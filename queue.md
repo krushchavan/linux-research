@@ -78,10 +78,10 @@
 - [x] btrfs -> subvolumes-and-snapshots
 - [x] btrfs -> transaction-model
 - [x] btrfs -> raid-and-multi-device-support
-- [>] btrfs -> checksumming-and-data-integrity
+- [x] btrfs -> checksumming-and-data-integrity
 
 # fuse
-- [ ] subsystem: fuse
+- [>] subsystem: fuse
 - [ ] fuse -> *
 
 # thp unresolved links
