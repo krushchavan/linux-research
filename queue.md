@@ -69,7 +69,7 @@
 - [x] fs -> filesystem-registration
 - [x] fs -> path-lookup
 - [x] fs -> mount-namespace
-- [ ] fs -> writeback-infrastructure
+- [x] fs -> writeback-infrastructure
 - [ ] fs -> fsnotify
 - [ ] fs -> core-in-memory-structures
 
