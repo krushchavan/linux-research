@@ -62,7 +62,7 @@
 - [x] mm -> address-space
 
 # fs / vfs concepts
-- [ ] fs -> dentry
+- [x] fs -> dentry
 - [ ] fs -> dentry-cache
 - [ ] fs -> inode-cache
 - [ ] fs -> file-object
