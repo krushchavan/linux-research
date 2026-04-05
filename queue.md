@@ -80,6 +80,10 @@
 - [ ] btrfs -> raid-and-multi-device-support
 - [ ] btrfs -> checksumming-and-data-integrity
 
+# fuse
+- [ ] subsystem: fuse
+- [ ] fuse -> *
+
 # nfs concepts
 - [ ] nfs -> nfs-client
 - [ ] nfs -> nfs-server
