@@ -15,7 +15,12 @@ Determine which category fits:
 
 ## Step 2 — Research from all available sources
 
-Use all three sources in parallel. Gather as much detail as possible before writing.
+Use all four sources. Gather as much detail as possible before writing.
+
+**kernel-internals.org** (use WebFetch — check first):
+- Try `https://kernel-internals.org/<subsystem>/` and `https://kernel-internals.org/<subsystem>/<topic>/`
+- Use `https://kernel-internals.org/site-index/` to discover available articles if unsure of the URL
+- This site explains *why* design decisions were made — extract that reasoning, not just mechanics
 
 **LKML** (use lkml_search_patches and lkml_get_thread tools):
 - Search for the topic and related keywords

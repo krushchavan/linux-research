@@ -34,10 +34,11 @@ The skill will:
 
 ## Research Sources (in order of priority)
 
-1. **LKML** — `lkml_search_patches`, `lkml_get_thread` tools
-2. **kernel.org** — official docs at https://www.kernel.org/doc/html/latest/
-3. **LWN.net** — web search for `site:lwn.net <topic>`
-4. **General web** — blogs, papers, conference talks
+1. **kernel-internals.org** — design rationale and internals at https://kernel-internals.org/
+2. **LKML** — `lkml_search_patches`, `lkml_get_thread` tools
+3. **kernel.org** — official docs at https://www.kernel.org/doc/html/latest/
+4. **LWN.net** — web search for `site:lwn.net <topic>`
+5. **General web** — blogs, papers, conference talks
 
 ## Note Naming Convention
 
