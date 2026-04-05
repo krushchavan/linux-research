@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh auth:*)",
+      "Bash(mkdir -p \"C:/Users/krush/.claude/skills/research-kernel\")",
+      "Bash(mkdir -p \"C:/Users/krush/source/repos/Linux Research Topics/.claude/skills/research-kernel\")",
+      "Bash(cp \"C:/Users/krush/.claude/skills/research-kernel.md\" \"C:/Users/krush/.claude/skills/research-kernel/SKILL.md\")",
+      "Bash(cp \"C:/Users/krush/.claude/skills/research-kernel.md\" \"C:/Users/krush/source/repos/Linux Research Topics/.claude/skills/research-kernel/SKILL.md\")",
+      "Bash(rm \"C:/Users/krush/.claude/skills/research-kernel.md\")"
+    ]
+  }
+}
