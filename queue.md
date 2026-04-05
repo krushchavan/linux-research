@@ -81,8 +81,8 @@
 - [x] btrfs -> checksumming-and-data-integrity
 
 # fuse
-- [>] subsystem: fuse
-- [ ] fuse -> *
+- [x] subsystem: fuse
+- [x] fuse -> *
 
 # thp unresolved links
 - [ ] mm -> memory-compaction
