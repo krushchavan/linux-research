@@ -28,6 +28,8 @@ sources:
 ## Core Components
 
 > For each major component: one paragraph on *what it does for the system* and *why it exists*. Explain what would break if it were removed. Introduce the canonical struct or source file as a grounding reference, but keep the focus on purpose and behaviour.
+>
+> Name each component as an Obsidian wiki-link so it becomes a clickable link to its concept note: `[[component-name]]`
 
 ## Key Data Structures
 
