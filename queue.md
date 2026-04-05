@@ -95,8 +95,8 @@
 - [x] nfs -> nfs-client
 - [x] nfs -> nfs-server
 - [x] nfs -> nfsv4.1-sessions
-- [>] nfs -> pnfs
-- [ ] nfs -> nfs-localio
+- [x] nfs -> pnfs
+- [>] nfs -> nfs-localio
 - [ ] nfs -> sunrpc
 - [ ] nfs -> xdr-encoding
 
