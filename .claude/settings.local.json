@@ -19,7 +19,11 @@
       "Bash(git -C \"C:/Users/krush/source/repos/Linux Research Topics\" add vault/subsystems/vfs.md queue.md)",
       "Bash(git -C \"C:/Users/krush/source/repos/Linux Research Topics\" commit -m \"research: Linux VFS subsystem \\(dcache, namei, mount API, fs_context\\)\")",
       "WebFetch(domain:btrfs.readthedocs.io)",
-      "WebFetch(domain:archive.kernel.org)"
+      "WebFetch(domain:archive.kernel.org)",
+      "WebFetch(domain:btrfs.wiki.kernel.org)",
+      "Bash(git -C \"C:/Users/krush/source/repos/Linux Research Topics\" add vault/subsystems/fs.md vault/subsystems/vfs.md vault/subsystems/nfs.md vault/subsystems/btrfs.md queue.md)",
+      "Bash(git -C \"C:/Users/krush/source/repos/Linux Research Topics\" status --short)",
+      "Bash(git -C:*)"
     ]
   }
 }

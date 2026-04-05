@@ -106,10 +106,28 @@ git -C "C:/Users/krush/source/repos/Linux Research Topics" push origin master
 
 **Scope judgement**: if a component is extremely narrow (e.g. a single sysctl, a trivial wrapper), fold it into the subsystem note rather than creating a shallow standalone note. Aim for concept notes that would stand alone as useful references.
 
-## Step 6 — Commit and push
+## Step 6 — Resolve all [[wiki links]]
+
+After all notes have been written, scan every note created in this session for `[[wiki link]]` patterns.
+
+For each unique link found:
+1. Derive the expected vault path — `vault/concepts/<kebab-case-name>.md` for concepts, `vault/subsystems/<name>.md` for subsystems
+2. Check whether that file exists on disk
+3. If it **does not exist**, add it to `queue.md` as a new `- [ ]` entry (append under `## Queue`, do not duplicate entries already in the queue)
+
+This ensures no `[[link]]` is ever left as a permanently empty page — every referenced topic will eventually be researched.
+
+**Do not** add to the queue:
+- Links that already have a file on disk
+- Links already present in `queue.md` (pending, in-progress, or complete)
+- Trivial one-off references that are clearly just inline mentions (e.g. a kernel version number or a syscall name used in passing)
+
+---
+
+## Step 7 — Commit and push
 
 ```bash
-git -C "C:/Users/krush/source/repos/Linux Research Topics" add vault/
+git -C "C:/Users/krush/source/repos/Linux Research Topics" add vault/ queue.md
 git -C "C:/Users/krush/source/repos/Linux Research Topics" commit -m "research: $ARGUMENTS"
 git -C "C:/Users/krush/source/repos/Linux Research Topics" push origin master
 ```
@@ -117,7 +135,7 @@ git -C "C:/Users/krush/source/repos/Linux Research Topics" push origin master
 If the repo has no remote yet, skip the push and inform the user.
 
 After saving, confirm:
-- The subsystem note path
+- The note(s) saved and their paths
 - How many concept notes were written and which were skipped (already existed)
+- How many unresolved `[[links]]` were added to the queue
 - Key sources used
-- Whether it was committed/pushed or if a remote needs to be set up
