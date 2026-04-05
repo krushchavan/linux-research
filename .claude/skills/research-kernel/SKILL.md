@@ -70,11 +70,18 @@ Fill in the frontmatter completely:
 
 ## Step 4 — Save the note
 
-Determine the file path:
-- concept → `vault/concepts/<kebab-case-title>.md`
-- subsystem → `vault/subsystems/<name>.md`
-- patch → `vault/patches/<slug-from-message-id>.md`
-- person → `vault/people/<firstname-lastname>.md`
+### Path conventions
+
+```
+vault/concepts/<subsystem>/<kebab-case-title>.md   ← concept notes
+vault/subsystems/<name>.md                         ← subsystem overview notes
+vault/patches/<lkml-message-id-slug>.md            ← patch analyses
+vault/people/<firstname-lastname>.md               ← contributor profiles
+```
+
+For concept notes, derive `<subsystem>` from the `subsystem` frontmatter field of the note being written (e.g. a buddy allocator concept under mm → `vault/concepts/mm/buddy-allocator.md`). If a concept spans multiple subsystems, use the primary one.
+
+If the `vault/concepts/<subsystem>/` directory does not yet exist, create it before writing the file.
 
 Write the file:
 - **Default**: if a note already exists, append new findings and update the `researched` date
@@ -86,32 +93,26 @@ This step applies **only when the topic is a subsystem**.
 
 After writing the subsystem note, extract the list of core components identified in the **Core Components** section. For each component:
 
-1. **Check if a concept note already exists** at `vault/concepts/<kebab-case-component-name>.md`
-   - If it exists and this is not a `--refresh` run, skip it (do not overwrite existing research)
+1. **Check if a concept note already exists** at `vault/concepts/<subsystem>/<kebab-case-component-name>.md`
+   - If it exists and this is not a `--refresh` run, skip it
    - If it does not exist, research and write it
 
-2. **Research the component** using the same four sources (Steps 2–4), but scoped to that specific component as a concept. Use the `concept.md` template.
+2. **Research the component** using the same four sources (Steps 2–4), scoped to that specific component. Use the `concept.md` template.
 
-3. **Save** to `vault/concepts/<kebab-case-component-name>.md`
+3. **Save** to `vault/concepts/<subsystem>/<kebab-case-component-name>.md` — use the same subsystem as the parent note.
 
-4. After all components are done, do a **single combined commit**:
+**Pacing**: research each component sequentially. Announce each one before starting so progress is visible.
 
-```bash
-git -C "C:/Users/krush/source/repos/Linux Research Topics" add vault/
-git -C "C:/Users/krush/source/repos/Linux Research Topics" commit -m "research: $ARGUMENTS — subsystem note + N concept notes"
-git -C "C:/Users/krush/source/repos/Linux Research Topics" push origin master
-```
-
-**Pacing**: research each component sequentially (not all at once) so each note gets full source coverage. Announce each component before starting it so the user can see progress.
-
-**Scope judgement**: if a component is extremely narrow (e.g. a single sysctl, a trivial wrapper), fold it into the subsystem note rather than creating a shallow standalone note. Aim for concept notes that would stand alone as useful references.
+**Scope judgement**: if a component is extremely narrow (a single sysctl, a trivial wrapper), fold it into the subsystem note rather than creating a shallow standalone. Aim for concept notes that stand alone as useful references.
 
 ## Step 6 — Resolve all [[wiki links]]
 
 After all notes have been written, scan every note created in this session for `[[wiki link]]` patterns.
 
 For each unique link found:
-1. Derive the expected vault path — `vault/concepts/<kebab-case-name>.md` for concepts, `vault/subsystems/<name>.md` for subsystems
+1. Derive the expected vault path:
+   - For concepts: check `vault/concepts/**/<kebab-case-name>.md` (search across all subsystem subfolders)
+   - For subsystems: check `vault/subsystems/<name>.md`
 2. Check whether that file exists on disk
 3. If it **does not exist**, add it to `queue.md` as a new `- [ ]` entry (append under `## Queue`, do not duplicate entries already in the queue)
 
