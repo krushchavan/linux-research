@@ -50,7 +50,7 @@ flowchart TB
     end
 
     subgraph kernel ["KERNEL-INTERNAL PATH"]
-        direction LR
+        direction TB
         subgraph byte_alloc ["Byte allocator"]
             direction TB
             K1["kmalloc()\nkmem_cache_alloc()"]
