@@ -74,7 +74,7 @@
 - [x] fs -> core-in-memory-structures
 
 # btrfs concepts
-- [ ] btrfs -> multiple-b-trees
+- [x] btrfs -> multiple-b-trees
 - [ ] btrfs -> subvolumes-and-snapshots
 - [ ] btrfs -> transaction-model
 - [ ] btrfs -> raid-and-multi-device-support
