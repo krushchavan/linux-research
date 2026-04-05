@@ -59,7 +59,7 @@
 - [x] mm -> page-reclaim
 - [x] mm -> swap
 - [x] mm -> transparent-huge-pages
-- [ ] mm -> address-space
+- [x] mm -> address-space
 
 # fs / vfs concepts
 - [ ] fs -> dentry
