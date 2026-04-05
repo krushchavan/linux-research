@@ -68,7 +68,7 @@
 - [x] fs -> file-object
 - [x] fs -> filesystem-registration
 - [x] fs -> path-lookup
-- [ ] fs -> mount-namespace
+- [x] fs -> mount-namespace
 - [ ] fs -> writeback-infrastructure
 - [ ] fs -> fsnotify
 - [ ] fs -> core-in-memory-structures
