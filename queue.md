@@ -58,7 +58,7 @@
 # mm concepts
 - [x] mm -> page-reclaim
 - [x] mm -> swap
-- [ ] mm -> transparent-huge-pages
+- [x] mm -> transparent-huge-pages
 - [ ] mm -> address-space
 
 # fs / vfs concepts
@@ -83,6 +83,9 @@
 # fuse
 - [ ] subsystem: fuse
 - [ ] fuse -> *
+
+# thp unresolved links
+- [ ] mm -> memory-compaction
 
 # page-reclaim unresolved links
 - [ ] subsystem: block
