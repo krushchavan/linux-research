@@ -75,7 +75,7 @@
 
 # btrfs concepts
 - [x] btrfs -> multiple-b-trees
-- [ ] btrfs -> subvolumes-and-snapshots
+- [x] btrfs -> subvolumes-and-snapshots
 - [ ] btrfs -> transaction-model
 - [ ] btrfs -> raid-and-multi-device-support
 - [ ] btrfs -> checksumming-and-data-integrity
