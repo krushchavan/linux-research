@@ -49,7 +49,7 @@
 
 - [x] mm -> Core Components
 - [x] subsystem: fs
-- [ ] subsystem: vfs
+- [x] subsystem: vfs
 - [ ] subsystem: nfs
 - [ ] subsystem: btrfs
 
