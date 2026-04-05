@@ -88,8 +88,8 @@
 - [x] mm -> memory-compaction
 
 # page-reclaim unresolved links
-- [>] subsystem: block
-- [ ] subsystem: memcg
+- [x] subsystem: block
+- [>] subsystem: memcg
 
 # nfs concepts
 - [x] nfs -> nfs-client
