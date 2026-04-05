@@ -19,38 +19,39 @@ sources:
 
 ## Mental Model
 
-> One strong analogy or conceptual frame — the single idea that makes the whole subsystem click before diving into details.
+> One strong analogy or conceptual frame for the subsystem as a whole — the single idea that makes the rest of the note make sense.
 
 ## Architecture
 
-> A Mermaid diagram showing the major components and how control/data flows between them. Follow with a short paragraph explaining what the diagram shows and how to read it.
+> A Mermaid diagram showing the major components and how control/data flows between them. Follow with a short paragraph explaining how to read it.
+
+---
 
 ## Core Components
 
-> For each major component: one paragraph on *what it does for the system* and *why it exists*. Explain what would break if it were removed. Introduce the canonical struct or source file as a grounding reference, but keep the focus on purpose and behaviour.
+> One subsection per component. Each subsection blends purpose, mechanism, and technical detail together so the reader fully understands one thing before moving to the next.
 >
-> Name each component as an Obsidian wiki-link so it becomes a clickable link to its concept note: `[[component-name]]`
+> Use Obsidian wiki-links for component names: `[[component-name]]` — these become links to the auto-generated concept notes.
 
-## Key Data Structures
+### [[Component Name]]
 
-> The structures that carry the subsystem's state. For each: what it represents, why it exists, and its most important fields with a one-line explanation of what each controls. Include the header file path.
->
-> Example format:
-> **`struct foo`** (`include/linux/foo.h`) — represents X so that Y can happen.
-> - `field_a` — controls the rate at which ...
-> - `field_b` — tracks whether ...
+**Purpose** — What problem does this component solve? What would break without it?
 
-## Key Functions / Entry Points
+**How it works** — Walk through the mechanism as a narrative. Explain *why* each step happens, not just what it does. Introduce structs and functions as they appear naturally in the story rather than in a separate list.
 
-> The functions a reader encounters first when tracing the subsystem. For each: what it does, what calls it, and what it triggers next. Organised by the flow they belong to (e.g. allocation path, reclaim path).
+**Key struct**: `struct_name` (`path/to/header.h`)
+- `field` — what it controls or tracks
 
-## Important Flags & Config Options
+**Key functions**:
+- `function_name()` — what it does and what calls it
 
-> Kconfig symbols, sysctl knobs, and important flags (e.g. GFP flags, VMA flags) that meaningfully change subsystem behaviour. For each: what enabling/setting it does and when you would change it.
+**Config & flags** — Kconfig symbols, sysctl knobs, or important flags that change this component's behaviour.
+
+---
 
 ## How Components Interact
 
-> Walk through 2–3 concrete scenarios end-to-end (e.g. "a process calls malloc()", "memory pressure triggers reclaim"). At each step, name which component acts, what it decides, and why it hands off to the next component.
+> Walk through 2–3 concrete end-to-end scenarios (e.g. "a process calls malloc()", "kswapd wakes under memory pressure"). At each step, name which component acts, what it decides, and why it hands off to the next. A Mermaid sequence diagram works well here.
 
 ## Where It Fits in the Kernel
 
@@ -62,15 +63,15 @@ sources:
 
 ## Design Decisions & Tradeoffs
 
-> The most consequential design choices that shaped the subsystem: what was chosen, what was rejected, and what was given up. Ground each decision in real history where possible.
+> The most consequential design choices that shaped the subsystem: what was chosen, what was rejected, and what was given up. Ground each in real history.
 
 ## How It Has Evolved
 
-> Key shifts over kernel history — what changed, which version introduced it, and what problem forced the change.
+> Key shifts over kernel history — what changed, which version, and what problem forced the change.
 
 ## Recent Development Activity
 
-> What is actively being worked on or debated right now? What problems remain unsolved?
+> What is actively being worked on or debated right now?
 
 ## Further Reading
 
