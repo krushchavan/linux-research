@@ -48,4 +48,14 @@
 ## Queue
 
 - [ ] mm -> Core Components
+- [ ] subsystem: fs
+- [ ] subsystem: vfs
+- [ ] subsystem: nfs
+- [ ] subsystem: btrfs
+- [ ] subsystem: fuse
+- [ ] fs -> Core Components
+- [ ] vfs -> Core Components
+- [ ] nfs -> Core Components
+- [ ] btrfs -> Core Components
+- [ ] fuse -> Core Components
 
