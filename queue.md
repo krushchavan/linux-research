@@ -70,7 +70,7 @@
 - [x] fs -> path-lookup
 - [x] fs -> mount-namespace
 - [x] fs -> writeback-infrastructure
-- [ ] fs -> fsnotify
+- [x] fs -> fsnotify
 - [ ] fs -> core-in-memory-structures
 
 # btrfs concepts
