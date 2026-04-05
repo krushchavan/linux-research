@@ -38,41 +38,53 @@ The `mm` subsystem is Linux's memory management layer — the part of the kernel
 The mm subsystem is best understood as a stack of layers, each solving a different level of the memory problem:
 
 ```
-User process
-    │  malloc() / mmap() / brk()
-    ▼
-┌─────────────────────────────────┐
-│  Virtual Memory Areas (VMAs)    │  mm/mmap.c, mm/memory.c
-│  Maple tree of address ranges   │  (per mm_struct, per process)
-└──────────────┬──────────────────┘
-               │  page fault
-               ▼
-┌─────────────────────────────────┐
-│  Page Fault Handler             │  mm/memory.c → handle_pte_fault()
-│  anonymous / file / swap        │
-└──────────────┬──────────────────┘
-               │  __alloc_pages()
-               ▼
-┌─────────────────────────────────┐
-│  Per-CPU Page Allocator (PCP)   │  mm/page_alloc.c
-│  Local fast path, batch refill  │
-└──────────────┬──────────────────┘
-               │  zone lock, slow path
-               ▼
-┌─────────────────────────────────┐
-│  Buddy Allocator                │  mm/page_alloc.c
-│  Zone free lists, power-of-2    │
-└──────────────┬──────────────────┘
-               │  reclaim / compaction
-               ▼
-┌─────────────────────────────────┐
-│  Page Reclaim & Compaction      │  mm/vmscan.c, mm/compaction.c
-│  kswapd, direct reclaim, LRU   │
-└─────────────────────────────────┘
+  USER-MODE PATH                              KERNEL-INTERNAL PATH
+  ══════════════════════════════════          ══════════════════════════════════════════════
 
-Parallel stack for kernel-internal allocations:
-  kmalloc / kmem_cache_alloc → SLUB (mm/slub.c) → Buddy
-  vmalloc                    → mm/vmalloc.c      → Buddy (non-contiguous)
+  User process                                Kernel code
+  malloc() / mmap() / brk()                  kmalloc()  kmem_cache_alloc()    vmalloc()
+          │                                       │              │                  │
+          ▼                                       └──────────────┘                  │
+  ┌───────────────────────────┐                          │                          │
+  │   VMAs  (Maple Tree)      │                          ▼                          │
+  │   mm/mmap.c               │               ┌─────────────────────┐    ┌──────────────────────┐
+  │   virtual address ranges  │               │       SLUB           │    │      vmalloc         │
+  │   permissions · backing   │               │   mm/slub.c          │    │   mm/vmalloc.c       │
+  └───────────┬───────────────┘               │   per-CPU obj cache  │    │   vmap area reserved │
+              │ (page fault on first access)   │   cmpxchg fast path  │    │   N scattered pages  │
+              ▼                                └──────────┬──────────┘    └──────────┬───────────┘
+  ┌───────────────────────────┐                           │ (cache miss /             │
+  │   Page Fault Handler      │                           │  slab exhausted)          │ (alloc_page() × N)
+  │   mm/memory.c             │                           │                           │
+  │   handle_pte_fault()      │                           │                           │
+  │   anon · file · swap · THP│                           │                           │
+  └───────────┬───────────────┘                           │                           │
+              │ __alloc_pages()                           │                           │
+              └───────────────────────────────────────────┴───────────────────────────┘
+                                                          │
+                                                          ▼
+                                           ┌──────────────────────────────────┐
+                                           │   Per-CPU Page Allocator (PCP)   │
+                                           │   mm/page_alloc.c                │
+                                           │   local fast path · order 0 – 3  │
+                                           │   per-CPU lists · batch refill   │
+                                           └──────────────────┬───────────────┘
+                                                              │ (zone→lock, slow path)
+                                                              ▼
+                                           ┌──────────────────────────────────┐
+                                           │       Buddy Allocator            │
+                                           │       mm/page_alloc.c            │
+                                           │   zone free lists · 2^order      │
+                                           │   UNMOVABLE · MOVABLE · RECLAIM  │
+                                           └──────────────────┬───────────────┘
+                                                              │ (reclaim / compaction)
+                                                              ▼
+                                           ┌──────────────────────────────────┐
+                                           │    Page Reclaim & Compaction     │
+                                           │    mm/vmscan.c · mm/compaction.c │
+                                           │    kswapd · direct reclaim       │
+                                           │    LRU eviction · migrate · OOM  │
+                                           └──────────────────────────────────┘
 ```
 
 The design principle is **demand paging with lazy allocation**: virtual addresses are handed out immediately and cheaply (just a VMA record), while physical pages are allocated only on first access via page faults. This makes `fork()` cheap (copy-on-write), `malloc()` cheap (no physical work yet), and overcommit possible (most reserved memory is never touched).
