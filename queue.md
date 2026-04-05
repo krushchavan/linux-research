@@ -71,7 +71,7 @@
 - [x] fs -> mount-namespace
 - [x] fs -> writeback-infrastructure
 - [x] fs -> fsnotify
-- [ ] fs -> core-in-memory-structures
+- [x] fs -> core-in-memory-structures
 
 # btrfs concepts
 - [ ] btrfs -> multiple-b-trees
