@@ -89,7 +89,7 @@
 
 # page-reclaim unresolved links
 - [x] subsystem: block
-- [>] subsystem: memcg
+- [x] subsystem: memcg
 
 # nfs concepts
 - [x] nfs -> nfs-client
