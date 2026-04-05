@@ -5,6 +5,8 @@ description: Research a Linux kernel topic and save a structured note to the vau
 
 Research the following Linux kernel topic and save a note to the vault in this repo: **$ARGUMENTS**
 
+If `$ARGUMENTS` contains `--refresh`, strip that flag from the topic name and treat this as a **full refresh**: delete the existing note (if any) and write a completely new one from scratch rather than appending.
+
 ## Step 1 — Classify the topic
 
 Determine which category fits:
@@ -64,7 +66,9 @@ Determine the file path:
 - patch → `vault/patches/<slug-from-message-id>.md`
 - person → `vault/people/<firstname-lastname>.md`
 
-Write the file. If a note for this topic already exists, update it rather than overwriting — append new findings and update the `researched` date.
+Write the file:
+- **Default**: if a note already exists, append new findings and update the `researched` date
+- **`--refresh` mode**: overwrite the file completely with a fresh note from scratch
 
 ## Step 5 — Commit and push
 
