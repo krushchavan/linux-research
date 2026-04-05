@@ -85,10 +85,10 @@
 - [x] fuse -> *
 
 # thp unresolved links
-- [>] mm -> memory-compaction
+- [x] mm -> memory-compaction
 
 # page-reclaim unresolved links
-- [ ] subsystem: block
+- [>] subsystem: block
 - [ ] subsystem: memcg
 
 # nfs concepts
