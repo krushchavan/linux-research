@@ -1,0 +1,13 @@
+# Obsidian workspace state (machine-specific, don't sync)
+vault/.obsidian/workspace.json
+vault/.obsidian/workspace-mobile.json
+vault/.obsidian/plugins/*/data.json
+
+# Keep plugin manifests and configs, ignore runtime data
+vault/.obsidian/plugins/*/main.js
+vault/.obsidian/plugins/*/styles.css
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
