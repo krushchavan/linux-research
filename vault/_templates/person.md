@@ -6,6 +6,7 @@ email:
 subsystems: []
 affiliation:
 researched: {{date}}
+status: in-progress
 sources:
   -
 ---

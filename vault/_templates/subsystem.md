@@ -6,6 +6,7 @@ maintainer:
 mailing_list:
 source_path:
 researched: {{date}}
+status: in-progress
 sources:
   -
 ---

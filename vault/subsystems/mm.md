@@ -38,53 +38,51 @@ The `mm` subsystem is Linux's memory management layer — the part of the kernel
 The mm subsystem is best understood as a stack of layers, each solving a different level of the memory problem:
 
 ```
-  USER-MODE PATH                              KERNEL-INTERNAL PATH
-  ══════════════════════════════════          ══════════════════════════════════════════════
+USER-MODE PATH                   KERNEL-INTERNAL PATH
+════════════════════════════     ══════════════════════════════════════════════════
 
-  User process                                Kernel code
-  malloc() / mmap() / brk()                  kmalloc()  kmem_cache_alloc()    vmalloc()
-          │                                       │              │                  │
-          ▼                                       └──────────────┘                  │
-  ┌───────────────────────────┐                          │                          │
-  │   VMAs  (Maple Tree)      │                          ▼                          │
-  │   mm/mmap.c               │               ┌─────────────────────┐    ┌──────────────────────┐
-  │   virtual address ranges  │               │       SLUB           │    │      vmalloc         │
-  │   permissions · backing   │               │   mm/slub.c          │    │   mm/vmalloc.c       │
-  └───────────┬───────────────┘               │   per-CPU obj cache  │    │   vmap area reserved │
-              │ (page fault on first access)   │   cmpxchg fast path  │    │   N scattered pages  │
-              ▼                                └──────────┬──────────┘    └──────────┬───────────┘
-  ┌───────────────────────────┐                           │ (cache miss /             │
-  │   Page Fault Handler      │                           │  slab exhausted)          │ (alloc_page() × N)
-  │   mm/memory.c             │                           │                           │
-  │   handle_pte_fault()      │                           │                           │
-  │   anon · file · swap · THP│                           │                           │
-  └───────────┬───────────────┘                           │                           │
-              │ __alloc_pages()                           │                           │
-              └───────────────────────────────────────────┴───────────────────────────┘
-                                                          │
-                                                          ▼
-                                           ┌──────────────────────────────────┐
-                                           │   Per-CPU Page Allocator (PCP)   │
-                                           │   mm/page_alloc.c                │
-                                           │   local fast path · order 0 – 3  │
-                                           │   per-CPU lists · batch refill   │
-                                           └──────────────────┬───────────────┘
-                                                              │ (zone→lock, slow path)
-                                                              ▼
-                                           ┌──────────────────────────────────┐
-                                           │       Buddy Allocator            │
-                                           │       mm/page_alloc.c            │
-                                           │   zone free lists · 2^order      │
-                                           │   UNMOVABLE · MOVABLE · RECLAIM  │
-                                           └──────────────────┬───────────────┘
-                                                              │ (reclaim / compaction)
-                                                              ▼
-                                           ┌──────────────────────────────────┐
-                                           │    Page Reclaim & Compaction     │
-                                           │    mm/vmscan.c · mm/compaction.c │
-                                           │    kswapd · direct reclaim       │
-                                           │    LRU eviction · migrate · OOM  │
-                                           └──────────────────────────────────┘
+malloc() / mmap() / brk()        kmalloc() / kmem_cache_alloc()        vmalloc()
+        │                                    │                              │
+        ▼                                    └──────────────┐               │
+┌─────────────────────────┐                               ▼                 │
+│   VMAs  (Maple Tree)    │                  ┌─────────────────────┐        │
+│   mm/mmap.c             │                  │  SLUB               │        ▼
+│   virtual addr ranges   │                  │  mm/slub.c          │  ┌─────────────────┐
+│   per mm_struct         │                  │  per-CPU obj cache  │  │  vmalloc        │
+└──────────┬──────────────┘                  │  cmpxchg fast path  │  │  mm/vmalloc.c   │
+           │  (page fault)                   └──────────┬──────────┘  │  vmap area            │                                            
+           ▼                                            │        │  alloc_page()×N │
+┌─────────────────────────┐                            │               └────────┬────────┘
+│   Page Fault Handler    │                            │                        │
+│   mm/memory.c           │                            │                        │
+│   handle_pte_fault()    │                            │                        │
+│   anon · file · swap    │                            │                        │
+└──────────┬──────────────┘                            │                        │
+           └──────── __alloc_pages() ──────────────────┴────────────────────────┘
+                                    │
+                                    ▼
+              ┌───────────────────────────────────────┐
+              │    Per-CPU Page Allocator  (PCP)      │
+              │    mm/page_alloc.c                    │
+              │    local fast path · order 0–3        │
+              │    per-CPU lists · batch refill        │
+              └───────────────────┬───────────────────┘
+                                  │  zone→lock, slow path
+                                  ▼
+              ┌───────────────────────────────────────┐
+              │         Buddy Allocator               │
+              │         mm/page_alloc.c               │
+              │    zone free lists · 2^order blocks   │
+              │    UNMOVABLE · MOVABLE · RECLAIMABLE  │
+              └───────────────────┬───────────────────┘
+                                  │  reclaim / compaction
+                                  ▼
+              ┌───────────────────────────────────────┐
+              │     Page Reclaim & Compaction         │
+              │     mm/vmscan.c · mm/compaction.c     │
+              │     kswapd · direct reclaim · LRU     │
+              │     page migration · OOM killer        │
+              └───────────────────────────────────────┘
 ```
 
 The design principle is **demand paging with lazy allocation**: virtual addresses are handed out immediately and cheaply (just a VMA record), while physical pages are allocated only on first access via page faults. This makes `fork()` cheap (copy-on-write), `malloc()` cheap (no physical work yet), and overcommit possible (most reserved memory is never touched).

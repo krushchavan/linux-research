@@ -8,6 +8,7 @@ date:
 subsystem:
 status:
 researched: {{date}}
+status: in-progress
 sources:
   -
 ---
