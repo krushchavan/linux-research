@@ -63,7 +63,7 @@
 
 # fs / vfs concepts
 - [x] fs -> dentry
-- [ ] fs -> dentry-cache
+- [x] fs -> dentry-cache
 - [ ] fs -> inode-cache
 - [ ] fs -> file-object
 - [ ] fs -> filesystem-registration
