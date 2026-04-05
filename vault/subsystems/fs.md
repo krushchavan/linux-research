@@ -6,18 +6,29 @@ maintainer: Christian Brauner <brauner@kernel.org>
 mailing_list: linux-fsdevel@vger.kernel.org
 source_path: fs/
 researched: 2026-04-05
+last_refreshed: 2026-04-05
 status: complete
+related: ["[[vfs]]", "[[nfs]]", "[[btrfs]]"]
 sources:
   - https://www.kernel.org/doc/html/v5.7/filesystems/vfs.html
+  - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://www.kernel.org/doc/html/latest/filesystems/path-lookup.html
   - https://static.lwn.net/kerneldoc/filesystems/vfs.html
   - https://lwn.net/Articles/57369/
   - https://lwn.net/Articles/780267/
   - https://lwn.net/Articles/712467/
+  - https://lwn.net/Articles/326552/
+  - https://lwn.net/Articles/311350/
+  - https://lwn.net/Articles/339399/
+  - https://lwn.net/Articles/840593/
   - https://docs.kernel.org/next/filesystems/fuse-io-uring.html
 ---
 
 # Linux Filesystem Subsystem (VFS)
+
+## Related Notes
+
+> **See also**: [[vfs]] (VFS internals deep-dive: dcache, namei, mount API), [[nfs]] (Network File System client & server), [[btrfs]] (B-tree filesystem).
 
 ## Overview
 
@@ -158,22 +169,100 @@ The `struct file_operations` vtable is the richest in VFS, covering everything f
 
 **Purpose** — The address space object glues a file's data to the page cache. It tracks which pages belong to a file, manages dirty/writeback state, and exposes the I/O operations the page reclaim and writeback infrastructure calls.
 
-**How it works** — Every inode that stores data (as opposed to purely metadata like directories in some filesystems) has an embedded `struct address_space`. Pages in the page cache are stored in a radix tree (or, in recent kernels, an XArray) keyed by page index within the file. When the kernel reads a file, `read_iter` checks whether the required pages are already in the tree; on a miss it calls `readpage` (or the newer `readahead` path) to populate them.
+**How it works** — Every inode that stores data has an embedded `struct address_space`. Pages (now: *folios*) in the page cache are stored in an XArray (`i_pages`) keyed by page-frame index within the file. When the kernel reads a file, `read_iter` checks whether the required folios are already in the XArray; on a miss it calls `read_folio()` (or, for prefetch, `readahead()`) to populate them from storage.
 
-Dirty pages are tagged in the XArray and later written back by `pdflush`/`writeback` threads through `writepages`. The `direct_IO` path bypasses the cache entirely, going straight from userspace buffers to the block layer.
+Dirty folios are tagged in the XArray and later written back by **per-BDI writeback workers** (`struct bdi_writeback`, `wb_workfn()`) through `writepages()`. `pdflush` was removed in Linux 3.2; the current model creates one writeback worker per backing device so that a stalled hard disk cannot block writeback for SSDs on other devices. The `direct_IO` path (invoked for `O_DIRECT` opens) bypasses the cache entirely, going straight from userspace buffers to the block layer.
+
+**Folio transition** — Since Linux 5.16+, `struct page` is being systematically replaced by `struct folio` throughout the page-cache and `address_space_operations`. A folio is a power-of-two-aligned contiguous group of pages, eliminating ambiguity between "base page" and "compound page." Filesystems that support large folios call `mapping_set_large_folios()` during inode setup; the page cache then opportunistically allocates multi-page folios on read/write for improved I/O and reduced per-page overhead.
 
 **Key struct**: `struct address_space` (`include/linux/fs.h`)
 - `a_ops` — pointer to `struct address_space_operations`
 - `host` — back-pointer to the owning inode
-- `i_pages` — XArray holding cached pages
-- `nrpages` — total number of resident pages
+- `i_pages` — XArray holding cached folios (replaces the old radix tree)
+- `nrpages` — total number of resident base pages
 - `writeback_index` — where the next writeback pass starts
 
-**Key functions** (in `address_space_operations`):
-- `readpage` / `readahead` — bring pages from storage into cache
-- `writepage` / `writepages` — flush dirty pages to storage
-- `write_begin` / `write_end` — bracket buffered writes for locking
-- `direct_IO` — bypass the cache for O_DIRECT
+**Key functions** (in `address_space_operations` — current API):
+- `read_folio(file, folio)` — bring one folio from storage into cache (replaces old `readpage`)
+- `readahead(ractl)` — populate a window of consecutive folios for prefetch
+- `dirty_folio(mapping, folio)` — mark a folio dirty; called on first write to a cached folio
+- `writepages(mapping, wbc)` — flush a range of dirty folios to storage
+- `write_begin(file, mapping, pos, len, pagep)` — prepare a folio for buffered write
+- `write_end(file, mapping, pos, len, copied, page)` — finalise after write
+- `direct_IO(kiocb, iter)` — bypass page cache for `O_DIRECT`
+- `migrate_folio` — relocate folios during memory compaction
+
+---
+
+### [[Writeback Infrastructure]] (BDI / `fs-writeback`)
+
+**Purpose** — The writeback infrastructure asynchronously flushes dirty pages from the page cache to storage. It decouples the latency of a `write()` call (which only dirties cache) from the latency of disk I/O. Without it, every write would block until the device confirmed the data.
+
+**How it works** — When a folio is dirtied, `__mark_inode_dirty()` places the inode on the owning backing device's (`struct backing_dev_info`, BDI) dirty inode list. The BDI owns one or more `struct bdi_writeback` objects (one per cgroup for cgroup-aware writeback). Each `bdi_writeback` has a dedicated kernel worker thread whose main loop is `wb_workfn()`.
+
+`wb_workfn()` continuously calls `wb_do_writeback()` until the work list is empty. `wb_do_writeback()` processes work items of type `struct wb_writeback_work`, each specifying: a superblock to flush, a sync mode (`WB_SYNC_NONE` or `WB_SYNC_ALL`), a number of pages to write, an age threshold (write folios older than N jiffies), and whether this is a `sync(2)` call.
+
+**Writeback triggers**:
+- **Periodic** (kupdated-style): the worker wakes up every `dirty_writeback_interval` (default 5 s) and writes back folios older than `dirty_expire_interval` (default 30 s).
+- **Ratio-based throttling**: `balance_dirty_pages()` is called inside the buffered write path. If dirty pages exceed `dirty_ratio` (default 20% of memory) the calling process is throttled; if they exceed `dirty_background_ratio` (default 10%), writeback workers are woken.
+- **`fsync(2)` / `sync(2)`**: calls `filemap_write_and_wait_range()` or `sync_inodes_sb()`, which drive `WB_SYNC_ALL` writeback — waiting for every dirty page to reach stable storage.
+- **Memory pressure**: `kswapd` and direct reclaim can invoke `writepage()` on individual folios as a last resort.
+
+**pdflush was removed in Linux 3.2.** The old global thread pool (2–8 `pdflush` threads shared by all devices) caused inter-device contention: a slow spinning disk could starve an SSD of writeback threads. Per-BDI workers solve this — each physical device has its own threads and its own dirty inode queue, so one device's latency cannot affect another's.
+
+**Cgroup writeback** (Linux 4.2+) — each memory cgroup that is associated with a block cgroup gets its own `bdi_writeback` so that writeback I/O is attributed and throttled per cgroup.
+
+**Key struct**: `struct backing_dev_info` (`include/linux/backing-dev.h`)
+- `wb` — the default `bdi_writeback` for this device
+- `wb_list` — list of per-cgroup `bdi_writeback` objects
+- `capabilities` — `BDI_CAP_WRITEBACK`, `BDI_CAP_SYNCHRONOUS_IO`, etc.
+
+**Key struct**: `struct bdi_writeback` (`include/linux/backing-dev-defs.h`)
+- `b_dirty` — list of dirty inodes awaiting writeback
+- `b_io` — inodes currently being written back
+- `b_more_io` — inodes deferred due to congestion
+- `dwork` — the `delayed_work` that schedules `wb_workfn`
+
+**Key struct**: `struct writeback_control` (`include/linux/writeback.h`)
+- `sync_mode` — `WB_SYNC_NONE` (skip locked) or `WB_SYNC_ALL` (wait)
+- `nr_to_write` — page budget for this pass
+- `range_start` / `range_end` — file offset range for `fsync`
+- `for_kupdate` / `for_background` — hint to filesystems on urgency
+
+**Key functions**:
+- `wb_workfn()` — the writeback worker thread loop (`fs/fs-writeback.c`)
+- `writeback_single_inode()` — write one inode's dirty pages
+- `balance_dirty_pages()` — called in the write path to throttle producers
+- `filemap_write_and_wait_range()` — wait for all writes in a range (used by `fsync`)
+
+**Config & flags** — `vm.dirty_ratio`, `vm.dirty_background_ratio`, `vm.dirty_writeback_centisecs`, `vm.dirty_expire_centisecs` in `/proc/sys/vm/`.
+
+---
+
+### [[fsnotify]] (Filesystem Notification Framework)
+
+**Purpose** — fsnotify is the generic in-kernel framework for notifying userspace about filesystem events (file created, deleted, modified, accessed, attribute changed, etc.). It is the common substrate on which `inotify`, `fanotify`, and `dnotify` are all built.
+
+**How it works** — The VFS layer calls lightweight fsnotify hook functions at strategic points (`fsnotify_create()`, `fsnotify_modify()`, `fsnotify_unlink()`, etc., defined in `include/linux/fsnotify.h`). These hooks are no-ops unless at least one notification group has registered interest in the object. When a group is registered, the hook calls `fsnotify()`, which iterates through all registered groups and invokes each group's `handle_inode_event()` or `handle_path_event()` callback.
+
+**Notification consumers**:
+- **inotify** — per-inode watches; each `inotify_add_watch()` call registers a mark on an inode. Events are delivered as `inotify_event` structs via a file-descriptor queue.
+- **fanotify** — more powerful; can watch entire mount points or directory trees. Supports **permission events** (`FAN_ACCESS_PERM`, `FAN_OPEN_PERM`): when a process tries to access a file, fanotify puts the process on hold until the listening daemon writes an allow/deny response to the fanotify fd. Used by anti-virus scanners and file integrity monitors.
+- **dnotify** (legacy) — per-directory signals via `fcntl(F_NOTIFY)`; largely superseded by inotify.
+
+**Mark system** — Each watched object (inode, vfsmount, superblock) can have **fsnotify marks** (`struct fsnotify_mark`) attached by one or more notification groups. The mark stores which event mask the group cares about. VFS hooks first check whether any mark exists before calling into the full fsnotify machinery — ensuring zero overhead when no watchers are registered.
+
+**Key struct**: `struct fsnotify_group` — represents one inotify or fanotify instance (created by `inotify_init()` or `fanotify_init()`).
+**Key struct**: `struct fsnotify_mark` — a watcher registration on a specific inode, vfsmount, or superblock.
+**Key struct**: `struct fsnotify_event` — one queued event (event type, path, inode info).
+
+**Key functions**:
+- `fsnotify_create()` / `fsnotify_unlink()` / `fsnotify_modify()` — VFS-layer hooks (inline, `include/linux/fsnotify.h`)
+- `fsnotify()` — the core dispatch function (`fs/notify/fsnotify.c`)
+- `inotify_add_watch()` / `inotify_rm_watch()` — inotify watch management
+- `fanotify_mark()` — fanotify mount/directory/filesystem mark API
+
+**Config** — `CONFIG_FSNOTIFY` (implicit with inotify or fanotify), `CONFIG_INOTIFY_USER`, `CONFIG_FANOTIFY`, `CONFIG_FANOTIFY_ACCESS_PERMISSIONS`.
 
 ---
 
@@ -239,12 +328,13 @@ sequenceDiagram
 4. VFS allocates a `vfsmount` and links it: the mountpoint dentry (`/mnt`) gains a child `vfsmount` pointing at the ext4 root dentry.
 5. From now on, path lookups reaching `/mnt` are automatically redirected into the ext4 tree.
 
-### Scenario 3: Dirty page writeback under memory pressure
+### Scenario 3: Dirty folio writeback under memory pressure
 
-1. Page reclaim (via `kswapd`) finds a dirty page via the LRU list.
-2. It calls `pageout()`, which calls `address_space_operations.writepage()` on the page's `address_space`.
-3. The filesystem (`ext4_writepage()`) assembles a `bio` and submits it to the block layer.
-4. On completion, the page's `PG_dirty` and `PG_writeback` flags are cleared.
+1. A process writes to a cached folio; `dirty_folio()` tags it `PAGECACHE_TAG_DIRTY` in the XArray and calls `__mark_inode_dirty()` to enqueue the inode on the BDI's dirty list.
+2. Periodically (and under memory pressure), `wb_workfn()` runs on the per-BDI writeback worker thread. It calls `writeback_sb_inodes()`, which iterates the dirty inode list.
+3. For each dirty inode, `writeback_single_inode()` calls `address_space_operations.writepages()` (e.g., `ext4_writepages()`), which builds a `struct bio` covering the dirty extent and submits it to the block layer.
+4. On I/O completion, the folio's `PG_dirty` and `PG_writeback` flags are cleared; the inode is moved off the dirty list.
+5. If writeback cannot keep up (e.g., the device is slow), the kernel calls `balance_dirty_pages()` inside the write path to throttle the writing process, preventing runaway dirty memory.
 
 ---
 
@@ -300,13 +390,17 @@ sequenceDiagram
 
 ## Further Reading
 
-1. **[Overview of the Linux Virtual File System — kernel.org](https://www.kernel.org/doc/html/v5.7/filesystems/vfs.html)** — the authoritative reference for all VFS objects and operation tables.
+1. **[Overview of the Linux Virtual File System — kernel.org](https://www.kernel.org/doc/html/latest/filesystems/vfs.html)** — the authoritative reference for all VFS objects and operation tables (current, includes folio API).
 2. **[Introduction to Pathname Lookup — kernel.org](https://www.kernel.org/doc/html/latest/filesystems/path-lookup.html)** — deep dive into RCU-walk, REF-walk, `nameidata`, and symlink handling.
-3. **[Creating Linux virtual filesystems — LWN.net (2003)](https://lwn.net/Articles/57369/)** — accessible introduction to writing a minimal VFS-backed filesystem.
-4. **[VFS: Introduce filesystem context — LWN.net (2019)](https://lwn.net/Articles/780267/)** — covers the new mount API and `struct fs_context`.
-5. **[The future of the page cache — LWN.net](https://lwn.net/Articles/712467/)** — explains the address space / page cache design and where it was heading.
-6. **[FUSE-over-io-uring — kernel.org](https://docs.kernel.org/next/filesystems/fuse-io-uring.html)** — design doc for FUSE's io_uring integration.
-7. **[Idmapped mounts — kernel.org](https://docs.kernel.org/filesystems/idmappings.html)** — full explanation of ID mapping semantics.
+3. **[Flushing out pdflush — LWN.net (2009)](https://lwn.net/Articles/326552/)** — explains why pdflush was replaced by per-BDI writeback workers and how `bdi_writeback` works.
+4. **[Page folios — LWN.net (2021)](https://lwn.net/Articles/840593/)** — Matthew Wilcox's introduction to `struct folio` and why it replaces `struct page` in the page cache.
+5. **[fsnotify, dnotify, and inotify — LWN.net (2009)](https://lwn.net/Articles/311350/)** — explains the fsnotify framework and the inotify/dnotify consumers built on it.
+6. **[The fanotify API — LWN.net (2010)](https://lwn.net/Articles/339399/)** — introduction to fanotify's permission event model.
+7. **[Creating Linux virtual filesystems — LWN.net (2003)](https://lwn.net/Articles/57369/)** — accessible introduction to writing a minimal VFS-backed filesystem.
+8. **[VFS: Introduce filesystem context — LWN.net (2019)](https://lwn.net/Articles/780267/)** — covers the new mount API and `struct fs_context`.
+9. **[The future of the page cache — LWN.net](https://lwn.net/Articles/712467/)** — explains the address space / page cache design and where it was heading.
+10. **[FUSE-over-io-uring — kernel.org](https://docs.kernel.org/next/filesystems/fuse-io-uring.html)** — design doc for FUSE's io_uring integration.
+11. **[Idmapped mounts — kernel.org](https://docs.kernel.org/filesystems/idmappings.html)** — full explanation of ID mapping semantics.
 
 ---
 

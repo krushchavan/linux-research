@@ -14,9 +14,17 @@ sources:
   - https://lwn.net/Articles/649115/
   - https://lwn.net/Articles/419811/
   - https://lwn.net/Articles/780267/
+  - https://lwn.net/Articles/840593/
+  - https://lwn.net/Articles/326552/
+  - https://lwn.net/Articles/311350/
+  - https://lwn.net/Articles/339399/
 ---
 
 # Virtual File System (VFS) Subsystem
+
+## Related Notes
+
+> **See also**: [[fs]] (VFS overview + full component guide), [[nfs]] (Network File System client & server), [[btrfs]] (B-tree copy-on-write filesystem).
 
 ## Overview
 
@@ -219,7 +227,7 @@ Each superblock tracks all its inodes in `sb->s_inodes`. This list is used durin
 **Lifecycle**:
 - **Alloc**: `alloc_inode()` calls the filesystem's `sb->s_op->alloc_inode()` (which may embed the `struct inode` inside a larger filesystem-specific struct).
 - **Use**: reference-counted via `ihold()` / `iput()`.
-- **Dirty**: `mark_inode_dirty()` adds the inode to `sb->s_dirty` and schedules writeback.
+- **Dirty**: `mark_inode_dirty()` sets `I_DIRTY_*` flags and enqueues the inode on the BDI writeback worker's dirty list (`wb->b_dirty`) — *not* on a superblock list. (Note: an older `sb->s_dirty` list existed but was removed when per-BDI writeback was introduced in Linux 3.2.)
 - **Eviction**: when reference count hits zero, the inode moves to a free list. If `i_nlink == 0` (file was deleted while open), `evict_inode()` is called immediately; otherwise, the inode waits on the LRU for the shrinker.
 
 **Key struct**: `struct inode` (`include/linux/fs.h`)
@@ -238,6 +246,36 @@ Each superblock tracks all its inodes in `sb->s_inodes`. This list is used durin
 - `mark_inode_dirty()` — schedule writeback
 - `iput()` — drop reference; triggers eviction pipeline
 - `evict_inode()` — final cleanup, calls `sb->s_op->evict_inode()`
+
+---
+
+### [[fsnotify]] Hooks in VFS
+
+**Purpose** — VFS is the natural interception point for filesystem events. The fsnotify framework provides inline hooks at VFS function boundaries so that `inotify`, `fanotify`, and similar consumers receive events without modifying individual filesystem drivers.
+
+**How it works** — `include/linux/fsnotify.h` defines a set of static inline functions (`fsnotify_create`, `fsnotify_unlink`, `fsnotify_modify`, `fsnotify_open`, `fsnotify_access`, `fsnotify_attrib`, `fsnotify_move`, etc.). Each is called at the corresponding VFS operation site:
+
+| VFS site | fsnotify hook |
+|---|---|
+| `vfs_create()` | `fsnotify_create(dir, dentry)` |
+| `vfs_unlink()` | `fsnotify_unlink(dir, dentry)` |
+| `vfs_mkdir()` / `vfs_rmdir()` | `fsnotify_mkdir` / `fsnotify_rmdir` |
+| `vfs_rename()` | `fsnotify_move()` |
+| `file_open()` | `fsnotify_open(file)` |
+| `vfs_read()` / `read_iter` | `fsnotify_access(file)` |
+| buffered write, `dirty_folio` | `fsnotify_modify(file)` |
+| `notify_change()` (chmod/chown) | `fsnotify_attrib(inode)` |
+
+Each hook function is a **no-op if no watchers are registered** — it checks `inode->i_fsnotify_marks` and `inode->i_sb->s_fsnotify_marks` for the quick-exit case; this makes the overhead near zero in the common case.
+
+When a watcher is present, `fsnotify()` is called, which iterates registered notification groups and invokes each group's `handle_inode_event()`. The framework supports:
+- **inotify** — per-inode watches; events delivered as `inotify_event` structs through a queue fd.
+- **fanotify** — per-mount or filesystem-wide watches; optionally **permission events** where the calling process is paused until the daemon allows/denies the operation.
+
+**Key struct**: `struct fsnotify_mark` — a watcher registration attached to an inode, vfsmount, or superblock; carries an event mask.
+**Key struct**: `struct fsnotify_group` — one inotify/fanotify listener instance; owns an event queue and a list of marks.
+
+**Config** — `CONFIG_FSNOTIFY` (enabled by inotify/fanotify), `CONFIG_INOTIFY_USER`, `CONFIG_FANOTIFY`, `CONFIG_FANOTIFY_ACCESS_PERMISSIONS`.
 
 ---
 
@@ -349,13 +387,17 @@ sequenceDiagram
 
 ## Further Reading
 
-1. **[Overview of the Linux Virtual File System — kernel.org](https://www.kernel.org/doc/html/latest/filesystems/vfs.html)** — authoritative reference for all VFS operation tables and object semantics.
+1. **[Overview of the Linux Virtual File System — kernel.org](https://www.kernel.org/doc/html/latest/filesystems/vfs.html)** — authoritative reference for all VFS operation tables and object semantics (includes current folio API).
 2. **[Filesystem Mount API — kernel.org](https://www.kernel.org/doc/html/latest/filesystems/mount_api.html)** — full documentation of `fs_context`, `fsopen`, `fsconfig`, and `fsmount`.
 3. **[Pathname lookup in Linux — LWN.net (2015)](https://lwn.net/Articles/649115/)** — four-part series by Neil Brown on RCU-walk, nameidata, and symlink handling.
 4. **[Dcache scalability and RCU-walk — LWN.net (2011)](https://lwn.net/Articles/419811/)** — Nick Piggin's explanation of the RCU-walk redesign and its motivation.
-5. **[A VFS deadlock post-mortem — LWN.net (2013)](https://lwn.net/Articles/545119/)** — real incident dissecting inode and dentry locking interactions.
-6. **[VFS: Introduce filesystem context — LWN.net (2019)](https://lwn.net/Articles/780267/)** — the motivation and design of `struct fs_context` replacing legacy `mount()`.
-7. **[Creating Linux virtual filesystems — LWN.net (2003)](https://lwn.net/Articles/57369/)** — accessible tutorial for writing a minimal VFS-backed filesystem.
+5. **[Flushing out pdflush — LWN.net (2009)](https://lwn.net/Articles/326552/)** — explains per-BDI writeback replacing pdflush and `bdi_writeback` design.
+6. **[Page folios — LWN.net (2021)](https://lwn.net/Articles/840593/)** — why `struct folio` replaces `struct page` in the page cache and VFS address_space operations.
+7. **[fsnotify, dnotify, and inotify — LWN.net (2009)](https://lwn.net/Articles/311350/)** — fsnotify framework design and how inotify/dnotify are built on it.
+8. **[The fanotify API — LWN.net (2010)](https://lwn.net/Articles/339399/)** — fanotify's permission event model and VFS integration.
+9. **[A VFS deadlock post-mortem — LWN.net (2013)](https://lwn.net/Articles/545119/)** — real incident dissecting inode and dentry locking interactions.
+10. **[VFS: Introduce filesystem context — LWN.net (2019)](https://lwn.net/Articles/780267/)** — the motivation and design of `struct fs_context` replacing legacy `mount()`.
+11. **[Creating Linux virtual filesystems — LWN.net (2003)](https://lwn.net/Articles/57369/)** — accessible tutorial for writing a minimal VFS-backed filesystem.
 
 ---
 

@@ -48,9 +48,9 @@
 ## Queue
 
 - [x] mm -> Core Components
-- [ ] subsystem: fs --refresh
-- [ ] subsystem: vfs --refresh
-- [>] subsystem: nfs
-- [ ] subsystem: btrfs
+- [x] subsystem: fs --refresh
+- [x] subsystem: vfs --refresh
+- [x] subsystem: nfs
+- [x] subsystem: btrfs
 
 
