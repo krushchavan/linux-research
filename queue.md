@@ -85,7 +85,7 @@
 - [x] fuse -> *
 
 # thp unresolved links
-- [ ] mm -> memory-compaction
+- [>] mm -> memory-compaction
 
 # page-reclaim unresolved links
 - [ ] subsystem: block
@@ -98,6 +98,6 @@
 - [x] nfs -> pnfs
 - [x] nfs -> nfs-localio
 - [x] nfs -> sunrpc
-- [>] nfs -> xdr-encoding
+- [x] nfs -> xdr-encoding
 
 
