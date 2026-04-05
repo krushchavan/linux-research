@@ -77,8 +77,8 @@
 - [x] btrfs -> multiple-b-trees
 - [x] btrfs -> subvolumes-and-snapshots
 - [x] btrfs -> transaction-model
-- [>] btrfs -> raid-and-multi-device-support
-- [ ] btrfs -> checksumming-and-data-integrity
+- [x] btrfs -> raid-and-multi-device-support
+- [>] btrfs -> checksumming-and-data-integrity
 
 # fuse
 - [ ] subsystem: fuse
