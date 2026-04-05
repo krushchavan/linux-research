@@ -67,7 +67,7 @@
 - [x] fs -> inode-cache
 - [x] fs -> file-object
 - [x] fs -> filesystem-registration
-- [ ] fs -> path-lookup
+- [x] fs -> path-lookup
 - [ ] fs -> mount-namespace
 - [ ] fs -> writeback-infrastructure
 - [ ] fs -> fsnotify
