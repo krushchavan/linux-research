@@ -56,7 +56,7 @@
 # --- Unresolved wiki links (auto-queued) ---
 
 # mm concepts
-- [ ] mm -> page-reclaim
+- [x] mm -> page-reclaim
 - [ ] mm -> swap
 - [ ] mm -> transparent-huge-pages
 - [ ] mm -> address-space
@@ -83,6 +83,10 @@
 # fuse
 - [ ] subsystem: fuse
 - [ ] fuse -> *
+
+# page-reclaim unresolved links
+- [ ] subsystem: block
+- [ ] subsystem: memcg
 
 # nfs concepts
 - [ ] nfs -> nfs-client
