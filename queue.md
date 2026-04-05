@@ -53,4 +53,40 @@
 - [x] subsystem: nfs
 - [x] subsystem: btrfs
 
+# --- Unresolved wiki links (auto-queued) ---
+
+# mm concepts
+- [ ] mm -> page-reclaim
+- [ ] mm -> swap
+- [ ] mm -> transparent-huge-pages
+- [ ] mm -> address-space
+
+# fs / vfs concepts
+- [ ] fs -> dentry
+- [ ] fs -> dentry-cache
+- [ ] fs -> inode-cache
+- [ ] fs -> file-object
+- [ ] fs -> filesystem-registration
+- [ ] fs -> path-lookup
+- [ ] fs -> mount-namespace
+- [ ] fs -> writeback-infrastructure
+- [ ] fs -> fsnotify
+- [ ] fs -> core-in-memory-structures
+
+# btrfs concepts
+- [ ] btrfs -> multiple-b-trees
+- [ ] btrfs -> subvolumes-and-snapshots
+- [ ] btrfs -> transaction-model
+- [ ] btrfs -> raid-and-multi-device-support
+- [ ] btrfs -> checksumming-and-data-integrity
+
+# nfs concepts
+- [ ] nfs -> nfs-client
+- [ ] nfs -> nfs-server
+- [ ] nfs -> nfsv4.1-sessions
+- [ ] nfs -> pnfs
+- [ ] nfs -> nfs-localio
+- [ ] nfs -> sunrpc
+- [ ] nfs -> xdr-encoding
+
 
