@@ -93,8 +93,8 @@
 
 # nfs concepts
 - [x] nfs -> nfs-client
-- [>] nfs -> nfs-server
-- [ ] nfs -> nfsv4.1-sessions
+- [x] nfs -> nfs-server
+- [>] nfs -> nfsv4.1-sessions
 - [ ] nfs -> pnfs
 - [ ] nfs -> nfs-localio
 - [ ] nfs -> sunrpc
