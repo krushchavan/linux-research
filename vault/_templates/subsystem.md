@@ -19,27 +19,48 @@ sources:
 
 ## Mental Model
 
-> One strong analogy or conceptual frame — the single idea that makes the whole subsystem make sense before diving into details.
+> One strong analogy or conceptual frame — the single idea that makes the whole subsystem click before diving into details.
 
 ## Architecture
 
-> A Mermaid diagram showing the major components and how they relate. Follow with a short paragraph explaining what the diagram shows.
+> A Mermaid diagram showing the major components and how control/data flows between them. Follow with a short paragraph explaining what the diagram shows and how to read it.
 
 ## Core Components
 
-> For each major component: one paragraph on *what it does for the system* and *why it exists*, not a list of its fields or functions.
+> For each major component: one paragraph on *what it does for the system* and *why it exists*. Explain what would break if it were removed. Introduce the canonical struct or source file as a grounding reference, but keep the focus on purpose and behaviour.
+
+## Key Data Structures
+
+> The structures that carry the subsystem's state. For each: what it represents, why it exists, and its most important fields with a one-line explanation of what each controls. Include the header file path.
+>
+> Example format:
+> **`struct foo`** (`include/linux/foo.h`) — represents X so that Y can happen.
+> - `field_a` — controls the rate at which ...
+> - `field_b` — tracks whether ...
+
+## Key Functions / Entry Points
+
+> The functions a reader encounters first when tracing the subsystem. For each: what it does, what calls it, and what it triggers next. Organised by the flow they belong to (e.g. allocation path, reclaim path).
+
+## Important Flags & Config Options
+
+> Kconfig symbols, sysctl knobs, and important flags (e.g. GFP flags, VMA flags) that meaningfully change subsystem behaviour. For each: what enabling/setting it does and when you would change it.
 
 ## How Components Interact
 
-> Describe the key flows through the subsystem. Pick 2–3 important scenarios (e.g. "allocating a page", "a process faults in memory") and walk through what happens step by step, which components are involved, and why.
+> Walk through 2–3 concrete scenarios end-to-end (e.g. "a process calls malloc()", "memory pressure triggers reclaim"). At each step, name which component acts, what it decides, and why it hands off to the next component.
 
 ## Where It Fits in the Kernel
 
-> How this subsystem connects upward to userspace, sideways to peer subsystems (e.g. scheduler, VFS, networking), and downward to hardware. What depends on it? What does it depend on?
+> How this subsystem connects to the rest of the kernel:
+> - **↑ Userspace**: what syscalls or library calls land here
+> - **→ [Peer subsystem]**: what this subsystem asks of each peer and why
+> - **← [Peer subsystem]**: what peers ask of this subsystem
+> - **↓ Hardware**: what hardware abstractions this subsystem sits above
 
 ## Design Decisions & Tradeoffs
 
-> The most important design choices that shape the subsystem: what was chosen, what was rejected, and what tradeoffs were accepted. Ground these in real history where possible.
+> The most consequential design choices that shaped the subsystem: what was chosen, what was rejected, and what was given up. Ground each decision in real history where possible.
 
 ## How It Has Evolved
 
@@ -55,4 +76,4 @@ sources:
 
 ## LKML Highlights
 
-> 2–3 threads that show real design debates or significant changes, each summarised in a sentence.
+> 2–3 threads that show real design debates or significant changes, each summarised in 1–2 sentences with the message-id.
