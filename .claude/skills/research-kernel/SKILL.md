@@ -22,11 +22,6 @@ Use all four sources. Gather as much detail as possible before writing.
 - Use `https://kernel-internals.org/site-index/` to discover available articles if unsure of the URL
 - This site explains *why* design decisions were made — extract that reasoning, not just mechanics
 
-**LKML** (use lkml_search_patches and lkml_get_thread tools):
-- Search for the topic and related keywords
-- Fetch full threads for the most relevant 2–3 results
-- Extract: what problem was solved, how, who reviewed it, what changed
-
 **kernel.org docs** (use WebFetch):
 - Fetch relevant pages from https://www.kernel.org/doc/html/latest/
 - For subsystems, check the subsystem-specific doc directory
@@ -35,6 +30,11 @@ Use all four sources. Gather as much detail as possible before writing.
 - Search `site:lwn.net <topic>` for LWN articles
 - Search for conference talks, blog posts, academic papers
 - Prioritize: LWN > kernelnewbies.org > blogs by known contributors
+
+**LKML** (use lkml_search_patches and lkml_get_thread tools — check last):
+- Search for the topic and related keywords
+- Fetch full threads for the most relevant 2–3 results
+- Extract: what problem was solved, how, who reviewed it, what changed
 
 ## Step 3 — Write the note
 
