@@ -57,7 +57,7 @@
 
 # mm concepts
 - [x] mm -> page-reclaim
-- [ ] mm -> swap
+- [x] mm -> swap
 - [ ] mm -> transparent-huge-pages
 - [ ] mm -> address-space
 
