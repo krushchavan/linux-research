@@ -66,7 +66,7 @@
 - [x] fs -> dentry-cache
 - [x] fs -> inode-cache
 - [x] fs -> file-object
-- [ ] fs -> filesystem-registration
+- [x] fs -> filesystem-registration
 - [ ] fs -> path-lookup
 - [ ] fs -> mount-namespace
 - [ ] fs -> writeback-infrastructure
