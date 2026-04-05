@@ -53,7 +53,7 @@ After saving a note, commit and push:
 ```bash
 git add vault/
 git commit -m "research: <topic>"
-git push
+git push origin master
 ```
 
 This keeps the vault in sync with GitHub so it's accessible from any machine.
