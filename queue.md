@@ -100,4 +100,48 @@
 - [x] nfs -> sunrpc
 - [x] nfs -> xdr-encoding
 
+# --- Gap-fill: identified from cross-reference crawl 2026-04-06 ---
+
+# Round 1 — Foundation (unblocks everything else)
+- [x] locking -> RCU read-copy-update
+- [ ] fuse -> fuse-connection
+- [ ] fuse -> fuse-request-queue
+- [ ] fuse -> fuse-wire-protocol
+- [ ] fuse -> fuse-vfs-integration
+- [ ] mm -> xarray
+
+# Round 2 — MM depth
+- [ ] mm -> rmap-reverse-mapping
+- [ ] mm -> oom-killer
+- [ ] mm -> page-table-management
+- [ ] locking -> seqlocks-and-memory-barriers
+
+# Round 3 — FS/VFS depth
+- [ ] fs -> vfs-locking-model
+- [ ] fs -> file-descriptor-and-open-file-table
+
+# Round 4 — Btrfs + NFS depth
+- [ ] btrfs -> space-accounting-and-block-groups
+- [ ] btrfs -> balance-and-device-management
+- [ ] nfs -> delegations-and-locking
+- [ ] nfs -> rpcsec-gss-and-kerberos
+
+# Round 5 — MEDIUM: MM + io_uring
+- [ ] mm -> get-user-pages-and-pinning
+- [ ] mm -> huge-pages-hugetlbfs
+- [ ] mm -> numa-memory-policy
+- [ ] io_uring internals
+
+# Round 6 — LOW priority
+- [ ] fs -> extended-attributes-and-acls
+- [ ] fs -> inotify-and-fanotify
+- [ ] btrfs -> send-receive-protocol
+- [ ] btrfs -> qgroups
+- [ ] nfs -> fscache
+
+# --- Unresolved links from rcu-read-copy-update 2026-04-06 ---
+- [ ] locking -> interrupt-handling
+- [ ] locking -> per-cpu-variables
+- [ ] locking -> dyntick-idle
+- [ ] subsystem: netfilter
 
