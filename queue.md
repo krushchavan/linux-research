@@ -104,7 +104,7 @@
 
 # Round 1 — Foundation (unblocks everything else)
 - [x] locking -> RCU read-copy-update
-- [ ] fuse -> fuse-connection
+- [x] fuse -> fuse-connection
 - [ ] fuse -> fuse-request-queue
 - [ ] fuse -> fuse-wire-protocol
 - [ ] fuse -> fuse-vfs-integration
