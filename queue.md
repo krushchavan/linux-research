@@ -108,7 +108,7 @@
 - [x] fuse -> fuse-request-queue
 - [x] fuse -> fuse-wire-protocol
 - [x] fuse -> fuse-vfs-integration
-- [ ] mm -> xarray
+- [x] mm -> xarray
 
 # Round 2 — MM depth
 - [ ] mm -> rmap-reverse-mapping
@@ -144,4 +144,7 @@
 - [ ] locking -> per-cpu-variables
 - [ ] locking -> dyntick-idle
 - [ ] subsystem: netfilter
+
+# --- Unresolved links from xarray 2026-04-10 ---
+- [ ] mm -> radix-tree
 
