@@ -112,7 +112,7 @@
 
 # Round 2 — MM depth
 - [x] mm -> rmap-reverse-mapping
-- [ ] mm -> oom-killer
+- [x] mm -> oom-killer
 - [ ] mm -> page-table-management
 - [ ] locking -> seqlocks-and-memory-barriers
 
@@ -147,4 +147,7 @@
 
 # --- Unresolved links from xarray 2026-04-10 ---
 - [ ] mm -> radix-tree
+
+# --- Unresolved links from oom-killer 2026-04-10 ---
+- [ ] mm -> memory-cgroup
 
