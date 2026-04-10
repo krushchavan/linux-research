@@ -105,7 +105,7 @@
 # Round 1 — Foundation (unblocks everything else)
 - [x] locking -> RCU read-copy-update
 - [x] fuse -> fuse-connection
-- [ ] fuse -> fuse-request-queue
+- [x] fuse -> fuse-request-queue
 - [ ] fuse -> fuse-wire-protocol
 - [ ] fuse -> fuse-vfs-integration
 - [ ] mm -> xarray
