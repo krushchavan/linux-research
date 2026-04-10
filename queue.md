@@ -106,7 +106,7 @@
 - [x] locking -> RCU read-copy-update
 - [x] fuse -> fuse-connection
 - [x] fuse -> fuse-request-queue
-- [ ] fuse -> fuse-wire-protocol
+- [x] fuse -> fuse-wire-protocol
 - [ ] fuse -> fuse-vfs-integration
 - [ ] mm -> xarray
 
