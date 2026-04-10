@@ -111,7 +111,7 @@
 - [x] mm -> xarray
 
 # Round 2 — MM depth
-- [ ] mm -> rmap-reverse-mapping
+- [x] mm -> rmap-reverse-mapping
 - [ ] mm -> oom-killer
 - [ ] mm -> page-table-management
 - [ ] locking -> seqlocks-and-memory-barriers
