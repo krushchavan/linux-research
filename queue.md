@@ -107,7 +107,7 @@
 - [x] fuse -> fuse-connection
 - [x] fuse -> fuse-request-queue
 - [x] fuse -> fuse-wire-protocol
-- [ ] fuse -> fuse-vfs-integration
+- [x] fuse -> fuse-vfs-integration
 - [ ] mm -> xarray
 
 # Round 2 — MM depth
