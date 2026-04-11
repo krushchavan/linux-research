@@ -124,7 +124,7 @@
 - [x] btrfs -> space-accounting-and-block-groups
 - [x] btrfs -> balance-and-device-management
 - [x] nfs -> delegations-and-locking
-- [ ] nfs -> rpcsec-gss-and-kerberos
+- [x] nfs -> rpcsec-gss-and-kerberos
 
 # Round 5 — MEDIUM: MM + io_uring
 - [ ] mm -> get-user-pages-and-pinning
