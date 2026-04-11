@@ -123,7 +123,7 @@
 # Round 4 — Btrfs + NFS depth
 - [x] btrfs -> space-accounting-and-block-groups
 - [x] btrfs -> balance-and-device-management
-- [ ] nfs -> delegations-and-locking
+- [x] nfs -> delegations-and-locking
 - [ ] nfs -> rpcsec-gss-and-kerberos
 
 # Round 5 — MEDIUM: MM + io_uring
