@@ -118,7 +118,7 @@
 
 # Round 3 — FS/VFS depth
 - [x] fs -> vfs-locking-model
-- [ ] fs -> file-descriptor-and-open-file-table
+- [x] fs -> file-descriptor-and-open-file-table
 
 # Round 4 — Btrfs + NFS depth
 - [ ] btrfs -> space-accounting-and-block-groups
