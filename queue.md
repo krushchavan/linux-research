@@ -122,7 +122,7 @@
 
 # Round 4 — Btrfs + NFS depth
 - [x] btrfs -> space-accounting-and-block-groups
-- [ ] btrfs -> balance-and-device-management
+- [x] btrfs -> balance-and-device-management
 - [ ] nfs -> delegations-and-locking
 - [ ] nfs -> rpcsec-gss-and-kerberos
 
