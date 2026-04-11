@@ -113,7 +113,7 @@
 # Round 2 — MM depth
 - [x] mm -> rmap-reverse-mapping
 - [x] mm -> oom-killer
-- [ ] mm -> page-table-management
+- [x] mm -> page-table-management
 - [ ] locking -> seqlocks-and-memory-barriers
 
 # Round 3 — FS/VFS depth
