@@ -121,7 +121,7 @@
 - [x] fs -> file-descriptor-and-open-file-table
 
 # Round 4 — Btrfs + NFS depth
-- [ ] btrfs -> space-accounting-and-block-groups
+- [x] btrfs -> space-accounting-and-block-groups
 - [ ] btrfs -> balance-and-device-management
 - [ ] nfs -> delegations-and-locking
 - [ ] nfs -> rpcsec-gss-and-kerberos
