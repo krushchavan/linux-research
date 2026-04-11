@@ -127,7 +127,7 @@
 - [x] nfs -> rpcsec-gss-and-kerberos
 
 # Round 5 — MEDIUM: MM + io_uring
-- [ ] mm -> get-user-pages-and-pinning
+- [x] mm -> get-user-pages-and-pinning
 - [ ] mm -> huge-pages-hugetlbfs
 - [ ] mm -> numa-memory-policy
 - [ ] io_uring internals
