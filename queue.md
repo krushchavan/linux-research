@@ -114,7 +114,7 @@
 - [x] mm -> rmap-reverse-mapping
 - [x] mm -> oom-killer
 - [x] mm -> page-table-management
-- [ ] locking -> seqlocks-and-memory-barriers
+- [x] locking -> seqlocks-and-memory-barriers
 
 # Round 3 — FS/VFS depth
 - [ ] fs -> vfs-locking-model
