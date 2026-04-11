@@ -117,7 +117,7 @@
 - [x] locking -> seqlocks-and-memory-barriers
 
 # Round 3 — FS/VFS depth
-- [ ] fs -> vfs-locking-model
+- [x] fs -> vfs-locking-model
 - [ ] fs -> file-descriptor-and-open-file-table
 
 # Round 4 — Btrfs + NFS depth
@@ -150,4 +150,7 @@
 
 # --- Unresolved links from oom-killer 2026-04-10 ---
 - [ ] mm -> memory-cgroup
+
+# --- Unresolved links from vfs-locking-model 2026-04-11 ---
+- [ ] subsystem: locking
 
