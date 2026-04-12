@@ -128,7 +128,7 @@
 
 # Round 5 — MEDIUM: MM + io_uring
 - [x] mm -> get-user-pages-and-pinning
-- [ ] mm -> huge-pages-hugetlbfs
+- [x] mm -> huge-pages-hugetlbfs
 - [ ] mm -> numa-memory-policy
 - [ ] io_uring internals
 
