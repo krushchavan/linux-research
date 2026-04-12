@@ -135,7 +135,7 @@
 # Round 6 — LOW priority
 - [x] fs -> extended-attributes-and-acls
 - [x] fs -> inotify-and-fanotify
-- [ ] btrfs -> send-receive-protocol
+- [x] btrfs -> send-receive-protocol
 - [ ] btrfs -> qgroups
 - [ ] nfs -> fscache
 
