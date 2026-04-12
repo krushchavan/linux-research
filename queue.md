@@ -136,7 +136,7 @@
 - [x] fs -> extended-attributes-and-acls
 - [x] fs -> inotify-and-fanotify
 - [x] btrfs -> send-receive-protocol
-- [ ] btrfs -> qgroups
+- [x] btrfs -> qgroups
 - [ ] nfs -> fscache
 
 # --- Unresolved links from rcu-read-copy-update 2026-04-06 ---
