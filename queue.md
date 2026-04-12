@@ -133,7 +133,7 @@
 - [x] io_uring internals
 
 # Round 6 — LOW priority
-- [ ] fs -> extended-attributes-and-acls
+- [x] fs -> extended-attributes-and-acls
 - [ ] fs -> inotify-and-fanotify
 - [ ] btrfs -> send-receive-protocol
 - [ ] btrfs -> qgroups
@@ -160,4 +160,8 @@
 # --- Unresolved links from io-uring-internals 2026-04-12 ---
 - [ ] subsystem: net
 - [ ] subsystem: security
+
+# --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
+- [ ] subsystem: fscrypt
+- [ ] subsystem: overlayfs
 
