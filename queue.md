@@ -129,7 +129,7 @@
 # Round 5 — MEDIUM: MM + io_uring
 - [x] mm -> get-user-pages-and-pinning
 - [x] mm -> huge-pages-hugetlbfs
-- [ ] mm -> numa-memory-policy
+- [x] mm -> numa-memory-policy
 - [ ] io_uring internals
 
 # Round 6 — LOW priority
@@ -153,4 +153,7 @@
 
 # --- Unresolved links from vfs-locking-model 2026-04-11 ---
 - [ ] subsystem: locking
+
+# --- Unresolved links from numa-memory-policy 2026-04-12 ---
+- [ ] subsystem: scheduler
 
