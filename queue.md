@@ -137,7 +137,7 @@
 - [x] fs -> inotify-and-fanotify
 - [x] btrfs -> send-receive-protocol
 - [x] btrfs -> qgroups
-- [ ] nfs -> fscache
+- [x] nfs -> fscache
 
 # --- Unresolved links from rcu-read-copy-update 2026-04-06 ---
 - [ ] locking -> interrupt-handling
@@ -164,4 +164,8 @@
 # --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
 - [ ] subsystem: fscrypt
 - [ ] subsystem: overlayfs
+
+# --- Unresolved links from nfs-fscache 2026-04-12 ---
+- [ ] subsystem: fscache
+- [ ] subsystem: netfs
 
