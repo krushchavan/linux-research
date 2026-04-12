@@ -130,7 +130,7 @@
 - [x] mm -> get-user-pages-and-pinning
 - [x] mm -> huge-pages-hugetlbfs
 - [x] mm -> numa-memory-policy
-- [ ] io_uring internals
+- [x] io_uring internals
 
 # Round 6 — LOW priority
 - [ ] fs -> extended-attributes-and-acls
@@ -156,4 +156,8 @@
 
 # --- Unresolved links from numa-memory-policy 2026-04-12 ---
 - [ ] subsystem: scheduler
+
+# --- Unresolved links from io-uring-internals 2026-04-12 ---
+- [ ] subsystem: net
+- [ ] subsystem: security
 
