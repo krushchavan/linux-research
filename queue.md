@@ -149,7 +149,7 @@
 - [x] mm -> radix-tree
 
 # --- Unresolved links from oom-killer 2026-04-10 ---
-- [ ] mm -> memory-cgroup
+- [x] mm -> memory-cgroup
 
 # --- Unresolved links from vfs-locking-model 2026-04-11 ---
 - [ ] subsystem: locking
@@ -171,4 +171,8 @@
 
 # --- Unresolved links from netfilter 2026-04-13 ---
 - [ ] subsystem: bpf
+
+# --- Unresolved links from memory-cgroup 2026-04-13 ---
+- [ ] mm -> folio
+- [ ] mm -> psi-pressure-stall-information
 
