@@ -155,7 +155,7 @@
 - [x] subsystem: locking
 
 # --- Unresolved links from numa-memory-policy 2026-04-12 ---
-- [ ] subsystem: scheduler
+- [x] subsystem: scheduler
 
 # --- Unresolved links from io-uring-internals 2026-04-12 ---
 - [ ] subsystem: net
@@ -175,4 +175,9 @@
 # --- Unresolved links from memory-cgroup 2026-04-13 ---
 - [ ] mm -> folio
 - [ ] mm -> psi-pressure-stall-information
+
+# --- Unresolved links from scheduler 2026-04-13 ---
+- [ ] subsystem: cgroups
+- [ ] scheduler -> preemption-model
+- [ ] scheduler -> pi-mutexes
 
