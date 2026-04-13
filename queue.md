@@ -146,7 +146,7 @@
 - [x] subsystem: netfilter
 
 # --- Unresolved links from xarray 2026-04-10 ---
-- [ ] mm -> radix-tree
+- [x] mm -> radix-tree
 
 # --- Unresolved links from oom-killer 2026-04-10 ---
 - [ ] mm -> memory-cgroup
