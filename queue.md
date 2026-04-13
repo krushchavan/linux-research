@@ -143,7 +143,7 @@
 - [x] locking -> interrupt-handling
 - [x] locking -> per-cpu-variables
 - [x] locking -> dyntick-idle
-- [ ] subsystem: netfilter
+- [x] subsystem: netfilter
 
 # --- Unresolved links from xarray 2026-04-10 ---
 - [ ] mm -> radix-tree
@@ -168,4 +168,7 @@
 # --- Unresolved links from nfs-fscache 2026-04-12 ---
 - [ ] subsystem: fscache
 - [ ] subsystem: netfs
+
+# --- Unresolved links from netfilter 2026-04-13 ---
+- [ ] subsystem: bpf
 
