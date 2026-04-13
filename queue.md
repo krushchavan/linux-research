@@ -141,7 +141,7 @@
 
 # --- Unresolved links from rcu-read-copy-update 2026-04-06 ---
 - [x] locking -> interrupt-handling
-- [ ] locking -> per-cpu-variables
+- [x] locking -> per-cpu-variables
 - [ ] locking -> dyntick-idle
 - [ ] subsystem: netfilter
 
