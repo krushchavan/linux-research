@@ -140,7 +140,7 @@
 - [x] nfs -> fscache
 
 # --- Unresolved links from rcu-read-copy-update 2026-04-06 ---
-- [ ] locking -> interrupt-handling
+- [x] locking -> interrupt-handling
 - [ ] locking -> per-cpu-variables
 - [ ] locking -> dyntick-idle
 - [ ] subsystem: netfilter
