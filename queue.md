@@ -152,7 +152,7 @@
 - [x] mm -> memory-cgroup
 
 # --- Unresolved links from vfs-locking-model 2026-04-11 ---
-- [ ] subsystem: locking
+- [x] subsystem: locking
 
 # --- Unresolved links from numa-memory-policy 2026-04-12 ---
 - [ ] subsystem: scheduler
