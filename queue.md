@@ -159,7 +159,7 @@
 
 # --- Unresolved links from io-uring-internals 2026-04-12 ---
 - [x] subsystem: net
-- [ ] subsystem: security
+- [x] subsystem: security
 
 # --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
 - [ ] subsystem: fscrypt
@@ -180,4 +180,9 @@
 - [ ] subsystem: cgroups
 - [ ] scheduler -> preemption-model
 - [ ] scheduler -> pi-mutexes
+
+# --- Unresolved links from security 2026-04-15 ---
+- [ ] subsystem: smack
+- [ ] security -> user-namespaces
+- [ ] security -> process-model
 
