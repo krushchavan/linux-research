@@ -163,7 +163,7 @@
 
 # --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
 - [x] subsystem: fscrypt
-- [ ] subsystem: overlayfs
+- [x] subsystem: overlayfs
 
 # --- Unresolved links from nfs-fscache 2026-04-12 ---
 - [ ] subsystem: fscache
