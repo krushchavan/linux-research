@@ -162,7 +162,7 @@
 - [x] subsystem: security
 
 # --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
-- [ ] subsystem: fscrypt
+- [x] subsystem: fscrypt
 - [ ] subsystem: overlayfs
 
 # --- Unresolved links from nfs-fscache 2026-04-12 ---
@@ -185,4 +185,8 @@
 - [ ] subsystem: smack
 - [ ] security -> user-namespaces
 - [ ] security -> process-model
+
+# --- Unresolved links from fscrypt 2026-04-15 ---
+- [ ] kernel-crypto-api
+- [ ] kernel-keyring
 
