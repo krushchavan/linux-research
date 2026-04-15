@@ -158,7 +158,7 @@
 - [x] subsystem: scheduler
 
 # --- Unresolved links from io-uring-internals 2026-04-12 ---
-- [ ] subsystem: net
+- [x] subsystem: net
 - [ ] subsystem: security
 
 # --- Unresolved links from extended-attributes-and-acls 2026-04-12 ---
