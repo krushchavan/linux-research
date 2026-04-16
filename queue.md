@@ -174,7 +174,7 @@
 
 # --- Unresolved links from memory-cgroup 2026-04-13 ---
 - [x] mm -> folio
-- [ ] mm -> psi-pressure-stall-information
+- [x] mm -> psi-pressure-stall-information
 
 # --- Unresolved links from scheduler 2026-04-13 ---
 - [ ] subsystem: cgroups
