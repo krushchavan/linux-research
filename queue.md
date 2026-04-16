@@ -178,7 +178,7 @@
 
 # --- Unresolved links from scheduler 2026-04-13 ---
 - [x] subsystem: cgroups
-- [ ] scheduler -> preemption-model
+- [x] scheduler -> preemption-model
 - [ ] scheduler -> pi-mutexes
 
 # --- Unresolved links from security 2026-04-15 ---
