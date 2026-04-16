@@ -170,7 +170,7 @@
 - [x] subsystem: netfs
 
 # --- Unresolved links from netfilter 2026-04-13 ---
-- [ ] subsystem: bpf
+- [x] subsystem: bpf
 
 # --- Unresolved links from memory-cgroup 2026-04-13 ---
 - [ ] mm -> folio
@@ -192,4 +192,7 @@
 
 # --- Unresolved links from fscache 2026-04-15 ---
 - [ ] concept: network-filesystems overview
+
+# --- Unresolved links from bpf 2026-04-16 ---
+- [ ] subsystem: tracing
 
