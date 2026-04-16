@@ -173,7 +173,7 @@
 - [x] subsystem: bpf
 
 # --- Unresolved links from memory-cgroup 2026-04-13 ---
-- [ ] mm -> folio
+- [x] mm -> folio
 - [ ] mm -> psi-pressure-stall-information
 
 # --- Unresolved links from scheduler 2026-04-13 ---
