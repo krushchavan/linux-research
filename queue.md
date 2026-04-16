@@ -177,7 +177,7 @@
 - [x] mm -> psi-pressure-stall-information
 
 # --- Unresolved links from scheduler 2026-04-13 ---
-- [ ] subsystem: cgroups
+- [x] subsystem: cgroups
 - [ ] scheduler -> preemption-model
 - [ ] scheduler -> pi-mutexes
 
