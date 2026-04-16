@@ -167,7 +167,7 @@
 
 # --- Unresolved links from nfs-fscache 2026-04-12 ---
 - [x] subsystem: fscache
-- [ ] subsystem: netfs
+- [x] subsystem: netfs
 
 # --- Unresolved links from netfilter 2026-04-13 ---
 - [ ] subsystem: bpf
