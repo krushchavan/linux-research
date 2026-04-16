@@ -166,7 +166,7 @@
 - [x] subsystem: overlayfs
 
 # --- Unresolved links from nfs-fscache 2026-04-12 ---
-- [ ] subsystem: fscache
+- [x] subsystem: fscache
 - [ ] subsystem: netfs
 
 # --- Unresolved links from netfilter 2026-04-13 ---
@@ -189,4 +189,7 @@
 # --- Unresolved links from fscrypt 2026-04-15 ---
 - [ ] kernel-crypto-api
 - [ ] kernel-keyring
+
+# --- Unresolved links from fscache 2026-04-15 ---
+- [ ] concept: network-filesystems overview
 
