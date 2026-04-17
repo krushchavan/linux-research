@@ -184,7 +184,7 @@
 # --- Unresolved links from security 2026-04-15 ---
 - [x] subsystem: smack
 - [x] security -> user-namespaces
-- [ ] security -> process-model
+- [x] security -> process-model
 
 # --- Unresolved links from fscrypt 2026-04-15 ---
 - [ ] kernel-crypto-api
