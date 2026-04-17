@@ -197,7 +197,7 @@
 - [x] subsystem: tracing
 
 # --- Unresolved links from smack 2026-04-16 ---
-- [ ] subsystem: netlabel
+- [x] subsystem: netlabel
 - [ ] concept: securityfs
 
 # --- Unresolved links from kernel-crypto-api 2026-04-17 ---
