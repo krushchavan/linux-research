@@ -191,7 +191,7 @@
 - [x] kernel-keyring
 
 # --- Unresolved links from fscache 2026-04-15 ---
-- [ ] concept: network-filesystems overview
+- [x] concept: network-filesystems overview
 
 # --- Unresolved links from bpf 2026-04-16 ---
 - [ ] subsystem: tracing
