@@ -194,7 +194,7 @@
 - [x] concept: network-filesystems overview
 
 # --- Unresolved links from bpf 2026-04-16 ---
-- [ ] subsystem: tracing
+- [x] subsystem: tracing
 
 # --- Unresolved links from smack 2026-04-16 ---
 - [ ] subsystem: netlabel
