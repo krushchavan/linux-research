@@ -188,7 +188,7 @@
 
 # --- Unresolved links from fscrypt 2026-04-15 ---
 - [x] kernel-crypto-api
-- [ ] kernel-keyring
+- [x] kernel-keyring
 
 # --- Unresolved links from fscache 2026-04-15 ---
 - [ ] concept: network-filesystems overview
