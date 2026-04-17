@@ -182,7 +182,7 @@
 - [x] scheduler -> pi-mutexes
 
 # --- Unresolved links from security 2026-04-15 ---
-- [ ] subsystem: smack
+- [x] subsystem: smack
 - [ ] security -> user-namespaces
 - [ ] security -> process-model
 
@@ -195,4 +195,8 @@
 
 # --- Unresolved links from bpf 2026-04-16 ---
 - [ ] subsystem: tracing
+
+# --- Unresolved links from smack 2026-04-16 ---
+- [ ] subsystem: netlabel
+- [ ] concept: securityfs
 
