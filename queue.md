@@ -187,7 +187,7 @@
 - [x] security -> process-model
 
 # --- Unresolved links from fscrypt 2026-04-15 ---
-- [ ] kernel-crypto-api
+- [x] kernel-crypto-api
 - [ ] kernel-keyring
 
 # --- Unresolved links from fscache 2026-04-15 ---
@@ -199,4 +199,7 @@
 # --- Unresolved links from smack 2026-04-16 ---
 - [ ] subsystem: netlabel
 - [ ] concept: securityfs
+
+# --- Unresolved links from kernel-crypto-api 2026-04-17 ---
+- [ ] subsystem: dm-crypt
 
