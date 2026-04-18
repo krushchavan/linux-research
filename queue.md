@@ -201,9 +201,13 @@
 - [x] concept: securityfs
 
 # --- Unresolved links from kernel-crypto-api 2026-04-17 ---
-- [ ] subsystem: dm-crypt
+- [x] subsystem: dm-crypt
 
 # --- Unresolved links from securityfs 2026-04-17 ---
 - [ ] concept: ima
 - [ ] concept: tpm
+
+# --- Unresolved links from dm-crypt 2026-04-18 ---
+- [ ] subsystem: dm-integrity
+- [ ] subsystem: device-mapper
 
