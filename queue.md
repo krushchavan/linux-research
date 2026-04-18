@@ -198,8 +198,12 @@
 
 # --- Unresolved links from smack 2026-04-16 ---
 - [x] subsystem: netlabel
-- [ ] concept: securityfs
+- [x] concept: securityfs
 
 # --- Unresolved links from kernel-crypto-api 2026-04-17 ---
 - [ ] subsystem: dm-crypt
+
+# --- Unresolved links from securityfs 2026-04-17 ---
+- [ ] concept: ima
+- [ ] concept: tpm
 
