@@ -205,7 +205,7 @@
 
 # --- Unresolved links from securityfs 2026-04-17 ---
 - [x] concept: ima
-- [ ] concept: tpm
+- [x] concept: tpm
 
 # --- Unresolved links from dm-crypt 2026-04-18 ---
 - [ ] subsystem: dm-integrity
