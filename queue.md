@@ -208,6 +208,9 @@
 - [x] concept: tpm
 
 # --- Unresolved links from dm-crypt 2026-04-18 ---
-- [ ] subsystem: dm-integrity
+- [x] subsystem: dm-integrity
 - [ ] subsystem: device-mapper
+
+# --- Unresolved links from dm-integrity 2026-04-18 ---
+- [ ] concept: dm-bufio
 
