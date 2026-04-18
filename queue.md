@@ -204,7 +204,7 @@
 - [x] subsystem: dm-crypt
 
 # --- Unresolved links from securityfs 2026-04-17 ---
-- [ ] concept: ima
+- [x] concept: ima
 - [ ] concept: tpm
 
 # --- Unresolved links from dm-crypt 2026-04-18 ---
