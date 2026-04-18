@@ -212,5 +212,5 @@
 - [x] subsystem: device-mapper
 
 # --- Unresolved links from dm-integrity 2026-04-18 ---
-- [ ] concept: dm-bufio
+- [x] concept: dm-bufio
 
