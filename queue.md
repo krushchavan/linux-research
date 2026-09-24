@@ -220,8 +220,13 @@
 
 # --- Unresolved links from io_uring 2026-09-24 ---
 - [x] subsystem: ublk
-- [ ] net -> page-pool
+- [x] net -> page-pool
 
 # --- Unresolved links from ublk 2026-09-24 ---
 - [ ] block -> blk-mq
 - [ ] mm -> maple-tree
+
+# --- Unresolved links from page-pool 2026-09-24 ---
+- [ ] net -> xdp
+- [ ] net -> devmem-tcp
+- [ ] concept: dma-mapping-api
