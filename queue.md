@@ -219,5 +219,9 @@
 - [x] subsystem: io_uring
 
 # --- Unresolved links from io_uring 2026-09-24 ---
-- [>] subsystem: ublk
+- [x] subsystem: ublk
 - [ ] net -> page-pool
+
+# --- Unresolved links from ublk 2026-09-24 ---
+- [ ] block -> blk-mq
+- [ ] mm -> maple-tree
