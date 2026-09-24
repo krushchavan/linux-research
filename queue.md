@@ -214,3 +214,10 @@
 # --- Unresolved links from dm-integrity 2026-04-18 ---
 - [x] concept: dm-bufio
 
+
+# --- Added by request 2026-09-24 ---
+- [x] subsystem: io_uring
+
+# --- Unresolved links from io_uring 2026-09-24 ---
+- [>] subsystem: ublk
+- [ ] net -> page-pool
