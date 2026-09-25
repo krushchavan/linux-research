@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.18"
 researched: 2026-04-13
 status: complete
+explained: "[[lockdep-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/lockdep-design.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Lockdep: Runtime Locking Correctness Validator
+
+> 📘 Plain-language version: [[lockdep-explained]]
 
 ## Overview
 

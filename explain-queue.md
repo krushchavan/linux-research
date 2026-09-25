@@ -177,7 +177,7 @@
 - [x] vault/concepts/locking/futex-internals.md
 - [x] vault/concepts/locking/interrupt-handling.md
 - [x] vault/concepts/locking/local-lock.md
-- [ ] vault/concepts/locking/lockdep.md
+- [x] vault/concepts/locking/lockdep.md
 - [ ] vault/concepts/locking/mutex.md
 - [ ] vault/concepts/locking/per-cpu-variables.md
 - [ ] vault/concepts/locking/rcu-read-copy-update.md
