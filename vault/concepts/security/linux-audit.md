@@ -6,11 +6,14 @@ subsystem: security
 kernel_version: "2.6.6"
 researched: 2026-04-15
 status: complete
+explained: "[[linux-audit-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/lsm.html
 ---
 
 # Linux Audit
+
+> 📘 Plain-language version: [[linux-audit-explained]]
 
 ## Overview
 

@@ -74,4 +74,4 @@ Unlabelled is the default for most systems: only traffic explicitly configured f
 
 - Technical version: [[netlabel-domain-hash-table]]
 - [[netlabel-explained|NetLabel]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-netlink-management-interface-explained|Management interface]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]]
-- [[rcu-read-copy-update-explained|RCU]], [[linux-audit|Audit]]
+- [[rcu-read-copy-update-explained|RCU]], [[linux-audit-explained|Audit]]

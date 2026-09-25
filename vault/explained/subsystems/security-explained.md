@@ -84,7 +84,7 @@ These aren't access controls but safety nets that make memory bugs harder to exp
 See [[kernel-hardening-explained|kernel hardening]].
 
 ### Audit
-Audit is a tamper-resistant record of security-relevant events for compliance. Records come from system-call entry and exit and from explicit calls inside subsystems (for example, an SELinux denial with the exact labels involved). They flow over netlink to the audit daemon, which filters and writes them; sequence numbers expose any gaps. See [[linux-audit|audit]].
+Audit is a tamper-resistant record of security-relevant events for compliance. Records come from system-call entry and exit and from explicit calls inside subsystems (for example, an SELinux denial with the exact labels involved). They flow over netlink to the audit daemon, which filters and writes them; sequence numbers expose any gaps. See [[linux-audit-explained|audit]].
 
 ## A request's journey
 
@@ -118,6 +118,6 @@ A denial runs the other way: a web server whose SELinux type isn't allowed to re
 ## Related
 
 - Technical version: [[security]]
-- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit|Audit]]
+- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit-explained|Audit]]
 - [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model|Process model]], [[netlabel-explained|NetLabel]]
 - [[vfs-explained|VFS]], [[net-explained|Networking]], [[bpf-explained|BPF]], [[io_uring-explained|io_uring]], [[rcu-read-copy-update-explained|RCU]]

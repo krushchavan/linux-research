@@ -74,4 +74,4 @@ List commands return one entry; "list all" commands walk the table and send the 
 
 - Technical version: [[netlabel-netlink-management-interface]]
 - [[netlabel-explained|NetLabel]], [[netlabel-domain-hash-table-explained|Domain table]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-lsm-security-api-explained|LSM API]]
-- [[linux-audit|Audit]], [[nftables-explained|nftables]]
+- [[linux-audit-explained|Audit]], [[nftables-explained|nftables]]
