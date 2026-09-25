@@ -63,7 +63,7 @@ Downloads go through the filesystem's size check and "issue read" callback; cach
 ### The write path
 Writeback walks the dirty pages and sorts them: cache-only copies go to the cache stream; ordinary dirty pages go to the server (and to the cache as well, if one is active). Each stream is cut to its own destination's limits. A failed server write re-dirties the pages for another try; a failed cache write makes the filesystem invalidate its cache entry.
 
-A subtle part is **pinning**: while pages are dirty, the file's cache handle mustn't be torn down. netfs marks the inode when pages are dirtied and releases the pin once writeback has finished. See [[netfs-write-path|the write path]].
+A subtle part is **pinning**: while pages are dirty, the file's cache handle mustn't be torn down. netfs marks the inode when pages are dirtied and releases the pin once writeback has finished. See [[netfs-write-path-explained|the write path]].
 
 ### The operations table
 This is the contract. A filesystem provides one table of callbacks: set up and free requests, widen readahead, size and issue reads, begin writeback, size and issue writes, retry, invalidate the cache, and update the size or modification time. Only "issue read" and "issue write" are required; netfs supplies defaults for the rest, and which callbacks exist decides which features are active. See [[netfs-operations-table-explained|the operations table]].
@@ -99,6 +99,6 @@ If a cache read had failed instead (say the cached copy turned out stale), netfs
 ## Related
 
 - Technical version: [[netfs]]
-- [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table-explained|Operations table]]
+- [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path-explained|Write path]], [[netfs-operations-table-explained|Operations table]]
 - [[netfs-helper-library-explained|netfs helper library (fscache view)]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|CacheFiles]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[writeback-infrastructure-explained|Writeback]]

@@ -99,5 +99,5 @@ A read-only filesystem can start with only "issue read" and add the rest later.
 ## Related
 
 - Technical version: [[netfs-operations-table]]
-- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path|Write path]]
+- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path-explained|Write path]]
 - [[fscache-explained|fscache]], [[network-filesystems-overview-explained|Network filesystems overview]]

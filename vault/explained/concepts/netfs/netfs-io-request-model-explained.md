@@ -82,5 +82,5 @@ Once a filesystem can issue reads, it never has to handle cache failures or resi
 ## Related
 
 - Technical version: [[netfs-io-request-model]]
-- [[netfs-explained|netfs subsystem]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table-explained|Operations table]]
+- [[netfs-explained|netfs subsystem]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path-explained|Write path]], [[netfs-operations-table-explained|Operations table]]
 - [[fscache-explained|fscache]], [[netfs-helper-library-explained|netfs helper library]], [[page-cache-explained|Page cache]]

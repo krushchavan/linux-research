@@ -89,5 +89,5 @@ Pages fetched from the server while a cache is active are marked for copying int
 ## Related
 
 - Technical version: [[netfs-read-path]]
-- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model-explained|Request model]], [[netfs-operations-table-explained|Operations table]], [[netfs-inode-context-explained|Inode context]], [[netfs-write-path|Write path]]
+- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model-explained|Request model]], [[netfs-operations-table-explained|Operations table]], [[netfs-inode-context-explained|Inode context]], [[netfs-write-path-explained|Write path]]
 - [[fscache-explained|fscache]], [[cachefiles-backend-explained|CacheFiles]], [[page-cache-explained|Page cache]], [[get-user-pages-and-pinning-explained|Pinning user pages]]

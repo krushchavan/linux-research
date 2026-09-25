@@ -142,7 +142,7 @@
 - [x] vault/concepts/netfs/netfs-io-request-model.md
 - [x] vault/concepts/netfs/netfs-operations-table.md
 - [x] vault/concepts/netfs/netfs-read-path.md
-- [ ] vault/concepts/netfs/netfs-write-path.md
+- [x] vault/concepts/netfs/netfs-write-path.md
 - [ ] vault/subsystems/nfs.md
 - [ ] vault/concepts/nfs/delegations-and-locking.md
 - [ ] vault/concepts/nfs/fscache.md

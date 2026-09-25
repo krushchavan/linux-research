@@ -6,6 +6,7 @@ subsystem: netfs
 kernel_version: "5.19"
 researched: 2026-04-16
 status: complete
+explained: "[[netfs-write-path-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://lwn.net/Articles/971770/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # netfs Write Path
+
+> 📘 Plain-language version: [[netfs-write-path-explained]]
 
 ## Purpose
 
