@@ -86,4 +86,4 @@ First-time page faults are normal (a program loading its data) and aren't pressu
 - [[memory-cgroup-explained|Memory cgroups]]: per-group pressure and throttling
 - [[page-reclaim-explained|Page reclaim]]: the main source of memory stalls
 - [[oom-killer-explained|OOM killer]]: what PSI-based daemons try to pre-empt
-- [[swap]], [[scheduler|Scheduler]], [[cgroups|Control groups]]
+- [[swap-explained|swap]], [[scheduler|Scheduler]], [[cgroups|Control groups]]

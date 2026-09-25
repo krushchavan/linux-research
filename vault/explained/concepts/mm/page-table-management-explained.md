@@ -110,4 +110,4 @@ Beyond faults, a reusable walker lets other code inspect or change page tables b
 - [[virtual-memory-areas]]: the *intent* that page tables implement
 - [[rmap-reverse-mapping-explained|rmap-reverse-mapping]]: finding page-table entries from a physical page
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|hugetlbfs]]: huge entries at higher levels
-- [[swap]], [[numa-memory-policy-explained|NUMA memory policy]]
+- [[swap-explained|swap]], [[numa-memory-policy-explained|NUMA memory policy]]

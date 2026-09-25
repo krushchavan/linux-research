@@ -139,7 +139,7 @@ Free pages have to be actively produced. See [[page-reclaim-explained|page-recla
 
 ### Swap: extending memory onto storage
 
-Anonymous memory has no file to fall back on, so without swap it would pin RAM forever. See [[swap]].
+Anonymous memory has no file to fall back on, so without swap it would pin RAM forever. See [[swap-explained|swap]].
 
 1. **Out:** reclaim picks an anonymous folio, allocates a swap slot, writes it out, and replaces the mapping with a **swap entry** that records where it went. The page is freed.
 2. **In:** touching that address faults; the handler reads the data back into a new page and restores the mapping.
@@ -189,7 +189,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 - Technical version: [[mm]]
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
-- [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
+- [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap-explained|swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information-explained|psi-pressure-stall-information]]
 - [[vfs|VFS]], [[block-explained|Block layer]]

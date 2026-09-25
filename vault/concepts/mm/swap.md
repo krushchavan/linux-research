@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[swap-explained]]"
 sources:
   - https://kernel-internals.org/mm/swap/
   - https://www.kernel.org/doc/gorman/html/understand/understand014.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Swap
+
+> 📘 Plain-language version: [[swap-explained]]
 
 ## Purpose
 
