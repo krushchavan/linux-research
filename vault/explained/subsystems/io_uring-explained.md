@@ -74,7 +74,7 @@ Some operations have to block: buffered writes that wait on a file's lock, fsync
 
 ### The polling thread (SQPOLL)
 
-Even one batched system call is a system call. See [[sqpoll]].
+Even one batched system call is a system call. See [[sqpoll-explained|sqpoll]].
 
 1. The application can ask for a dedicated kernel thread that watches the submission ring and picks up new requests itself. Steady-state submission then costs only a memory write.
 2. If nothing arrives for a configured idle time, the thread sets a "wake me" flag in shared memory and sleeps. The application then makes one system call to wake it.

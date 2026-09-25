@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.1"
 researched: 2026-09-24
 status: complete
+explained: "[[sqpoll-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/io-uring-arch/
   - https://kernel-internals.org/io-uring/life-of-request/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # SQPOLL (Submission Queue Polling)
+
+> 📘 Plain-language version: [[sqpoll-explained]]
 
 ## Purpose
 
