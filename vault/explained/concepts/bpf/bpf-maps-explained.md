@@ -52,7 +52,7 @@ If a hash table was created without preallocating memory, entries are allocated 
 - **Hash table:** arbitrary keys. The **LRU** variant automatically evicts the least-recently-used entries so it never fills up, which is ideal for connection tracking.
 - **Longest-prefix-match trie:** finds the most specific network prefix that matches an address. Used for routing tables and firewall allow-lists.
 - **Program array:** holds other BPF programs. A *tail call* jumps into one of them, replacing the current program. This lets you chain stages together, such as a multi-step protocol parser too large to verify as one program (the limit is about a million instructions).
-- **Ring buffer:** one shared circular buffer that userspace maps into its own memory, for streaming events out with no copy. See [[bpf-ring-buffer|the ring buffer]].
+- **Ring buffer:** one shared circular buffer that userspace maps into its own memory, for streaming events out with no copy. See [[bpf-ring-buffer-explained|the ring buffer]].
 - **Socket maps:** hold sockets, so a program can forward data straight from one socket to another inside the kernel, for proxies and load balancers.
 - **Maps of maps:** the outer map holds inner maps, so you can swap an entire table atomically by replacing one entry.
 - **Queues and stacks** with push and pop.
@@ -97,7 +97,7 @@ If a hash table was created without preallocating memory, entries are allocated 
 
 - Technical version: [[bpf-maps]]
 - [[bpf-explained|BPF overview]]
-- [[bpf-ring-buffer|BPF ring buffer]]: the streaming map in detail
+- [[bpf-ring-buffer-explained|BPF ring buffer]]: the streaming map in detail
 - [[bpf-verifier|The verifier]]: checks every map access
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: how programs call lookup and update
 - [[btf-and-co-re|BTF]]: type info that lets tools pretty-print map contents

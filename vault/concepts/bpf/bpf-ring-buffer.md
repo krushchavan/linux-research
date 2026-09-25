@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "5.8"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-ring-buffer-explained]]"
 sources:
   - https://lwn.net/Articles/821456/
   - https://lwn.net/Articles/740157/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # BPF Ring Buffer
+
+> 📘 Plain-language version: [[bpf-ring-buffer-explained]]
 
 ## Purpose
 

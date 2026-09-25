@@ -112,7 +112,7 @@ Kernel data structures change layout between versions, so a program compiled for
 BTF also lets tools pretty-print map contents and lets the verifier type-check kfunc calls.
 
 ### The ring buffer: streaming events out
-See [[bpf-ring-buffer]].
+See [[bpf-ring-buffer-explained|bpf-ring-buffer]].
 
 Tracing tools push huge numbers of events to userspace. The older mechanism gave each CPU its own buffer, which wasted memory and forced readers to poll every CPU.
 
@@ -162,6 +162,6 @@ Dropping attack traffic at the network card with XDP:
 
 - Technical version: [[bpf]]
 - [[bpf-verifier|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
-- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
+- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]

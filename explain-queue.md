@@ -34,7 +34,7 @@
 - [ ] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [x] vault/concepts/bpf/bpf-maps.md
 - [x] vault/concepts/bpf/bpf-program-types.md
-- [ ] vault/concepts/bpf/bpf-ring-buffer.md
+- [x] vault/concepts/bpf/bpf-ring-buffer.md
 - [ ] vault/concepts/bpf/bpf-verifier.md
 - [ ] vault/concepts/bpf/btf-and-co-re.md
 - [ ] vault/concepts/bpf/libbpf-and-toolchain.md
