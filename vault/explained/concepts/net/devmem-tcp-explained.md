@@ -93,5 +93,5 @@ A flow not steered to the bound queue lands in host memory and is reported as li
 ## Related
 
 - Technical version: [[devmem-tcp]]
-- [[page-pool-explained|Page pool]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy receive]], [[net-explained|Networking stack]], [[sk-buff-explained|skb]], [[tcp-ip-stack|TCP/IP]], [[network-device-and-napi-explained|Devices and NAPI]]
+- [[page-pool-explained|Page pool]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy receive]], [[net-explained|Networking stack]], [[sk-buff-explained|skb]], [[tcp-ip-stack-explained|TCP/IP]], [[network-device-and-napi-explained|Devices and NAPI]]
 - [[dma-mapping-api-explained|DMA mapping]]

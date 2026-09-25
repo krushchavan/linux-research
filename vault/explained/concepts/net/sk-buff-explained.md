@@ -83,5 +83,5 @@ There are two ways to free an skb: one for normal consumption and one for drops.
 ## Related
 
 - Technical version: [[sk-buff]]
-- [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|IP routing]], [[tcp-ip-stack|TCP/IP]]
+- [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|IP routing]], [[tcp-ip-stack-explained|TCP/IP]]
 - [[page-pool-explained|Page pool]], [[xdp|XDP]], [[netfilter|Netfilter]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]

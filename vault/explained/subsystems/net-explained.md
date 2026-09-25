@@ -59,7 +59,7 @@ Sockets are layered structures: generic socket, then internet socket, then TCP o
 - **TCP receive:** find the socket (established connections first, then listeners for new connections), check sequence numbers, update the window, acknowledge, and queue in-order data; out-of-order segments wait in a sorted tree.
 - **TCP send:** copy program data into skbs on the socket's write queue, then send what fits in both the **congestion window** and the receiver's advertised window. Retransmission is driven by timers and by SACK- and RACK-based loss detection.
 
-**Congestion control** is pluggable: Cubic (the default), Reno, DCTCP, and BBR, which models bandwidth and round-trip time to keep the pipe full without building queues. See [[tcp-ip-stack|the TCP/IP stack]].
+**Congestion control** is pluggable: Cubic (the default), Reno, DCTCP, and BBR, which models bandwidth and round-trip time to keep the pipe full without building queues. See [[tcp-ip-stack-explained|the TCP/IP stack]].
 
 ### Traffic control (qdiscs)
 Every device's outgoing path has a **queueing discipline** that decides the order packets leave in:
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

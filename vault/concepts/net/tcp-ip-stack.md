@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "2.4"
 researched: 2026-04-14
 status: complete
+explained: "[[tcp-ip-stack-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/ip-sysctl.html
   - https://lwn.net/Articles/168894/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # TCP/IP Stack
+
+> 📘 Plain-language version: [[tcp-ip-stack-explained]]
 
 ## Purpose
 
