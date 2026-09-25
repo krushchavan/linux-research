@@ -21,6 +21,8 @@ sources:
 
 # Per-CPU Page Allocator (PCP)
 
+> 📘 Plain-language version: [[per-cpu-page-allocator-pcp-explained]]
+
 ## Summary
 
 The Per-CPU Page Allocator (PCP) is a per-CPU caching layer that sits between callers of `alloc_pages()` and the global zone buddy allocator. Each CPU keeps a small local list of free pages per memory zone so that routine single-page allocations and frees can be satisfied with only a cheap local spinlock rather than the globally-contended `zone->lock`. When the local list runs dry it refills in bulk from the buddy allocator under the zone lock; when it overflows it drains in bulk back — amortizing lock cost across many operations. The mechanism is foundational to memory allocator scalability on multi-core and NUMA systems, and has been incrementally extended since Linux 2.6 to cover high-order pages, dynamic watermark tuning, and remote draining.

@@ -58,7 +58,7 @@ If the fast path fails, the allocator wakes background reclaim, tries compaction
 
 ### The per-CPU page cache: avoiding the lock
 
-The buddy allocator's zone lock would choke on a machine with many CPUs. See [[per-cpu-page-allocator-pcp]].
+The buddy allocator's zone lock would choke on a machine with many CPUs. See [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]].
 
 1. Each CPU keeps its own small stock of free pages per zone. Small allocations (the vast majority) pop one with no shared lock.
 2. When the stock runs out, it's refilled with a batch under the zone lock, once. When it grows too big, the excess goes back in one batch.
@@ -187,7 +187,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 ## Related
 
 - Technical version: [[mm]]
-- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
+- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]

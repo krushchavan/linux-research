@@ -81,7 +81,7 @@
 - [x] vault/concepts/mm/page-fault-handler.md
 - [x] vault/concepts/mm/page-reclaim.md
 - [x] vault/concepts/mm/page-table-management.md
-- [ ] vault/concepts/mm/per-cpu-page-allocator-pcp.md
+- [x] vault/concepts/mm/per-cpu-page-allocator-pcp.md
 - [ ] vault/concepts/mm/psi-pressure-stall-information.md
 - [ ] vault/concepts/mm/radix-tree.md
 - [ ] vault/concepts/mm/rmap-reverse-mapping.md
