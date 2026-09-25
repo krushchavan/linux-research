@@ -46,7 +46,7 @@ Every allocation path ends at the **buddy allocator**, the single source of phys
 
 ### The buddy allocator: who owns physical RAM
 
-The only authority on which physical pages are free. See [[buddy-allocator]].
+The only authority on which physical pages are free. See [[buddy-allocator-explained|buddy-allocator]].
 
 1. Memory is handed out in power-of-two blocks called **orders** (order 0 = 4 KB up to order 10 = 4 MB), inside **zones** per NUMA node (DMA, DMA32, NORMAL, MOVABLE). Each zone has a free list per order.
 2. **Allocate:** take a block of the right order. If there's none, split a bigger block in half repeatedly, putting the spare halves on the lower lists.
@@ -187,7 +187,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 ## Related
 
 - Technical version: [[mm]]
-- [[buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
+- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree]], [[page-fault-handler]], [[page-table-management]]
 - [[page-cache]], [[folio]], [[page-reclaim]], [[swap]], [[oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs]], [[memory-compaction]]

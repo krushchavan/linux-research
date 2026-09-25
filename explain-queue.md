@@ -68,7 +68,7 @@
 - [x] vault/concepts/ublk/ublk-zero-copy.md
 - [x] vault/subsystems/mm.md
 - [x] vault/concepts/mm/address-space.md
-- [ ] vault/concepts/mm/buddy-allocator.md
+- [x] vault/concepts/mm/buddy-allocator.md
 - [ ] vault/concepts/mm/folio.md
 - [ ] vault/concepts/mm/get-user-pages-and-pinning.md
 - [ ] vault/concepts/mm/huge-pages-hugetlbfs.md

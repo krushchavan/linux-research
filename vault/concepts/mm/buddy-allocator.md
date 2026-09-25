@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "1.0+"
 researched: 2026-04-05
 status: complete
+explained: "[[buddy-allocator-explained]]"
 sources:
   - https://kernel-internals.org/mm/page-allocator/
   - https://kernel-internals.org/mm/numa/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Buddy Allocator
+
+> 📘 Plain-language version: [[buddy-allocator-explained]]
 
 ## Purpose
 
