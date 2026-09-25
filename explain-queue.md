@@ -169,7 +169,7 @@
 - [x] vault/concepts/cgroups/cgroup-freezer.md
 - [x] vault/concepts/cgroups/cpuset-controller.md
 - [x] vault/concepts/cgroups/css-set-and-subsystem-state.md
-- [ ] vault/concepts/cgroups/io-controller.md
+- [x] vault/concepts/cgroups/io-controller.md
 - [ ] vault/concepts/cgroups/pid-controller.md
 - [ ] vault/concepts/crypto/kernel-crypto-api.md
 - [ ] vault/subsystems/locking.md

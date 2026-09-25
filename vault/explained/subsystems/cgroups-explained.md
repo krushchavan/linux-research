@@ -69,7 +69,7 @@ Each group has per-device state in the block layer:
 - **weight** uses a cost model that estimates each I/O's device time and shares device time in proportion, with a virtual-time scheduler much like the CPU's
 - **latency** protects a group: if its latency rises above target, *others* get less
 
-Writeback is jointly managed with the memory controller, so dirty pages are written back under the budget of the group that dirtied them. See [[io-controller|the I/O controller]].
+Writeback is jointly managed with the memory controller, so dirty pages are written back under the budget of the group that dirtied them. See [[io-controller-explained|the I/O controller]].
 
 ### PIDs
 A counter per group caps the number of tasks, mainly to stop fork bombs in containers. Every fork checks the counter at each level up the tree; if any level would go over, the fork fails with "try again". A parent's limit covers all its descendants combined. See [[pid-controller|the PID controller]].
@@ -110,6 +110,6 @@ A process in a container limited to 50% of one CPU spins in a loop:
 ## Related
 
 - Technical version: [[cgroups]]
-- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller|I/O]], [[pid-controller|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
+- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller-explained|I/O]], [[pid-controller|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
 - [[memcg-explained|Memory cgroups]], [[memory-cgroup-explained|Memory cgroup concepts]], [[psi-pressure-stall-information-explained|Pressure stall information]], [[oom-killer-explained|OOM killer]]
 - [[scheduler|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]

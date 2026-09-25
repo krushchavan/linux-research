@@ -94,5 +94,5 @@ Before this, per-container I/O limits didn't work for buffered writes: the I/O c
 - [[page-cache-explained|Page cache]], [[address-space-explained|Address space]]: where dirty pages live
 - [[inode-cache-explained|Inode cache]]: dirty inodes can't be evicted
 - [[page-reclaim-explained|Page reclaim]]: writing pages under memory pressure
-- [[memory-cgroup-explained|Memory cgroups]], [[io-controller|I/O controller]], [[block-explained|Block layer]]
+- [[memory-cgroup-explained|Memory cgroups]], [[io-controller-explained|I/O controller]], [[block-explained|Block layer]]
 - [[fs-explained|Filesystem subsystem (VFS)]]

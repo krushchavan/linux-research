@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "2.6.33"
 researched: 2026-04-16
 status: complete
+explained: "[[io-controller-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://kernel-internals.org/sched/cpu-cgroup/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # I/O Controller (blkcg)
+
+> 📘 Plain-language version: [[io-controller-explained]]
 
 ## Purpose
 
