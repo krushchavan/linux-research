@@ -49,7 +49,7 @@
 - [x] vault/concepts/dm-crypt/dm-crypt-crypt-config.md
 - [x] vault/concepts/dm-crypt/dm-crypt-crypt-io.md
 - [x] vault/concepts/dm-crypt/dm-crypt-crypto-api-integration.md
-- [ ] vault/concepts/dm-crypt/dm-crypt-iv-generation.md
+- [x] vault/concepts/dm-crypt/dm-crypt-iv-generation.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-key-management.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-workqueue-io-path.md
 - [ ] vault/subsystems/dm-integrity.md

@@ -26,7 +26,7 @@ When the device's table is loaded, the constructor reads the cipher string. It c
 - **Classic:** cipher, mode and IV scheme, such as "aes-xts-plain64".
 - **Crypto-API form:** a direct name from the kernel's algorithm catalogue plus an IV scheme, such as "capi:xts(aes)-plain64". This form also allows authenticated modes like AES-GCM.
 
-The IV-scheme name selects a small table of IV functions (see [[dm-crypt-iv-generation]]).
+The IV-scheme name selects a small table of IV functions (see [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]]).
 
 ### Step 2: Allocate one cipher per CPU
 This is the key step. The constructor loops over all online CPUs and allocates a separate cipher instance for each. At encryption time, a worker uses the instance for the CPU it's running on. No locking, and the cipher's expanded key and working state stay on that CPU, which suits AES hardware acceleration whose state is CPU-local anyway. Authenticated modes get a parallel set.
@@ -87,5 +87,5 @@ When the device is removed, device mapper first makes sure no I/O is in flight. 
 - Technical version: [[dm-crypt-crypt-config]]
 - [[dm-crypt-explained|dm-crypt]]: the subsystem overview
 - [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]]: the per-request objects that point back here
-- [[dm-crypt-iv-generation]], [[dm-crypt-key-management]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]]
+- [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-key-management]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]]
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]

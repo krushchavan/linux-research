@@ -60,7 +60,7 @@ Each incoming I/O request gets a small tracking object that carries it through t
 
 ### IV generation
 
-Each sector needs its own **initialization vector** (IV). Otherwise two sectors holding the same plaintext would produce the same ciphertext, which leaks information. See [[dm-crypt-iv-generation]].
+Each sector needs its own **initialization vector** (IV). Otherwise two sectors holding the same plaintext would produce the same ciphertext, which leaks information. See [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]].
 
 1. **plain64** uses the sector number itself as the IV. It's fast but predictable. It is the recommended choice with XTS mode, because XTS's own "tweak" already isolates sectors from each other.
 2. **ESSIV** encrypts the sector number under a key derived from a hash of the master key, so the IV can't be predicted without the key. It was the safe choice for the older CBC mode, where predictable IVs allow "watermarking" attacks, but costs an extra encryption per sector.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative

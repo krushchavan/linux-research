@@ -85,5 +85,5 @@ With the "no read queue" or "no write queue" options, the crypto loop runs direc
 - Technical version: [[dm-crypt-crypt-io]]
 - [[dm-crypt-explained|dm-crypt]]: the subsystem overview
 - [[dm-crypt-crypt-config-explained|Per-device encryption state]]: what each tracking object points back to
-- [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]]
+- [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]]
 - [[block-explained|Block layer]]: where completions come from

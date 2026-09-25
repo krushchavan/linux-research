@@ -6,6 +6,7 @@ subsystem: dm-crypt
 kernel_version: "2.5"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-crypt-iv-generation-explained]]"
 sources:
   - https://kernel-internals.org/security/dm-crypt/
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-crypt IV Generation — Sector Initialization Vectors
+
+> 📘 Plain-language version: [[dm-crypt-iv-generation-explained]]
 
 ## Purpose
 
