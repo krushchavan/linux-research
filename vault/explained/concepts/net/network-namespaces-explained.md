@@ -75,4 +75,4 @@ A namespace stays alive while anything references it: a process running in it, a
 
 - Technical version: [[network-namespaces]]
 - [[net-explained|Networking stack]], [[ip-routing-explained|IP routing]], [[tcp-ip-stack-explained|TCP/IP]], [[network-device-and-napi-explained|Devices and NAPI]]
-- [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[netfilter-explained|Netfilter]], [[cgroups-explained|cgroups]]
+- [[mount-namespace-explained|Mount namespaces]], [[user-namespaces-explained|User namespaces]], [[netfilter-explained|Netfilter]], [[cgroups-explained|cgroups]]

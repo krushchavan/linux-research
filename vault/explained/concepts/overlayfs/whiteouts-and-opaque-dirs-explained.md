@@ -70,4 +70,4 @@ The upper filesystem must support whichever attribute namespace is used; filesys
 
 - Technical version: [[whiteouts-and-opaque-dirs]]
 - [[overlayfs-explained|OverlayFS]], [[directory-merging-explained|Directory merging]], [[copy-up-explained|Copy-up]], [[layer-stack-explained|Layer stack]], [[redirect-dir-and-index-explained|Redirects and index]]
-- [[extended-attributes-and-acls-explained|Extended attributes]], [[user-namespaces|User namespaces]], [[path-lookup-explained|Path lookup]]
+- [[extended-attributes-and-acls-explained|Extended attributes]], [[user-namespaces-explained|User namespaces]], [[path-lookup-explained|Path lookup]]

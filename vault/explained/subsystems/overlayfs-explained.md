@@ -102,5 +102,5 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 
 - Technical version: [[overlayfs]]
 - [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs-explained|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index-explained|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
-- [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
+- [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces-explained|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]

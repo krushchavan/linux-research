@@ -238,7 +238,7 @@
 - [x] vault/concepts/security/smack-network-labeling.md
 - [x] vault/concepts/security/smackfs.md
 - [x] vault/concepts/security/tpm.md
-- [ ] vault/concepts/security/user-namespaces.md
+- [x] vault/concepts/security/user-namespaces.md
 - [ ] vault/subsystems/tracing.md
 - [ ] vault/concepts/tracing/ftrace.md
 - [ ] vault/concepts/tracing/kprobes-and-kretprobes.md

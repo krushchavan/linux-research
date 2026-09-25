@@ -87,5 +87,5 @@ Each user has limits on how many keys they own and how many bytes those keys use
 ## Related
 
 - Technical version: [[kernel-keyring]]
-- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[ima-explained|IMA]], [[tpm-explained|TPM]], [[lsm-framework-explained|LSM framework]], [[user-namespaces|User namespaces]]
+- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[ima-explained|IMA]], [[tpm-explained|TPM]], [[lsm-framework-explained|LSM framework]], [[user-namespaces-explained|User namespaces]]
 - [[fscrypt-explained|fscrypt]], [[dm-crypt-explained|dm-crypt]], [[kernel-crypto-api-explained|Kernel crypto API]], [[nfs-explained|NFS]], [[rpcsec-gss-and-kerberos-explained|RPCSEC_GSS and Kerberos]]

@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "3.8"
 researched: 2026-04-17
 status: complete
+explained: "[[user-namespaces-explained]]"
 sources:
   - https://kernel-internals.org/security/user-namespaces/
   - https://man7.org/linux/man-pages/man7/user_namespaces.7.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # User Namespaces
+
+> 📘 Plain-language version: [[user-namespaces-explained]]
 
 ## Purpose
 
