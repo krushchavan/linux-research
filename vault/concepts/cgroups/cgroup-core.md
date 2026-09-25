@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "2.6.24"
 researched: 2026-04-16
 status: complete
+explained: "[[cgroup-core-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://lwn.net/Articles/679786/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Cgroup Core
+
+> 📘 Plain-language version: [[cgroup-core-explained]]
 
 ## Purpose
 

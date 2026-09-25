@@ -40,7 +40,7 @@ There are two layers: a **core** that manages the tree and who belongs where, an
 ### The core
 Each cgroup is a node in the tree and a directory under `/sys/fs/cgroup`. Creating a directory creates a cgroup and asks each enabled controller to set up its per-group state. Writing a process ID to a group's process list moves the process there.
 
-cgroup v2 enforces the **no-internal-process rule**: a group that hands controllers down to its children can't also hold processes directly, so a parent's own tasks never compete unfairly against its child groups. Controllers are switched on for a group's children by writing to a control file; the change propagates down the subtree, setting up or tearing down per-group state. See [[cgroup-core|the cgroup core]].
+cgroup v2 enforces the **no-internal-process rule**: a group that hands controllers down to its children can't also hold processes directly, so a parent's own tasks never compete unfairly against its child groups. Controllers are switched on for a group's children by writing to a control file; the change propagates down the subtree, setting up or tearing down per-group state. See [[cgroup-core-explained|the cgroup core]].
 
 ### Shared state bundles
 This is the key efficiency trick. Rather than giving every task its own pointer to each controller's state, all tasks that sit in exactly the same combination of groups **share one bundle** of pointers. Moving a task looks up a bundle for the new combination in a hash table, creating one only if none exists; reference counts free bundles when unused.
@@ -85,7 +85,7 @@ eBPF programs can be attached to a group to filter network traffic, control sock
 
 ## A request's journey
 
-A process in a container with a 50%-of-one-CPU limit (quota 50 ms per 100 ms period, in the note's example) spins in a loop:
+A process in a container limited to 50% of one CPU spins in a loop:
 
 1. **Run and charge.** Each time it runs, its group's remaining run time goes down.
 2. **Draw more.** When a CPU's local slice runs out, it pulls another 5 ms from the group's pool.
@@ -110,6 +110,6 @@ A process in a container with a 50%-of-one-CPU limit (quota 50 ms per 100 ms per
 ## Related
 
 - Technical version: [[cgroups]]
-- [[cgroup-core|Core]], [[css-set-and-subsystem-state|State bundles]], [[io-controller|I/O]], [[pid-controller|PIDs]], [[cpuset-controller|cpuset]], [[cgroup-freezer|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
+- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state|State bundles]], [[io-controller|I/O]], [[pid-controller|PIDs]], [[cpuset-controller|cpuset]], [[cgroup-freezer|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
 - [[memcg-explained|Memory cgroups]], [[memory-cgroup-explained|Memory cgroup concepts]], [[psi-pressure-stall-information-explained|Pressure stall information]], [[oom-killer-explained|OOM killer]]
 - [[scheduler|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]
