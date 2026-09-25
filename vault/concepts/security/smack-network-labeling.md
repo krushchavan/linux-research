@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.30"
 researched: 2026-04-16
 status: complete
+explained: "[[smack-network-labeling-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/LSM/Smack.html
   - https://www.kernel.org/doc/html/v5.4/netlabel/cipso_ipv4.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Smack Network Labeling
+
+> 📘 Plain-language version: [[smack-network-labeling-explained]]
 
 ## Purpose
 

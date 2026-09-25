@@ -67,5 +67,5 @@ From then on, [[smack-inode-and-task-labeling-explained|files and processes]] st
 ## Related
 
 - Technical version: [[smack-label-registry]]
-- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
+- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling-explained|Network labelling]], [[smackfs|smackfs]]
 - [[netlabel-explained|NetLabel]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[linux-audit-explained|Audit]]

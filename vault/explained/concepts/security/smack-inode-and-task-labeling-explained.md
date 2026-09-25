@@ -72,5 +72,5 @@ A process's label can be read, and written, through /proc. Writing requires the 
 ## Related
 
 - Technical version: [[smack-inode-and-task-labeling]]
-- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
+- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-network-labeling-explained|Network labelling]], [[smackfs|smackfs]]
 - [[credentials-explained|Credentials]], [[process-model-explained|Process security model]], [[vfs-explained|VFS]], [[extended-attributes-and-acls-explained|Extended attributes]]
