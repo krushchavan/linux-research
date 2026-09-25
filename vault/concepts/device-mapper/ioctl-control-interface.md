@@ -6,6 +6,7 @@ subsystem: device-mapper
 kernel_version: "2.6.0"
 researched: 2026-04-18
 status: complete
+explained: "[[ioctl-control-interface-explained]]"
 sources:
   - https://lwn.net/Articles/35077/
   - https://en.wikipedia.org/wiki/Device_mapper
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Device Mapper ioctl Control Interface
+
+> 📘 Plain-language version: [[ioctl-control-interface-explained]]
 
 ## Overview
 

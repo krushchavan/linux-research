@@ -41,7 +41,7 @@
 - [x] vault/subsystems/device-mapper.md
 - [x] vault/concepts/device-mapper/dm-bufio.md
 - [x] vault/concepts/device-mapper/dm-io.md
-- [ ] vault/concepts/device-mapper/ioctl-control-interface.md
+- [x] vault/concepts/device-mapper/ioctl-control-interface.md
 - [ ] vault/concepts/device-mapper/kcopyd.md
 - [ ] vault/concepts/device-mapper/persistent-data-library.md
 - [ ] vault/concepts/device-mapper/target-framework.md

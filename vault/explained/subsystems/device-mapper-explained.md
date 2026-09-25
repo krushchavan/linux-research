@@ -59,7 +59,7 @@ The plugin contract that makes DM extensible. See [[target-framework]].
 
 ### The control interface
 
-Configuration lives entirely in user space (LVM2, dmsetup). The kernel exposes one control device, and everything happens through ioctls on it. See [[ioctl-control-interface]].
+Configuration lives entirely in user space (LVM2, dmsetup). The kernel exposes one control device, and everything happens through ioctls on it. See [[ioctl-control-interface-explained|ioctl-control-interface]].
 
 The key design is **two table slots per device: active and inactive**. This is the key idea of the control plane.
 1. **Load** a new table into the inactive slot. Live I/O is untouched.
@@ -149,6 +149,6 @@ LVM creating a new thin volume and the first write to it:
 
 - Technical version: [[device-mapper]]
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
-- [[target-framework]], [[ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
+- [[target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt]], [[dm-integrity]]: the security targets
 - [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]
