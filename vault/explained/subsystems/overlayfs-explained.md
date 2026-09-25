@@ -48,7 +48,7 @@ This is the key mechanism. Before a lower file is written, truncated or has its 
 3. copy the data across with an in-kernel zero-copy path, then clone the extended attributes
 4. **rename** it into place in the upper tree
 
-The rename is the commit, so a half-copied file is never visible; an interrupted copy just leaves a temp file that's abandoned at the next mount. From then on, the overlay inode points at the upper file and ignores the lower one. See [[copy-up|copy-up]].
+The rename is the commit, so a half-copied file is never visible; an interrupted copy just leaves a temp file that's abandoned at the next mount. From then on, the overlay inode points at the upper file and ignores the lower one. See [[copy-up-explained|copy-up]].
 
 ### Whiteouts and opaque directories
 Lower layers can't be changed, so deleting a lower file creates a **whiteout** in the upper layer at the same path: a special device file (0:0), or on supporting filesystems a zero-size file with a marker attribute. Lookup sees it and reports "no such file" without looking further down.
@@ -101,6 +101,6 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 ## Related
 
 - Technical version: [[overlayfs]]
-- [[layer-stack|Layer stack]], [[copy-up|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino|xino]], [[metacopy|Metacopy]]
+- [[layer-stack|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino|xino]], [[metacopy|Metacopy]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]
