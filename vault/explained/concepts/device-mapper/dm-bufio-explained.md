@@ -73,5 +73,5 @@ The source note doesn't give a version history for dm-bufio itself. Its main use
 - Technical version: [[dm-bufio]]
 - [[device-mapper-explained|Device mapper]]: the framework this serves
 - [[dm-integrity]]: the main user
-- [[persistent-data-library]]: the parallel metadata cache for thin provisioning
+- [[persistent-data-library-explained|persistent-data-library]]: the parallel metadata cache for thin provisioning
 - [[block-explained|Block layer]]: where cache misses and write-backs go

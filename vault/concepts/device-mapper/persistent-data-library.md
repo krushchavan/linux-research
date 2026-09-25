@@ -6,12 +6,15 @@ subsystem: device-mapper
 kernel_version: "3.2"
 researched: 2026-04-18
 status: complete
+explained: "[[persistent-data-library-explained]]"
 sources:
   - https://static.lwn.net/kerneldoc/admin-guide/device-mapper/persistent-data.html
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/thin-provisioning.html
 ---
 
 # Persistent Data Library
+
+> 📘 Plain-language version: [[persistent-data-library-explained]]
 
 ## Overview
 

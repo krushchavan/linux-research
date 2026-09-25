@@ -87,7 +87,7 @@ An asynchronous copy engine. Snapshots, mirror resyncs and cache fills all need 
 
 ### The persistent-data library
 
-Thin provisioning, dm-cache and dm-era all need complex, crash-safe metadata on disk: maps from virtual to physical blocks, reference counts. This shared library means each target doesn't have to write its own. See [[persistent-data-library]].
+Thin provisioning, dm-cache and dm-era all need complex, crash-safe metadata on disk: maps from virtual to physical blocks, reference counts. This shared library means each target doesn't have to write its own. See [[persistent-data-library-explained|persistent-data-library]].
 
 1. **Block manager:** a cache of fixed-size (4 KiB) metadata blocks with per-block read/write locks.
 2. **Transaction manager:** enforces **copy-on-write**. You can never modify a committed block in place. To write, you get a fresh copy (a *shadow*). Shadowing the same block twice in one transaction returns the same copy. A commit flushes all written blocks and then atomically updates the superblock. If power is lost before the next commit, the on-disk metadata is still consistent as of the last one.
@@ -149,6 +149,6 @@ LVM creating a new thin volume and the first write to it:
 
 - Technical version: [[device-mapper]]
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
-- [[target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd-explained|kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
+- [[target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd-explained|kcopyd]], [[persistent-data-library-explained|persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt]], [[dm-integrity]]: the security targets
 - [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]
