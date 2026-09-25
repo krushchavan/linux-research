@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.10"
 researched: 2026-04-17
 status: complete
+explained: "[[kernel-keyring-explained]]"
 sources:
   - https://kernel-internals.org/crypto/keyring/
   - https://docs.kernel.org/security/keys/core.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Kernel Keyring (Key Retention Service)
+
+> 📘 Plain-language version: [[kernel-keyring-explained]]
 
 ## Purpose
 

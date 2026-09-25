@@ -129,5 +129,5 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
 - [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path-explained|dm-crypt-workqueue-io-path]], [[dm-crypt-key-management-explained|dm-crypt-key-management]]
 - [[dm-integrity-explained|dm-integrity]]: stores authentication tags for authenticated mode
-- [[kernel-crypto-api-explained|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
+- [[kernel-crypto-api-explained|Kernel crypto API]], [[kernel-keyring-explained|Kernel keyring]]
 - [[fscrypt-explained|fscrypt]]: file-level encryption, the per-directory alternative
