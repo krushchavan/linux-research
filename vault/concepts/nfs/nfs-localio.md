@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "6.13"
 researched: 2026-04-05
 status: complete
+explained: "[[nfs-localio-explained]]"
 sources:
   - https://docs.kernel.org/filesystems/nfs/localio.html
   - https://lwn.net/Articles/986514/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # NFS LOCALIO
+
+> 📘 Plain-language version: [[nfs-localio-explained]]
 
 ## Purpose
 
