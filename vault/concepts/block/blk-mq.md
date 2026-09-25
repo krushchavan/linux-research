@@ -6,6 +6,7 @@ subsystem: block
 kernel_version: "3.13"
 researched: 2026-09-25
 status: complete
+explained: "[[blk-mq-explained]]"
 sources:
   - https://kernel-internals.org/block/blk-mq/
   - https://www.kernel.org/doc/html/latest/block/blk-mq.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # blk-mq (Multi-Queue Block Layer)
+
+> 📘 Plain-language version: [[blk-mq-explained]]
 
 ## Purpose
 

@@ -52,7 +52,7 @@ Virtual devices (encryption, RAID, device-mapper) take a bio and submit new bios
 ### Batching ("plugging")
 A task that is about to submit many requests can open a *plug*. Requests collect on a private list and are pushed down together when the plug closes, or automatically if the task goes to sleep. This lets neighbouring requests be merged and lets drivers notify the hardware once per batch instead of once per request.
 
-### The multi-queue core ([[blk-mq]])
+### The multi-queue core ([[blk-mq-explained|blk-mq]])
 This is what replaced the single global lock. It has two tiers:
 1. **Per-CPU staging queues.** Each CPU has its own, so CPUs never contend with each other when submitting.
 2. **Hardware queues.** One per submission queue the device actually has: 32 or more for NVMe, one for a simple SATA disk. Staging queues are mapped onto hardware queues.
@@ -106,7 +106,7 @@ The block layer calls the bio's completion callback, which wakes the writeback t
 ## Related
 
 - Technical version: [[block]]
-- [[blk-mq|The multi-queue core]]: the scalable submission and dispatch engine
+- [[blk-mq-explained|The multi-queue core]]: the scalable submission and dispatch engine
 - [[io_uring]]: the async interface that drives polling and passthrough
 - [[device-mapper|Device mapper]]: stacked virtual block devices
 - [[ublk]]: block devices implemented by userspace programs
