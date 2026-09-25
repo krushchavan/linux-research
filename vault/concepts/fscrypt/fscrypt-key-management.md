@@ -6,6 +6,7 @@ subsystem: fscrypt
 kernel_version: "5.4"
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-key-management-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/737274/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # fscrypt Key Management
+
+> 📘 Plain-language version: [[fscrypt-key-management-explained]]
 
 ## Purpose
 

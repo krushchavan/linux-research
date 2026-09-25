@@ -85,5 +85,5 @@ This defends against memory-extraction attacks such as cold boot or DMA-based re
 ## Related
 
 - Technical version: [[fscrypt-inline-encryption]]
-- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info-explained|Per-inode info]]
+- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-key-management-explained|Key management]], [[fscrypt-inode-info-explained|Per-inode info]]
 - [[block-explained|Block layer]], [[blk-mq-explained|Multi-queue block layer]], [[kernel-crypto-api|Kernel crypto API]]
