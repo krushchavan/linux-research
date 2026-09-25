@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.7"
 researched: 2026-09-24
 status: complete
+explained: "[[provided-buffer-rings-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/fixed-buffers/
   - https://kernel-internals.org/io-uring/networking/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # io_uring Provided Buffer Rings
+
+> 📘 Plain-language version: [[provided-buffer-rings-explained]]
 
 ## Purpose
 

@@ -34,7 +34,7 @@
 - [x] vault/concepts/io_uring/io-uring-internals.md
 - [x] vault/concepts/io_uring/io-uring-task-work.md
 - [x] vault/concepts/io_uring/io-wq.md
-- [ ] vault/concepts/io_uring/provided-buffer-rings.md
+- [x] vault/concepts/io_uring/provided-buffer-rings.md
 - [ ] vault/concepts/io_uring/registered-resources.md
 - [ ] vault/concepts/io_uring/sqpoll.md
 - [ ] vault/concepts/io_uring/uring-cmd-passthrough.md

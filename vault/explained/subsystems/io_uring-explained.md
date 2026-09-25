@@ -100,7 +100,7 @@ Every ordinary I/O pays to look up the file descriptor and, for user memory, to 
 
 ### Provided buffer rings
 
-A server with 10,000 idle sockets would waste a lot of memory if every pending receive had its own buffer. See [[provided-buffer-rings]].
+A server with 10,000 idle sockets would waste a lot of memory if every pending receive had its own buffer. See [[provided-buffer-rings-explained|provided-buffer-rings]].
 
 1. The application registers a *buffer group*: a ring of buffer descriptions it fills and the kernel consumes (5.19).
 2. A receive request says "pick a buffer from group G" instead of naming one. The kernel chooses a buffer only when data actually arrives, and the completion says which buffer it used.
