@@ -9,6 +9,7 @@ mailing_list: linux-mm@kvack.org
 source_path: mm/
 researched: 2026-04-05
 status: complete
+explained: "[[mm-explained]]"
 sources:
   - https://kernel-internals.org/mm/
   - https://kernel-internals.org/mm/overview/
@@ -33,6 +34,8 @@ sources:
 ---
 
 # mm Subsystem
+
+> 📘 Plain-language version: [[mm-explained]]
 
 ## Overview
 
