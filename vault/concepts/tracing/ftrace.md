@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "2.6.27"
 researched: 2026-04-17
 status: complete
+explained: "[[ftrace-explained]]"
 sources:
   - https://kernel-internals.org/tracing/ftrace/
   - https://kernel-internals.org/tracing/ftrace-advanced/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # ftrace
+
+> 📘 Plain-language version: [[ftrace-explained]]
 
 ## Purpose
 

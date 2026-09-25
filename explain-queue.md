@@ -240,7 +240,7 @@
 - [x] vault/concepts/security/tpm.md
 - [x] vault/concepts/security/user-namespaces.md
 - [x] vault/subsystems/tracing.md
-- [ ] vault/concepts/tracing/ftrace.md
+- [x] vault/concepts/tracing/ftrace.md
 - [ ] vault/concepts/tracing/kprobes-and-kretprobes.md
 - [ ] vault/concepts/tracing/perf-events.md
 - [ ] vault/concepts/tracing/tracefs-and-ring-buffer.md
