@@ -21,7 +21,7 @@
 - [x] vault/subsystems/block.md
 - [x] vault/concepts/block/blk-mq.md
 - [x] vault/subsystems/bpf.md
-- [ ] vault/concepts/bpf/bpf-helpers-and-kfuncs.md
+- [x] vault/concepts/bpf/bpf-helpers-and-kfuncs.md
 - [ ] vault/concepts/bpf/bpf-jit-compiler.md
 - [ ] vault/concepts/bpf/bpf-maps.md
 - [ ] vault/concepts/bpf/bpf-program-types.md

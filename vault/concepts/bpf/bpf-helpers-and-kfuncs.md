@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "3.18"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-helpers-and-kfuncs-explained]]"
 sources:
   - https://lwn.net/Articles/856005/
   - https://lwn.net/Articles/740157/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # BPF Helpers and kfuncs
+
+> 📘 Plain-language version: [[bpf-helpers-and-kfuncs-explained]]
 
 ## Purpose
 

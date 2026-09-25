@@ -93,7 +93,7 @@ Major families:
 The biggest struct_ops user is **sched_ext** (6.12+), which lets a BPF program replace the CPU scheduling policy.
 
 ### Helpers and kfuncs: the approved kernel API
-See [[bpf-helpers-and-kfuncs]].
+See [[bpf-helpers-and-kfuncs-explained|bpf-helpers-and-kfuncs]].
 
 The verifier can't reason about arbitrary kernel functions, so programs may only call a curated set.
 
@@ -162,6 +162,6 @@ Dropping attack traffic at the network card with XDP:
 
 - Technical version: [[bpf]]
 - [[bpf-verifier|The verifier]], [[bpf-maps|maps]], [[bpf-jit-compiler|the JIT]], [[bpf-program-types|program types]]
-- [[bpf-helpers-and-kfuncs|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
+- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]
