@@ -62,7 +62,7 @@
 - [x] vault/concepts/dma/dma-mapping-api.md
 - [x] vault/subsystems/ublk.md
 - [x] vault/concepts/ublk/ublk-batch-io.md
-- [ ] vault/concepts/ublk/ublk-control-plane.md
+- [x] vault/concepts/ublk/ublk-control-plane.md
 - [ ] vault/concepts/ublk/ublk-io-command-protocol.md
 - [ ] vault/concepts/ublk/ublk-user-recovery.md
 - [ ] vault/concepts/ublk/ublk-zero-copy.md

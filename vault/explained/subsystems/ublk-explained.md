@@ -52,7 +52,7 @@ Most of ublk's later history is about making the data movement across that bound
 
 ### Control plane
 
-Creates and tears down devices and agrees on their shape. See [[ublk-control-plane]].
+Creates and tears down devices and agrees on their shape. See [[ublk-control-plane-explained|ublk-control-plane]].
 
 1. The server sends an "add device" command on a control device, giving the number of queues, queue depth (up to 4096 × 4096), largest I/O size, and feature flags. The kernel creates the device's internal state and a per-device channel the server will talk to. After this, the basic shape is frozen.
 2. A "set parameters" command supplies block sizes, maximum request size, discard, zoned, alignment and integrity limits.
@@ -134,5 +134,5 @@ If the server crashed in the middle, the device would quiesce, client I/O would 
 - [[io_uring-explained|io_uring]]: the transport ublk rides on
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[io-uring-task-work-explained|Task work]], [[registered-resources-explained|Registered resources]], [[provided-buffer-rings-explained|Provided buffer rings]]
 - [[blk-mq-explained|blk-mq]] and [[block-explained|Block layer]]: ublk is a normal block driver to them
-- [[ublk-control-plane]], [[ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
+- [[ublk-control-plane-explained|ublk-control-plane]], [[ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
 - [[get-user-pages-and-pinning|Page pinning]]
