@@ -87,5 +87,5 @@ Inserting, updating or deleting shadows the whole path from the root down to the
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-bufio-explained|dm-bufio]]: the simpler, separate metadata cache used by dm-integrity
 - [[target-framework-explained|target-framework]]: thin, cache and era build this stack in their constructors
-- [[cow-b-tree-engine|Copy-on-write B-trees in btrfs]]: a similar idea in a filesystem
+- [[cow-b-tree-engine-explained|Copy-on-write B-trees in btrfs]]: a similar idea in a filesystem
 - [[block-explained|Block layer]]

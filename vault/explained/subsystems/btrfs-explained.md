@@ -46,7 +46,7 @@ Every read and write goes through the chunk tree to turn a logical address into 
 ## The pieces
 
 ### The copy-on-write B-tree engine
-See [[cow-b-tree-engine]].
+See [[cow-b-tree-engine-explained|cow-b-tree-engine]].
 
 Everything is stored in B+ trees. Inner nodes hold keys and pointers to children; leaves hold keys and variable-sized items packed together. Every item is found by a three-part key: which object (an inode number, a tree ID…), what type of item (inode, directory entry, file extent…), and an offset whose meaning depends on the type.
 
@@ -147,7 +147,7 @@ Writing 64 KiB to a file:
 ## Related
 
 - Technical version: [[btrfs]]
-- [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model-explained|transactions]], [[multiple-b-trees-explained|the trees]]
+- [[cow-b-tree-engine-explained|Copy-on-write B-trees]], [[transaction-model-explained|transactions]], [[multiple-b-trees-explained|the trees]]
 - [[subvolumes-and-snapshots-explained|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures-explained|in-memory structures]]

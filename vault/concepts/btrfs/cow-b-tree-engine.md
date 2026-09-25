@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29"
 researched: 2026-09-25
 status: complete
+explained: "[[cow-b-tree-engine-explained]]"
 sources:
   - https://btrfs.readthedocs.io/en/latest/dev/dev-btrfs-design.html
   - https://btrfs.readthedocs.io/en/latest/dev/dev-btrees.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Btrfs COW B-tree Engine
+
+> 📘 Plain-language version: [[cow-b-tree-engine-explained]]
 
 ## Purpose
 
