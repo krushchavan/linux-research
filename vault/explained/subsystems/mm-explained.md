@@ -113,7 +113,7 @@ Then the faulting instruction resumes as if nothing happened.
 
 ### The page cache: file data in RAM
 
-Storage is thousands of times slower than RAM. See [[page-cache]].
+Storage is thousands of times slower than RAM. See [[page-cache-explained|page-cache]].
 
 1. Each file has a mapping from file offset to cached **folios** (a folio is one or more contiguous pages treated as a unit).
 2. A read looks up the offset. A hit copies straight from RAM. A miss allocates a folio, inserts it, reads from disk, then copies.
@@ -189,7 +189,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 - Technical version: [[mm]]
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler]], [[page-table-management]]
-- [[page-cache]], [[folio-explained|folio]], [[page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
+- [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information]]
 - [[vfs|VFS]], [[block-explained|Block layer]]

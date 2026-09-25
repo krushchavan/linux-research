@@ -93,7 +93,7 @@ The address space keeps an **interval tree** of every memory mapping (VMA) of th
 
 - Technical version: [[address-space]]
 - [[mm-explained|Memory management]]: the subsystem overview
-- [[page-cache]]: what this object implements
+- [[page-cache-explained|page-cache]]: what this object implements
 - [[folio-explained|folio]]: the unit it caches
 - [[page-reclaim]], [[rmap-reverse-mapping]], [[writeback-infrastructure]]
 - [[memory-compaction-explained|memory-compaction]], [[transparent-huge-pages]], [[xarray]]

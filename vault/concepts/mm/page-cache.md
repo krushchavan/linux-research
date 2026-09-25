@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "1.0+"
 researched: 2026-04-05
 status: complete
+explained: "[[page-cache-explained]]"
 sources:
   - https://kernel-internals.org/mm/page-cache/
   - https://lwn.net/Articles/888715/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Page Cache
+
+> 📘 Plain-language version: [[page-cache-explained]]
 
 ## Purpose
 
