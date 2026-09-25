@@ -242,7 +242,7 @@
 - [x] fs -> iomap
 
 # --- Unresolved links from io-scheduler 2026-09-25 ---
-- [ ] block -> zoned-block-devices
+- [x] block -> zoned-block-devices
 
 # --- Empty source notes found by explain-kernel 2026-09-25 (files exist but are 0 bytes) ---
 - [ ] btrfs -> cow-b-tree-engine
