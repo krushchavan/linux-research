@@ -84,6 +84,6 @@ Writing "+memory" to a group's children-controllers file first checks that the p
 ## Related
 
 - Technical version: [[cgroup-core]]
-- [[cgroups-explained|cgroups]], [[css-set-and-subsystem-state|Shared state bundles]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|cgroup BPF]]
+- [[cgroups-explained|cgroups]], [[css-set-and-subsystem-state-explained|Shared state bundles]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|cgroup BPF]]
 - [[io-controller|I/O controller]], [[pid-controller|PID controller]], [[cpuset-controller-explained|cpuset]], [[memcg-explained|Memory cgroups]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[rcu-read-copy-update|RCU]]

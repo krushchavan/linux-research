@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "2.6.24"
 researched: 2026-04-16
 status: complete
+explained: "[[css-set-and-subsystem-state-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://docs.kernel.org/admin-guide/cgroup-v1/cgroups.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # css_set and cgroup_subsys_state
+
+> 📘 Plain-language version: [[css-set-and-subsystem-state-explained]]
 
 ## Purpose
 

@@ -45,7 +45,7 @@ cgroup v2 enforces the **no-internal-process rule**: a group that hands controll
 ### Shared state bundles
 This is the key efficiency trick. Rather than giving every task its own pointer to each controller's state, all tasks that sit in exactly the same combination of groups **share one bundle** of pointers. Moving a task looks up a bundle for the new combination in a hash table, creating one only if none exists; reference counts free bundles when unused.
 
-Forking is then cheap: the child just takes a reference to its parent's bundle. Storing per-controller pointers in every task would bloat each task and make fork slower as more controllers are compiled in. Links in both directions let the core list every task in a group, and let controllers find every group a bundle touches. See [[css-set-and-subsystem-state|shared state bundles]].
+Forking is then cheap: the child just takes a reference to its parent's bundle. Storing per-controller pointers in every task would bloat each task and make fork slower as more controllers are compiled in. Links in both directions let the core list every task in a group, and let controllers find every group a bundle touches. See [[css-set-and-subsystem-state-explained|shared state bundles]].
 
 ### Memory
 Every page of memory is charged to the group that allocated it. Four tiers shape reclaim:
@@ -110,6 +110,6 @@ A process in a container limited to 50% of one CPU spins in a loop:
 ## Related
 
 - Technical version: [[cgroups]]
-- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state|State bundles]], [[io-controller|I/O]], [[pid-controller|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
+- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller|I/O]], [[pid-controller|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
 - [[memcg-explained|Memory cgroups]], [[memory-cgroup-explained|Memory cgroup concepts]], [[psi-pressure-stall-information-explained|Pressure stall information]], [[oom-killer-explained|OOM killer]]
 - [[scheduler|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]
