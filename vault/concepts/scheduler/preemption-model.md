@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6"
 researched: 2026-04-16
 status: complete
+explained: "[[preemption-model-explained]]"
 sources:
   - https://kernel-internals.org/sched/preemption/
   - https://lwn.net/Articles/944686/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Preemption Model
+
+> 📘 Plain-language version: [[preemption-model-explained]]
 
 ## Purpose
 

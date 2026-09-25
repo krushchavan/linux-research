@@ -27,7 +27,7 @@ Switches don't happen at arbitrary moments. When the scheduler wants the current
 - when pre-emption is re-enabled in kernel code (in the fully pre-emptible kernel)
 - at explicit "good place to reschedule" markers in long kernel loops (in the voluntary model)
 
-Which of these apply depends on the kernel's [[preemption-model|pre-emption model]]. In the non-pre-emptible model, only explicit calls and returns to user space count.
+Which of these apply depends on the kernel's [[preemption-model-explained|pre-emption model]]. In the non-pre-emptible model, only explicit calls and returns to user space count.
 
 ### Step 2: Lock and stamp the time
 The central scheduling function disables local interrupts, so nothing can change the run queue mid-switch, and takes the run queue's lock. It refreshes the queue's clock once, so all accounting during the switch uses the same timestamp.
@@ -85,5 +85,5 @@ This is the key step. Back in the new task, a clean-up routine marks the old tas
 ## Related
 
 - Technical version: [[context-switch]]
-- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[preemption-model|Preemption model]], [[scheduler-classes|Scheduling classes]]
+- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[preemption-model-explained|Preemption model]], [[scheduler-classes|Scheduling classes]]
 - [[interrupt-handling-explained|Interrupt handling]], [[locking-explained|Locking]]

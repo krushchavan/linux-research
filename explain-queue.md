@@ -213,7 +213,7 @@
 - [x] vault/concepts/scheduler/cpu-cgroups.md
 - [x] vault/concepts/scheduler/load-balancing.md
 - [x] vault/concepts/scheduler/pi-mutexes.md
-- [ ] vault/concepts/scheduler/preemption-model.md
+- [x] vault/concepts/scheduler/preemption-model.md
 - [ ] vault/concepts/scheduler/rt-scheduler.md
 - [ ] vault/concepts/scheduler/runqueue.md
 - [ ] vault/concepts/scheduler/sched-deadline.md
