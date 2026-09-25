@@ -70,7 +70,7 @@ Every device's outgoing path has a **queueing discipline** that decides the orde
 Classifiers can be eBPF programs (since 4.1), which have largely replaced complex qdisc hierarchies for software-defined networking. See [[traffic-control-qdisc|traffic control]].
 
 ### Network namespaces
-A **network namespace** gives a group of processes its own interfaces, routing tables, firewall and connection-tracking state, port space and network sysctls, as if it were a separate machine. Creating one calls every networking subsystem's registered per-namespace initialiser. Physical cards stay global; containers usually get one end of a **veth** pair (packets sent on one end appear on the other), or macvlan, ipvlan or SR-IOV virtual functions. Because socket lookup searches only the packet's own namespace, two containers can both listen on port 80. See [[network-namespaces|network namespaces]].
+A **network namespace** gives a group of processes its own interfaces, routing tables, firewall and connection-tracking state, port space and network sysctls, as if it were a separate machine. Creating one calls every networking subsystem's registered per-namespace initialiser. Physical cards stay global; containers usually get one end of a **veth** pair (packets sent on one end appear on the other), or macvlan, ipvlan or SR-IOV virtual functions. Because socket lookup searches only the packet's own namespace, two containers can both listen on port 80. See [[network-namespaces-explained|network namespaces]].
 
 ### XDP and AF_XDP
 **XDP** runs an eBPF program inside the driver, **before any skb is allocated**, on a lightweight descriptor of the raw bytes, at 10 to 50 million packets per second. Its verdict:
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

@@ -188,7 +188,7 @@
 - [x] vault/concepts/net/devmem-tcp.md
 - [x] vault/concepts/net/ip-routing.md
 - [x] vault/concepts/net/network-device-and-napi.md
-- [ ] vault/concepts/net/network-namespaces.md
+- [x] vault/concepts/net/network-namespaces.md
 - [ ] vault/concepts/net/page-pool.md
 - [ ] vault/concepts/net/sk-buff.md
 - [ ] vault/concepts/net/tcp-ip-stack.md

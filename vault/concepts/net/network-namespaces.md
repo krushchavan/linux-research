@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "2.6.24"
 researched: 2026-04-14
 status: complete
+explained: "[[network-namespaces-explained]]"
 sources:
   - https://lwn.net/Articles/580893/
   - https://lwn.net/Articles/219794/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Network Namespaces
+
+> 📘 Plain-language version: [[network-namespaces-explained]]
 
 ## Purpose
 
