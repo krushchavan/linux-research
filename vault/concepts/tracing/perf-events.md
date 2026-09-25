@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "2.6.31"
 researched: 2026-04-17
 status: complete
+explained: "[[perf-events-explained]]"
 sources:
   - https://kernel-internals.org/tracing/perf-events/
   - https://lwn.net/Articles/357481/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # perf Events
+
+> 📘 Plain-language version: [[perf-events-explained]]
 
 ## Purpose
 

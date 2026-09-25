@@ -80,5 +80,5 @@ Since 5.5, BPF's function entry and exit programs attach through ftrace's patchi
 ## Related
 
 - Technical version: [[ftrace]]
-- [[tracing-explained|Tracing subsystem]], [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[tracepoints-and-trace-event|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[perf-events|perf events]]
+- [[tracing-explained|Tracing subsystem]], [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[tracepoints-and-trace-event|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[perf-events-explained|perf events]]
 - [[bpf-explained|BPF]], [[scheduler-explained|Scheduler]], [[preemption-model-explained|Preemption model]]

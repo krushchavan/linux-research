@@ -71,5 +71,5 @@ kprobes can be defined as trace events through tracefs (so hits land in the ring
 ## Related
 
 - Technical version: [[kprobes-and-kretprobes]]
-- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event|Tracepoints]], [[uprobes-and-usdt|uprobes and USDT]], [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[perf-events|perf events]]
+- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event|Tracepoints]], [[uprobes-and-usdt|uprobes and USDT]], [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[perf-events-explained|perf events]]
 - [[bpf-explained|BPF]], [[bpf-program-types-explained|BPF program types]]

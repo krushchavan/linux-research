@@ -57,7 +57,7 @@ kprobes can attach to **almost any kernel instruction** at runtime. The kernel s
 uprobes bring the same breakpoint approach to **user-space programs**, without ptrace. A probe is registered on a (file, offset) pair; mapped pages containing it get a copy-on-write patched version, so one registration covers every process running that binary. **USDT** markers are no-ops that developers compile into programs with metadata describing each probe; tools find them, and enabling one is purely a kernel-side patch, costing nothing when inactive. See [[uprobes-and-usdt|uprobes and USDT]].
 
 ### perf events
-perf events **sample** the system and read **hardware counters**. One system call creates an event: a hardware counter, software counter, tracepoint or probe, with a sample rate and a choice of what to capture. For hardware events, the CPU's performance unit is programmed to interrupt (via NMI) after N events; the handler records the instruction pointer and optionally a call stack into a ring buffer shared with user space. With more events than hardware counters (e.g. 4 general plus 3 fixed on Skylake), the kernel time-slices them and scales the results. Stacks can be unwound with frame pointers (fast, unreliable without them), DWARF data (accurate, but copies up to 64 KB of stack per sample), or Intel's last-branch record hardware. See [[perf-events|perf events]].
+perf events **sample** the system and read **hardware counters**. One system call creates an event: a hardware counter, software counter, tracepoint or probe, with a sample rate and a choice of what to capture. For hardware events, the CPU's performance unit is programmed to interrupt (via NMI) after N events; the handler records the instruction pointer and optionally a call stack into a ring buffer shared with user space. With more events than hardware counters (e.g. 4 general plus 3 fixed on Skylake), the kernel time-slices them and scales the results. Stacks can be unwound with frame pointers (fast, unreliable without them), DWARF data (accurate, but copies up to 64 KB of stack per sample), or Intel's last-branch record hardware. See [[perf-events-explained|perf events]].
 
 ## A request's journey
 
@@ -87,5 +87,5 @@ perf events **sample** the system and read **hardware counters**. One system cal
 ## Related
 
 - Technical version: [[tracing]]
-- [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[uprobes-and-usdt|uprobes and USDT]], [[perf-events|perf events]]
+- [[tracefs-and-ring-buffer|tracefs and ring buffer]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[uprobes-and-usdt|uprobes and USDT]], [[perf-events-explained|perf events]]
 - [[bpf-explained|BPF]], [[bpf-program-types-explained|BPF program types]], [[scheduler-explained|Scheduler]], [[mm-explained|Memory management]], [[interrupt-handling-explained|Interrupt handling]]
