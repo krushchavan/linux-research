@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.0"
 researched: 2026-04-05
 status: complete
+explained: "[[xdr-encoding-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/net/sunrpc/xdr.c
   - https://github.com/torvalds/linux/blob/master/include/linux/sunrpc/xdr.h
@@ -14,6 +15,8 @@ sources:
 ---
 
 # XDR Encoding (eXternal Data Representation)
+
+> 📘 Plain-language version: [[xdr-encoding-explained]]
 
 ## Purpose
 

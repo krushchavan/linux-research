@@ -44,7 +44,7 @@ This is the key rule. On `close`, all dirty data is committed to the server's st
 NFSv4 is stateful. An OPEN returns an **open state ID** that must accompany later reads, writes and locks for that file. With a **read delegation**, the client can cache aggressively without checking the server; with a **write delegation**, it has exclusive write access and can buffer writes until close. When another client wants the file, the server sends a recall, and the client flushes and hands the delegation back. See [[delegations-and-locking-explained|delegations and locking]].
 
 ### Step 6: Getting calls onto the wire
-Every operation becomes an RPC: build a task with the right encoders and arguments, hand it to the connection (which handles reconnection, retransmission and back-off), decode the reply into kernel structures, and wake the waiting process. See [[sunrpc-explained|SUNRPC]] and [[xdr-encoding|XDR]].
+Every operation becomes an RPC: build a task with the right encoders and arguments, hand it to the connection (which handles reconnection, retransmission and back-off), decode the reply into kernel structures, and wake the waiting process. See [[sunrpc-explained|SUNRPC]] and [[xdr-encoding-explained|XDR]].
 
 ### Step 7: Recovering after a server reboot
 If NFSv4 calls start failing with "stale client ID" or "expired", the client knows the server has lost its state. A background state manager then rebuilds it: re-registering, re-opening files and reclaiming locks, with back-off, and finally telling the server it has finished reclaiming.
@@ -80,6 +80,6 @@ If NFSv4 calls start failing with "stale client ID" or "expired", the client kno
 ## Related
 
 - Technical version: [[nfs-client]]
-- [[nfs-explained|NFS subsystem]], [[nfs-server-explained|NFS server]], [[sunrpc-explained|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]]
+- [[nfs-explained|NFS subsystem]], [[nfs-server-explained|NFS server]], [[sunrpc-explained|SUNRPC]], [[xdr-encoding-explained|XDR]], [[nfsv4.1-sessions-explained|Sessions]]
 - [[delegations-and-locking-explained|Delegations and locking]], [[nfs-fscache-explained|NFS local caching]]
 - [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[fs-explained|Filesystem subsystem (VFS)]]

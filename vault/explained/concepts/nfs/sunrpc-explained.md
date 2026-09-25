@@ -83,5 +83,5 @@ The NFS server often needs answers only user space can give: which client name a
 ## Related
 
 - Technical version: [[sunrpc]]
-- [[nfs-explained|NFS subsystem]], [[xdr-encoding|XDR]], [[rpcsec-gss-and-kerberos-explained|RPCSEC_GSS and Kerberos]], [[nfsv4.1-sessions-explained|Sessions]]
+- [[nfs-explained|NFS subsystem]], [[xdr-encoding-explained|XDR]], [[rpcsec-gss-and-kerberos-explained|RPCSEC_GSS and Kerberos]], [[nfsv4.1-sessions-explained|Sessions]]
 - [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]]
