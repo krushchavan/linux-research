@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29"
 researched: 2026-04-05
 status: complete
+explained: "[[raid-and-multi-device-support-explained]]"
 sources:
   - https://lwn.net/Articles/577961/
   - https://lwn.net/Articles/536038/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Btrfs RAID and Multi-Device Support
+
+> 📘 Plain-language version: [[raid-and-multi-device-support-explained]]
 
 ## Purpose
 

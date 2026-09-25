@@ -93,7 +93,7 @@ Because the extent tree knows who references each block, the quota system can re
 **Send/receive** compares two read-only snapshots by walking both trees side by side and emits a stream of changes. Replaying that stream elsewhere gives efficient incremental backups.
 
 ### RAID and multiple devices
-See [[raid-and-multi-device-support]].
+See [[raid-and-multi-device-support-explained|raid-and-multi-device-support]].
 
 Btrfs does RAID itself, at the level of large allocation chunks, with separate choices for data and metadata:
 - **single** (one copy), **DUP** (two copies on the same device), **RAID0** (striped, no redundancy)
@@ -149,6 +149,6 @@ Writing 64 KiB to a file:
 - Technical version: [[btrfs]]
 - [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees-explained|the trees]]
 - [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol|send/receive]], [[qgroups-explained|quota groups]]
-- [[raid-and-multi-device-support|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
+- [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups|Space accounting]], [[core-in-memory-structures|in-memory structures]]
 - [[fs|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

@@ -98,7 +98,7 @@
 - [ ] vault/concepts/btrfs/cow-b-tree-engine.md
 - [x] vault/concepts/btrfs/multiple-b-trees.md
 - [x] vault/concepts/btrfs/qgroups.md
-- [ ] vault/concepts/btrfs/raid-and-multi-device-support.md
+- [x] vault/concepts/btrfs/raid-and-multi-device-support.md
 - [ ] vault/concepts/btrfs/send-receive-protocol.md
 - [ ] vault/concepts/btrfs/space-accounting-and-block-groups.md
 - [ ] vault/concepts/btrfs/subvolumes-and-snapshots.md

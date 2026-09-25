@@ -94,7 +94,7 @@ Each node has a read/write lock. Writers lock from the root down and can release
 - [[btrfs-explained|Btrfs]]: the subsystem overview
 - [[transaction-model]]: how tree changes are committed together
 - [[subvolumes-and-snapshots]]: separate filesystem trees sharing nodes
-- [[raid-and-multi-device-support]]: what the chunk tree maps to
+- [[raid-and-multi-device-support-explained|raid-and-multi-device-support]]: what the chunk tree maps to
 - [[checksumming-and-data-integrity-explained|Checksumming and data integrity]]
 - [[balance-and-device-management-explained|Balance and device management]]
 - [[persistent-data-library-explained|Device mapper's persistent-data library]]: the same copy-on-write B-tree idea in the block layer
