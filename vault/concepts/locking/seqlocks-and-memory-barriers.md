@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.12"
 researched: 2026-04-11
 status: complete
+explained: "[[seqlocks-and-memory-barriers-explained]]"
 sources:
   - https://kernel-internals.org/locking/seqlock/
   - https://www.kernel.org/doc/html/latest/locking/seqlock.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Seqlocks and Memory Barriers
+
+> 📘 Plain-language version: [[seqlocks-and-memory-barriers-explained]]
 
 ## Purpose
 

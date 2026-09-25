@@ -112,5 +112,5 @@ When the last reference to the ring's file descriptor goes away (close or proces
 - [[io_uring-explained|io_uring]]: the subsystem overview
 - [[io-uring-async-poll-and-multishot-explained|Async poll and multishot]]
 - [[io-wq-explained|io-wq]], [[sqpoll-explained|sqpoll]], [[io-uring-task-work-explained|io-uring-task-work]], [[registered-resources-explained|registered-resources]], [[provided-buffer-rings-explained|provided-buffer-rings]]
-- [[seqlocks-and-memory-barriers|Memory barriers]]: the acquire/release ordering the rings rely on
+- [[seqlocks-and-memory-barriers-explained|Memory barriers]]: the acquire/release ordering the rings rely on
 - [[vfs-explained|VFS]], [[block-explained|Block layer]], [[security|Security]]
