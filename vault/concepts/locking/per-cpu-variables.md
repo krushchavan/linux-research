@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.x (static DEFINE_PER_CPU); unified chunk allocator v2.6.30+"
 researched: 2026-04-13
 status: complete
+explained: "[[per-cpu-variables-explained]]"
 sources:
   - https://lwn.net/Articles/22911/
   - https://lwn.net/Articles/258238/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Per-CPU Variables
+
+> 📘 Plain-language version: [[per-cpu-variables-explained]]
 
 ## Purpose
 
