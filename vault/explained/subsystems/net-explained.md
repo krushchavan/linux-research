@@ -46,7 +46,7 @@ Receiving uses **NAPI** to avoid an interrupt per packet:
 2. in soft-interrupt context, the driver's poll function is called with a **budget** (64 packets by default); it builds skbs from the receive ring and passes them up, with **GRO** merging segments of the same TCP flow into bigger skbs to save per-packet work
 3. if it used the whole budget, polling continues; if the ring empties first, interrupts are switched back on
 
-This is the key trade in receive: interrupts when quiet (good latency), batched polling when busy (good throughput). Since 5.11, **threaded NAPI** can run polling in a per-interface kernel thread instead, which the scheduler can see, prioritise and pin to CPUs. See [[network-device-and-napi|devices and NAPI]].
+This is the key trade in receive: interrupts when quiet (good latency), batched polling when busy (good throughput). Since 5.11, **threaded NAPI** can run polling in a per-interface kernel thread instead, which the scheduler can see, prioritise and pin to CPUs. See [[network-device-and-napi-explained|devices and NAPI]].
 
 ### Routing
 On arrival, IP checks the header, runs the firewall's prerouting hook, then looks the destination up in the **FIB** (forwarding table). IPv4's FIB is an **LC-trie**, a compressed prefix tree that finds the longest matching prefix quickly. The result becomes a cached route holding the output device, the next hop, and a function pointer: local delivery, or forwarding. Forwarding decrements the TTL (dropping at zero), runs the forward hook, fragments if the packet is bigger than the outgoing MTU, and queues it for transmission.
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff|skb]], [[network-device-and-napi|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "2.4.20"
 researched: 2026-04-14
 status: complete
+explained: "[[network-device-and-napi-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/napi.html
   - https://www.kernel.org/doc/html/latest/networking/scaling.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Network Device & NAPI
+
+> 📘 Plain-language version: [[network-device-and-napi-explained]]
 
 ## Purpose
 
