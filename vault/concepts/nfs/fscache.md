@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.30"
 researched: 2026-04-12
 status: complete
+explained: "[[nfs-fscache-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/caching/fscache.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/netfs-api.html
@@ -19,6 +20,8 @@ sources:
 ---
 
 # NFS fscache Integration
+
+> 📘 Plain-language version: [[nfs-fscache-explained]]
 
 ## Purpose
 
