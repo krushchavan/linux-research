@@ -113,5 +113,5 @@ The old disk stays live until the new one is fully populated, so redundancy neve
 - [[btrfs-explained|Btrfs overview]]
 - [[space-accounting-and-block-groups-explained|Space accounting and block groups]]: what balance reclaims
 - [[raid-and-multi-device-support-explained|RAID and multiple devices]]: the layouts balance converts between
-- [[transaction-model|Transactions]]: why a crash mid-balance is safe
+- [[transaction-model-explained|Transactions]]: why a crash mid-balance is safe
 - [[checksumming-and-data-integrity-explained|Checksums]]: verified during replace

@@ -59,7 +59,7 @@ To modify a node:
 This gives atomic, crash-consistent updates without a journal.
 
 ### Transactions
-See [[transaction-model]].
+See [[transaction-model-explained|transaction-model]].
 
 Changes are grouped into transactions, each with an increasing *generation* number.
 1. Many writers can join the same open transaction.
@@ -147,7 +147,7 @@ Writing 64 KiB to a file:
 ## Related
 
 - Technical version: [[btrfs]]
-- [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees-explained|the trees]]
+- [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model-explained|transactions]], [[multiple-b-trees-explained|the trees]]
 - [[subvolumes-and-snapshots-explained|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures|in-memory structures]]

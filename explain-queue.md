@@ -102,7 +102,7 @@
 - [x] vault/concepts/btrfs/send-receive-protocol.md
 - [x] vault/concepts/btrfs/space-accounting-and-block-groups.md
 - [x] vault/concepts/btrfs/subvolumes-and-snapshots.md
-- [ ] vault/concepts/btrfs/transaction-model.md
+- [x] vault/concepts/btrfs/transaction-model.md
 - [ ] vault/subsystems/fs.md
 - [ ] vault/concepts/fs/core-in-memory-structures.md
 - [ ] vault/concepts/fs/dentry-cache.md

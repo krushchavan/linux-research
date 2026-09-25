@@ -100,4 +100,4 @@ Zoned devices must be written sequentially within each zone, which clashes with 
 - [[checksumming-and-data-integrity-explained|Checksumming and data integrity]]: how the good copy is identified
 - [[balance-and-device-management-explained|Balance and device management]]
 - [[multiple-b-trees-explained|Btrfs B-trees]]: the chunk tree among the others
-- [[transaction-model]], [[block-explained|Block layer]]
+- [[transaction-model-explained|transaction-model]], [[block-explained|Block layer]]

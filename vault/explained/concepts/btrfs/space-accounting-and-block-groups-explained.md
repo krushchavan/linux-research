@@ -112,7 +112,7 @@ Btrfs allocates the first free range that fits. When big extents are freed and s
 
 - Technical version: [[space-accounting-and-block-groups]]
 - [[btrfs-explained|Btrfs]]: the subsystem overview
-- [[transaction-model]]: commits release pinned space
+- [[transaction-model-explained|transaction-model]]: commits release pinned space
 - [[multiple-b-trees-explained|Btrfs B-trees]]: the extent tree and free space tree
 - [[raid-and-multi-device-support-explained|RAID and multi-device support]]: how chunks map to devices
 - [[balance-and-device-management-explained|Balance]], [[qgroups-explained|Qgroups]], [[subvolumes-and-snapshots-explained|subvolumes-and-snapshots]]

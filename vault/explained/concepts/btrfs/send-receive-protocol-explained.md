@@ -92,4 +92,4 @@ The user-space receiver reads each command, checks its CRC, and runs the matchin
 - [[subvolumes-and-snapshots-explained|subvolumes-and-snapshots]]: the read-only snapshots being compared
 - [[multiple-b-trees-explained|Btrfs B-trees]]: the trees being walked and the back-references used for clones
 - [[checksumming-and-data-integrity-explained|Checksumming]]: encoded writes carry pre-checksummed compressed extents
-- [[transaction-model]]
+- [[transaction-model-explained|transaction-model]]
