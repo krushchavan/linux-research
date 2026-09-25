@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.2"
 researched: 2026-04-05
 status: complete
+explained: "[[nfs-server-explained]]"
 sources:
   - https://docs.kernel.org/filesystems/nfs/exporting.html
   - https://man7.org/linux/man-pages/man7/nfsd.7.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # NFS Server (knfsd/nfsd)
+
+> 📘 Plain-language version: [[nfs-server-explained]]
 
 ## Purpose
 

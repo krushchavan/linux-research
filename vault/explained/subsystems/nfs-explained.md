@@ -77,7 +77,7 @@ When client and server run in the **same kernel** (for example, containers on on
 ### The server
 `nfsd` runs as a pool of kernel threads. Each takes an incoming call, dispatches it to the right version's handler, and performs it with ordinary VFS operations on the exported path. An export table says which clients may access what, with which options. Files are identified by **file handles**, opaque strings encoding the filesystem and inode, which each exportable filesystem knows how to produce and decode.
 
-NFSv4 servers keep **state**: who has which files open, byte-range locks and delegations. After a restart, the server gives clients a **grace period** (90 seconds by default) to reclaim their state. See [[nfs-server|NFS server]].
+NFSv4 servers keep **state**: who has which files open, byte-range locks and delegations. After a restart, the server gives clients a **grace period** (90 seconds by default) to reclaim their state. See [[nfs-server-explained|NFS server]].
 
 ## A request's journey
 
@@ -110,5 +110,5 @@ If the server reboots, the client notices (a sequence break or a stale-client er
 ## Related
 
 - Technical version: [[nfs]]
-- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]], [[nfs-client-explained|Client]], [[nfs-server|Server]], [[pnfs|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
+- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]], [[nfs-client-explained|Client]], [[nfs-server-explained|Server]], [[pnfs|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[btrfs-explained|btrfs]]

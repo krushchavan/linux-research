@@ -148,7 +148,7 @@
 - [x] vault/concepts/nfs/fscache.md
 - [x] vault/concepts/nfs/nfs-client.md
 - [x] vault/concepts/nfs/nfs-localio.md
-- [ ] vault/concepts/nfs/nfs-server.md
+- [x] vault/concepts/nfs/nfs-server.md
 - [ ] vault/concepts/nfs/nfsv4.1-sessions.md
 - [ ] vault/concepts/nfs/pnfs.md
 - [ ] vault/concepts/nfs/rpcsec-gss-and-kerberos.md
