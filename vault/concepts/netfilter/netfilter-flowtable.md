@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "4.16"
 researched: 2026-04-13
 status: complete
+explained: "[[netfilter-flowtable-explained]]"
 sources:
   - https://docs.kernel.org/networking/nf_flowtable.html
   - https://kernel-internals.org/net/netfilter/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Netfilter Flowtable
+
+> 📘 Plain-language version: [[netfilter-flowtable-explained]]
 
 ## Purpose
 
