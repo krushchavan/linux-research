@@ -225,7 +225,7 @@
 - [x] vault/concepts/security/ima.md
 - [x] vault/concepts/security/kernel-hardening.md
 - [x] vault/concepts/security/kernel-keyring.md
-- [ ] vault/concepts/security/landlock.md
+- [x] vault/concepts/security/landlock.md
 - [ ] vault/concepts/security/linux-audit.md
 - [ ] vault/concepts/security/lsm-framework.md
 - [ ] vault/concepts/security/process-model.md

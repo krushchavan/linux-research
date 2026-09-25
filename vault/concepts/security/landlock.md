@@ -6,12 +6,15 @@ subsystem: security
 kernel_version: "5.13"
 researched: 2026-04-15
 status: complete
+explained: "[[landlock-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/landlock.html
   - https://lwn.net/Articles/698226/
 ---
 
 # Landlock
+
+> 📘 Plain-language version: [[landlock-explained]]
 
 ## Overview
 

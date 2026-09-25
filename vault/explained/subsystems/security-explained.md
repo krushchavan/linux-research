@@ -67,7 +67,7 @@ SELinux, developed by the NSA and merged in 2.6.0, is **mandatory access control
 AppArmor does mandatory access control by **path**, with readable per-program profiles ("this browser may read the home directory, write to /tmp, use TCP"). A profile attaches when a matching program is executed, and a task can also switch profiles explicitly. It's the default on Ubuntu and Debian-based systems. It can't yet fully stack with SELinux, since both still need exclusive use of some object types. See [[apparmor-explained|AppArmor]].
 
 ### Landlock
-Landlock lets **unprivileged** processes sandbox themselves. A process builds a ruleset (which file trees and, later, network ports it may use), then applies it to itself. Rulesets are immutable and stack: children inherit them and can only add restrictions. Unlike seccomp, Landlock restricts *objects*, not system calls: a read of an allowed file works, a read of a forbidden one fails. That suits programs that use many system calls but should touch only a few files. See [[landlock|Landlock]].
+Landlock lets **unprivileged** processes sandbox themselves. A process builds a ruleset (which file trees and, later, network ports it may use), then applies it to itself. Rulesets are immutable and stack: children inherit them and can only add restrictions. Unlike seccomp, Landlock restricts *objects*, not system calls: a read of an allowed file works, a read of a forbidden one fails. That suits programs that use many system calls but should touch only a few files. See [[landlock-explained|Landlock]].
 
 ### Credentials
 Everything about a task's identity (user and group IDs, capability sets, security labels, keyrings, user namespace) lives in one **immutable, reference-counted credentials record**. To change it, the kernel copies the record, edits the copy, lets the security modules check it, then swaps it in atomically, freeing the old one after an RCU grace period. Readers always see a consistent snapshot without locking. Open files remember the **opener's** credentials, so a file opened with privilege and handed to less-privileged code is still judged by who opened it. See [[credentials-explained|credentials]].
@@ -118,6 +118,6 @@ A denial runs the other way: a web server whose SELinux type isn't allowed to re
 ## Related
 
 - Technical version: [[security]]
-- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit|Audit]]
+- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit|Audit]]
 - [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model|Process model]], [[netlabel-explained|NetLabel]]
 - [[vfs-explained|VFS]], [[net-explained|Networking]], [[bpf-explained|BPF]], [[io_uring-explained|io_uring]], [[rcu-read-copy-update-explained|RCU]]
