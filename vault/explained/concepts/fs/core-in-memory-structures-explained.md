@@ -92,5 +92,5 @@ The source note doesn't give a separate history for these objects; see the [[fs-
 
 - Technical version: [[core-in-memory-structures]]
 - [[fs-explained|Filesystem subsystem (VFS)]]: the overview
-- [[superblock]], [[inode]], [[dentry]], [[dentry-cache]], [[inode-cache]], [[file-object]], [[mount-namespace]]
+- [[superblock]], [[inode]], [[dentry]], [[dentry-cache-explained|dentry-cache]], [[inode-cache]], [[file-object]], [[mount-namespace]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[path-lookup]]
