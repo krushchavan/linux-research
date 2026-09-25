@@ -239,7 +239,7 @@
 - [x] net -> af-xdp
 
 # --- Unresolved links from bio-layer 2026-09-25 ---
-- [ ] fs -> iomap
+- [x] fs -> iomap
 
 # --- Unresolved links from io-scheduler 2026-09-25 ---
 - [ ] block -> zoned-block-devices
