@@ -69,7 +69,7 @@ Both need the underlying filesystem to support NFS-style file handles. See [[red
 By default, inode numbers aren't stable across remounts and can collide between layers, which confuses tools that identify files by (device, inode). **xino** gives each underlying filesystem a small ID and packs it into the unused high bits of the inode number, making numbers unique and persistent. If a filesystem uses very large inode numbers, xino falls back and warns. When all layers share one filesystem, no encoding is needed. See [[inode-numbering-xino-explained|inode numbering]].
 
 ### Metacopy
-A container starting up may `chown` thousands of files. A full copy-up for each would copy gigabytes and break sharing of cached file data between containers. With **metacopy**, a metadata change copies up only the metadata, leaving a marked shell file in the upper layer, while reads keep coming from the lower file, so containers still share its cached pages. Data is copied only when the file is first opened for writing. Optionally, a fs-verity digest of the lower data is stored and checked on access (a mismatch gives an I/O error), so tampered lower layers are caught. See [[metacopy|metacopy]].
+A container starting up may `chown` thousands of files. A full copy-up for each would copy gigabytes and break sharing of cached file data between containers. With **metacopy**, a metadata change copies up only the metadata, leaving a marked shell file in the upper layer, while reads keep coming from the lower file, so containers still share its cached pages. Data is copied only when the file is first opened for writing. Optionally, a fs-verity digest of the lower data is stored and checked on access (a mismatch gives an I/O error), so tampered lower layers are caught. See [[metacopy-explained|metacopy]].
 
 ## A request's journey
 
@@ -101,6 +101,6 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 ## Related
 
 - Technical version: [[overlayfs]]
-- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy|Metacopy]]
+- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]

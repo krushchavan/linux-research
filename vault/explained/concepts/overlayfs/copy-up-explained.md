@@ -50,7 +50,7 @@ The overlay inode now points at the upper file, and a version counter is bumped 
 After copying the data, OverlayFS syncs the upper file before the rename, so a crash right afterwards doesn't lose it. A strict mode extends this to directories and metadata-only copies; a volatile mode skips syncing entirely for speed.
 
 ### Step 7: The metadata-only shortcut
-With **metacopy** enabled, changes to metadata alone (permissions, owner, times) copy only the metadata, marked as a shell. Reads still come from the lower file, so containers keep sharing its cached pages, and the data is copied only when the file is first opened for writing. It's opt-in because, until that first write, the file's inode number differs from its data inode's, which can surprise tools such as rsync and backup software. See [[metacopy|metacopy]].
+With **metacopy** enabled, changes to metadata alone (permissions, owner, times) copy only the metadata, marked as a shell. Reads still come from the lower file, so containers keep sharing its cached pages, and the data is copied only when the file is first opened for writing. It's opt-in because, until that first write, the file's inode number differs from its data inode's, which can surprise tools such as rsync and backup software. See [[metacopy-explained|metacopy]].
 
 ## The picture
 
@@ -82,5 +82,5 @@ With **metacopy** enabled, changes to metadata alone (permissions, owner, times)
 ## Related
 
 - Technical version: [[copy-up]]
-- [[overlayfs-explained|OverlayFS]], [[layer-stack-explained|Layer stack]], [[metacopy|Metacopy]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]]
+- [[overlayfs-explained|OverlayFS]], [[layer-stack-explained|Layer stack]], [[metacopy-explained|Metacopy]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[extended-attributes-and-acls-explained|Extended attributes]], [[fscrypt-explained|fscrypt]]

@@ -6,6 +6,7 @@ subsystem: overlayfs
 kernel_version: "5.2"
 researched: 2026-04-15
 status: complete
+explained: "[[metacopy-explained]]"
 sources:
   - https://kernel-internals.org/filesystems/overlayfs/
   - https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # OverlayFS Metacopy
+
+> 📘 Plain-language version: [[metacopy-explained]]
 
 ## Purpose
 

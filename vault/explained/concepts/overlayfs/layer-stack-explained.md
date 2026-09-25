@@ -71,5 +71,5 @@ Newer kernels allow lower layers, marked with a double colon, that hold only fil
 ## Related
 
 - Technical version: [[layer-stack]]
-- [[overlayfs-explained|OverlayFS]], [[copy-up-explained|Copy-up]], [[directory-merging-explained|Directory merging]], [[inode-numbering-xino-explained|xino]], [[metacopy|Metacopy]]
+- [[overlayfs-explained|OverlayFS]], [[copy-up-explained|Copy-up]], [[directory-merging-explained|Directory merging]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
 - [[filesystem-registration-explained|Filesystem registration and mounting]], [[mount-namespace-explained|Mount namespaces]]
