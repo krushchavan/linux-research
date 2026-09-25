@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "6.0"
 researched: 2026-09-24
 status: complete
+explained: "[[io-uring-zero-copy-networking-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/iou-zcrx.html
   - https://kernel-internals.org/io-uring/networking/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # io_uring Zero-Copy Networking
+
+> 📘 Plain-language version: [[io-uring-zero-copy-networking-explained]]
 
 ## Purpose
 
