@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: 5.13
 researched: 2026-04-17
 status: complete
+explained: "[[network-filesystems-overview-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/fscache.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Network Filesystems Overview
+
+> 📘 Plain-language version: [[network-filesystems-overview-explained]]
 
 ## Purpose
 
