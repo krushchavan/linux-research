@@ -71,5 +71,5 @@ Other options zero stack frames and new allocations so stale data can't leak, an
 ## Related
 
 - Technical version: [[kernel-hardening]]
-- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf|seccomp]], [[capabilities-explained|Capabilities]]
+- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf-explained|seccomp]], [[capabilities-explained|Capabilities]]
 - [[bpf-explained|BPF]], [[bpf-jit-compiler-explained|BPF JIT compiler]]

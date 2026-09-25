@@ -229,7 +229,7 @@
 - [x] vault/concepts/security/linux-audit.md
 - [x] vault/concepts/security/lsm-framework.md
 - [x] vault/concepts/security/process-model.md
-- [ ] vault/concepts/security/seccomp-bpf.md
+- [x] vault/concepts/security/seccomp-bpf.md
 - [ ] vault/concepts/security/securityfs.md
 - [ ] vault/concepts/security/selinux.md
 - [ ] vault/concepts/security/smack-access-engine.md

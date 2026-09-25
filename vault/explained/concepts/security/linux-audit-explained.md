@@ -66,4 +66,4 @@ Records travel to the audit daemon over netlink. The daemon checks that sequence
 ## Related
 
 - Technical version: [[linux-audit]]
-- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[credentials-explained|Credentials]], [[seccomp-bpf|seccomp]]
+- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[credentials-explained|Credentials]], [[seccomp-bpf-explained|seccomp]]

@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "3.5"
 researched: 2026-04-15
 status: complete
+explained: "[[seccomp-bpf-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/userspace-api/seccomp_filter.html
   - https://lwn.net/Articles/443099/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # seccomp BPF
+
+> 📘 Plain-language version: [[seccomp-bpf-explained]]
 
 ## Overview
 
