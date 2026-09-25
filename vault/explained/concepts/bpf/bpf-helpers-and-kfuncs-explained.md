@@ -95,7 +95,7 @@ A kfunc that proves stable and widely useful can be promoted to a helper. It gai
 
 - Technical version: [[bpf-helpers-and-kfuncs]]
 - [[bpf-explained|BPF overview]]
-- [[bpf-verifier|The verifier]]: does all the checking described here
+- [[bpf-verifier-explained|The verifier]]: does all the checking described here
 - [[bpf-maps-explained|Maps]]: what most helpers operate on
 - [[btf-and-co-re|BTF and CO-RE]]: the type information kfuncs depend on
 - [[bpf-program-types-explained|Program types]]: decide which menu a program gets

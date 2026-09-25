@@ -85,5 +85,5 @@ Since 5.20 there's also a user ring buffer where the roles flip: one userspace p
 - Technical version: [[bpf-ring-buffer]]
 - [[bpf-explained|BPF overview]]
 - [[bpf-maps-explained|BPF maps]]: the ring buffer is one kind of map
-- [[bpf-verifier|The verifier]]: enforces commit-or-discard on every path
+- [[bpf-verifier-explained|The verifier]]: enforces commit-or-discard on every path
 - [[tracing|Tracing]]: the main producer of ring-buffer events

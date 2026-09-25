@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "3.18"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-verifier-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/bpf/verifier.html
   - https://lwn.net/Articles/982077/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # BPF Verifier
+
+> 📘 Plain-language version: [[bpf-verifier-explained]]
 
 ## Purpose
 

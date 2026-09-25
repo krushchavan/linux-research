@@ -35,7 +35,7 @@
 - [x] vault/concepts/bpf/bpf-maps.md
 - [x] vault/concepts/bpf/bpf-program-types.md
 - [x] vault/concepts/bpf/bpf-ring-buffer.md
-- [ ] vault/concepts/bpf/bpf-verifier.md
+- [x] vault/concepts/bpf/bpf-verifier.md
 - [ ] vault/concepts/bpf/btf-and-co-re.md
 - [ ] vault/concepts/bpf/libbpf-and-toolchain.md
 - [ ] vault/subsystems/btrfs.md

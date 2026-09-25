@@ -45,7 +45,7 @@ Think of BPF as a kernel extension bus. You write a small program in a restricte
 ## The pieces
 
 ### The verifier: the safety gatekeeper
-See [[bpf-verifier]].
+See [[bpf-verifier-explained|bpf-verifier]].
 
 Without the verifier, arbitrary code running in the kernel could read past the end of a buffer, follow a stale pointer, or spin forever. The verifier proves, before a single instruction runs, that none of this can happen.
 
@@ -161,7 +161,7 @@ Dropping attack traffic at the network card with XDP:
 ## Related
 
 - Technical version: [[bpf]]
-- [[bpf-verifier|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
+- [[bpf-verifier-explained|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]
