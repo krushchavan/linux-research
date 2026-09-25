@@ -164,4 +164,4 @@ Dropping attack traffic at the network card with XDP:
 - [[bpf-verifier-explained|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re-explained|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain-explained|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
-- [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]
+- [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups-explained|cgroups]], [[tracing|tracing]]

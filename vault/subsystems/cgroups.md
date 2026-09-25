@@ -7,6 +7,7 @@ mailing_list: cgroups@vger.kernel.org
 source_path: kernel/cgroup/
 researched: 2026-04-16
 status: complete
+explained: "[[cgroups-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://lwn.net/Articles/679786/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Control Groups (cgroups) Subsystem
+
+> 📘 Plain-language version: [[cgroups-explained]]
 
 ## Overview
 

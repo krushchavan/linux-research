@@ -106,4 +106,4 @@ This is the most striking use of program types. Since 6.12, BPF can replace the 
 - [[bpf-explained|BPF overview]]
 - [[bpf-verifier-explained|The verifier]]: enforces each type's contract
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: the per-type function menus
-- [[xdp|XDP]], [[net|networking]], [[security|security]], [[scheduler|scheduler]], [[cgroups|cgroups]]
+- [[xdp|XDP]], [[net|networking]], [[security|security]], [[scheduler|scheduler]], [[cgroups-explained|cgroups]]
