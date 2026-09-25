@@ -6,6 +6,7 @@ subsystem: block
 kernel_version: "4.11"
 researched: 2026-09-25
 status: complete
+explained: "[[io-scheduler-explained]]"
 sources:
   - https://kernel-internals.org/block/io-schedulers/
   - https://www.kernel.org/doc/html/latest/block/bfq-iosched.html
@@ -24,6 +25,8 @@ sources:
 ---
 
 # I/O Schedulers (the blk-mq Elevator: mq-deadline, BFQ, Kyber, none)
+
+> 📘 Plain-language version: [[io-scheduler-explained]]
 
 ## Purpose
 

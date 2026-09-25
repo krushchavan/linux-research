@@ -75,4 +75,4 @@ When a page is dirtied, it's tagged with the group responsible. When writeback l
 
 - Technical version: [[io-controller]]
 - [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[memcg-explained|Memory cgroups]]
-- [[block-explained|Block layer]], [[io-scheduler|I/O schedulers]], [[writeback-infrastructure-explained|Writeback]]
+- [[block-explained|Block layer]], [[io-scheduler-explained|I/O schedulers]], [[writeback-infrastructure-explained|Writeback]]

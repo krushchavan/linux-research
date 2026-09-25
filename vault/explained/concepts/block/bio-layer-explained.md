@@ -84,5 +84,5 @@ A chained parent counts its outstanding pieces; each piece's completion decremen
 ## Related
 
 - Technical version: [[bio-layer]]
-- [[blk-mq-explained|blk-mq]], [[io-scheduler|I/O scheduler]], [[io-controller-explained|I/O controller]], [[block-explained|Block layer]], [[device-mapper-explained|Device mapper]], [[dm-integrity-explained|dm-integrity]]
+- [[blk-mq-explained|blk-mq]], [[io-scheduler-explained|I/O scheduler]], [[io-controller-explained|I/O controller]], [[block-explained|Block layer]], [[device-mapper-explained|Device mapper]], [[dm-integrity-explained|dm-integrity]]
 - [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[swap-explained|Swap]], [[folio-explained|Folio]], [[get-user-pages-and-pinning-explained|Page pinning]], [[io-uring-internals-explained|io_uring internals]]

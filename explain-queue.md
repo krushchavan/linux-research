@@ -248,4 +248,4 @@
 - [x] vault/concepts/tracing/uprobes-and-usdt.md
 - [x] vault/subsystems/smack.md
 - [x] vault/concepts/block/bio-layer.md
-- [ ] vault/concepts/block/io-scheduler.md
+- [x] vault/concepts/block/io-scheduler.md
