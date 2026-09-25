@@ -109,6 +109,6 @@ FUSE never keeps unused inodes on the reuse list; when one is dropped it's evict
 ## Related
 
 - Technical version: [[fuse-vfs-integration]]
-- [[fuse-explained|FUSE subsystem]], [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]]
+- [[fuse-explained|FUSE subsystem]], [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol-explained|Wire protocol]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[dentry-cache-explained|Dentry cache]], [[inode-cache-explained|Inode cache]]
 - [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[filesystem-registration-explained|Filesystem registration]]

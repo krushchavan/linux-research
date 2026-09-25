@@ -136,7 +136,7 @@
 - [x] vault/concepts/fuse/fuse-connection.md
 - [x] vault/concepts/fuse/fuse-request-queue.md
 - [x] vault/concepts/fuse/fuse-vfs-integration.md
-- [ ] vault/concepts/fuse/fuse-wire-protocol.md
+- [x] vault/concepts/fuse/fuse-wire-protocol.md
 - [ ] vault/subsystems/netfs.md
 - [ ] vault/concepts/netfs/netfs-inode-context.md
 - [ ] vault/concepts/netfs/netfs-io-request-model.md

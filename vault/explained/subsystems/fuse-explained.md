@@ -51,7 +51,7 @@ When the daemon reads from the device, it gets the highest-priority request, whi
 ### The wire protocol
 Every message starts with a fixed header. Requests carry length, operation code, unique ID, the target inode's node ID, and the caller's user, group and process IDs; replies carry length, an error code and the same unique ID. Each operation then has its own body: for example, a lookup sends a name and gets back the inode's attributes plus how long they can be cached.
 
-The major version has been 7 since 2008; the minor version grows with each new operation. Operations are added but never removed, and the kernel avoids sending newer operations to an older daemon. See [[fuse-wire-protocol|the wire protocol]].
+The major version has been 7 since 2008; the minor version grows with each new operation. Operations are added but never removed, and the kernel avoids sending newer operations to an older daemon. See [[fuse-wire-protocol-explained|the wire protocol]].
 
 ### Looking like a real filesystem
 FUSE fills in the kernel's standard tables of filesystem operations with thin wrappers. Each one:
@@ -98,7 +98,7 @@ If a non-fatal signal arrives during a later read the daemon is already handling
 ## Related
 
 - Technical version: [[fuse]]
-- [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
+- [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol-explained|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[page-cache-explained|Page cache]]
 - [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs|OverlayFS]]
 - [[network-filesystems-overview-explained|Network filesystems]]

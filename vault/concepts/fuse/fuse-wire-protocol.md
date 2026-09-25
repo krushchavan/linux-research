@@ -6,6 +6,7 @@ subsystem: fuse
 kernel_version: "2.6.14"
 researched: 2026-04-10
 status: complete
+explained: "[[fuse-wire-protocol-explained]]"
 sources:
   - https://john-millikin.com/the-fuse-protocol
   - https://www.man7.org/linux/man-pages/man4/fuse.4.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # FUSE Wire Protocol
+
+> 📘 Plain-language version: [[fuse-wire-protocol-explained]]
 
 ## Purpose
 
