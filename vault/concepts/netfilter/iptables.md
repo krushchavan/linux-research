@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "2.4"
 researched: 2026-04-13
 status: complete
+explained: "[[iptables-explained]]"
 sources:
   - https://kernel-internals.org/net/netfilter/
   - https://kernel-internals.org/net/nftables-iptables/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # iptables
+
+> 📘 Plain-language version: [[iptables-explained]]
 
 ## Purpose
 
