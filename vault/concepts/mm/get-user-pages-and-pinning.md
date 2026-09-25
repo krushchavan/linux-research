@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6 (get_user_pages); 5.6 (pin_user_pages/FOLL_PIN)"
 researched: 2026-04-11
 status: complete
+explained: "[[get-user-pages-and-pinning-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/core-api/pin_user_pages.html
   - https://lwn.net/Articles/807108/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # get_user_pages and Memory Pinning
+
+> 📘 Plain-language version: [[get-user-pages-and-pinning-explained]]
 
 ## Purpose
 

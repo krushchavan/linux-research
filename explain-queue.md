@@ -70,7 +70,7 @@
 - [x] vault/concepts/mm/address-space.md
 - [x] vault/concepts/mm/buddy-allocator.md
 - [x] vault/concepts/mm/folio.md
-- [ ] vault/concepts/mm/get-user-pages-and-pinning.md
+- [x] vault/concepts/mm/get-user-pages-and-pinning.md
 - [ ] vault/concepts/mm/huge-pages-hugetlbfs.md
 - [ ] vault/concepts/mm/maple-tree.md
 - [ ] vault/concepts/mm/memory-cgroup.md
