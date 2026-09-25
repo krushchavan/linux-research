@@ -69,5 +69,5 @@ Names and field layouts are treated as interfaces: renaming, retyping or reorder
 ## Related
 
 - Technical version: [[tracepoints-and-trace-event]]
-- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[kprobes-and-kretprobes-explained|kprobes]], [[tracefs-and-ring-buffer-explained|tracefs and ring buffer]], [[perf-events-explained|perf events]], [[uprobes-and-usdt|uprobes and USDT]]
+- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[kprobes-and-kretprobes-explained|kprobes]], [[tracefs-and-ring-buffer-explained|tracefs and ring buffer]], [[perf-events-explained|perf events]], [[uprobes-and-usdt-explained|uprobes and USDT]]
 - [[bpf-explained|BPF]], [[scheduler-explained|Scheduler]], [[rcu-read-copy-update-explained|RCU]]

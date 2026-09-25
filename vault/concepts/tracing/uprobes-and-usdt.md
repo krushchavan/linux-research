@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "3.5"
 researched: 2026-04-17
 status: complete
+explained: "[[uprobes-and-usdt-explained]]"
 sources:
   - https://kernel-internals.org/tracing/kprobes-tracepoints/
   - https://www.kernel.org/doc/html/latest/trace/tracepoints.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # uprobes and USDT
+
+> 📘 Plain-language version: [[uprobes-and-usdt-explained]]
 
 ## Purpose
 

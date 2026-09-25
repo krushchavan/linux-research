@@ -80,5 +80,5 @@ A setting controls access in tiers, because a cycle count is harmless but a call
 ## Related
 
 - Technical version: [[perf-events]]
-- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event-explained|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[uprobes-and-usdt|uprobes and USDT]], [[tracefs-and-ring-buffer-explained|tracefs and ring buffer]]
+- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event-explained|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[uprobes-and-usdt-explained|uprobes and USDT]], [[tracefs-and-ring-buffer-explained|tracefs and ring buffer]]
 - [[bpf-explained|BPF]], [[scheduler-explained|Scheduler]], [[mm-explained|Memory management]], [[kernel-hardening-explained|Kernel hardening]]
