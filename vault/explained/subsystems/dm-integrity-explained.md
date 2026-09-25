@@ -78,7 +78,7 @@ A faster alternative when doubling every write is too expensive. See [[dm-integr
 
 ### Tag management
 
-This layer hides where tags come from. See [[dm-integrity-tag-management]].
+This layer hides where tags come from. See [[dm-integrity-tag-management-explained|dm-integrity-tag-management]].
 
 1. **Internal hash:** on write, a hash of each sector is computed and stored; on read, recomputed and compared. Mismatch is an error.
 2. **External tags from dm-crypt:** tags arrive attached to the I/O request as integrity data, and dm-integrity stores them. On read, it attaches the stored tag, and dm-crypt's authenticated decryption does the checking.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation-explained|dm-integrity-recalculation]]
+- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management-explained|dm-integrity-tag-management]], [[dm-integrity-recalculation-explained|dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]

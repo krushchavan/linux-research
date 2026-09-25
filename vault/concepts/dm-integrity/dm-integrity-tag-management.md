@@ -6,6 +6,7 @@ subsystem: dm-integrity
 kernel_version: "4.12"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-tag-management-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://docs.kernel.org/block/data-integrity.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-integrity Tag Management
+
+> 📘 Plain-language version: [[dm-integrity-tag-management-explained]]
 
 ## Purpose
 
