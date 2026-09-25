@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "2.6.29"
 researched: 2026-04-16
 status: complete
+explained: "[[cgroup-freezer-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/freezer-subsystem.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Cgroup Freezer
+
+> 📘 Plain-language version: [[cgroup-freezer-explained]]
 
 ## Purpose
 
