@@ -76,5 +76,5 @@ The tree has no lock of its own. Its main users (the page cache) already hold a 
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[xarray]]: its successor
 - [[page-cache-explained|Page cache]], [[address-space-explained|Address space]]: its main user
-- [[page-reclaim-explained|Page reclaim]], [[transparent-huge-pages]]
+- [[page-reclaim-explained|Page reclaim]], [[transparent-huge-pages-explained|transparent-huge-pages]]
 - [[rcu-read-copy-update|RCU]], [[block-explained|Block layer]]

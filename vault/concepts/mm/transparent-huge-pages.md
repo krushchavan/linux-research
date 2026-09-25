@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.38"
 researched: 2026-04-05
 status: complete
+explained: "[[transparent-huge-pages-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/mm/transhuge.html
   - https://lwn.net/Articles/423584/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Transparent Huge Pages
+
+> 📘 Plain-language version: [[transparent-huge-pages-explained]]
 
 ## Purpose
 

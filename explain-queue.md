@@ -87,7 +87,7 @@
 - [x] vault/concepts/mm/rmap-reverse-mapping.md
 - [x] vault/concepts/mm/slub-slab-allocator.md
 - [x] vault/concepts/mm/swap.md
-- [ ] vault/concepts/mm/transparent-huge-pages.md
+- [x] vault/concepts/mm/transparent-huge-pages.md
 - [ ] vault/concepts/mm/virtual-memory-areas.md
 - [ ] vault/concepts/mm/vmalloc.md
 - [ ] vault/concepts/mm/xarray.md

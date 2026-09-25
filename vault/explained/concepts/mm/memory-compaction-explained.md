@@ -95,7 +95,7 @@ Compaction can run **asynchronously** (skip pages that are locked, for low laten
 - Technical version: [[memory-compaction]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[buddy-allocator-explained|Buddy allocator]]: where the free blocks end up, and the movability tags
-- [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|hugetlbfs]]: the main customers
+- [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|hugetlbfs]]: the main customers
 - [[rmap-reverse-mapping-explained|rmap-reverse-mapping]]: how mappings are repointed
 - [[page-reclaim-explained|page-reclaim]]: the complementary slow-path step
 - [[get-user-pages-and-pinning-explained|Page pinning]]: why some pages can't move

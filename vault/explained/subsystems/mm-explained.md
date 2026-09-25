@@ -149,7 +149,7 @@ Anonymous memory has no file to fall back on, so without swap it would pin RAM f
 
 ### Transparent huge pages: fewer, bigger mappings
 
-A 1 GB heap in 4 KB pages needs 262,144 address-translation entries, and the CPU's translation cache (TLB) can't hold them. See [[transparent-huge-pages]].
+A 1 GB heap in 4 KB pages needs 262,144 address-translation entries, and the CPU's translation cache (TLB) can't hold them. See [[transparent-huge-pages-explained|transparent-huge-pages]].
 
 1. **At fault time:** try to allocate an aligned 2 MB block and map it with one entry. If fragmentation prevents it, fall back to 4 KB.
 2. **In the background:** a daemon (khugepaged) finds runs of 512 small pages that could be combined, copies them into one 2 MB page and swaps it in.
@@ -190,6 +190,6 @@ Had the program *read* first, it would have got the shared zero page with no all
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap-explained|swap]], [[oom-killer-explained|oom-killer]]
-- [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
+- [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information-explained|psi-pressure-stall-information]]
 - [[vfs|VFS]], [[block-explained|Block layer]]
