@@ -99,5 +99,5 @@ Checking permissions, reading attributes and listing extended attributes don't c
 - [[path-lookup-explained|Path lookup]]: RCU-walk and ref-walk in detail
 - [[dentry-explained|Dentries]], [[dentry-cache-explained|Dentry cache]]
 - [[page-cache-explained|Page cache]], [[address-space-explained|Address space]]: the invalidate lock
-- [[locking-explained|locking]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]]
+- [[locking-explained|locking]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]]
 - [[fs-explained|Filesystem subsystem (VFS)]]

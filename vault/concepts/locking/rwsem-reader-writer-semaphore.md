@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.4.0"
 researched: 2026-04-13
 status: complete
+explained: "[[rwsem-reader-writer-semaphore-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/locktypes.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # rwsem: Reader-Writer Semaphore
+
+> 📘 Plain-language version: [[rwsem-reader-writer-semaphore-explained]]
 
 ## Overview
 

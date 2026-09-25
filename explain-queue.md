@@ -181,7 +181,7 @@
 - [x] vault/concepts/locking/mutex.md
 - [x] vault/concepts/locking/per-cpu-variables.md
 - [x] vault/concepts/locking/rcu-read-copy-update.md
-- [ ] vault/concepts/locking/rwsem-reader-writer-semaphore.md
+- [x] vault/concepts/locking/rwsem-reader-writer-semaphore.md
 - [ ] vault/concepts/locking/seqlocks-and-memory-barriers.md
 - [ ] vault/concepts/locking/spinlock-and-raw-spinlock.md
 - [ ] vault/subsystems/net.md

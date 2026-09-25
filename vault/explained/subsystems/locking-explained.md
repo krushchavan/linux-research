@@ -49,7 +49,7 @@ A mutex lets waiters **sleep** during long critical sections in task context. It
 **RT mutexes** add **priority inheritance**: if a high-priority task waits on a lock held by a low-priority one, the holder is temporarily boosted, along the whole chain if the holder is itself waiting. **Wound/wait mutexes** help graphics drivers that must take a changing set of locks: each attempt carries a global ticket, and a newer one blocking an older one is "wounded" and must back off and retry, guaranteeing progress. See [[mutex-explained|mutexes]].
 
 ### Read/write semaphores
-These let **many readers or one writer** in: good for read-heavy structures like inodes, address spaces and memory maps. One word holds a writer bit, flags, and a reader count. Readers add to the count if no writer holds or waits for the lock; a writer sets its bit when the count is empty, otherwise it queues. Both sides can spin optimistically while the owner runs. A handoff flag (5.2) stops a steady stream of readers from starving writers. On release, a writer wakes the next writer, or all readers queued at the front. See [[rwsem-reader-writer-semaphore|read/write semaphores]].
+These let **many readers or one writer** in: good for read-heavy structures like inodes, address spaces and memory maps. One word holds a writer bit, flags, and a reader count. Readers add to the count if no writer holds or waits for the lock; a writer sets its bit when the count is empty, otherwise it queues. Both sides can spin optimistically while the owner runs. A handoff flag (5.2) stops a steady stream of readers from starving writers. On release, a writer wakes the next writer, or all readers queued at the front. See [[rwsem-reader-writer-semaphore-explained|read/write semaphores]].
 
 ### Sequence locks
 For small data read constantly and written rarely, such as the kernel's timekeeping, readers take **no lock at all**. A counter goes odd while a write is in progress and even when it's done. A reader notes the counter, reads the data, and checks the counter again; if it changed or was odd, it retries. A spinlock alongside keeps writers from colliding with each other. Typed variants (5.10) tell lockdep which lock serialises the writers, and a "latch" variant keeps two copies so a reader, even in an NMI, can always find a consistent one. See [[seqlocks-and-memory-barriers|sequence locks]].
@@ -94,6 +94,6 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 ## Related
 
 - Technical version: [[locking]]
-- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
+- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update-explained|RCU]], [[per-cpu-variables-explained|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]
 - [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]
