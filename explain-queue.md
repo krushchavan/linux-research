@@ -228,7 +228,7 @@
 - [x] vault/concepts/security/landlock.md
 - [x] vault/concepts/security/linux-audit.md
 - [x] vault/concepts/security/lsm-framework.md
-- [ ] vault/concepts/security/process-model.md
+- [x] vault/concepts/security/process-model.md
 - [ ] vault/concepts/security/seccomp-bpf.md
 - [ ] vault/concepts/security/securityfs.md
 - [ ] vault/concepts/security/selinux.md

@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.29"
 researched: 2026-04-17
 status: complete
+explained: "[[process-model-explained]]"
 sources:
   - https://www.kernel.org/doc/html/v4.15/security/credentials.html
   - https://www.kernel.org/doc/html/v5.3/userspace-api/no_new_privs.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Process Security Model
+
+> 📘 Plain-language version: [[process-model-explained]]
 
 ## Purpose
 

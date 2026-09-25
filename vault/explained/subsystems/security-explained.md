@@ -119,5 +119,5 @@ A denial runs the other way: a web server whose SELinux type isn't allowed to re
 
 - Technical version: [[security]]
 - [[lsm-framework-explained|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit-explained|Audit]]
-- [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model|Process model]], [[netlabel-explained|NetLabel]]
+- [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model-explained|Process model]], [[netlabel-explained|NetLabel]]
 - [[vfs-explained|VFS]], [[net-explained|Networking]], [[bpf-explained|BPF]], [[io_uring-explained|io_uring]], [[rcu-read-copy-update-explained|RCU]]
