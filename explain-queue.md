@@ -183,7 +183,7 @@
 - [x] vault/concepts/locking/rcu-read-copy-update.md
 - [x] vault/concepts/locking/rwsem-reader-writer-semaphore.md
 - [x] vault/concepts/locking/seqlocks-and-memory-barriers.md
-- [ ] vault/concepts/locking/spinlock-and-raw-spinlock.md
+- [x] vault/concepts/locking/spinlock-and-raw-spinlock.md
 - [ ] vault/subsystems/net.md
 - [ ] vault/concepts/net/devmem-tcp.md
 - [ ] vault/concepts/net/ip-routing.md

@@ -70,5 +70,5 @@ A local lock only guards against other code on the **same CPU**. It is not a rep
 ## Related
 
 - Technical version: [[local-lock]]
-- [[locking-explained|Locking subsystem]], [[per-cpu-variables-explained|Per-CPU variables]], [[spinlock-and-raw-spinlock|Spinlocks]], [[lockdep-explained|Lockdep]]
+- [[locking-explained|Locking subsystem]], [[per-cpu-variables-explained|Per-CPU variables]], [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[lockdep-explained|Lockdep]]
 - [[interrupt-handling-explained|Interrupt handling]], [[per-cpu-page-allocator-pcp-explained|Per-CPU page lists]]

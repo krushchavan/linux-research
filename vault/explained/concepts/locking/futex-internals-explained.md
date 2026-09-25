@@ -83,5 +83,5 @@ Since 5.16, a thread can wait on up to N futex words in one call and learn which
 ## Related
 
 - Technical version: [[futex-internals]]
-- [[locking-explained|Locking subsystem]], [[mutex-explained|Mutexes and RT mutexes]], [[spinlock-and-raw-spinlock|Spinlocks]]
+- [[locking-explained|Locking subsystem]], [[mutex-explained|Mutexes and RT mutexes]], [[spinlock-and-raw-spinlock-explained|Spinlocks]]
 - [[get-user-pages-and-pinning-explained|Looking up user pages]], [[scheduler|Scheduler]]

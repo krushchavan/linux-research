@@ -38,7 +38,7 @@ For code that must never sleep (interrupt handlers, soft interrupts, short bound
 
 The older ticket lock had every waiter spinning on the same shared word, so each release set off a storm of cache-line traffic across CPUs. Queuing removes that. Taking a spinlock also disables preemption (and optionally interrupts), and on single-CPU builds it compiles down to preemption toggling alone.
 
-On real-time kernels (PREEMPT_RT), an ordinary spinlock becomes a sleeping lock so high-priority tasks can preempt the holder. Code that truly can't sleep, such as low-level interrupt and clock code, uses a **raw** spinlock, which always spins. See [[spinlock-and-raw-spinlock|spinlocks]].
+On real-time kernels (PREEMPT_RT), an ordinary spinlock becomes a sleeping lock so high-priority tasks can preempt the holder. Code that truly can't sleep, such as low-level interrupt and clock code, uses a **raw** spinlock, which always spins. See [[spinlock-and-raw-spinlock-explained|spinlocks]].
 
 ### Mutexes
 A mutex lets waiters **sleep** during long critical sections in task context. Its owner field holds the owning task plus flags: waiters present, hand the lock directly to the next waiter, next waiter picking it up. Taking it has three paths:
@@ -94,6 +94,6 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 ## Related
 
 - Technical version: [[locking]]
-- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[seqlocks-and-memory-barriers-explained|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
+- [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[seqlocks-and-memory-barriers-explained|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update-explained|RCU]], [[per-cpu-variables-explained|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]
 - [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]

@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.0"
 researched: 2026-04-13
 status: complete
+explained: "[[spinlock-and-raw-spinlock-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/locktypes.html
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Spinlock and raw_spinlock
+
+> 📘 Plain-language version: [[spinlock-and-raw-spinlock-explained]]
 
 ## Overview
 
