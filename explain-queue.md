@@ -76,7 +76,7 @@
 - [x] vault/concepts/mm/memory-cgroup.md
 - [x] vault/concepts/mm/memory-compaction.md
 - [x] vault/concepts/mm/numa-memory-policy.md
-- [ ] vault/concepts/mm/oom-killer.md
+- [x] vault/concepts/mm/oom-killer.md
 - [ ] vault/concepts/mm/page-cache.md
 - [ ] vault/concepts/mm/page-fault-handler.md
 - [ ] vault/concepts/mm/page-reclaim.md

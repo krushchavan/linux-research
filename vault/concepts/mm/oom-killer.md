@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.4"
 researched: 2026-04-10
 status: complete
+explained: "[[oom-killer-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/mm/concepts.html
   - https://www.kernel.org/doc/gorman/html/understand/understand016.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # OOM Killer
+
+> 📘 Plain-language version: [[oom-killer-explained]]
 
 ## Purpose
 
