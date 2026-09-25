@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "4.20"
 researched: 2026-04-10
 status: complete
+explained: "[[xarray-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/core-api/xarray.html
   - https://docs.kernel.org/core-api/xarray.html
@@ -16,6 +17,8 @@ sources:
 ---
 
 # XArray
+
+> 📘 Plain-language version: [[xarray-explained]]
 
 ## Purpose
 

@@ -90,7 +90,7 @@
 - [x] vault/concepts/mm/transparent-huge-pages.md
 - [x] vault/concepts/mm/virtual-memory-areas.md
 - [x] vault/concepts/mm/vmalloc.md
-- [ ] vault/concepts/mm/xarray.md
+- [x] vault/concepts/mm/xarray.md
 - [ ] vault/subsystems/memcg.md
 - [x] vault/subsystems/btrfs.md
 - [x] vault/concepts/btrfs/balance-and-device-management.md
