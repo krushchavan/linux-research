@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.5"
 researched: 2026-04-13
 status: complete
+explained: "[[radix-tree-explained]]"
 sources:
   - https://lwn.net/Articles/175432/
   - https://lwn.net/Articles/684864/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Radix Tree
+
+> 📘 Plain-language version: [[radix-tree-explained]]
 
 ## Purpose
 
