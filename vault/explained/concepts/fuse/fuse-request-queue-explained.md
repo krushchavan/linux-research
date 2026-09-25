@@ -96,5 +96,5 @@ A recovery mechanism (proposed from 6.1, still evolving) lets a crashed daemon r
 ## Related
 
 - Technical version: [[fuse-request-queue]]
-- [[fuse-explained|FUSE subsystem]], [[fuse-connection-explained|Connection]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
+- [[fuse-explained|FUSE subsystem]], [[fuse-connection-explained|Connection]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
 - [[io_uring-explained|io_uring]], [[writeback-infrastructure-explained|Writeback]]

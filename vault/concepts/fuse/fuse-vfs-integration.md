@@ -6,6 +6,7 @@ subsystem: fuse
 kernel_version: "2.6.14"
 researched: 2026-04-10
 status: complete
+explained: "[[fuse-vfs-integration-explained]]"
 sources:
   - https://www.kernel.org/doc/html/next/filesystems/fuse.html
   - https://github.com/torvalds/linux/blob/master/fs/fuse/fuse_i.h
@@ -19,6 +20,8 @@ sources:
 ---
 
 # FUSE VFS Integration
+
+> 📘 Plain-language version: [[fuse-vfs-integration-explained]]
 
 ## Purpose
 

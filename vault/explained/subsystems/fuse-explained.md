@@ -60,7 +60,7 @@ FUSE fills in the kernel's standard tables of filesystem operations with thin wr
 3. sends it and waits
 4. translates the reply back into kernel structures
 
-The daemon picks its own **node IDs** for inodes, so it can address them any way it likes (paths, database keys). The root is always node 1. Lookups and attribute replies include **time-to-live** values, letting the kernel cache attributes and name lookups for that long instead of asking on every `stat`. See [[fuse-vfs-integration|VFS integration]].
+The daemon picks its own **node IDs** for inodes, so it can address them any way it likes (paths, database keys). The root is always node 1. Lookups and attribute replies include **time-to-live** values, letting the kernel cache attributes and name lookups for that long instead of asking on every `stat`. See [[fuse-vfs-integration-explained|VFS integration]].
 
 ### Interruption and abort
 A process stuck waiting for the daemon must still respond to signals, or a crashed daemon would leave threads hung forever:
@@ -98,7 +98,7 @@ If a non-fatal signal arrives during a later read the daemon is already handling
 ## Related
 
 - Technical version: [[fuse]]
-- [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
+- [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[page-cache-explained|Page cache]]
 - [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs|OverlayFS]]
 - [[network-filesystems-overview-explained|Network filesystems]]

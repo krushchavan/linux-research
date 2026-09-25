@@ -98,6 +98,6 @@ The same connection machinery serves CUSE (character devices implemented in user
 ## Related
 
 - Technical version: [[fuse-connection]]
-- [[fuse-explained|FUSE subsystem]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
+- [[fuse-explained|FUSE subsystem]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
 - [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]]
 - [[writeback-infrastructure-explained|Writeback]], [[rcu-read-copy-update|RCU]]
