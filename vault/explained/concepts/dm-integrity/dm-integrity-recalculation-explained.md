@@ -92,4 +92,4 @@ The reasoning: an attacker who could reset the marker to zero in the superblock 
 - [[dm-integrity-bitmap-mode-explained|Bitmap mode]]: triggers recalculation of dirty regions
 - [[dm-integrity-device-config-explained|Device configuration]]: holds the progress marker
 - [[dm-integrity-on-disk-layout-explained|On-disk layout]]: the superblock that stores it
-- [[dm-bufio-explained|dm-bufio]], [[kernel-crypto-api|Kernel crypto API]]
+- [[dm-bufio-explained|dm-bufio]], [[kernel-crypto-api-explained|Kernel crypto API]]

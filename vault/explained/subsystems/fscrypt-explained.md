@@ -107,4 +107,4 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 - Technical version: [[fscrypt]]
 - [[fscrypt-policy-explained|Policies]], [[fscrypt-key-management-explained|Key management]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
-- [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]
+- [[kernel-crypto-api-explained|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]

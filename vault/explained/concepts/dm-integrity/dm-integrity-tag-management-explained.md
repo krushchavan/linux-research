@@ -84,4 +84,4 @@ The comparison isn't constant-time, and that's deliberate. Timing attacks help w
 - [[dm-crypt-explained|dm-crypt]]: the source of external tags
 - [[dm-crypt-crypto-api-integration-explained|dm-crypt's authenticated mode]]
 - [[dm-integrity-journal-explained|The journal]]: where tags are stored in journaled mode
-- [[dm-bufio-explained|dm-bufio]], [[kernel-crypto-api|Kernel crypto API]]
+- [[dm-bufio-explained|dm-bufio]], [[kernel-crypto-api-explained|Kernel crypto API]]

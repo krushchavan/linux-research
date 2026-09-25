@@ -6,6 +6,7 @@ subsystem: crypto
 kernel_version: "2.5.45"
 researched: 2026-04-17
 status: complete
+explained: "[[kernel-crypto-api-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/crypto/architecture.html
   - https://www.kernel.org/doc/html/latest/crypto/api-intro.html
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Kernel Crypto API
+
+> 📘 Plain-language version: [[kernel-crypto-api-explained]]
 
 ## Purpose
 

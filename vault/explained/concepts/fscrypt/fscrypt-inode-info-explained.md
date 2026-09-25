@@ -82,4 +82,4 @@ When the inode is evicted from the inode cache, its derived key is zeroed and fr
 
 - Technical version: [[fscrypt-inode-info]]
 - [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-key-management-explained|Key management]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
-- [[inode-cache-explained|Inode cache]], [[kernel-crypto-api|Kernel crypto API]]
+- [[inode-cache-explained|Inode cache]], [[kernel-crypto-api-explained|Kernel crypto API]]

@@ -101,4 +101,4 @@ Rather than versioning the legacy protocol, whose buffer limit couldn't be raise
 
 - Technical version: [[rpcsec-gss-and-kerberos]]
 - [[nfs-explained|NFS subsystem]], [[sunrpc-explained|SUNRPC]], [[xdr-encoding-explained|XDR]], [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]]
-- [[kernel-crypto-api|Kernel crypto API]], [[security|Security]]
+- [[kernel-crypto-api-explained|Kernel crypto API]], [[security|Security]]

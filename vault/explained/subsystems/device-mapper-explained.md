@@ -151,4 +151,4 @@ LVM creating a new thin volume and the first write to it:
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
 - [[target-framework-explained|target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd-explained|kcopyd]], [[persistent-data-library-explained|persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt-explained|dm-crypt]], [[dm-integrity-explained|dm-integrity]]: the security targets
-- [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]
+- [[kernel-crypto-api-explained|Kernel crypto API]], [[ima|IMA]]

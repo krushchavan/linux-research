@@ -88,4 +88,4 @@ When the device is removed, device mapper first makes sure no I/O is in flight. 
 - [[dm-crypt-explained|dm-crypt]]: the subsystem overview
 - [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]]: the per-request objects that point back here
 - [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-key-management-explained|dm-crypt-key-management]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]]
-- [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
+- [[kernel-crypto-api-explained|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]

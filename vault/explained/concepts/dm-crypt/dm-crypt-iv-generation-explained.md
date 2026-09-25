@@ -81,4 +81,4 @@ If the encryption unit is set to 4096 bytes (to match the filesystem block size)
 - [[dm-crypt-explained|dm-crypt]]: the subsystem overview
 - [[dm-crypt-crypt-config-explained|Per-device encryption state]]: stores the chosen scheme and its state
 - [[dm-crypt-crypt-io-explained|Per-request context]]: calls the generator before each sector
-- [[dm-crypt-crypto-api-integration-explained|Crypto API integration]], [[kernel-crypto-api|Kernel crypto API]]
+- [[dm-crypt-crypto-api-integration-explained|Crypto API integration]], [[kernel-crypto-api-explained|Kernel crypto API]]

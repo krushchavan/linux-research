@@ -79,4 +79,4 @@ When the device is removed, the journal is flushed, the superblock is saved (inc
 - [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]]: the layout this object computes and checks
 - [[dm-integrity-bitmap-mode-explained|Bitmap mode]], [[dm-integrity-journal-explained|dm-integrity-journal]]
 - [[dm-bufio-explained|dm-bufio]]: the tag-area cache
-- [[device-mapper-explained|Device mapper]], [[kernel-crypto-api|Kernel crypto API]]
+- [[device-mapper-explained|Device mapper]], [[kernel-crypto-api-explained|Kernel crypto API]]
