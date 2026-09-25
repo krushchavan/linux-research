@@ -146,7 +146,7 @@
 - [x] vault/subsystems/nfs.md
 - [x] vault/concepts/nfs/delegations-and-locking.md
 - [x] vault/concepts/nfs/fscache.md
-- [ ] vault/concepts/nfs/nfs-client.md
+- [x] vault/concepts/nfs/nfs-client.md
 - [ ] vault/concepts/nfs/nfs-localio.md
 - [ ] vault/concepts/nfs/nfs-server.md
 - [ ] vault/concepts/nfs/nfsv4.1-sessions.md

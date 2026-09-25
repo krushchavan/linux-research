@@ -96,5 +96,5 @@ A client that doesn't finish in time loses its locks, and applications see I/O o
 ## Related
 
 - Technical version: [[delegations-and-locking]]
-- [[nfs-explained|NFS subsystem]], [[nfs-client|NFS client]], [[nfs-server|NFS server]], [[nfsv4.1-sessions|NFSv4.1 sessions]], [[sunrpc|SUNRPC]]
+- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-server|NFS server]], [[nfsv4.1-sessions|NFSv4.1 sessions]], [[sunrpc|SUNRPC]]
 - [[vfs-locking-model-explained|VFS locking model]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]]

@@ -80,5 +80,5 @@ A user-space daemon configures CacheFiles through a device file: where the cache
 
 - Technical version: [[concepts/nfs/fscache|NFS fscache integration]]
 - [[fscache-explained|fscache subsystem]], [[fscache-cookie-subsystem-explained|Cookies]], [[cachefiles-backend-explained|CacheFiles]], [[netfs-explained|netfs]], [[netfs-helper-library-explained|netfs helper library]]
-- [[nfs-explained|NFS subsystem]], [[nfs-client|NFS client]], [[delegations-and-locking-explained|Delegations]]
+- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[delegations-and-locking-explained|Delegations]]
 - [[page-cache-explained|Page cache]], [[page-reclaim-explained|Page reclaim]], [[block-explained|Block layer]]

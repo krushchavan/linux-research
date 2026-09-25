@@ -66,7 +66,7 @@ Mounting creates a per-server record (connection, capabilities, read/write sizes
 
 This is the key rule. NFS promises **close-to-open consistency**: on `open`, the client always revalidates its cache, so it sees everything written by others before they closed; on `close`, it flushes its dirty pages. It's weaker than fully coherent caching (as in AFS), but avoids constant invalidation traffic.
 
-With NFSv4 **delegations**, the server can promise a client that nobody else has the file open in a conflicting way. With a read delegation the client can cache reads without revalidating; with a write delegation it can gather writes and commit at close. The server recalls a delegation when a conflicting open arrives. See [[nfs-client|NFS client]] and [[delegations-and-locking-explained|delegations and locking]].
+With NFSv4 **delegations**, the server can promise a client that nobody else has the file open in a conflicting way. With a read delegation the client can cache reads without revalidating; with a write delegation it can gather writes and commit at close. The server recalls a delegation when a conflicting open arrives. See [[nfs-client-explained|NFS client]] and [[delegations-and-locking-explained|delegations and locking]].
 
 ### pNFS: parallel data paths
 pNFS (NFSv4.1+) splits **metadata**, still handled by the main server, from **data**, which the client can read and write directly on storage devices or secondary servers. On open, the client asks for a **layout** describing where the file's data lives: which devices, which stripes, which protocol. Later reads and writes go straight there. Layout types include files and flexfiles (secondary NFS servers), blocks (SAN devices) and objects. The server can recall a layout over the back channel; the client must drain in-flight I/O and return it first. Most deployments skip pNFS because its complexity only pays off at very large scale. See [[pnfs|pNFS]].
@@ -110,5 +110,5 @@ If the server reboots, the client notices (a sequence break or a stale-client er
 ## Related
 
 - Technical version: [[nfs]]
-- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]], [[nfs-client|Client]], [[nfs-server|Server]], [[pnfs|pNFS]], [[nfs-localio|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
+- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]], [[nfs-client-explained|Client]], [[nfs-server|Server]], [[pnfs|pNFS]], [[nfs-localio|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[btrfs-explained|btrfs]]
