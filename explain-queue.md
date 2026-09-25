@@ -110,7 +110,7 @@
 - [x] vault/concepts/fs/extended-attributes-and-acls.md
 - [x] vault/concepts/fs/file-descriptor-and-open-file-table.md
 - [x] vault/concepts/fs/file-object.md
-- [ ] vault/concepts/fs/filesystem-registration.md
+- [x] vault/concepts/fs/filesystem-registration.md
 - [ ] vault/concepts/fs/fsnotify.md
 - [ ] vault/concepts/fs/inode-cache.md
 - [ ] vault/concepts/fs/inode.md
