@@ -55,7 +55,7 @@ Capabilities break root into about 40 powers: binding to low ports, loading modu
 - **bounding:** a hard limit; once removed, never regained, even via setuid
 - **ambient** (4.3): carried across execution unconditionally, for non-setuid helper programs that need a parent's powers
 
-Executables can carry capabilities in an extended attribute, so they don't need to be setuid root. The notorious weak spot is the **system-administration capability**, which grew over 25 years to cover dozens of unrelated operations and is effectively a second root. A "no new privileges" flag stops any later program from gaining privileges through setuid or file capabilities. See [[capabilities|capabilities]].
+Executables can carry capabilities in an extended attribute, so they don't need to be setuid root. The notorious weak spot is the **system-administration capability**, which grew over 25 years to cover dozens of unrelated operations and is effectively a second root. A "no new privileges" flag stops any later program from gaining privileges through setuid or file capabilities. See [[capabilities-explained|capabilities]].
 
 ### seccomp
 A process can **restrict its own system calls**. It installs a small BPF filter program that sees each call's number, architecture and arguments, and returns a verdict: kill the process or thread, send a signal, return an error, notify a tracer, log, or allow. Filters stack, all of them run, and the most severe verdict wins. Installing one needs either privilege or the "no new privileges" flag, so an unprivileged user can't filter a setuid program to confuse it. A newer verdict (5.0) hands the decision to a **user-space supervisor** over a file descriptor. Container runtimes and browsers depend on seccomp. See [[seccomp-bpf|seccomp BPF]].
@@ -118,6 +118,6 @@ A denial runs the other way: a web server whose SELinux type isn't allowed to re
 ## Related
 
 - Technical version: [[security]]
-- [[lsm-framework|LSM framework]], [[capabilities|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock|Landlock]], [[credentials|Credentials]], [[kernel-hardening|Kernel hardening]], [[linux-audit|Audit]]
+- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock|Landlock]], [[credentials|Credentials]], [[kernel-hardening|Kernel hardening]], [[linux-audit|Audit]]
 - [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model|Process model]], [[netlabel-explained|NetLabel]]
 - [[vfs-explained|VFS]], [[net-explained|Networking]], [[bpf-explained|BPF]], [[io_uring-explained|io_uring]], [[rcu-read-copy-update-explained|RCU]]

@@ -6,12 +6,15 @@ subsystem: security
 kernel_version: "2.2"
 researched: 2026-04-15
 status: complete
+explained: "[[capabilities-explained]]"
 sources:
   - https://kernel-internals.org/security/capabilities/
   - https://www.kernel.org/doc/html/latest/security/credentials.html
 ---
 
 # Linux Capabilities
+
+> 📘 Plain-language version: [[capabilities-explained]]
 
 ## Overview
 

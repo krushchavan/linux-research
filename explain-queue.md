@@ -220,7 +220,7 @@
 - [x] vault/concepts/scheduler/scheduler-classes.md
 - [x] vault/subsystems/security.md
 - [x] vault/concepts/security/apparmor.md
-- [ ] vault/concepts/security/capabilities.md
+- [x] vault/concepts/security/capabilities.md
 - [ ] vault/concepts/security/credentials.md
 - [ ] vault/concepts/security/ima.md
 - [ ] vault/concepts/security/kernel-hardening.md
