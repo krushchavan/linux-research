@@ -103,6 +103,6 @@ If the completion ring is full at flush time, the extra results go on an overflo
 - [[io_uring-explained|io_uring]]: the subsystem overview
 - [[io-uring-internals-explained|io_uring internals]]: where completions are posted
 - [[io-uring-async-poll-and-multishot-explained|Async poll and multishot]]: poll wake-ups queue task work
-- [[io-wq]]: helper-thread creation is itself scheduled with task work
+- [[io-wq-explained|io-wq]]: helper-thread creation is itself scheduled with task work
 - [[uring-cmd-passthrough]]: drivers finish commands in task context
 - [[block-explained|Block layer]]: disk completions that start the chain

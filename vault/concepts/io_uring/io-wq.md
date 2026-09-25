@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.3"
 researched: 2026-09-24
 status: complete
+explained: "[[io-wq-explained]]"
 sources:
   - https://lwn.net/Articles/803070/
   - https://lwn.net/Articles/803036/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # io-wq
+
+> 📘 Plain-language version: [[io-wq-explained]]
 
 ## Purpose
 

@@ -65,7 +65,7 @@ A system-wide switch (6.6) can allow io_uring for everyone, only for one group, 
 
 ### Helper threads (io-wq)
 
-Some operations have to block: buffered writes that wait on a file's lock, fsync, many file opens. See [[io-wq]].
+Some operations have to block: buffered writes that wait on a file's lock, fsync, many file opens. See [[io-wq-explained|io-wq]].
 
 1. When the non-blocking attempt fails and the file cannot be polled, the request goes to a pool of helper threads owned by the submitting process.
 2. Work is split into two classes. **Bound** work (regular files, block devices) has finite latency and a modest worker cap. **Unbound** work (sockets, pipes, anything that may wait forever) is capped by the process's thread limit. That way a pile of stuck network requests can't starve disk I/O of workers.

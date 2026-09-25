@@ -33,7 +33,7 @@
 - [x] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
 - [x] vault/concepts/io_uring/io-uring-internals.md
 - [x] vault/concepts/io_uring/io-uring-task-work.md
-- [ ] vault/concepts/io_uring/io-wq.md
+- [x] vault/concepts/io_uring/io-wq.md
 - [ ] vault/concepts/io_uring/provided-buffer-rings.md
 - [ ] vault/concepts/io_uring/registered-resources.md
 - [ ] vault/concepts/io_uring/sqpoll.md
