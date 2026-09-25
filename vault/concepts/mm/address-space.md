@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[address-space-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://www.kernel.org/doc/html/latest/core-api/mm-api.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Address Space (struct address_space)
+
+> 📘 Plain-language version: [[address-space-explained]]
 
 ## Purpose
 

@@ -67,7 +67,7 @@
 - [x] vault/concepts/ublk/ublk-user-recovery.md
 - [x] vault/concepts/ublk/ublk-zero-copy.md
 - [x] vault/subsystems/mm.md
-- [ ] vault/concepts/mm/address-space.md
+- [x] vault/concepts/mm/address-space.md
 - [ ] vault/concepts/mm/buddy-allocator.md
 - [ ] vault/concepts/mm/folio.md
 - [ ] vault/concepts/mm/get-user-pages-and-pinning.md
