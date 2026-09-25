@@ -94,5 +94,5 @@ Since around 5.12, kernel subsystems on an allowlist (such as SELinux, AppArmor 
 ## Related
 
 - Technical version: [[ima]]
-- [[security-explained|Security subsystem]], [[tpm|TPM]], [[kernel-keyring-explained|Kernel keyring]], [[lsm-framework-explained|LSM framework]], [[securityfs-explained|securityfs]], [[selinux-explained|SELinux]]
+- [[security-explained|Security subsystem]], [[tpm-explained|TPM]], [[kernel-keyring-explained|Kernel keyring]], [[lsm-framework-explained|LSM framework]], [[securityfs-explained|securityfs]], [[selinux-explained|SELinux]]
 - [[dm-crypt-explained|dm-crypt]], [[dm-integrity-explained|dm-integrity]], [[fscrypt-explained|fscrypt]], [[extended-attributes-and-acls-explained|Extended attributes]]

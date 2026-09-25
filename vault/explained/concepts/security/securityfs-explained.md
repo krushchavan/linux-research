@@ -80,5 +80,5 @@ Today securityfs is effectively one global instance. A namespace-keyed mount pat
 ## Related
 
 - Technical version: [[securityfs]]
-- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[ima-explained|IMA]], [[apparmor-explained|AppArmor]], [[smackfs-explained|smackfs]], [[tpm|TPM]], [[kernel-keyring-explained|Kernel keyring]]
+- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[ima-explained|IMA]], [[apparmor-explained|AppArmor]], [[smackfs-explained|smackfs]], [[tpm-explained|TPM]], [[kernel-keyring-explained|Kernel keyring]]
 - [[vfs-explained|VFS]]

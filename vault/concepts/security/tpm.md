@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.12"
 researched: 2026-04-18
 status: complete
+explained: "[[tpm-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/tpm/index.html
   - https://docs.kernel.org/security/tpm/tpm-security.html
@@ -22,6 +23,8 @@ sources:
 ---
 
 # TPM (Trusted Platform Module)
+
+> 📘 Plain-language version: [[tpm-explained]]
 
 ## Purpose
 

@@ -105,5 +105,5 @@ When the device is closed, the kernel zeroes its copy of the key using a special
 - [[dm-crypt-explained|dm-crypt]]: the subsystem overview
 - [[dm-crypt-crypt-config-explained|Per-device encryption state]]: where the key is held and zeroed
 - [[kernel-keyring-explained|Kernel keyring]]: how keys are stored and looked up
-- [[tpm|TPM]]: the chip behind trusted keys
+- [[tpm-explained|TPM]]: the chip behind trusted keys
 - [[kernel-crypto-api-explained|Kernel crypto API]]
