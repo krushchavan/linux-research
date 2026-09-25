@@ -126,7 +126,7 @@
 - [x] vault/concepts/fscache/fscache-cookie-subsystem.md
 - [x] vault/concepts/fscache/netfs-helper-library.md
 - [x] vault/subsystems/fscrypt.md
-- [ ] vault/concepts/fscrypt/fscrypt-contents-encryption.md
+- [x] vault/concepts/fscrypt/fscrypt-contents-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-filenames-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-inline-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-inode-info.md

@@ -6,6 +6,7 @@ subsystem: fscrypt
 kernel_version: "4.1"
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-contents-encryption-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/824841/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # fscrypt Contents Encryption
+
+> 📘 Plain-language version: [[fscrypt-contents-encryption-explained]]
 
 ## Purpose
 

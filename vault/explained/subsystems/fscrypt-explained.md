@@ -66,7 +66,7 @@ This is the key design choice. fscrypt works at the **page cache boundary**, not
 - **Reading:** ciphertext is read from disk into the page cache, then decrypted in place before anyone sees it.
 - **Writing:** encrypting in place would destroy the plaintext copy that later reads need. So at writeback, fscrypt encrypts into a temporary **bounce page**, writes that, and keeps the plaintext page cached.
 
-Each data unit's IV comes from its position in the file, optionally mixed with the inode number. Special IV schemes exist for hardware that shares one key across files or only supports 32-bit IVs (some eMMC storage). A "direct key" mode for Adiantum puts the file nonce straight into the IV and skips per-file derivation. See [[fscrypt-contents-encryption|contents encryption]].
+Each data unit's IV comes from its position in the file, optionally mixed with the inode number. Special IV schemes exist for hardware that shares one key across files or only supports 32-bit IVs (some eMMC storage). A "direct key" mode for Adiantum puts the file nonce straight into the IV and skips per-file derivation. See [[fscrypt-contents-encryption-explained|contents encryption]].
 
 ### Filename encryption
 Directory entries are encrypted with the directory's filename key (derived separately from content keys), each name in one pass. Short names are padded to 16 bytes and longer ones to a configurable boundary, hiding exact lengths. Names that would be too long once encoded as text are stored as a hash prefix, with the full ciphertext kept elsewhere.
@@ -105,6 +105,6 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 ## Related
 
 - Technical version: [[fscrypt]]
-- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption|Contents encryption]], [[fscrypt-filenames-encryption|Filename encryption]], [[fscrypt-inline-encryption|Inline encryption]]
+- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption|Filename encryption]], [[fscrypt-inline-encryption|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
 - [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]
