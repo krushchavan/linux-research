@@ -22,7 +22,7 @@ If [[cipso-ipv4-engine-explained|CIPSO]] is a stamp on the back of an envelope, 
 ## Step by step
 
 ### Step 1: Same front door as CIPSO
-A security module labels a socket the same way whatever the IP version. NetLabel's [[netlabel-domain-hash-table|domain table]] decides which engine to use, and for IPv6 destinations configured for CALIPSO, calls into the CALIPSO engine. Security modules never call CALIPSO directly.
+A security module labels a socket the same way whatever the IP version. NetLabel's [[netlabel-domain-hash-table-explained|domain table]] decides which engine to use, and for IPv6 destinations configured for CALIPSO, calls into the CALIPSO engine. Security modules never call CALIPSO directly.
 
 ### Step 2: Configure a DOI
 As with CIPSO, an administrator defines a **Domain of Interpretation** with a number, using `netlabelctl calipso add`. The DOI number goes into every CALIPSO option. Unlike CIPSO, RFC 5570 has **no translating mode**: the label in the packet is the sender's label as-is, and the DOI only supplies the context for interpreting it. Every node in the network must share the same DOI definition and numbering.
@@ -64,5 +64,5 @@ This is the key point. SELinux uses the same code path for CALIPSO as for CIPSO:
 ## Related
 
 - Technical version: [[calipso-ipv6-engine]]
-- [[netlabel-explained|NetLabel]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[netlabel-lsm-security-api|LSM API]], [[netlabel-domain-hash-table|Domain table]]
+- [[netlabel-explained|NetLabel]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[netlabel-lsm-security-api|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]]
 - [[selinux|SELinux]], [[smack|Smack]], [[net-explained|Networking stack]]

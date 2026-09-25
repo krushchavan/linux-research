@@ -6,6 +6,7 @@ subsystem: netlabel
 kernel_version: "2.6.19"
 researched: 2026-04-17
 status: complete
+explained: "[[netlabel-domain-hash-table-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/netlabel/introduction.html
   - https://www.paul-moore.com/blog/d/2009/02/netlabel_address_selectors.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # NetLabel Domain Hash Table
+
+> 📘 Plain-language version: [[netlabel-domain-hash-table-explained]]
 
 ## Purpose
 
