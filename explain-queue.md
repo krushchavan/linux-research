@@ -236,7 +236,7 @@
 - [x] vault/concepts/security/smack-inode-and-task-labeling.md
 - [x] vault/concepts/security/smack-label-registry.md
 - [x] vault/concepts/security/smack-network-labeling.md
-- [ ] vault/concepts/security/smackfs.md
+- [x] vault/concepts/security/smackfs.md
 - [ ] vault/concepts/security/tpm.md
 - [ ] vault/concepts/security/user-namespaces.md
 - [ ] vault/subsystems/tracing.md

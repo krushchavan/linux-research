@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.25"
 researched: 2026-04-16
 status: complete
+explained: "[[smackfs-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/LSM/Smack.html
   - https://github.com/torvalds/linux/blob/master/security/smack/smackfs.c
@@ -13,6 +14,8 @@ sources:
 ---
 
 # smackfs
+
+> 📘 Plain-language version: [[smackfs-explained]]
 
 ## Purpose
 

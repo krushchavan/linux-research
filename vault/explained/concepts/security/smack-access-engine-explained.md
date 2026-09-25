@@ -70,5 +70,5 @@ If logging is on, the engine writes an audit record with both labels, the reques
 ## Related
 
 - Technical version: [[smack-access-engine]]
-- [[smack|Smack]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling-explained|Network labelling]], [[smackfs|smackfs]]
+- [[smack|Smack]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling-explained|Network labelling]], [[smackfs-explained|smackfs]]
 - [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[capabilities-explained|Capabilities]], [[linux-audit-explained|Audit]], [[selinux-explained|SELinux]]
