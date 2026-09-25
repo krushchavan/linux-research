@@ -236,7 +236,7 @@
 - [x] block -> io-scheduler
 
 # --- Unresolved links from xdp 2026-09-25 ---
-- [ ] net -> af-xdp
+- [x] net -> af-xdp
 
 # --- Unresolved links from bio-layer 2026-09-25 ---
 - [ ] fs -> iomap
