@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "4.8"
 researched: 2026-09-25
 status: complete
+explained: "[[iomap-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/iomap/design.html
   - https://www.kernel.org/doc/html/latest/filesystems/iomap/operations.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # iomap
+
+> 📘 Plain-language version: [[iomap-explained]]
 
 ## Purpose
 

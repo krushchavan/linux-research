@@ -17,7 +17,7 @@
 
 ## Queue
 - [x] vault/concepts/net/af-xdp.md
-- [ ] vault/concepts/fs/iomap.md
+- [x] vault/concepts/fs/iomap.md
 - [ ] vault/concepts/block/zoned-block-devices.md
 
 - [x] vault/concepts/io_uring/io-uring-zero-copy-networking.md
