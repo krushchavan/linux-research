@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.x (generic IRQ layer); threaded IRQs v2.6.30+; IRQF_DISABLED removed v3.1"
 researched: 2026-04-12
 status: complete
+explained: "[[interrupt-handling-explained]]"
 sources:
   - https://static.lwn.net/kerneldoc/core-api/genericirq.html
   - https://static.lwn.net/kerneldoc/kernel-hacking/locking.html
@@ -22,6 +23,8 @@ sources:
 ---
 
 # Interrupt Handling and Locking
+
+> 📘 Plain-language version: [[interrupt-handling-explained]]
 
 ## Purpose
 
