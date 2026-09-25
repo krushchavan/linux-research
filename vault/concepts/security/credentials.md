@@ -6,11 +6,14 @@ subsystem: security
 kernel_version: "2.6.29"
 researched: 2026-04-15
 status: complete
+explained: "[[credentials-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/credentials.html
 ---
 
 # Credentials
+
+> 📘 Plain-language version: [[credentials-explained]]
 
 ## Overview
 

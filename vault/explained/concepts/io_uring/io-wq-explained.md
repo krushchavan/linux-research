@@ -98,4 +98,4 @@ If a worker can't be created (the thread limit is hit, or the process is exiting
 - [[io-uring-internals-explained|io_uring internals]]: where the fallback decision is made
 - [[io-uring-async-poll-and-multishot-explained|Async poll and multishot]]: the preferred path for pollable files
 - [[io-uring-task-work-explained|Task work]]: how workers get created in the owner's context
-- [[credentials|Credentials]], [[vfs-explained|VFS]]
+- [[credentials-explained|Credentials]], [[vfs-explained|VFS]]
