@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29 (multi-device); balance filters 3.3; device replace 3.9"
 researched: 2026-04-11
 status: complete
+explained: "[[balance-and-device-management-explained]]"
 sources:
   - https://lwn.net/Articles/437883/
   - https://lwn.net/Articles/577961/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Btrfs Balance and Device Management
+
+> 📘 Plain-language version: [[balance-and-device-management-explained]]
 
 ## Purpose
 
