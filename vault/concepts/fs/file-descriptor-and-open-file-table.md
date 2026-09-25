@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6.12+"
 researched: 2026-04-11
 status: complete
+explained: "[[file-descriptor-and-open-file-table-explained]]"
 sources:
   - https://docs.kernel.org/filesystems/files.html
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # File Descriptor and Open File Table
+
+> 📘 Plain-language version: [[file-descriptor-and-open-file-table-explained]]
 
 ## Purpose
 
