@@ -90,6 +90,6 @@ A buffered read of an uncached file on a Ceph mount with local caching:
 
 - Technical version: [[network-filesystems-overview]]
 - [[netfs]], [[netfs-helper-library-explained|netfs-helper-library]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|cachefiles-backend]]
-- [[nfs]], [[nfs-client]], [[nfs-server]], [[fuse]]
+- [[nfs]], [[nfs-client]], [[nfs-server]], [[fuse-explained|fuse]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]]
 - [[sunrpc]], [[security]]

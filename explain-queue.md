@@ -132,7 +132,7 @@
 - [x] vault/concepts/fscrypt/fscrypt-inode-info.md
 - [x] vault/concepts/fscrypt/fscrypt-key-management.md
 - [x] vault/concepts/fscrypt/fscrypt-policy.md
-- [ ] vault/subsystems/fuse.md
+- [x] vault/subsystems/fuse.md
 - [ ] vault/concepts/fuse/fuse-connection.md
 - [ ] vault/concepts/fuse/fuse-request-queue.md
 - [ ] vault/concepts/fuse/fuse-vfs-integration.md

@@ -103,4 +103,4 @@ The feature shipped (5.19) with no security-module hook, so SELinux and Smack co
 - [[registered-resources-explained|Registered resources]]: fixed and kernel-registered buffers
 - [[io-uring-task-work-explained|Task work]]: how completions bounce to the submitter
 - [[sqpoll-explained|SQPOLL]], [[io-wq-explained|io-wq]]
-- [[ublk-explained|ublk]], [[fuse|FUSE]], [[block-explained|Block layer]], [[security|Security]]
+- [[ublk-explained|ublk]], [[fuse-explained|FUSE]], [[block-explained|Block layer]], [[security|Security]]

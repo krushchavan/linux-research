@@ -7,6 +7,7 @@ mailing_list: linux-fsdevel@vger.kernel.org
 source_path: fs/fuse/
 researched: 2026-04-05
 status: complete
+explained: "[[fuse-explained]]"
 sources:
   - https://lwn.net/Articles/118574/
   - https://lwn.net/Articles/68104/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # FUSE (Filesystem in USErspace) Subsystem
+
+> 📘 Plain-language version: [[fuse-explained]]
 
 ## Overview
 
