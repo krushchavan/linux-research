@@ -97,4 +97,4 @@ The address space keeps an **interval tree** of every memory mapping (VMA) of th
 - [[folio-explained|folio]]: the unit it caches
 - [[page-reclaim-explained|page-reclaim]], [[rmap-reverse-mapping-explained|rmap-reverse-mapping]], [[writeback-infrastructure-explained|writeback-infrastructure]]
 - [[memory-compaction-explained|memory-compaction]], [[transparent-huge-pages-explained|transparent-huge-pages]], [[xarray-explained|xarray]]
-- [[vfs|VFS]], [[block-explained|Block layer]]
+- [[vfs-explained|VFS]], [[block-explained|Block layer]]

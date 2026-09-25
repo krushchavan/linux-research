@@ -89,4 +89,4 @@ Direct I/O skips the page-based path and goes straight to the raw I/O helpers.
 - Technical version: [[netfs-helper-library]]
 - [[fscache-explained|fscache subsystem]], [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[cachefiles-backend-explained|CacheFiles backend]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
-- [[vfs|VFS]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[mm-explained|Memory management]]
+- [[vfs-explained|VFS]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[mm-explained|Memory management]]

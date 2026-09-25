@@ -97,4 +97,4 @@ Registration fails if the locked-memory limit would be exceeded, the address is 
 - [[get-user-pages-and-pinning-explained|Page pinning]]: how long-term pins work
 - [[ublk-explained|ublk]]: the main user of kernel-registered buffers
 - [[uring-cmd-passthrough-explained|uring-cmd-passthrough]]: passthrough commands can use registered buffers
-- [[vfs|VFS]], [[block-explained|Block layer]]
+- [[vfs-explained|VFS]], [[block-explained|Block layer]]

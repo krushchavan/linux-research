@@ -92,4 +92,4 @@ A device file was chosen over netlink to reuse familiar messaging patterns. The 
 - Technical version: [[cachefiles-backend]]
 - [[fscache-explained|fscache subsystem]], [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library-explained|netfs helper library]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
-- [[vfs|VFS]], [[security|Security]]
+- [[vfs-explained|VFS]], [[security|Security]]

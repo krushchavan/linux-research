@@ -192,4 +192,4 @@ Had the program *read* first, it would have got the shared zero page with no all
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap-explained|swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information-explained|psi-pressure-stall-information]]
-- [[vfs|VFS]], [[block-explained|Block layer]]
+- [[vfs-explained|VFS]], [[block-explained|Block layer]]

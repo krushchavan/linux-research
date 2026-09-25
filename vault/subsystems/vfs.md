@@ -7,6 +7,7 @@ mailing_list: linux-fsdevel@vger.kernel.org
 source_path: fs/
 researched: 2026-04-05
 status: complete
+explained: "[[vfs-explained]]"
 sources:
   - https://kernel-internals.org/vfs/
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
@@ -21,6 +22,8 @@ sources:
 ---
 
 # Virtual File System (VFS) Subsystem
+
+> 📘 Plain-language version: [[vfs-explained]]
 
 ## Related Notes
 
