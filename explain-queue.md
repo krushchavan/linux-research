@@ -232,7 +232,7 @@
 - [x] vault/concepts/security/seccomp-bpf.md
 - [x] vault/concepts/security/securityfs.md
 - [x] vault/concepts/security/selinux.md
-- [ ] vault/concepts/security/smack-access-engine.md
+- [x] vault/concepts/security/smack-access-engine.md
 - [ ] vault/concepts/security/smack-inode-and-task-labeling.md
 - [ ] vault/concepts/security/smack-label-registry.md
 - [ ] vault/concepts/security/smack-network-labeling.md

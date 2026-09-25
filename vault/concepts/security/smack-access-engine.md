@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.25"
 researched: 2026-04-16
 status: complete
+explained: "[[smack-access-engine-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/LSM/Smack.html
   - https://github.com/torvalds/linux/blob/master/security/smack/smack_lsm.c
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Smack Access Engine
+
+> 📘 Plain-language version: [[smack-access-engine-explained]]
 
 ## Purpose
 
