@@ -223,10 +223,14 @@
 - [x] net -> page-pool
 
 # --- Unresolved links from ublk 2026-09-24 ---
-- [ ] block -> blk-mq
-- [ ] mm -> maple-tree
+- [x] block -> blk-mq
+- [>] mm -> maple-tree
 
 # --- Unresolved links from page-pool 2026-09-24 ---
 - [ ] net -> xdp
 - [ ] net -> devmem-tcp
 - [ ] concept: dma-mapping-api
+
+# --- Unresolved links from blk-mq 2026-09-25 ---
+- [ ] block -> bio-layer
+- [ ] block -> io-scheduler
