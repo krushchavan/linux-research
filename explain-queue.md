@@ -69,7 +69,7 @@
 - [x] vault/subsystems/mm.md
 - [x] vault/concepts/mm/address-space.md
 - [x] vault/concepts/mm/buddy-allocator.md
-- [ ] vault/concepts/mm/folio.md
+- [x] vault/concepts/mm/folio.md
 - [ ] vault/concepts/mm/get-user-pages-and-pinning.md
 - [ ] vault/concepts/mm/huge-pages-hugetlbfs.md
 - [ ] vault/concepts/mm/maple-tree.md

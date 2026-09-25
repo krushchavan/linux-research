@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "5.16"
 researched: 2026-04-16
 status: complete
+explained: "[[folio-explained]]"
 sources:
   - https://kernel-internals.org/mm/folio/
   - https://lwn.net/Articles/849538/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Folio
+
+> 📘 Plain-language version: [[folio-explained]]
 
 ## Purpose
 
