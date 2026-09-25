@@ -6,12 +6,15 @@ subsystem: cgroups
 kernel_version: "4.3"
 researched: 2026-04-16
 status: complete
+explained: "[[pid-controller-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://lwn.net/Articles/679786/
 ---
 
 # PID Controller
+
+> 📘 Plain-language version: [[pid-controller-explained]]
 
 ## Purpose
 
