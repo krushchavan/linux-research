@@ -246,5 +246,5 @@
 
 # --- Empty source notes found by explain-kernel 2026-09-25 (files exist but are 0 bytes) ---
 - [x] btrfs -> cow-b-tree-engine
-- [ ] fs -> inode
-- [ ] fs -> superblock
+- [x] fs -> inode
+- [x] fs -> superblock
