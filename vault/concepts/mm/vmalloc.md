@@ -6,12 +6,15 @@ subsystem: mm
 kernel_version: "1.0+"
 researched: 2026-04-05
 status: complete
+explained: "[[vmalloc-explained]]"
 sources:
   - https://kernel-internals.org/mm/vmalloc/
   - https://static.lwn.net/kerneldoc/core-api/memory-allocation.html
 ---
 
 # vmalloc
+
+> 📘 Plain-language version: [[vmalloc-explained]]
 
 ## Purpose
 

@@ -86,6 +86,6 @@ Originally a CPU had just one active slab and went straight to the locked per-no
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[buddy-allocator-explained|Buddy allocator]]: where slab pages come from
 - [[per-cpu-page-allocator-pcp-explained|Per-CPU page allocator]]: serves many of those page requests
-- [[vmalloc]]: the fallback for large allocations
+- [[vmalloc-explained|vmalloc]]: the fallback for large allocations
 - [[memory-cgroup-explained|Memory cgroups]]: charging kernel objects to groups
 - [[kernel-hardening|Kernel hardening]]

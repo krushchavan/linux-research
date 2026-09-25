@@ -89,7 +89,7 @@
 - [x] vault/concepts/mm/swap.md
 - [x] vault/concepts/mm/transparent-huge-pages.md
 - [x] vault/concepts/mm/virtual-memory-areas.md
-- [ ] vault/concepts/mm/vmalloc.md
+- [x] vault/concepts/mm/vmalloc.md
 - [ ] vault/concepts/mm/xarray.md
 - [ ] vault/subsystems/memcg.md
 - [x] vault/subsystems/btrfs.md

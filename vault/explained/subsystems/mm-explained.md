@@ -79,7 +79,7 @@ SLUB replaced the older SLAB in 2007 not mainly for speed but for simplicity, wh
 
 ### vmalloc: big buffers from scattered pages
 
-Physically contiguous memory gets hard to find beyond a few pages once RAM is fragmented. See [[vmalloc]].
+Physically contiguous memory gets hard to find beyond a few pages once RAM is fragmented. See [[vmalloc-explained|vmalloc]].
 
 1. The kernel reserves a large virtual address region for this.
 2. A request finds a free virtual range (a balanced-tree search), allocates pages one at a time from anywhere in RAM, and maps them in so they *look* contiguous.
@@ -187,7 +187,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 ## Related
 
 - Technical version: [[mm]]
-- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc]]
+- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc-explained|vmalloc]]
 - [[virtual-memory-areas-explained|virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap-explained|swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
