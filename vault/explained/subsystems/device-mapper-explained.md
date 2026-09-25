@@ -70,7 +70,7 @@ If the new table is wrong, it can be cleared from the inactive slot without ever
 
 ### dm-io
 
-A thin I/O layer targets use for their *own* I/O (metadata, copying), separate from user I/O. See [[dm-io]].
+A thin I/O layer targets use for their *own* I/O (metadata, copying), separate from user I/O. See [[dm-io-explained|dm-io]].
 
 1. A target creates a client sized for how much I/O it expects in flight. The client has a reserved memory pool, so metadata I/O can always make progress even when memory is tight.
 2. Each request names one or more regions (device, start sector, count) and a memory buffer, described as a list of pages, an existing list of page segments, or one contiguous virtual buffer.
@@ -149,6 +149,6 @@ LVM creating a new thin volume and the first write to it:
 
 - Technical version: [[device-mapper]]
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
-- [[target-framework]], [[ioctl-control-interface]], [[dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
+- [[target-framework]], [[ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt]], [[dm-integrity]]: the security targets
 - [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]

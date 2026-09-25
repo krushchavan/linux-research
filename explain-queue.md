@@ -40,7 +40,7 @@
 - [x] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [x] vault/subsystems/device-mapper.md
 - [x] vault/concepts/device-mapper/dm-bufio.md
-- [ ] vault/concepts/device-mapper/dm-io.md
+- [x] vault/concepts/device-mapper/dm-io.md
 - [ ] vault/concepts/device-mapper/ioctl-control-interface.md
 - [ ] vault/concepts/device-mapper/kcopyd.md
 - [ ] vault/concepts/device-mapper/persistent-data-library.md

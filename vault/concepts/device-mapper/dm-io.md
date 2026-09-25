@@ -6,12 +6,15 @@ subsystem: device-mapper
 kernel_version: "2.6.0"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-io-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-io.html
   - https://lwn.net/Articles/87711/
 ---
 
 # dm-io: Device Mapper Low-Level I/O Helper
+
+> 📘 Plain-language version: [[dm-io-explained]]
 
 ## Overview
 
