@@ -76,7 +76,7 @@ At first there was one server thread per queue. Since 6.16, each slot can be ser
 
 ### Batch I/O
 
-Removes the one-command-per-request overhead (7.0). See [[ublk-batch-io]].
+Removes the one-command-per-request overhead (7.0). See [[ublk-batch-io-explained|ublk-batch-io]].
 
 1. Three per-queue commands replace the per-request ones: prime many slots at once; a **multishot** fetch that delivers a batch of tags into a buffer with one completion; and a commit that reports results for many tags at once.
 2. Inside the kernel, new requests go into a per-queue queue of events. Writers take a lock; the single reader doesn't need one.
@@ -134,5 +134,5 @@ If the server crashed in the middle, the device would quiesce, client I/O would 
 - [[io_uring-explained|io_uring]]: the transport ublk rides on
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[io-uring-task-work-explained|Task work]], [[registered-resources-explained|Registered resources]], [[provided-buffer-rings-explained|Provided buffer rings]]
 - [[blk-mq-explained|blk-mq]] and [[block-explained|Block layer]]: ublk is a normal block driver to them
-- [[ublk-control-plane]], [[ublk-io-command-protocol]], [[ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
+- [[ublk-control-plane]], [[ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
 - [[get-user-pages-and-pinning|Page pinning]]
