@@ -36,7 +36,7 @@
 - [x] vault/concepts/bpf/bpf-program-types.md
 - [x] vault/concepts/bpf/bpf-ring-buffer.md
 - [x] vault/concepts/bpf/bpf-verifier.md
-- [ ] vault/concepts/bpf/btf-and-co-re.md
+- [x] vault/concepts/bpf/btf-and-co-re.md
 - [ ] vault/concepts/bpf/libbpf-and-toolchain.md
 - [ ] vault/subsystems/btrfs.md
 - [ ] vault/concepts/btrfs/balance-and-device-management.md

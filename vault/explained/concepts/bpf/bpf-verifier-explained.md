@@ -102,4 +102,4 @@ To keep a malicious program from making the verifier itself run forever, there a
 - [[bpf-jit-compiler-explained|The JIT compiler]]: runs once the verifier approves
 - [[bpf-program-types-explained|Program types]]: decide which calls and input fields are allowed
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: the calls the verifier type-checks
-- [[btf-and-co-re|BTF]]: the type information used to check kfunc calls
+- [[btf-and-co-re-explained|BTF]]: the type information used to check kfunc calls

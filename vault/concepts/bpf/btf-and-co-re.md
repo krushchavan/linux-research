@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "4.18"
 researched: 2026-04-16
 status: complete
+explained: "[[btf-and-co-re-explained]]"
 sources:
   - https://lwn.net/Articles/875879/
   - https://lwn.net/Articles/909095/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # BTF and CO-RE
+
+> 📘 Plain-language version: [[btf-and-co-re-explained]]
 
 ## Purpose
 

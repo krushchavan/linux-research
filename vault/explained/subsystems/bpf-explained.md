@@ -101,7 +101,7 @@ The verifier can't reason about arbitrary kernel functions, so programs may only
 2. **kfuncs** are the newer answer: ordinary kernel functions marked as callable, with **no stability promise**. The verifier checks calls using the kernel's own type information, which lets it enforce richer rules, such as "this pointer must be a trusted task pointer, not any number".
 
 ### BTF and CO-RE: one binary, many kernels
-See [[btf-and-co-re]].
+See [[btf-and-co-re-explained|btf-and-co-re]].
 
 Kernel data structures change layout between versions, so a program compiled for one kernel reads the wrong field on another.
 
@@ -162,6 +162,6 @@ Dropping attack traffic at the network card with XDP:
 
 - Technical version: [[bpf]]
 - [[bpf-verifier-explained|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
-- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
+- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re-explained|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]

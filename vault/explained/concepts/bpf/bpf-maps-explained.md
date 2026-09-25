@@ -100,4 +100,4 @@ If a hash table was created without preallocating memory, entries are allocated 
 - [[bpf-ring-buffer-explained|BPF ring buffer]]: the streaming map in detail
 - [[bpf-verifier-explained|The verifier]]: checks every map access
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: how programs call lookup and update
-- [[btf-and-co-re|BTF]]: type info that lets tools pretty-print map contents
+- [[btf-and-co-re-explained|BTF]]: type info that lets tools pretty-print map contents
