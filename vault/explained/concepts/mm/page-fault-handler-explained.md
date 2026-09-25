@@ -105,7 +105,7 @@ For the kernel's own user-copy functions, a fault at a known location jumps to a
 
 - Technical version: [[page-fault-handler]]
 - [[mm-explained|Memory management]]: the subsystem overview
-- [[virtual-memory-areas]], [[maple-tree-explained|Maple tree]]: how the VMA is found
+- [[virtual-memory-areas-explained|virtual-memory-areas]], [[maple-tree-explained|Maple tree]]: how the VMA is found
 - [[page-cache-explained|Page cache]]: file-backed faults
 - [[swap-explained|swap]]: swap-in
 - [[buddy-allocator-explained|Buddy allocator]]: where new pages come from

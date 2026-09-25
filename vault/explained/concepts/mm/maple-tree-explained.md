@@ -84,7 +84,7 @@ Each process's VMAs live in a maple tree with gap tracking and lock-free reading
 
 - Technical version: [[maple-tree]]
 - [[mm-explained|Memory management]]: the subsystem overview
-- [[virtual-memory-areas]]: the VMAs stored in it
+- [[virtual-memory-areas-explained|virtual-memory-areas]]: the VMAs stored in it
 - [[page-fault-handler-explained|page-fault-handler]]: the fast, lock-free VMA lookup
 - [[rcu-read-copy-update|RCU]]: what makes lock-free reading safe
 - [[xarray]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[ublk-zero-copy-explained|ublk zero-copy]]

@@ -107,7 +107,7 @@ Beyond faults, a reusable walker lets other code inspect or change page tables b
 - Technical version: [[page-table-management]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[page-fault-handler-explained|Page fault handler]]: the main user of the fault-time walk
-- [[virtual-memory-areas]]: the *intent* that page tables implement
+- [[virtual-memory-areas-explained|virtual-memory-areas]]: the *intent* that page tables implement
 - [[rmap-reverse-mapping-explained|rmap-reverse-mapping]]: finding page-table entries from a physical page
 - [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|hugetlbfs]]: huge entries at higher levels
 - [[swap-explained|swap]], [[numa-memory-policy-explained|NUMA memory policy]]

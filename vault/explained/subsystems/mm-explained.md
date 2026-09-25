@@ -90,7 +90,7 @@ Used for loaded modules, large driver buffers and device register mappings, but 
 
 ### Virtual memory areas: each process's map
 
-Each process needs its own layout of stack, heap, code, mapped files and libraries, with different permissions. See [[virtual-memory-areas]].
+Each process needs its own layout of stack, heap, code, mapped files and libraries, with different permissions. See [[virtual-memory-areas-explained|virtual-memory-areas]].
 
 1. A process's memory descriptor holds a tree of **VMAs**, each saying "this address range exists, with these permissions, backed by this file (or nothing), handled by these fault functions".
 2. `mmap` finds a gap and records a VMA. **No physical memory is touched.** `munmap` splits or removes VMAs and clears their mappings.
@@ -188,7 +188,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 
 - Technical version: [[mm]]
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc]]
-- [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
+- [[virtual-memory-areas-explained|virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap-explained|swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages-explained|transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information-explained|psi-pressure-stall-information]]

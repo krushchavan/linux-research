@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "1.0+"
 researched: 2026-04-05
 status: complete
+explained: "[[virtual-memory-areas-explained]]"
 sources:
   - https://kernel-internals.org/mm/mmap/
   - https://lwn.net/Articles/919547/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Virtual Memory Areas
+
+> 📘 Plain-language version: [[virtual-memory-areas-explained]]
 
 ## Purpose
 

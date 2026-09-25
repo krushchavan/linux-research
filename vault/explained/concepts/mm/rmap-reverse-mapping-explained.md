@@ -89,4 +89,4 @@ This is the key design lesson. Originally, every region created by forking share
 - [[memory-compaction-explained|Memory compaction]], [[transparent-huge-pages-explained|transparent-huge-pages]], [[swap-explained|swap]]
 - [[address-space-explained|Address space]]: holds the file-side tree
 - [[page-fault-handler-explained|Page fault handler]]: registers new mappings
-- [[page-table-management-explained|Page table management]], [[virtual-memory-areas]]
+- [[page-table-management-explained|Page table management]], [[virtual-memory-areas-explained|virtual-memory-areas]]
