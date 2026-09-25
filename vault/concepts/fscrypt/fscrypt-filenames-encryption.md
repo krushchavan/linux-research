@@ -6,12 +6,15 @@ subsystem: fscrypt
 kernel_version: "4.1"
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-filenames-encryption-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/811990/
 ---
 
 # fscrypt Filenames Encryption
+
+> 📘 Plain-language version: [[fscrypt-filenames-encryption-explained]]
 
 ## Purpose
 

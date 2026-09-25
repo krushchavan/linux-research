@@ -127,7 +127,7 @@
 - [x] vault/concepts/fscache/netfs-helper-library.md
 - [x] vault/subsystems/fscrypt.md
 - [x] vault/concepts/fscrypt/fscrypt-contents-encryption.md
-- [ ] vault/concepts/fscrypt/fscrypt-filenames-encryption.md
+- [x] vault/concepts/fscrypt/fscrypt-filenames-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-inline-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-inode-info.md
 - [ ] vault/concepts/fscrypt/fscrypt-key-management.md

@@ -71,7 +71,7 @@ Each data unit's IV comes from its position in the file, optionally mixed with t
 ### Filename encryption
 Directory entries are encrypted with the directory's filename key (derived separately from content keys), each name in one pass. Short names are padded to 16 bytes and longer ones to a configurable boundary, hiding exact lengths. Names that would be too long once encoded as text are stored as a hash prefix, with the full ciphertext kept elsewhere.
 
-Without the key, directory listings still work: they show **no-key names**, encoded ciphertext that programs can pass back to operations that only need to identify a file, not to know its name. See [[fscrypt-filenames-encryption|filename encryption]].
+Without the key, directory listings still work: they show **no-key names**, encoded ciphertext that programs can pass back to operations that only need to identify a file, not to know its name. See [[fscrypt-filenames-encryption-explained|filename encryption]].
 
 ### Inline hardware encryption
 With the right mount option, fscrypt hands the key and IV to the block layer alongside each I/O instead of encrypting in software, and the storage controller's crypto engine encrypts or decrypts during the transfer: no CPU cipher work and no bounce pages. If the hardware can't handle the algorithm or IV size, a software fallback does it transparently.
@@ -105,6 +105,6 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 ## Related
 
 - Technical version: [[fscrypt]]
-- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption|Filename encryption]], [[fscrypt-inline-encryption|Inline encryption]]
+- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
 - [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]
