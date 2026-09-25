@@ -91,7 +91,7 @@ Completions are often detected in the wrong place: an interrupt handler, or a ca
 
 ### Registered files and buffers
 
-Every ordinary I/O pays to look up the file descriptor and, for user memory, to find and pin the pages. Registering them once up front removes that per-request cost. See [[registered-resources]].
+Every ordinary I/O pays to look up the file descriptor and, for user memory, to find and pin the pages. Registering them once up front removes that per-request cost. See [[registered-resources-explained|registered-resources]].
 
 1. The application registers a table of files. Requests then name a slot number instead of a descriptor. Since 5.15, opening a file or accepting a connection can put the result straight into a slot, without ever creating a normal descriptor.
 2. Registered buffers have their pages pinned once and recorded as a ready-made list of physical pages. Reads, writes, sends and driver commands can use them directly.

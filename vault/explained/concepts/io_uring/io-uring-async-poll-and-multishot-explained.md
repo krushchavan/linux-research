@@ -115,5 +115,5 @@ The same engine powers several features:
 - [[io-uring-task-work-explained|io-uring-task-work]]: how wake-ups continue in the application's thread
 - [[provided-buffer-rings-explained|provided-buffer-rings]]: where multishot receive gets its buffers
 - [[io-wq-explained|io-wq]]: the helper-thread fallback this avoids
-- [[registered-resources]]: direct descriptors for multishot accept
+- [[registered-resources-explained|registered-resources]]: direct descriptors for multishot accept
 - [[vfs|VFS]], [[net|Networking]]

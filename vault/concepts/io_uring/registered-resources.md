@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.1"
 researched: 2026-09-24
 status: complete
+explained: "[[registered-resources-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/fixed-buffers/
   - https://kernelnewbies.org/Linux_6.15
@@ -16,6 +17,8 @@ sources:
 ---
 
 # io_uring Registered Resources (Fixed Files and Buffers)
+
+> 📘 Plain-language version: [[registered-resources-explained]]
 
 ## Purpose
 
