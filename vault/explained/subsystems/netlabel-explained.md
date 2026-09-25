@@ -43,7 +43,7 @@ Translation is governed by a **Domain of Interpretation (DOI)**: a numbered tabl
 - **pass-through:** numbers are used as-is, so both ends must agree on numbering
 - **local:** carries the full local label, only over loopback, never off the machine
 
-See [[cipso-ipv4-engine|the CIPSO engine]].
+See [[cipso-ipv4-engine-explained|the CIPSO engine]].
 
 ### The CALIPSO engine (IPv6)
 CALIPSO (RFC 5570, merged in 4.8) does the same job for IPv6, using a **hop-by-hop option** that routers along the path can inspect. To security modules the interface is identical. Linux automatically decodes incoming CALIPSO labels for any known DOI, so administrators only configure the outgoing side. See [[calipso-ipv6-engine-explained|the CALIPSO engine]].
@@ -91,6 +91,6 @@ An SELinux process with categories c1 and c2 sends over TCP, and the receiver ch
 ## Related
 
 - Technical version: [[netlabel]]
-- [[cipso-ipv4-engine|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table|Domain table]], [[netlabel-netlink-management-interface|Management interface]], [[netlabel-lsm-security-api|LSM API]]
+- [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table|Domain table]], [[netlabel-netlink-management-interface|Management interface]], [[netlabel-lsm-security-api|LSM API]]
 - [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework|LSM framework]], [[linux-audit|Audit]]
 - [[net-explained|Networking stack]], [[netfilter-explained|Netfilter (SECMARK)]]

@@ -6,6 +6,7 @@ subsystem: netlabel
 kernel_version: "2.6.19"
 researched: 2026-04-17
 status: complete
+explained: "[[cipso-ipv4-engine-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/netlabel/cipso_ipv4.html
   - https://lwn.net/Articles/204905/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # CIPSO/IPv4 Engine
+
+> 📘 Plain-language version: [[cipso-ipv4-engine-explained]]
 
 ## Purpose
 
