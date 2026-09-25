@@ -6,6 +6,7 @@ subsystem: block
 kernel_version: "2.5.1"
 researched: 2026-09-25
 status: complete
+explained: "[[bio-layer-explained]]"
 sources:
   - https://kernel-internals.org/block/
   - https://kernel-internals.org/block/bio-request/
@@ -22,6 +23,8 @@ sources:
 ---
 
 # The bio Layer (struct bio and bio submission)
+
+> 📘 Plain-language version: [[bio-layer-explained]]
 
 ## Purpose
 

@@ -247,5 +247,5 @@
 - [x] vault/concepts/tracing/tracepoints-and-trace-event.md
 - [x] vault/concepts/tracing/uprobes-and-usdt.md
 - [x] vault/subsystems/smack.md
-- [ ] vault/concepts/block/bio-layer.md
+- [x] vault/concepts/block/bio-layer.md
 - [ ] vault/concepts/block/io-scheduler.md
