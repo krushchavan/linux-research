@@ -92,7 +92,7 @@
 - [ ] vault/concepts/mm/vmalloc.md
 - [ ] vault/concepts/mm/xarray.md
 - [ ] vault/subsystems/memcg.md
-- [ ] vault/subsystems/btrfs.md
+- [x] vault/subsystems/btrfs.md
 - [ ] vault/concepts/btrfs/balance-and-device-management.md
 - [ ] vault/concepts/btrfs/checksumming-and-data-integrity.md
 - [ ] vault/concepts/btrfs/cow-b-tree-engine.md

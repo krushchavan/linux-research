@@ -7,6 +7,7 @@ mailing_list: linux-btrfs@vger.kernel.org
 source_path: fs/btrfs/
 researched: 2026-04-05
 status: complete
+explained: "[[btrfs-explained]]"
 sources:
   - https://archive.kernel.org/oldwiki/btrfs.wiki.kernel.org/index.php/On-disk_Format.html
   - https://archive.kernel.org/oldwiki/btrfs.wiki.kernel.org/index.php/Data_Structures.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Btrfs (B-tree Filesystem) Subsystem
+
+> 📘 Plain-language version: [[btrfs-explained]]
 
 ## Related Notes
 
