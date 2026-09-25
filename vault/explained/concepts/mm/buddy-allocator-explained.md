@@ -89,7 +89,7 @@ The buddy allocator only knows free versus allocated. It doesn't track *who* hol
 - Technical version: [[buddy-allocator]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[per-cpu-page-allocator-pcp]]: the lock-free layer in front of it
-- [[memory-compaction]]: how fragmentation gets undone
+- [[memory-compaction-explained|memory-compaction]]: how fragmentation gets undone
 - [[page-reclaim]], [[oom-killer]]: what the slow path calls
 - [[slub-slab-allocator]], [[vmalloc]], [[page-cache]]: its main customers
 - [[dma-mapping-api-explained|DMA mapping API]]: why contiguous memory matters

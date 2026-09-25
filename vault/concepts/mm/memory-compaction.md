@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.35"
 researched: 2026-04-05
 status: complete
+explained: "[[memory-compaction-explained]]"
 sources:
   - https://lwn.net/Articles/368869/
   - https://lwn.net/Articles/817905/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Memory Compaction
+
+> 📘 Plain-language version: [[memory-compaction-explained]]
 
 ## Purpose
 
