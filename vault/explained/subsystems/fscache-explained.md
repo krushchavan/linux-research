@@ -59,7 +59,7 @@ It organises I/O at three levels:
 - a **stream** is a run of pieces headed for the same destination. A read has one stream; a cached write has two, one to the server and one to the cache, each cut into pieces that suit its destination (say 1 MB for the server, block-aligned for the cache)
 - a **subrequest** is one network call or one cache I/O
 
-Pages unlock progressively as their pieces complete, not when the whole request finishes. See [[netfs-helper-library|the netfs helper library]].
+Pages unlock progressively as their pieces complete, not when the whole request finishes. See [[netfs-helper-library-explained|the netfs helper library]].
 
 ### CacheFiles: the storage backend
 CacheFiles stores cached data as ordinary files on an already-mounted local filesystem. That way it reuses the local filesystem's block allocation, journalling and crash recovery instead of inventing its own.
@@ -105,6 +105,6 @@ If the server's copy later changes (new generation number or size), the filesyst
 ## Related
 
 - Technical version: [[fscache]]
-- [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
+- [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library-explained|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
 - [[vfs|VFS]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]], [[block-explained|Block layer]], [[security|Security]]

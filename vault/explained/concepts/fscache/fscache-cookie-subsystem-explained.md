@@ -78,5 +78,5 @@ Before 5.17, fscache called back into the filesystem to produce keys, check vali
 ## Related
 
 - Technical version: [[fscache-cookie-subsystem]]
-- [[fscache-explained|fscache subsystem]], [[cachefiles-backend-explained|CacheFiles backend]], [[netfs-helper-library|netfs helper library]]
+- [[fscache-explained|fscache subsystem]], [[cachefiles-backend-explained|CacheFiles backend]], [[netfs-helper-library-explained|netfs helper library]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[vfs|VFS]]

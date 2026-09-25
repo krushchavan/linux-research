@@ -6,6 +6,7 @@ subsystem: fscache
 kernel_version: "5.12"
 researched: 2026-04-15
 status: complete
+explained: "[[netfs-helper-library-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/netfs-api.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # netfs Helper Library
+
+> 📘 Plain-language version: [[netfs-helper-library-explained]]
 
 ## Purpose
 

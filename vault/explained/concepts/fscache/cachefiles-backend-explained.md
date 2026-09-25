@@ -32,7 +32,7 @@ Each cache file carries an extended attribute holding the object type and the ne
 ### Step 3: Moving data with direct I/O
 This is the key step. All cache reads and writes use asynchronous **direct I/O** straight between disk and the network filesystem's own pages.
 
-Before the 5.17 rewrite, CacheFiles read data into the backing file's page cache and then copied it into the network filesystem's page cache, so every cached page existed twice in memory. Now data goes from disk to the application's page in one transfer. When the I/O completes, CacheFiles notifies the [[netfs-helper-library|netfs helper library]], which advances the overall request and unlocks the pages. The cost is more complex asynchronous bookkeeping, and having to respect the backing filesystem's direct-I/O alignment rules.
+Before the 5.17 rewrite, CacheFiles read data into the backing file's page cache and then copied it into the network filesystem's page cache, so every cached page existed twice in memory. Now data goes from disk to the application's page in one transfer. When the I/O completes, CacheFiles notifies the [[netfs-helper-library-explained|netfs helper library]], which advances the overall request and unlocks the pages. The cost is more complex asynchronous bookkeeping, and having to respect the backing filesystem's direct-I/O alignment rules.
 
 ### Step 4: Keeping disk usage in bounds
 Six thresholds, three for disk blocks and three for file counts, each a percentage:
@@ -90,6 +90,6 @@ A device file was chosen over netlink to reuse familiar messaging patterns. The 
 ## Related
 
 - Technical version: [[cachefiles-backend]]
-- [[fscache-explained|fscache subsystem]], [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library|netfs helper library]]
+- [[fscache-explained|fscache subsystem]], [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library-explained|netfs helper library]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
 - [[vfs|VFS]], [[security|Security]]
