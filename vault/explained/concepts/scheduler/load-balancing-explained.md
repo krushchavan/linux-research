@@ -20,7 +20,7 @@ Giving each CPU its own run queue removes the global lock from task selection, b
 
 ## The idea in one paragraph
 
-Think of a **bank with several teller windows**. A greeter assigns arriving customers to queues; periodically a manager looks over all the queues and moves people from long ones to empty ones. But the manager is careful: they don't move someone who's in the middle of being served (their cache is hot), prefers moving people to a nearby window over one across the building (NUMA), and moves people in batches to spread the cost. The greeter also tries to pick well at arrival, so less shuffling is needed later.
+Think of a **bank with several teller windows**. A greeter assigns arriving customers to queues; periodically a manager looks over all the queues and moves people from long ones to empty ones. But the manager is careful: they don't move someone who's in the middle of being served (their cache is hot), prefer moving people to a nearby window over one across the building (NUMA), and move people in batches to spread the cost. The greeter also tries to pick well at arrival, so less shuffling is needed later.
 
 ## Step by step
 

@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6.18"
 researched: 2026-04-16
 status: complete
+explained: "[[pi-mutexes-explained]]"
 sources:
   - https://kernel-internals.org/sched/pi-mutexes/
   - https://docs.kernel.org/locking/rt-mutex-design.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # PI Mutexes (Priority Inheritance)
+
+> 📘 Plain-language version: [[pi-mutexes-explained]]
 
 ## Purpose
 
