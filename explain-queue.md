@@ -210,7 +210,7 @@
 - [x] vault/subsystems/scheduler.md
 - [x] vault/concepts/scheduler/cfs-eevdf.md
 - [x] vault/concepts/scheduler/context-switch.md
-- [ ] vault/concepts/scheduler/cpu-cgroups.md
+- [x] vault/concepts/scheduler/cpu-cgroups.md
 - [ ] vault/concepts/scheduler/load-balancing.md
 - [ ] vault/concepts/scheduler/pi-mutexes.md
 - [ ] vault/concepts/scheduler/preemption-model.md

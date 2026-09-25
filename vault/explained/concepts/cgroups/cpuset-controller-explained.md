@@ -67,5 +67,5 @@ Most kernel resource controls share; this one deliberately grants exclusive owne
 ## Related
 
 - Technical version: [[cpuset-controller]]
-- [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[cpu-cgroups|CPU cgroups]]
+- [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[cpu-cgroups-explained|CPU cgroups]]
 - [[numa-memory-policy-explained|NUMA memory policy]], [[scheduler-explained|Scheduler]]

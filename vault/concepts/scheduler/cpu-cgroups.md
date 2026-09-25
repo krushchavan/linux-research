@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6.24"
 researched: 2026-04-13
 status: complete
+explained: "[[cpu-cgroups-explained]]"
 sources:
   - https://kernel-internals.org/sched/cpu-cgroup/
   - https://kernel-internals.org/sched/cpu-bandwidth/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # CPU Cgroups
+
+> 📘 Plain-language version: [[cpu-cgroups-explained]]
 
 ## Purpose
 

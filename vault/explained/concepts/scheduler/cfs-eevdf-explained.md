@@ -45,7 +45,7 @@ This is the key step. Each task gets a **virtual deadline**: its virtual runtime
 When a task wakes, its virtual deadline is compared with the running task's. If it's earlier, the running task is flagged to be switched out, a more principled test than the old heuristic.
 
 ### Step 7: Groups
-With group scheduling, each cgroup gets its own per-CPU queue and a single entity representing the whole group. That entity competes in the parent's queue using the group's weight, while tasks inside the group compete among themselves: a two-level hierarchy rather than one flat tree. See [[cpu-cgroups|CPU cgroups]].
+With group scheduling, each cgroup gets its own per-CPU queue and a single entity representing the whole group. That entity competes in the parent's queue using the group's weight, while tasks inside the group compete among themselves: a two-level hierarchy rather than one flat tree. See [[cpu-cgroups-explained|CPU cgroups]].
 
 ## The picture
 
@@ -77,5 +77,5 @@ With group scheduling, each cgroup gets its own per-CPU queue and a single entit
 ## Related
 
 - Technical version: [[cfs-eevdf]]
-- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cpu-cgroups|CPU cgroups]], [[load-balancing|Load balancing]], [[scheduler-classes|Scheduling classes]]
+- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cpu-cgroups-explained|CPU cgroups]], [[load-balancing|Load balancing]], [[scheduler-classes|Scheduling classes]]
 - [[interrupt-handling-explained|Interrupt handling]]

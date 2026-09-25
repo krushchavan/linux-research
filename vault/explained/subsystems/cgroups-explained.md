@@ -61,7 +61,7 @@ Each group becomes a scheduling entity that competes with its siblings, with its
 - **Weights** (1 to 10,000, default 100) split CPU in proportion when CPUs are busy. It's work-conserving: an idle group's share goes to others.
 - **Bandwidth limits** give a group a quota of run time per period (default 100 ms). When the quota is used up, the group is **throttled**, taken off the run queues entirely, until a timer refills it at the period's end. CPUs draw run time from the group's pool in 5 ms slices to limit lock contention. Limits nest: a child gets at most what its parent has left.
 
-See [[cpu-cgroups|CPU cgroups]].
+See [[cpu-cgroups-explained|CPU cgroups]].
 
 ### I/O
 Each group has per-device state in the block layer:
@@ -110,6 +110,6 @@ A process in a container limited to 50% of one CPU spins in a loop:
 ## Related
 
 - Technical version: [[cgroups]]
-- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller-explained|I/O]], [[pid-controller-explained|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
+- [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller-explained|I/O]], [[pid-controller-explained|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups-explained|CPU]]
 - [[memcg-explained|Memory cgroups]], [[memory-cgroup-explained|Memory cgroup concepts]], [[psi-pressure-stall-information-explained|Pressure stall information]], [[oom-killer-explained|OOM killer]]
 - [[scheduler-explained|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]

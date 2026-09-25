@@ -94,7 +94,7 @@ Containers need isolation: one mustn't starve another by spawning endless thread
 - **soft limit (weight):** proportional shares
 - **hard limit (bandwidth):** a quota per period, e.g. 50 ms per 100 ms. Each CPU borrows 5 ms slices from the group's pool; when the pool is empty, the group's queues are throttled until a timer refills it at the next period.
 
-See [[cpu-cgroups|CPU cgroups]] and [[cgroups-explained|cgroups]].
+See [[cpu-cgroups-explained|CPU cgroups]] and [[cgroups-explained|cgroups]].
 
 ## A request's journey
 
@@ -125,5 +125,5 @@ A task blocks on an empty pipe and is later woken:
 ## Related
 
 - Technical version: [[scheduler]]
-- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
+- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups-explained|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
 - [[cgroups-explained|cgroups]], [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]], [[mm-explained|Memory management]], [[numa-memory-policy|NUMA memory policy]]
