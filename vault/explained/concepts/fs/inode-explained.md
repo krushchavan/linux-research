@@ -85,5 +85,5 @@ Changing metadata marks the inode **dirty**, lets the filesystem log the change 
 ## Related
 
 - Technical version: [[inode]]
-- [[inode-cache-explained|Inode cache]], [[core-in-memory-structures-explained|Core VFS structures]], [[dentry-explained|Dentry]], [[path-lookup-explained|Path lookup]], [[superblock|Superblock]]
+- [[inode-cache-explained|Inode cache]], [[core-in-memory-structures-explained|Core VFS structures]], [[dentry-explained|Dentry]], [[path-lookup-explained|Path lookup]], [[superblock-explained|Superblock]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[lsm-framework-explained|LSM framework]], [[user-namespaces-explained|User namespaces]]

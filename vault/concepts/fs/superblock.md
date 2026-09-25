@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6"
 researched: 2026-09-25
 status: complete
+explained: "[[superblock-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://lwn.net/Articles/780268/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Superblock (struct super_block)
+
+> 📘 Plain-language version: [[superblock-explained]]
 
 ## Purpose
 

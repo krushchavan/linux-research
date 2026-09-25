@@ -94,6 +94,6 @@ A superblock lives while any mount references it. When the last mount goes, the 
 
 - Technical version: [[filesystem-registration]]
 - [[fs-explained|Filesystem subsystem (VFS)]]
-- [[superblock]]: what a mount builds
+- [[superblock-explained|superblock]]: what a mount builds
 - [[core-in-memory-structures-explained|Core VFS objects]]
 - [[mount-namespace-explained|mount-namespace]], [[lsm-framework-explained|LSM framework]], [[nfs-explained|NFS]], [[fuse-explained|FUSE]]

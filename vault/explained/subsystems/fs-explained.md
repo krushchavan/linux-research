@@ -41,7 +41,7 @@ The **Virtual File System** (VFS) is an **object-oriented plugin framework writt
 
 ### Superblock: one mounted filesystem
 
-A superblock represents one *mounted instance* of a filesystem: its mount options, root directory, list of inodes, dirty inodes and the filesystem's own metadata. See [[superblock]].
+A superblock represents one *mounted instance* of a filesystem: its mount options, root directory, list of inodes, dirty inodes and the filesystem's own metadata. See [[superblock-explained|superblock]].
 
 1. A filesystem module registers itself with VFS.
 2. Mounting calls the filesystem's mount function, which reads its on-disk superblock, builds the in-memory one with a root directory, and hands it back.
@@ -144,7 +144,7 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 
 - Technical version: [[fs]]
 - [[vfs-explained|vfs]]: the VFS deep dive
-- [[superblock]], [[inode-explained|inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup-explained|path-lookup]]
+- [[superblock-explained|superblock]], [[inode-explained|inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup-explained|path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|writeback-infrastructure]]
 - [[fsnotify-explained|fsnotify]], [[inotify-and-fanotify-explained|inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs-explained|nfs]], [[fuse-explained|fuse]]

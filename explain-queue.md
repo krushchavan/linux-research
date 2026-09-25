@@ -121,7 +121,7 @@
 - [x] vault/concepts/fs/mount-namespace.md
 - [x] vault/concepts/fs/network-filesystems-overview.md
 - [x] vault/concepts/fs/path-lookup.md
-- [ ] vault/concepts/fs/superblock.md
+- [x] vault/concepts/fs/superblock.md
 - [x] vault/concepts/fs/vfs-locking-model.md
 - [x] vault/concepts/fs/writeback-infrastructure.md
 - [x] vault/subsystems/fscache.md
