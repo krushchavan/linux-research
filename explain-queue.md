@@ -97,7 +97,7 @@
 - [x] vault/concepts/btrfs/checksumming-and-data-integrity.md
 - [ ] vault/concepts/btrfs/cow-b-tree-engine.md
 - [x] vault/concepts/btrfs/multiple-b-trees.md
-- [ ] vault/concepts/btrfs/qgroups.md
+- [x] vault/concepts/btrfs/qgroups.md
 - [ ] vault/concepts/btrfs/raid-and-multi-device-support.md
 - [ ] vault/concepts/btrfs/send-receive-protocol.md
 - [ ] vault/concepts/btrfs/space-accounting-and-block-groups.md

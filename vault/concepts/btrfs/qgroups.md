@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "3.8"
 researched: 2026-04-12
 status: complete
+explained: "[[qgroups-explained]]"
 sources:
   - https://lwn.net/Articles/462401/
   - https://lwn.net/Articles/548316/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Btrfs Quota Groups (Qgroups)
+
+> 📘 Plain-language version: [[qgroups-explained]]
 
 ## Purpose
 
