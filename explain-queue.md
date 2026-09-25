@@ -30,7 +30,7 @@
 - [x] vault/concepts/bpf/btf-and-co-re.md
 - [x] vault/concepts/bpf/libbpf-and-toolchain.md
 - [x] vault/subsystems/io_uring.md
-- [ ] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
+- [x] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
 - [ ] vault/concepts/io_uring/io-uring-internals.md
 - [ ] vault/concepts/io_uring/io-uring-task-work.md
 - [ ] vault/concepts/io_uring/io-wq.md

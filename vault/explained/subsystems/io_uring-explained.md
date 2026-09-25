@@ -109,7 +109,7 @@ A server with 10,000 idle sockets would waste a lot of memory if every pending r
 
 ### Async poll and multishot
 
-Sending a socket read to a helper thread that then sleeps would recreate thread-per-connection. See [[io-uring-async-poll-and-multishot]].
+Sending a socket read to a helper thread that then sleeps would recreate thread-per-connection. See [[io-uring-async-poll-and-multishot-explained|io-uring-async-poll-and-multishot]].
 
 1. If a non-blocking attempt on a pollable file fails, io_uring hooks the request onto that file's wait queue, the same one epoll would use.
 2. When the socket becomes readable, the wake-up callback claims the request and queues task work, which retries it in the submitting thread.

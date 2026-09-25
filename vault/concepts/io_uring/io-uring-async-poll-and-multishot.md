@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.7"
 researched: 2026-09-24
 status: complete
+explained: "[[io-uring-async-poll-and-multishot-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/multishot-ops/
   - https://kernel-internals.org/io-uring/networking/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # io_uring Async Poll and Multishot Requests
+
+> 📘 Plain-language version: [[io-uring-async-poll-and-multishot-explained]]
 
 ## Purpose
 
