@@ -83,7 +83,7 @@ Every inode with data has an address space that ties the file to the page cache.
 
 ### Writeback: flushing dirty data
 
-`write()` normally only dirties the cache; writeback gets the data to disk later, so a write doesn't wait for the device. See [[writeback-infrastructure]].
+`write()` normally only dirties the cache; writeback gets the data to disk later, so a write doesn't wait for the device. See [[writeback-infrastructure-explained|writeback-infrastructure]].
 
 1. Dirtying a folio puts its inode on its **backing device's** dirty list. Each device (and, since 4.2, each cgroup on it) has its own worker.
 2. Triggers:
@@ -145,7 +145,7 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 - Technical version: [[fs]]
 - [[vfs]]: the VFS deep dive
 - [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup-explained|path-lookup]]
-- [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure]]
+- [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|writeback-infrastructure]]
 - [[fsnotify-explained|fsnotify]], [[inotify-and-fanotify-explained|inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse]]
 - [[lsm-framework|LSM framework]], [[mount-namespace-explained|mount-namespace]]

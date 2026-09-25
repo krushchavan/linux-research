@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[writeback-infrastructure-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://lwn.net/Articles/326552/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Writeback Infrastructure
+
+> 📘 Plain-language version: [[writeback-infrastructure-explained]]
 
 ## Purpose
 

@@ -87,5 +87,5 @@ Like the dentry cache, each filesystem's inode LRU is split per NUMA node and pe
 - [[inode]]: the object being cached
 - [[dentry-cache-explained|Dentry cache]]: its partner; dentries hold inode references
 - [[core-in-memory-structures-explained|Core VFS objects]], [[fs-explained|Filesystem subsystem (VFS)]]
-- [[address-space-explained|Address space]], [[writeback-infrastructure]]
+- [[address-space-explained|Address space]], [[writeback-infrastructure-explained|writeback-infrastructure]]
 - [[page-reclaim-explained|Page reclaim]], [[memory-cgroup-explained|Memory cgroups]]

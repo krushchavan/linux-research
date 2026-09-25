@@ -120,7 +120,7 @@
 - [x] vault/concepts/fs/path-lookup.md
 - [ ] vault/concepts/fs/superblock.md
 - [x] vault/concepts/fs/vfs-locking-model.md
-- [ ] vault/concepts/fs/writeback-infrastructure.md
+- [x] vault/concepts/fs/writeback-infrastructure.md
 - [ ] vault/subsystems/fscache.md
 - [ ] vault/concepts/fscache/cachefiles-backend.md
 - [ ] vault/concepts/fscache/fscache-cookie-subsystem.md
