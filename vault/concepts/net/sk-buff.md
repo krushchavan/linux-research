@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "2.0"
 researched: 2026-04-14
 status: complete
+explained: "[[sk-buff-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/skbuff.html
   - https://lwn.net/Articles/775255/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # sk_buff: The Network Packet Buffer
+
+> 📘 Plain-language version: [[sk-buff-explained]]
 
 ## Purpose
 

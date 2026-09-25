@@ -36,7 +36,7 @@ Think of a **motorway with toll booths**. A packet is a car; each layer is a boo
 ### The skb: one packet, many layers
 An **skb** doesn't contain packet data; it points into a separate buffer that has free **headroom** in front, the packet in the middle, and **tailroom** after. Adding a header (IP handing down to Ethernet) just moves the start pointer back into the headroom; stripping one moves it forward. No copying.
 
-Large packets chain extra page fragments, which is how TCP can hand the card a single 64 KB "packet" for the hardware to slice into wire-sized frames (segmentation offload). Reference counts are split between the metadata and the shared data, so a **clone** (for multicast or packet capture) can share the data but have its own header area, while a full **copy** duplicates everything. The skb also records checksum status (hardware already verified it; hardware must still compute it), a cached flow hash, the owning socket, a cached route, and a small scratch area each layer can use for its own state. See [[sk-buff|the skb]].
+Large packets chain extra page fragments, which is how TCP can hand the card a single 64 KB "packet" for the hardware to slice into wire-sized frames (segmentation offload). Reference counts are split between the metadata and the shared data, so a **clone** (for multicast or packet capture) can share the data but have its own header area, while a full **copy** duplicates everything. The skb also records checksum status (hardware already verified it; hardware must still compute it), a cached flow hash, the owning socket, a cached route, and a small scratch area each layer can use for its own state. See [[sk-buff-explained|the skb]].
 
 ### Network devices and NAPI
 Every interface (Ethernet, Wi-Fi, virtual, tunnel) is a **network device** with a table of driver operations and a set of offload capability flags.
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

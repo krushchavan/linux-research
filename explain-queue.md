@@ -190,7 +190,7 @@
 - [x] vault/concepts/net/network-device-and-napi.md
 - [x] vault/concepts/net/network-namespaces.md
 - [x] vault/concepts/net/page-pool.md
-- [ ] vault/concepts/net/sk-buff.md
+- [x] vault/concepts/net/sk-buff.md
 - [ ] vault/concepts/net/tcp-ip-stack.md
 - [ ] vault/concepts/net/traffic-control-qdisc.md
 - [ ] vault/concepts/net/xdp.md

@@ -82,6 +82,6 @@ Before 6.15 this was dangerous: a late page would be unmapped against a device w
 ## Related
 
 - Technical version: [[page-pool]]
-- [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[sk-buff|skb]], [[xdp|XDP]]
+- [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[sk-buff-explained|skb]], [[xdp|XDP]]
 - [[devmem-tcp-explained|Device-memory TCP]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[buddy-allocator-explained|Buddy allocator]], [[dma-mapping-api-explained|DMA mapping]], [[xarray-explained|XArray]]
