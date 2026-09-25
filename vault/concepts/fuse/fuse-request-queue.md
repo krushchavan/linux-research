@@ -6,6 +6,7 @@ subsystem: fuse
 kernel_version: "2.6.14"
 researched: 2026-04-09
 status: complete
+explained: "[[fuse-request-queue-explained]]"
 sources:
   - https://www.kernel.org/doc/html/v6.0/filesystems/fuse.html
   - https://github.com/torvalds/linux/blob/master/fs/fuse/fuse_i.h
@@ -18,6 +19,8 @@ sources:
 ---
 
 # FUSE Request Queue
+
+> 📘 Plain-language version: [[fuse-request-queue-explained]]
 
 ## Purpose
 

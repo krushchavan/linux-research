@@ -134,7 +134,7 @@
 - [x] vault/concepts/fscrypt/fscrypt-policy.md
 - [x] vault/subsystems/fuse.md
 - [x] vault/concepts/fuse/fuse-connection.md
-- [ ] vault/concepts/fuse/fuse-request-queue.md
+- [x] vault/concepts/fuse/fuse-request-queue.md
 - [ ] vault/concepts/fuse/fuse-vfs-integration.md
 - [ ] vault/concepts/fuse/fuse-wire-protocol.md
 - [ ] vault/subsystems/netfs.md

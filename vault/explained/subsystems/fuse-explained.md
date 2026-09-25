@@ -46,7 +46,7 @@ Many processes can be waiting on the daemon at once, so requests are organised i
 - **processing**, requests the daemon has read but not answered
 - **in transfer**, requests being copied through the device
 
-When the daemon reads from the device, it gets the highest-priority request, which moves from pending to processing. When it writes a reply, the kernel matches it to the request by a **unique ID** and wakes the waiting thread. See [[fuse-request-queue|the request queue]].
+When the daemon reads from the device, it gets the highest-priority request, which moves from pending to processing. When it writes a reply, the kernel matches it to the request by a **unique ID** and wakes the waiting thread. See [[fuse-request-queue-explained|the request queue]].
 
 ### The wire protocol
 Every message starts with a fixed header. Requests carry length, operation code, unique ID, the target inode's node ID, and the caller's user, group and process IDs; replies carry length, an error code and the same unique ID. Each operation then has its own body: for example, a lookup sends a name and gets back the inode's attributes plus how long they can be cached.
@@ -98,7 +98,7 @@ If a non-fatal signal arrives during a later read the daemon is already handling
 ## Related
 
 - Technical version: [[fuse]]
-- [[fuse-connection-explained|Connection]], [[fuse-request-queue|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
+- [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[page-cache-explained|Page cache]]
 - [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs|OverlayFS]]
 - [[network-filesystems-overview-explained|Network filesystems]]
