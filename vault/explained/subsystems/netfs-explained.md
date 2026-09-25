@@ -58,7 +58,7 @@ See [[netfs-inode-context-explained|the inode context]].
 ### The read path
 Readahead, single-page reads and direct reads share one loop. The filesystem may first widen the window (Ceph can round up to a 2 MB stripe). Then, for each stretch of the file, netfs asks the local cache what to do: fill with zeros (a hole), read from the cache, download from the server, or treat the cached copy as invalid. Neighbouring pages with the same answer merge into one subrequest to save calls.
 
-Downloads go through the filesystem's size check and "issue read" callback; cache reads go straight to the cache. As progress arrives, finished pages unlock, so early data is usable while later calls are still in flight. Direct reads skip the page cache, pinning the user's buffer and reading into it. See [[netfs-read-path|the read path]].
+Downloads go through the filesystem's size check and "issue read" callback; cache reads go straight to the cache. As progress arrives, finished pages unlock, so early data is usable while later calls are still in flight. Direct reads skip the page cache, pinning the user's buffer and reading into it. See [[netfs-read-path-explained|the read path]].
 
 ### The write path
 Writeback walks the dirty pages and sorts them: cache-only copies go to the cache stream; ordinary dirty pages go to the server (and to the cache as well, if one is active). Each stream is cut to its own destination's limits. A failed server write re-dirties the pages for another try; a failed cache write makes the filesystem invalidate its cache entry.
@@ -99,6 +99,6 @@ If a cache read had failed instead (say the cached copy turned out stale), netfs
 ## Related
 
 - Technical version: [[netfs]]
-- [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table-explained|Operations table]]
+- [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path-explained|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table-explained|Operations table]]
 - [[netfs-helper-library-explained|netfs helper library (fscache view)]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|CacheFiles]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[writeback-infrastructure-explained|Writeback]]
