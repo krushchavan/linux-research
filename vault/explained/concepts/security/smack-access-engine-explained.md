@@ -22,7 +22,7 @@ Every Smack hook boils its question down to the same form: **may a subject with 
 ## Step by step
 
 ### Step 1: Resolve both labels
-The hook looks up the subject's label (from the process's credentials) and the object's label (from the inode, socket, etc.) as canonical entries in the [[smack-label-registry|label registry]], so labels can be compared as pointers rather than strings.
+The hook looks up the subject's label (from the process's credentials) and the object's label (from the inode, socket, etc.) as canonical entries in the [[smack-label-registry-explained|label registry]], so labels can be compared as pointers rather than strings.
 
 ### Step 2: Check the five built-in cases, in order
 1. **Subject is "\*" (star):** deny everything. Star is Smack's quarantine label; a process with it can reach nothing, and no rule or capability overrides this.
@@ -70,5 +70,5 @@ If logging is on, the engine writes an audit record with both labels, the reques
 ## Related
 
 - Technical version: [[smack-access-engine]]
-- [[smack|Smack]], [[smack-label-registry|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
+- [[smack|Smack]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
 - [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[capabilities-explained|Capabilities]], [[linux-audit-explained|Audit]], [[selinux-explained|SELinux]]

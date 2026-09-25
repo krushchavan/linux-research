@@ -28,7 +28,7 @@ When a file, directory or symlink is created, Smack writes the **creating proces
 If the parent directory is marked **transmuting**, and the rule from the creator to the directory includes the transmute permission, the new file takes the **directory's** label instead. Without this, a shared directory written by processes from several domains fills up with a mix of labels, each needing its own rules. With it, everything in the directory carries one label and one rule governs access.
 
 ### Step 3: Read once, then cache
-This is the key step for performance. The first time an existing file is checked, Smack reads its label attribute from disk and resolves the string to a canonical entry in the [[smack-label-registry|label registry]]. That pointer is cached with the inode, so later checks need no attribute read and no string comparison.
+This is the key step for performance. The first time an existing file is checked, Smack reads its label attribute from disk and resolves the string to a canonical entry in the [[smack-label-registry-explained|label registry]]. That pointer is cached with the inode, so later checks need no attribute read and no string comparison.
 
 ### Step 4: Extra labels on files
 - **mmap label:** before a process may memory-map the file, it must have **write** access to this label. This stops a confined process mapping a file from a less-trusted domain and using it as a hidden write channel.
@@ -72,5 +72,5 @@ A process's label can be read, and written, through /proc. Writing requires the 
 ## Related
 
 - Technical version: [[smack-inode-and-task-labeling]]
-- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry|Label registry]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
+- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-network-labeling|Network labelling]], [[smackfs|smackfs]]
 - [[credentials-explained|Credentials]], [[process-model-explained|Process security model]], [[vfs-explained|VFS]], [[extended-attributes-and-acls-explained|Extended attributes]]
