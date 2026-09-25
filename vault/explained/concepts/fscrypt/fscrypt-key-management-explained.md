@@ -86,5 +86,5 @@ With inline encryption hardware, the stored secret can be a wrapped blob rather 
 ## Related
 
 - Technical version: [[fscrypt-key-management]]
-- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-inline-encryption-explained|Inline encryption]], [[fscrypt-policy|Policies]]
+- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-inline-encryption-explained|Inline encryption]], [[fscrypt-policy-explained|Policies]]
 - [[inode-cache-explained|Inode cache]], [[kernel-crypto-api|Kernel crypto API]]

@@ -45,7 +45,7 @@ There are two versions:
 - **v1** (legacy) names the key with an 8-byte label chosen by a person, and derives per-file keys with a scheme later shown vulnerable to electromagnetic side-channel attacks.
 - **v2** names the key by a hash of the key itself, derives with HKDF-SHA512, and can reliably reject a wrong key.
 
-v1 is kept indefinitely because a huge number of Android devices use it. See [[fscrypt-policy|policies]].
+v1 is kept indefinitely because a huge number of Android devices use it. See [[fscrypt-policy-explained|policies]].
 
 ### Key management
 Master keys live in a **keyring attached to the mounted filesystem**, not in a process's keyring. With v1, keys sat in per-session or per-user keyrings, so a key added through `sudo` or a helper under another user ID was invisible to the actual user; backup daemons and FUSE helpers hit the same problem. The filesystem keyring is visible to every process on that filesystem.
@@ -105,6 +105,6 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 ## Related
 
 - Technical version: [[fscrypt]]
-- [[fscrypt-policy|Policies]], [[fscrypt-key-management-explained|Key management]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
+- [[fscrypt-policy-explained|Policies]], [[fscrypt-key-management-explained|Key management]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
 - [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]

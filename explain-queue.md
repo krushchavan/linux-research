@@ -131,7 +131,7 @@
 - [x] vault/concepts/fscrypt/fscrypt-inline-encryption.md
 - [x] vault/concepts/fscrypt/fscrypt-inode-info.md
 - [x] vault/concepts/fscrypt/fscrypt-key-management.md
-- [ ] vault/concepts/fscrypt/fscrypt-policy.md
+- [x] vault/concepts/fscrypt/fscrypt-policy.md
 - [ ] vault/subsystems/fuse.md
 - [ ] vault/concepts/fuse/fuse-connection.md
 - [ ] vault/concepts/fuse/fuse-request-queue.md
