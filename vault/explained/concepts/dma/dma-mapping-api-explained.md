@@ -121,4 +121,4 @@ Scatter lists force conversions (block request → scatter list → device addre
 - [[page-pool|Page pool]]: keeps network pages mapped for life
 - [[get-user-pages-and-pinning-explained|Page pinning]]: how user memory is pinned before mapping
 - [[buddy-allocator-explained|Buddy allocator]]: backing memory for coherent allocations
-- [[devmem-tcp|Device-memory TCP]]: a driver of the move away from per-page descriptors
+- [[devmem-tcp-explained|Device-memory TCP]]: a driver of the move away from per-page descriptors

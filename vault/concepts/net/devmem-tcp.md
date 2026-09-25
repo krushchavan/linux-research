@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.12"
 researched: 2026-09-25
 status: complete
+explained: "[[devmem-tcp-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/devmem.html
   - https://www.kernel.org/doc/html/latest/networking/netmem.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Device Memory TCP (devmem TCP)
+
+> 📘 Plain-language version: [[devmem-tcp-explained]]
 
 ## Purpose
 

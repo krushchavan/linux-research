@@ -185,7 +185,7 @@
 - [x] vault/concepts/locking/seqlocks-and-memory-barriers.md
 - [x] vault/concepts/locking/spinlock-and-raw-spinlock.md
 - [x] vault/subsystems/net.md
-- [ ] vault/concepts/net/devmem-tcp.md
+- [x] vault/concepts/net/devmem-tcp.md
 - [ ] vault/concepts/net/ip-routing.md
 - [ ] vault/concepts/net/network-device-and-napi.md
 - [ ] vault/concepts/net/network-namespaces.md
