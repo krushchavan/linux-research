@@ -56,7 +56,7 @@ Arguments and results are packed in **XDR**, a portable binary format, so NFS wo
 NFSv4 bundles several operations into one **compound** call, processed left to right and stopping at the first error. An `open` that took three round trips in NFSv3 (lookup, access, open) becomes one. See [[xdr-encoding|XDR encoding]].
 
 ### NFSv4.1 sessions
-Sessions give each client a negotiated table of slots, each with a sequence number that goes up by one per call. From the number, the server can spot a retransmitted call and replay its saved answer instead of running it twice. That's essential for operations like rename or remove, which aren't safe to repeat. The same connection also carries a **back channel** for server-to-client callbacks (recalls, notifications). The server can grow or shrink the slot table on the fly, depending on its memory. See [[nfsv4.1-sessions|NFSv4.1 sessions]].
+Sessions give each client a negotiated table of slots, each with a sequence number that goes up by one per call. From the number, the server can spot a retransmitted call and replay its saved answer instead of running it twice. That's essential for operations like rename or remove, which aren't safe to repeat. The same connection also carries a **back channel** for server-to-client callbacks (recalls, notifications). The server can grow or shrink the slot table on the fly, depending on its memory. See [[nfsv4.1-sessions-explained|NFSv4.1 sessions]].
 
 ### The client
 Mounting creates a per-server record (connection, capabilities, read/write sizes) and a longer-lived client identity shared by all mounts of that server, then fetches the root.
@@ -110,5 +110,5 @@ If the server reboots, the client notices (a sequence break or a stale-client er
 ## Related
 
 - Technical version: [[nfs]]
-- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]], [[nfs-client-explained|Client]], [[nfs-server-explained|Server]], [[pnfs|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
+- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]], [[nfs-client-explained|Client]], [[nfs-server-explained|Server]], [[pnfs|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[btrfs-explained|btrfs]]

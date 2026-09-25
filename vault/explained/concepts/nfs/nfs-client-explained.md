@@ -80,6 +80,6 @@ If NFSv4 calls start failing with "stale client ID" or "expired", the client kno
 ## Related
 
 - Technical version: [[nfs-client]]
-- [[nfs-explained|NFS subsystem]], [[nfs-server-explained|NFS server]], [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions|Sessions]]
+- [[nfs-explained|NFS subsystem]], [[nfs-server-explained|NFS server]], [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]]
 - [[delegations-and-locking-explained|Delegations and locking]], [[nfs-fscache-explained|NFS local caching]]
 - [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[fs-explained|Filesystem subsystem (VFS)]]

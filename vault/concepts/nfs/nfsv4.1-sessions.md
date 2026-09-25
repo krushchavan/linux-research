@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.38"
 researched: 2026-04-05
 status: complete
+explained: "[[nfsv4.1-sessions-explained]]"
 sources:
   - https://lwn.net/Articles/898262/
   - https://www.kernel.org/doc/html/v5.18/filesystems/nfs/nfs41-server.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # NFSv4.1 Sessions
+
+> 📘 Plain-language version: [[nfsv4.1-sessions-explained]]
 
 ## Purpose
 
