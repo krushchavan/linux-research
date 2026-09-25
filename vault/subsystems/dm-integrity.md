@@ -7,6 +7,7 @@ mailing_list: dm-devel@lists.linux.dev
 source_path: drivers/md/dm-integrity.c
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://www.kernel.org/doc/Documentation/device-mapper/dm-integrity.txt
@@ -17,6 +18,8 @@ sources:
 ---
 
 # dm-integrity — Block-Layer Data Integrity Subsystem
+
+> 📘 Plain-language version: [[dm-integrity-explained]]
 
 ## Overview
 

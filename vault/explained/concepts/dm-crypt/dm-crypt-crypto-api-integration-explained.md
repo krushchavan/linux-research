@@ -97,4 +97,4 @@ On a read, if the tag doesn't match, decryption reports a bad message and the re
 - [[dm-crypt-crypt-config-explained|Per-device encryption state]]: holds the per-CPU ciphers
 - [[dm-crypt-crypt-io-explained|Per-request context]]: builds and submits the requests
 - [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]]: supplies each sector's IV
-- [[kernel-crypto-api|Kernel crypto API]], [[dm-integrity]]
+- [[kernel-crypto-api|Kernel crypto API]], [[dm-integrity-explained|dm-integrity]]
