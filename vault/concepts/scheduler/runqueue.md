@@ -6,12 +6,15 @@ subsystem: scheduler
 kernel_version: "2.6.23"
 researched: 2026-04-13
 status: complete
+explained: "[[runqueue-explained]]"
 sources:
   - https://kernel-internals.org/sched/runqueues/
   - https://kernel-internals.org/sched/
 ---
 
 # Runqueue
+
+> 📘 Plain-language version: [[runqueue-explained]]
 
 ## Purpose
 

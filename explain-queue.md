@@ -215,8 +215,8 @@
 - [x] vault/concepts/scheduler/pi-mutexes.md
 - [x] vault/concepts/scheduler/preemption-model.md
 - [x] vault/concepts/scheduler/rt-scheduler.md
-- [ ] vault/concepts/scheduler/runqueue.md
-- [ ] vault/concepts/scheduler/sched-deadline.md
+- [x] vault/concepts/scheduler/runqueue.md
+- [>] vault/concepts/scheduler/sched-deadline.md
 - [ ] vault/concepts/scheduler/scheduler-classes.md
 - [ ] vault/subsystems/security.md
 - [ ] vault/concepts/security/apparmor.md

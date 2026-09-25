@@ -80,5 +80,5 @@ In cgroup v2, a child can't exceed its ancestors. If a container is capped at 20
 ## Related
 
 - Technical version: [[cpu-cgroups]]
-- [[scheduler-explained|Scheduler]], [[cfs-eevdf-explained|CFS/EEVDF]], [[runqueue|Run queue]]
+- [[scheduler-explained|Scheduler]], [[cfs-eevdf-explained|CFS/EEVDF]], [[runqueue-explained|Run queue]]
 - [[cgroups-explained|cgroups]], [[mm-explained|Memory management]]

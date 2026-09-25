@@ -84,5 +84,5 @@ Optionally, the kernel periodically unmaps a task's pages so that the next acces
 ## Related
 
 - Technical version: [[load-balancing]]
-- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[cpu-cgroups-explained|CPU cgroups]], [[rt-scheduler-explained|Real-time scheduler]]
+- [[scheduler-explained|Scheduler]], [[runqueue-explained|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[cpu-cgroups-explained|CPU cgroups]], [[rt-scheduler-explained|Real-time scheduler]]
 - [[numa-memory-policy|NUMA memory policy]], [[interrupt-handling-explained|Interrupt handling]]

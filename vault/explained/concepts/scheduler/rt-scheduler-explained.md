@@ -66,5 +66,5 @@ Real-time tasks may by default use at most **950 ms of every 1000 ms**. When a C
 ## Related
 
 - Technical version: [[rt-scheduler]]
-- [[scheduler-explained|Scheduler]], [[pi-mutexes-explained|PI mutexes]], [[preemption-model-explained|Preemption model]], [[sched-deadline|SCHED_DEADLINE]], [[runqueue|Run queue]], [[load-balancing-explained|Load balancing]]
+- [[scheduler-explained|Scheduler]], [[pi-mutexes-explained|PI mutexes]], [[preemption-model-explained|Preemption model]], [[sched-deadline|SCHED_DEADLINE]], [[runqueue-explained|Run queue]], [[load-balancing-explained|Load balancing]]
 - [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]]

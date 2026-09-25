@@ -77,5 +77,5 @@ With group scheduling, each cgroup gets its own per-CPU queue and a single entit
 ## Related
 
 - Technical version: [[cfs-eevdf]]
-- [[scheduler-explained|Scheduler]], [[runqueue|Run queue]], [[cpu-cgroups-explained|CPU cgroups]], [[load-balancing-explained|Load balancing]], [[scheduler-classes|Scheduling classes]]
+- [[scheduler-explained|Scheduler]], [[runqueue-explained|Run queue]], [[cpu-cgroups-explained|CPU cgroups]], [[load-balancing-explained|Load balancing]], [[scheduler-classes|Scheduling classes]]
 - [[interrupt-handling-explained|Interrupt handling]]
