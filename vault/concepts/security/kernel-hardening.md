@@ -6,11 +6,14 @@ subsystem: security
 kernel_version: "3.14"
 researched: 2026-04-15
 status: complete
+explained: "[[kernel-hardening-explained]]"
 sources:
   - https://kernel-internals.org/security/kernel-hardening/
 ---
 
 # Kernel Hardening
+
+> 📘 Plain-language version: [[kernel-hardening-explained]]
 
 ## Overview
 

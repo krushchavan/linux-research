@@ -223,7 +223,7 @@
 - [x] vault/concepts/security/capabilities.md
 - [x] vault/concepts/security/credentials.md
 - [x] vault/concepts/security/ima.md
-- [ ] vault/concepts/security/kernel-hardening.md
+- [x] vault/concepts/security/kernel-hardening.md
 - [ ] vault/concepts/security/kernel-keyring.md
 - [ ] vault/concepts/security/landlock.md
 - [ ] vault/concepts/security/linux-audit.md

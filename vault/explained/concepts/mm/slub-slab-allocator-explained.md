@@ -88,4 +88,4 @@ Originally a CPU had just one active slab and went straight to the locked per-no
 - [[per-cpu-page-allocator-pcp-explained|Per-CPU page allocator]]: serves many of those page requests
 - [[vmalloc-explained|vmalloc]]: the fallback for large allocations
 - [[memory-cgroup-explained|Memory cgroups]]: charging kernel objects to groups
-- [[kernel-hardening|Kernel hardening]]
+- [[kernel-hardening-explained|Kernel hardening]]
