@@ -91,5 +91,5 @@ The journal reveals which sectors were recently written, and entries could be ta
 - [[dm-integrity-explained|dm-integrity]]: the subsystem overview
 - [[dm-integrity-bitmap-mode-explained|Bitmap mode]]: the no-journal alternative
 - [[dm-integrity-device-config-explained|Device configuration]]: holds the journal settings
-- [[dm-integrity-on-disk-layout]]: where the journal sits
+- [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]]: where the journal sits
 - [[dm-bufio-explained|dm-bufio]]: the tag cache used during copy-home

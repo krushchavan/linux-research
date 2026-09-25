@@ -49,7 +49,7 @@ One object per device holds its mode, hash functions, journal settings, bitmap a
 
 ### On-disk layout
 
-Everything is at fixed, computable positions. See [[dm-integrity-on-disk-layout]].
+Everything is at fixed, computable positions. See [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]].
 
 1. The order is: reserved sectors, a 4 KiB **superblock**, the **journal**, then **data and tags interleaved**.
 2. The superblock holds a magic string, format version, chunk size (as a power of two), tag size, journal size and usable data size.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
+- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]

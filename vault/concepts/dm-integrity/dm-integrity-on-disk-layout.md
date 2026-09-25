@@ -6,6 +6,7 @@ subsystem: dm-integrity
 kernel_version: "4.12"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-on-disk-layout-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://www.kernel.org/doc/Documentation/device-mapper/dm-integrity.txt
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-integrity On-Disk Layout
+
+> 📘 Plain-language version: [[dm-integrity-on-disk-layout-explained]]
 
 ## Purpose
 
