@@ -157,7 +157,7 @@
 - [x] vault/subsystems/overlayfs.md
 - [x] vault/concepts/overlayfs/copy-up.md
 - [x] vault/concepts/overlayfs/directory-merging.md
-- [ ] vault/concepts/overlayfs/inode-numbering-xino.md
+- [x] vault/concepts/overlayfs/inode-numbering-xino.md
 - [ ] vault/concepts/overlayfs/layer-stack.md
 - [ ] vault/concepts/overlayfs/metacopy.md
 - [ ] vault/concepts/overlayfs/redirect-dir-and-index.md

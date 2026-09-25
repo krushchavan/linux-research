@@ -6,6 +6,7 @@ subsystem: overlayfs
 kernel_version: "4.17"
 researched: 2026-04-15
 status: complete
+explained: "[[inode-numbering-xino-explained]]"
 sources:
   - https://kernel-internals.org/filesystems/overlayfs/
   - https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # OverlayFS Inode Numbering (xino)
+
+> 📘 Plain-language version: [[inode-numbering-xino-explained]]
 
 ## Purpose
 
