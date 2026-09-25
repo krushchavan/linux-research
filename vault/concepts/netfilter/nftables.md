@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "3.13"
 researched: 2026-04-13
 status: complete
+explained: "[[nftables-explained]]"
 sources:
   - https://kernel-internals.org/net/nftables-iptables/
   - https://kernel-internals.org/net/netfilter/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # nftables
+
+> 📘 Plain-language version: [[nftables-explained]]
 
 ## Purpose
 

@@ -42,7 +42,7 @@ iptables organises rules into **tables** (filter, nat, mangle, raw, security), e
 ### nftables (the replacement)
 nftables replaces iptables' separate per-protocol code (for IPv4, IPv6, ARP and bridging) with **one engine**: a small **bytecode virtual machine**. Rules are compiled in user space into simple instructions (load a packet field into a register, compare, look up a set, emit a verdict); the kernel module only interprets them and knows nothing about ports or addresses itself.
 
-This is the key design change. Its real speed comes from **sets**: named collections of addresses, ports, MACs or prefixes stored as hash tables, trees or specialised structures, so one lookup replaces thousands of rule comparisons. Updates are **atomic transactions**: a whole batch applies or none of it does, with packets in flight seeing the old version until the commit completes. The early worry that an interpreter would be slower than iptables' native code proved unfounded. See [[nftables|nftables]].
+This is the key design change. Its real speed comes from **sets**: named collections of addresses, ports, MACs or prefixes stored as hash tables, trees or specialised structures, so one lookup replaces thousands of rule comparisons. Updates are **atomic transactions**: a whole batch applies or none of it does, with packets in flight seeing the old version until the commit completes. The early worry that an interpreter would be slower than iptables' native code proved unfounded. See [[nftables-explained|nftables]].
 
 ### Connection tracking
 **Conntrack** keeps a table of every flow, so rules can match on state (new, established, related, invalid) and NAT can reverse-translate replies automatically. It runs first, at priority −200, when packets arrive and when local packets leave.
@@ -89,5 +89,5 @@ The first packet of a new inbound TCP connection to a port-forwarded service:
 ## Related
 
 - Technical version: [[netfilter]]
-- [[netfilter-hook-framework-explained|Hook framework]], [[iptables-explained|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]], [[netfilter-flowtable-explained|Flowtable]]
+- [[netfilter-hook-framework-explained|Hook framework]], [[iptables-explained|iptables]], [[nftables-explained|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]], [[netfilter-flowtable-explained|Flowtable]]
 - [[net-explained|Networking stack]], [[ip-routing-explained|IP routing]], [[network-namespaces-explained|Network namespaces]], [[xdp-explained|XDP]], [[bpf-explained|BPF]], [[security|Security]]

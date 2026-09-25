@@ -76,5 +76,5 @@ Some protocols (FTP, SIP) carry addresses inside the payload itself. Header rewr
 ## Related
 
 - Technical version: [[netfilter-nat]]
-- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-hook-framework-explained|Hook framework]], [[netfilter-flowtable-explained|Flowtable]], [[iptables-explained|iptables]], [[nftables|nftables]]
+- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-hook-framework-explained|Hook framework]], [[netfilter-flowtable-explained|Flowtable]], [[iptables-explained|iptables]], [[nftables-explained|nftables]]
 - [[ip-routing-explained|IP routing]]

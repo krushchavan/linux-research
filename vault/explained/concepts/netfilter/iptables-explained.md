@@ -73,4 +73,4 @@ To change rules, the user-space tool downloads the **whole** table, edits it, an
 ## Related
 
 - Technical version: [[iptables]]
-- [[netfilter-explained|Netfilter]], [[nftables|nftables]], [[netfilter-hook-framework-explained|Hook framework]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]]
+- [[netfilter-explained|Netfilter]], [[nftables-explained|nftables]], [[netfilter-hook-framework-explained|Hook framework]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]]
