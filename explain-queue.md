@@ -144,7 +144,7 @@
 - [x] vault/concepts/netfs/netfs-read-path.md
 - [x] vault/concepts/netfs/netfs-write-path.md
 - [x] vault/subsystems/nfs.md
-- [ ] vault/concepts/nfs/delegations-and-locking.md
+- [x] vault/concepts/nfs/delegations-and-locking.md
 - [ ] vault/concepts/nfs/fscache.md
 - [ ] vault/concepts/nfs/nfs-client.md
 - [ ] vault/concepts/nfs/nfs-localio.md

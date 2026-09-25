@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.22"
 researched: 2026-04-11
 status: complete
+explained: "[[delegations-and-locking-explained]]"
 sources:
   - https://lwn.net/Articles/898262/
   - https://lwn.net/Articles/560080/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # NFS Delegations and Locking
+
+> 📘 Plain-language version: [[delegations-and-locking-explained]]
 
 ## Purpose
 
