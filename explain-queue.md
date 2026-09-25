@@ -121,7 +121,7 @@
 - [ ] vault/concepts/fs/superblock.md
 - [x] vault/concepts/fs/vfs-locking-model.md
 - [x] vault/concepts/fs/writeback-infrastructure.md
-- [ ] vault/subsystems/fscache.md
+- [x] vault/subsystems/fscache.md
 - [ ] vault/concepts/fscache/cachefiles-backend.md
 - [ ] vault/concepts/fscache/fscache-cookie-subsystem.md
 - [ ] vault/concepts/fscache/netfs-helper-library.md

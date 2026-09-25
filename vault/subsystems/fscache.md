@@ -7,6 +7,7 @@ mailing_list: linux-cachefs@redhat.com
 source_path: fs/fscache/, fs/cachefiles/, fs/netfs/
 researched: 2026-04-15
 status: complete
+explained: "[[fscache-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/caching/fscache.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/backend-api.html
@@ -19,6 +20,8 @@ sources:
 ---
 
 # fscache Subsystem
+
+> 📘 Plain-language version: [[fscache-explained]]
 
 ## Overview
 
