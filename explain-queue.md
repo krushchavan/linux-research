@@ -47,7 +47,7 @@
 - [x] vault/concepts/device-mapper/target-framework.md
 - [x] vault/subsystems/dm-crypt.md
 - [x] vault/concepts/dm-crypt/dm-crypt-crypt-config.md
-- [ ] vault/concepts/dm-crypt/dm-crypt-crypt-io.md
+- [x] vault/concepts/dm-crypt/dm-crypt-crypt-io.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypto-api-integration.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-iv-generation.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-key-management.md

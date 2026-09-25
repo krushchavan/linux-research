@@ -52,7 +52,7 @@ One object per encrypted device holds everything for its lifetime. See [[dm-cryp
 
 ### Per-request work unit
 
-Each incoming I/O request gets a small tracking object that carries it through the pipeline. See [[dm-crypt-crypt-io]].
+Each incoming I/O request gets a small tracking object that carries it through the pipeline. See [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]].
 
 1. **Writes** are queued to a worker that walks each sector, computes its IV, encrypts it, and collects the ciphertext into a new request aimed at the real disk.
 2. **Reads** go straight to the disk first, with nothing to decrypt yet. When the disk completes the read, a completion callback queues decryption work.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative
