@@ -7,6 +7,7 @@ mailing_list: cgroups@vger.kernel.org
 source_path: mm/memcontrol.c
 researched: 2026-04-05
 status: complete
+explained: "[[memcg-explained]]"
 sources:
   - https://lwn.net/Articles/432224/
   - https://lwn.net/Articles/516535/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # memcg (Memory Control Group) Subsystem
+
+> 📘 Plain-language version: [[memcg-explained]]
 
 ## Overview
 
