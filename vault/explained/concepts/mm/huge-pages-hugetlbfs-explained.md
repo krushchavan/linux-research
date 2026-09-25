@@ -98,4 +98,4 @@ For private mappings, the process that made the reservation is its **owner**. Af
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[transparent-huge-pages]]: the automatic, best-effort alternative
 - [[folio-explained|Folios]]: the large-page machinery hugetlbfs is being unified with
-- [[page-table-management]], [[numa-memory-policy-explained|numa-memory-policy]], [[memory-compaction-explained|memory-compaction]], [[memory-cgroup-explained|memory-cgroup]]
+- [[page-table-management-explained|page-table-management]], [[numa-memory-policy-explained|numa-memory-policy]], [[memory-compaction-explained|memory-compaction]], [[memory-cgroup-explained|memory-cgroup]]

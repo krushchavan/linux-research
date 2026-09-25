@@ -109,4 +109,4 @@ For the kernel's own user-copy functions, a fault at a known location jumps to a
 - [[page-cache-explained|Page cache]]: file-backed faults
 - [[swap]]: swap-in
 - [[buddy-allocator-explained|Buddy allocator]]: where new pages come from
-- [[page-table-management]], [[page-reclaim-explained|page-reclaim]], [[oom-killer-explained|OOM killer]]
+- [[page-table-management-explained|page-table-management]], [[page-reclaim-explained|page-reclaim]], [[oom-killer-explained|OOM killer]]

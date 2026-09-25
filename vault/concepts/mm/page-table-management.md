@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.11 (four-level); 4.14 (five-level)"
 researched: 2026-04-10
 status: complete
+explained: "[[page-table-management-explained]]"
 sources:
   - https://kernel-internals.org/mm/page-tables/
   - https://docs.kernel.org/mm/page_tables.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Page Table Management
+
+> 📘 Plain-language version: [[page-table-management-explained]]
 
 ## Purpose
 
