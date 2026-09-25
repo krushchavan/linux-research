@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[path-lookup-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/path-lookup.html
   - https://lwn.net/Articles/649729/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Path Lookup (namei)
+
+> 📘 Plain-language version: [[path-lookup-explained]]
 
 ## Purpose
 

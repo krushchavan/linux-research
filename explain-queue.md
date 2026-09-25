@@ -117,7 +117,7 @@
 - [x] vault/concepts/fs/inotify-and-fanotify.md
 - [x] vault/concepts/fs/mount-namespace.md
 - [x] vault/concepts/fs/network-filesystems-overview.md
-- [ ] vault/concepts/fs/path-lookup.md
+- [x] vault/concepts/fs/path-lookup.md
 - [ ] vault/concepts/fs/superblock.md
 - [ ] vault/concepts/fs/vfs-locking-model.md
 - [ ] vault/concepts/fs/writeback-infrastructure.md

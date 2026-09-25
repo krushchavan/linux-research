@@ -90,4 +90,4 @@ Every file object carries its own readahead window: where it starts, how big it 
 - [[file-descriptor-and-open-file-table-explained|Descriptors and the open file table]]
 - [[core-in-memory-structures-explained|Core VFS objects]], [[fs-explained|Filesystem subsystem (VFS)]]
 - [[dentry-explained|Dentries]], [[inode]], [[address-space-explained|Address space]], [[page-cache-explained|Page cache]]
-- [[path-lookup]], [[io_uring-explained|io_uring]]
+- [[path-lookup-explained|path-lookup]], [[io_uring-explained|io_uring]]

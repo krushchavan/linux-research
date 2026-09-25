@@ -103,7 +103,7 @@ The common framework behind inotify, fanotify and the old dnotify. See [[fsnotif
 
 ### Path lookup: from a string to a file
 
-Turning `/usr/bin/python` into a dentry and mount, used by nearly every file system call. See [[path-lookup]].
+Turning `/usr/bin/python` into a dentry and mount, used by nearly every file system call. See [[path-lookup-explained|path-lookup]].
 
 1. The path is walked component by component, through the dentry cache, calling the filesystem on misses.
 2. **RCU-walk** (2.6.38) is the fast path: it takes no locks and touches no reference counts, checking consistency with sequence counters. This is the key to scaling on many cores, since cached lookups leave no footprint.
@@ -144,7 +144,7 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 
 - Technical version: [[fs]]
 - [[vfs]]: the VFS deep dive
-- [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup]]
+- [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup-explained|path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure]]
 - [[fsnotify-explained|fsnotify]], [[inotify-and-fanotify-explained|inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse]]

@@ -95,5 +95,5 @@ A read/write semaphore protects every change to mount trees (and stable reads, s
 - Technical version: [[mount-namespace]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[core-in-memory-structures-explained|Core VFS objects]]
 - [[filesystem-registration-explained|Filesystem registration and mounting]]
-- [[path-lookup]]: crossing mount points
+- [[path-lookup-explained|path-lookup]]: crossing mount points
 - [[user-namespaces]], [[cgroups|Control groups]], [[overlayfs|OverlayFS]]

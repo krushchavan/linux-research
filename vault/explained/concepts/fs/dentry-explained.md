@@ -88,5 +88,5 @@ A dentry with something mounted on it tells the lookup to cross into that mount;
 - [[dentry-cache-explained|Dentry cache]]: how all dentries are stored and reclaimed
 - [[core-in-memory-structures-explained|Core VFS objects]]
 - [[fs-explained|Filesystem subsystem (VFS)]]
-- [[path-lookup]], [[inode]], [[mount-namespace-explained|mount-namespace]]
+- [[path-lookup-explained|path-lookup]], [[inode]], [[mount-namespace-explained|mount-namespace]]
 - [[page-reclaim-explained|Page reclaim]], [[rcu-read-copy-update|RCU]], [[seqlocks-and-memory-barriers|Sequence locks]]
