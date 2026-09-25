@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6.13"
 researched: 2026-04-12
 status: complete
+explained: "[[inotify-and-fanotify-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/inotify.html
   - https://www.man7.org/linux/man-pages/man7/inotify.7.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # inotify and fanotify
+
+> 📘 Plain-language version: [[inotify-and-fanotify-explained]]
 
 ## Purpose
 
