@@ -28,7 +28,7 @@ Before anything is labelled, an administrator defines at least one DOI with `net
 - **local:** for loopback only. CIPSO's numbers can't represent arbitrary security contexts, but on the same machine the full label can be carried as-is; these packets never leave the host.
 
 ### Step 2: Attach the seal to a socket
-When a security module labels an IPv4 socket, NetLabel's [[netlabel-lsm-security-api|API]] hands it to the CIPSO engine, which:
+When a security module labels an IPv4 socket, NetLabel's [[netlabel-lsm-security-api-explained|API]] hands it to the CIPSO engine, which:
 1. finds the requested DOI
 2. translates the neutral label record (level and category bitmap) into a binary CIPSO option using that DOI's tables
 3. stores the option on the socket
@@ -76,5 +76,5 @@ The module then maps the record to its own security ID and enforces policy. Sinc
 ## Related
 
 - Technical version: [[cipso-ipv4-engine]]
-- [[netlabel-explained|NetLabel]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-lsm-security-api|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]]
+- [[netlabel-explained|NetLabel]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]]
 - [[selinux|SELinux]], [[smack|Smack]], [[net-explained|Networking stack]]

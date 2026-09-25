@@ -61,7 +61,7 @@ This is the key design choice. SELinux and Smack deal only with a **protocol-neu
 - **Sending:** the module fills in the record and asks NetLabel to label the socket; NetLabel picks the protocol from the domain table and has the engine attach the option.
 - **Receiving:** in its "socket receives a packet" hook, the module asks NetLabel for the packet's label; NetLabel finds a CIPSO or CALIPSO option and decodes it, or returns the configured default for unlabelled traffic. The module maps the result to its own security ID and enforces policy.
 
-A **label cache** remembers "this wire label means that security ID", so repeated packets with the same label skip both NetLabel's translation and the module's own lookup, a big win for busy trusted connections. See [[netlabel-lsm-security-api|the LSM API]].
+A **label cache** remembers "this wire label means that security ID", so repeated packets with the same label skip both NetLabel's translation and the module's own lookup, a big win for busy trusted connections. See [[netlabel-lsm-security-api-explained|the LSM API]].
 
 ## A request's journey
 
@@ -91,6 +91,6 @@ An SELinux process with categories c1 and c2 sends over TCP, and the receiver ch
 ## Related
 
 - Technical version: [[netlabel]]
-- [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]], [[netlabel-lsm-security-api|LSM API]]
+- [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]], [[netlabel-lsm-security-api-explained|LSM API]]
 - [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework|LSM framework]], [[linux-audit|Audit]]
 - [[net-explained|Networking stack]], [[netfilter-explained|Netfilter (SECMARK)]]

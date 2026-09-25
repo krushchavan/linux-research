@@ -6,6 +6,7 @@ subsystem: netlabel
 kernel_version: "2.6.19"
 researched: 2026-04-17
 status: complete
+explained: "[[netlabel-lsm-security-api-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/netlabel/lsm_interface.html
   - https://docs.huihoo.com/doxygen/linux/kernel/3.7/structnetlbl__lsm__secattr.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # NetLabel LSM Security API
+
+> 📘 Plain-language version: [[netlabel-lsm-security-api-explained]]
 
 ## Purpose
 
