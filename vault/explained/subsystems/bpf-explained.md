@@ -57,7 +57,7 @@ Without the verifier, arbitrary code running in the kernel could read past the e
 Because of Spectre (2017–2019), the verifier also has to simulate *speculative* execution paths, something no comparable system does.
 
 ### Maps: the shared mailboxes
-See [[bpf-maps]].
+See [[bpf-maps-explained|bpf-maps]].
 
 BPF programs run in interrupt or kernel context and can't make blocking system calls. Maps are the only structured way to share state between a program and userspace, or between programs.
 
@@ -161,7 +161,7 @@ Dropping attack traffic at the network card with XDP:
 ## Related
 
 - Technical version: [[bpf]]
-- [[bpf-verifier|The verifier]], [[bpf-maps|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types|program types]]
+- [[bpf-verifier|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types|program types]]
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]

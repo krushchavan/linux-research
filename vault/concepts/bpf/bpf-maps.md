@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "3.18"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-maps-explained]]"
 sources:
   - https://lwn.net/Articles/740157/
   - https://kernel-internals.org/bpf/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # BPF Maps
+
+> 📘 Plain-language version: [[bpf-maps-explained]]
 
 ## Purpose
 

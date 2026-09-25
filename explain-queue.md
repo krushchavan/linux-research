@@ -32,7 +32,7 @@
 - [ ] vault/concepts/io_uring/registered-resources.md
 - [ ] vault/concepts/io_uring/sqpoll.md
 - [ ] vault/concepts/io_uring/uring-cmd-passthrough.md
-- [ ] vault/concepts/bpf/bpf-maps.md
+- [x] vault/concepts/bpf/bpf-maps.md
 - [ ] vault/concepts/bpf/bpf-program-types.md
 - [ ] vault/concepts/bpf/bpf-ring-buffer.md
 - [ ] vault/concepts/bpf/bpf-verifier.md
