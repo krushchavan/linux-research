@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.36"
 researched: 2026-04-15
 status: complete
+explained: "[[apparmor-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/lsm.html
   - https://lwn.net/Articles/837994/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # AppArmor
+
+> 📘 Plain-language version: [[apparmor-explained]]
 
 ## Overview
 

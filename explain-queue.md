@@ -219,7 +219,7 @@
 - [x] vault/concepts/scheduler/sched-deadline.md
 - [x] vault/concepts/scheduler/scheduler-classes.md
 - [x] vault/subsystems/security.md
-- [ ] vault/concepts/security/apparmor.md
+- [x] vault/concepts/security/apparmor.md
 - [ ] vault/concepts/security/capabilities.md
 - [ ] vault/concepts/security/credentials.md
 - [ ] vault/concepts/security/ima.md
