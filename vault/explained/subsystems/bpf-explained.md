@@ -79,7 +79,7 @@ The bytecode interpreter is about 3× slower than native code and is itself a Sp
 It covers x86-64, arm64, arm32, ppc64, s390x, mips64, sparc64, arc and riscv64. A kernel option can remove the interpreter entirely.
 
 ### Program types: what a program is allowed to be
-See [[bpf-program-types]].
+See [[bpf-program-types-explained|bpf-program-types]].
 
 A program's *type* fixes three things: what data it receives, which kernel functions it may call, and what its return value means. That's how the kernel stops a packet filter from calling a scheduler-only function.
 
@@ -161,7 +161,7 @@ Dropping attack traffic at the network card with XDP:
 ## Related
 
 - Technical version: [[bpf]]
-- [[bpf-verifier|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types|program types]]
+- [[bpf-verifier|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re|BTF and CO-RE]], [[bpf-ring-buffer|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]

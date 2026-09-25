@@ -93,4 +93,4 @@ A *tail call* is different from a normal call: one program hands off to another 
 - [[bpf-explained|BPF overview]]
 - [[bpf-verifier|The verifier]]: runs first, and marks instructions the JIT may rewrite
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: what the direct calls point to
-- [[bpf-program-types|Program types]]: decide what input the compiled program receives
+- [[bpf-program-types-explained|Program types]]: decide what input the compiled program receives

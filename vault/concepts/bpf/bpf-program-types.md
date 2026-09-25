@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "3.18"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-program-types-explained]]"
 sources:
   - https://lwn.net/Articles/740157/
   - https://lwn.net/Articles/972075/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # BPF Program Types
+
+> 📘 Plain-language version: [[bpf-program-types-explained]]
 
 ## Purpose
 
