@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6.23"
 researched: 2026-04-13
 status: complete
+explained: "[[cfs-eevdf-explained]]"
 sources:
   - https://kernel-internals.org/sched/cfs/
   - https://kernel-internals.org/sched/eevdf/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # CFS and EEVDF: The Fair Scheduler
+
+> 📘 Plain-language version: [[cfs-eevdf-explained]]
 
 ## Purpose
 

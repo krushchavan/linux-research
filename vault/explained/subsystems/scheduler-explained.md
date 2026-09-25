@@ -59,7 +59,7 @@ Since 6.6, selection uses **EEVDF**, which adds two ideas:
 - **eligibility:** a task may run only if it isn't ahead of the weighted average
 - **virtual deadline:** a task's virtual runtime plus its requested slice; asking for shorter slices means earlier deadlines
 
-The scheduler picks the eligible task with the earliest virtual deadline. A waking task is placed a little behind the average, so it gets scheduled promptly without monopolising the CPU, and pre-empts the running task if its deadline is earlier. See [[cfs-eevdf|CFS/EEVDF]].
+The scheduler picks the eligible task with the earliest virtual deadline. A waking task is placed a little behind the average, so it gets scheduled promptly without monopolising the CPU, and pre-empts the running task if its deadline is earlier. See [[cfs-eevdf-explained|CFS/EEVDF]].
 
 ### The real-time scheduler
 For tasks needing deterministic access, two standard policies:
@@ -125,5 +125,5 @@ A task blocks on an empty pipe and is later woken:
 ## Related
 
 - Technical version: [[scheduler]]
-- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
+- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
 - [[cgroups-explained|cgroups]], [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]], [[mm-explained|Memory management]], [[numa-memory-policy|NUMA memory policy]]

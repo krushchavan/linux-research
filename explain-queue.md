@@ -208,7 +208,7 @@
 - [x] vault/concepts/netlabel/netlabel-lsm-security-api.md
 - [x] vault/concepts/netlabel/netlabel-netlink-management-interface.md
 - [x] vault/subsystems/scheduler.md
-- [ ] vault/concepts/scheduler/cfs-eevdf.md
+- [x] vault/concepts/scheduler/cfs-eevdf.md
 - [ ] vault/concepts/scheduler/context-switch.md
 - [ ] vault/concepts/scheduler/cpu-cgroups.md
 - [ ] vault/concepts/scheduler/load-balancing.md
