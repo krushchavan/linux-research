@@ -239,7 +239,7 @@
 - [x] vault/concepts/security/smackfs.md
 - [x] vault/concepts/security/tpm.md
 - [x] vault/concepts/security/user-namespaces.md
-- [ ] vault/subsystems/tracing.md
+- [x] vault/subsystems/tracing.md
 - [ ] vault/concepts/tracing/ftrace.md
 - [ ] vault/concepts/tracing/kprobes-and-kretprobes.md
 - [ ] vault/concepts/tracing/perf-events.md

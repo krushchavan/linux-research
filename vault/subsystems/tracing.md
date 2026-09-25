@@ -7,6 +7,7 @@ mailing_list: linux-trace-kernel@vger.kernel.org
 source_path: kernel/trace/
 researched: 2026-04-17
 status: complete
+explained: "[[tracing-explained]]"
 sources:
   - https://kernel-internals.org/tracing/
   - https://kernel-internals.org/tracing/ftrace/
@@ -26,6 +27,8 @@ sources:
 ---
 
 # Linux Kernel Tracing Subsystem
+
+> 📘 Plain-language version: [[tracing-explained]]
 
 ## Overview
 
