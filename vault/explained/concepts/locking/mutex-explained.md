@@ -74,4 +74,4 @@ Graphics drivers must lock a set of buffers that's only known at run time, so no
 
 - Technical version: [[mutex]]
 - [[locking-explained|Locking subsystem]], [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[lockdep-explained|Lockdep]]
-- [[futex-internals-explained|Futexes (priority inheritance for user space)]], [[scheduler|Scheduler]]
+- [[futex-internals-explained|Futexes (priority inheritance for user space)]], [[scheduler-explained|Scheduler]]

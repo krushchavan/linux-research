@@ -7,6 +7,7 @@ mailing_list: linux-kernel@vger.kernel.org
 source_path: kernel/sched/
 researched: 2026-04-13
 status: complete
+explained: "[[scheduler-explained]]"
 sources:
   - https://kernel-internals.org/sched/
   - https://kernel-internals.org/sched/scheduler-classes/
@@ -27,6 +28,8 @@ sources:
 ---
 
 # Scheduler Subsystem
+
+> 📘 Plain-language version: [[scheduler-explained]]
 
 ## Overview
 

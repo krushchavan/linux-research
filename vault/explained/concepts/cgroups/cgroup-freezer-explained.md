@@ -77,4 +77,4 @@ Freezing a parent freezes everything below it, and a child can't be thawed while
 
 - Technical version: [[cgroup-freezer]]
 - [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[cgroup-bpf-explained|cgroup BPF]]
-- [[scheduler|Scheduler]], [[inotify-and-fanotify-explained|inotify and fanotify]]
+- [[scheduler-explained|Scheduler]], [[inotify-and-fanotify-explained|inotify and fanotify]]

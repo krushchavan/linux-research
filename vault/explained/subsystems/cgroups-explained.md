@@ -112,4 +112,4 @@ A process in a container limited to 50% of one CPU spins in a loop:
 - Technical version: [[cgroups]]
 - [[cgroup-core-explained|Core]], [[css-set-and-subsystem-state-explained|State bundles]], [[io-controller-explained|I/O]], [[pid-controller-explained|PIDs]], [[cpuset-controller-explained|cpuset]], [[cgroup-freezer-explained|Freezer]], [[cgroup-bpf-explained|BPF]], [[cpu-cgroups|CPU]]
 - [[memcg-explained|Memory cgroups]], [[memory-cgroup-explained|Memory cgroup concepts]], [[psi-pressure-stall-information-explained|Pressure stall information]], [[oom-killer-explained|OOM killer]]
-- [[scheduler|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]
+- [[scheduler-explained|Scheduler]], [[block-explained|Block layer]], [[writeback-infrastructure-explained|Writeback]], [[bpf-explained|BPF]]

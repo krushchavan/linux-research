@@ -96,4 +96,4 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 - Technical version: [[locking]]
 - [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore-explained|Read/write semaphores]], [[seqlocks-and-memory-barriers-explained|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update-explained|RCU]], [[per-cpu-variables-explained|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]
-- [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]
+- [[vfs-locking-model-explained|VFS locking model]], [[scheduler-explained|Scheduler]]
