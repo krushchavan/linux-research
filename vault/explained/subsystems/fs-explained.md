@@ -66,7 +66,7 @@ A dentry maps one path component to its inode. The **dentry cache** is an in-mem
 
 ### File: one open instance
 
-A file object is the kernel side of an open file descriptor: current position, open flags and any per-open private data. See [[file-object]] and [[file-descriptor-and-open-file-table-explained|file-descriptor-and-open-file-table]].
+A file object is the kernel side of an open file descriptor: current position, open flags and any per-open private data. See [[file-object-explained|file-object]] and [[file-descriptor-and-open-file-table-explained|file-descriptor-and-open-file-table]].
 
 1. `open` allocates one, points it at the dentry (and so the inode), copies the inode's file operations, and calls the filesystem's open.
 2. The descriptor number the program gets is an index into its descriptor table.
@@ -144,7 +144,7 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 
 - Technical version: [[fs]]
 - [[vfs]]: the VFS deep dive
-- [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object]], [[path-lookup]]
+- [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure]]
 - [[fsnotify]], [[inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse]]

@@ -109,7 +109,7 @@
 - [x] vault/concepts/fs/dentry.md
 - [x] vault/concepts/fs/extended-attributes-and-acls.md
 - [x] vault/concepts/fs/file-descriptor-and-open-file-table.md
-- [ ] vault/concepts/fs/file-object.md
+- [x] vault/concepts/fs/file-object.md
 - [ ] vault/concepts/fs/filesystem-registration.md
 - [ ] vault/concepts/fs/fsnotify.md
 - [ ] vault/concepts/fs/inode-cache.md

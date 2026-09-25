@@ -93,7 +93,7 @@ Writers (install, close, grow) take the table's lock and publish changes RCU-sty
 ## Related
 
 - Technical version: [[file-descriptor-and-open-file-table]]
-- [[file-object]]: the open file description itself
+- [[file-object-explained|file-object]]: the open file description itself
 - [[core-in-memory-structures-explained|Core VFS objects]], [[fs-explained|Filesystem subsystem (VFS)]]
 - [[path-lookup]], [[vfs-locking-model]]
 - [[registered-resources-explained|io_uring registered files]]: skipping this lookup entirely

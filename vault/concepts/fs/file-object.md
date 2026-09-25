@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[file-object-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://docs.kernel.org/filesystems/files.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # File Object (struct file)
+
+> 📘 Plain-language version: [[file-object-explained]]
 
 ## Purpose
 
