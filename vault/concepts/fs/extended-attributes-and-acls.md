@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6.0"
 researched: 2026-04-12
 status: complete
+explained: "[[extended-attributes-and-acls-explained]]"
 sources:
   - https://kernel-internals.org/vfs/xattr/
   - https://kernel-internals.org/site-index/
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Extended Attributes and ACLs
+
+> 📘 Plain-language version: [[extended-attributes-and-acls-explained]]
 
 ## Purpose
 
