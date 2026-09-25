@@ -53,7 +53,7 @@ netfs also sorts I/O into locking classes so it doesn't over-serialise:
 - truncate and fallocate are exclusive
 - memory mappings are a fifth, special case
 
-See [[netfs-inode-context|the inode context]].
+See [[netfs-inode-context-explained|the inode context]].
 
 ### The read path
 Readahead, single-page reads and direct reads share one loop. The filesystem may first widen the window (Ceph can round up to a 2 MB stripe). Then, for each stretch of the file, netfs asks the local cache what to do: fill with zeros (a hole), read from the cache, download from the server, or treat the cached copy as invalid. Neighbouring pages with the same answer merge into one subrequest to save calls.
@@ -99,6 +99,6 @@ If a cache read had failed instead (say the cached copy turned out stale), netfs
 ## Related
 
 - Technical version: [[netfs]]
-- [[netfs-io-request-model|Request model]], [[netfs-inode-context|Inode context]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
+- [[netfs-io-request-model|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
 - [[netfs-helper-library-explained|netfs helper library (fscache view)]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|CacheFiles]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[writeback-infrastructure-explained|Writeback]]

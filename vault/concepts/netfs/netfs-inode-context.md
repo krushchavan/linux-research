@@ -6,12 +6,15 @@ subsystem: netfs
 kernel_version: "5.13"
 researched: 2026-04-16
 status: complete
+explained: "[[netfs-inode-context-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://lwn.net/Articles/894589/
 ---
 
 # netfs Inode Context
+
+> 📘 Plain-language version: [[netfs-inode-context-explained]]
 
 ## Purpose
 
