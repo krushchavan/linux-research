@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6.38"
 researched: 2026-04-11
 status: complete
+explained: "[[vfs-locking-model-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/locking.html
   - https://www.kernel.org/doc/html/latest/filesystems/directory-locking.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # VFS Locking Model
+
+> 📘 Plain-language version: [[vfs-locking-model-explained]]
 
 ## Purpose
 

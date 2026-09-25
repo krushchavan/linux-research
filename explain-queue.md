@@ -119,7 +119,7 @@
 - [x] vault/concepts/fs/network-filesystems-overview.md
 - [x] vault/concepts/fs/path-lookup.md
 - [ ] vault/concepts/fs/superblock.md
-- [ ] vault/concepts/fs/vfs-locking-model.md
+- [x] vault/concepts/fs/vfs-locking-model.md
 - [ ] vault/concepts/fs/writeback-infrastructure.md
 - [ ] vault/subsystems/fscache.md
 - [ ] vault/concepts/fscache/cachefiles-backend.md
