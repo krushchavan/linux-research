@@ -6,6 +6,7 @@ subsystem: fscache
 kernel_version: "2.6.30"
 researched: 2026-04-15
 status: complete
+explained: "[[cachefiles-backend-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/caching/cachefiles.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/backend-api.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # CacheFiles Backend
+
+> 📘 Plain-language version: [[cachefiles-backend-explained]]
 
 ## Purpose
 

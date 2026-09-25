@@ -69,7 +69,7 @@ CacheFiles stores cached data as ordinary files on an already-mounted local file
 - **Space:** three pairs of thresholds (for blocks and for file counts) say when culling starts, when it stops, and when all new caching halts. The kernel only moves objects to the graveyard; a user-space daemon picks victims by access time, oldest first, and deletes them.
 - **Security:** CacheFiles temporarily switches the credentials it acts with when touching cache files, and SELinux gives cache files and the daemon their own narrow labels.
 
-See [[cachefiles-backend|CacheFiles]].
+See [[cachefiles-backend-explained|CacheFiles]].
 
 ### On-demand mode
 In some setups, such as Kata Containers, the "local" store is itself remote, so the kernel can't fill the cache on its own. On-demand mode (6.1) lets the kernel send "open" or "read this range" requests to a user-space daemon over a device file. The daemon fetches the data, writes it into the cache file and replies.
@@ -105,6 +105,6 @@ If the server's copy later changes (new generation number or size), the filesyst
 ## Related
 
 - Technical version: [[fscache]]
-- [[fscache-cookie-subsystem|Cookie subsystem]], [[netfs-helper-library|netfs helper library]], [[cachefiles-backend|CacheFiles backend]]
+- [[fscache-cookie-subsystem|Cookie subsystem]], [[netfs-helper-library|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
 - [[vfs|VFS]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]], [[block-explained|Block layer]], [[security|Security]]
