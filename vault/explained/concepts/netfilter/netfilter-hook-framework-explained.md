@@ -73,5 +73,5 @@ They bracket every meaningful decision: before routing, then the local-versus-fo
 ## Related
 
 - Technical version: [[netfilter-hook-framework]]
-- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable-explained|Flowtable]], [[iptables-explained|iptables]], [[nftables|nftables]]
+- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]], [[netfilter-flowtable-explained|Flowtable]], [[iptables-explained|iptables]], [[nftables|nftables]]
 - [[net-explained|Networking stack]], [[xdp-explained|XDP]], [[rcu-read-copy-update-explained|RCU]], [[bpf-explained|BPF]]

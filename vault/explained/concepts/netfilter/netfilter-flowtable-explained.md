@@ -76,5 +76,5 @@ An entry that sees no packets for its timeout (30 seconds by default for TCP and
 ## Related
 
 - Technical version: [[netfilter-flowtable]]
-- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-hook-framework-explained|Hook framework]], [[nftables|nftables]]
+- [[netfilter-explained|Netfilter]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]], [[netfilter-hook-framework-explained|Hook framework]], [[nftables|nftables]]
 - [[ip-routing-explained|IP routing]], [[traffic-control-qdisc-explained|Traffic control]], [[net-explained|Networking stack]]

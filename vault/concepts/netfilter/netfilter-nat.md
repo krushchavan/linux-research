@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "2.4"
 researched: 2026-04-13
 status: complete
+explained: "[[netfilter-nat-explained]]"
 sources:
   - https://kernel-internals.org/net/netfilter/
   - https://kernel-internals.org/net/nftables-iptables/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Netfilter NAT
+
+> 📘 Plain-language version: [[netfilter-nat-explained]]
 
 ## Purpose
 

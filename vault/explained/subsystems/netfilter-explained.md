@@ -54,7 +54,7 @@ NAT is an extension of conntrack. The first time a NAT rule matches a flow, the 
 - **DNAT** (destination NAT, for port forwarding) happens before routing, so routing sees the new destination.
 - **SNAT** (source NAT) happens after routing, once the outgoing interface is known. **Masquerade** is SNAT that uses whatever address the outgoing interface currently has.
 
-The reverse translation for replies is worked out once and stored in the entry's reply tuple. See [[netfilter-nat|NAT]].
+The reverse translation for replies is worked out once and stored in the entry's reply tuple. See [[netfilter-nat-explained|NAT]].
 
 ### The flowtable fast path
 Once a flow is established, a rule can explicitly **offload** it to a flowtable: a hash table of compact entries (addresses, ports, link-layer details and incoming interface). Later packets are caught by a hook just ahead of conntrack, at −201, looked up, rewritten from cached NAT state if needed, and sent straight to the neighbour, skipping routing, filter chains and NAT hooks. If the card supports it, entries can be pushed into **hardware**, forwarding at line rate with no kernel CPU per packet. Offload is explicit, so administrators can always see which flows bypass the rules. See [[netfilter-flowtable-explained|the flowtable]].
@@ -89,5 +89,5 @@ The first packet of a new inbound TCP connection to a port-forwarded service:
 ## Related
 
 - Technical version: [[netfilter]]
-- [[netfilter-hook-framework-explained|Hook framework]], [[iptables-explained|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable-explained|Flowtable]]
+- [[netfilter-hook-framework-explained|Hook framework]], [[iptables-explained|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat-explained|NAT]], [[netfilter-flowtable-explained|Flowtable]]
 - [[net-explained|Networking stack]], [[ip-routing-explained|IP routing]], [[network-namespaces-explained|Network namespaces]], [[xdp-explained|XDP]], [[bpf-explained|BPF]], [[security|Security]]
