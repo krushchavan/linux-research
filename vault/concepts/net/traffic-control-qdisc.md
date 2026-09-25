@@ -6,12 +6,15 @@ subsystem: net
 kernel_version: "2.4"
 researched: 2026-04-14
 status: complete
+explained: "[[traffic-control-qdisc-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/index.html
   - https://kernel-internals.org/net/tc-and-qdisc/
 ---
 
 # Traffic Control & qdisc
+
+> 📘 Plain-language version: [[traffic-control-qdisc-explained]]
 
 ## Purpose
 

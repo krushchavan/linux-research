@@ -67,7 +67,7 @@ Every device's outgoing path has a **queueing discipline** that decides the orde
 - **HTB**: a hierarchy of classes, each with a guaranteed rate and a ceiling, using token buckets, for rate limiting
 - **fq**: fair queueing per flow with pacing, recommended for internet-facing servers since it stops one flow from blocking others
 
-Classifiers can be eBPF programs (since 4.1), which have largely replaced complex qdisc hierarchies for software-defined networking. See [[traffic-control-qdisc|traffic control]].
+Classifiers can be eBPF programs (since 4.1), which have largely replaced complex qdisc hierarchies for software-defined networking. See [[traffic-control-qdisc-explained|traffic control]].
 
 ### Network namespaces
 A **network namespace** gives a group of processes its own interfaces, routing tables, firewall and connection-tracking state, port space and network sysctls, as if it were a separate machine. Creating one calls every networking subsystem's registered per-namespace initialiser. Physical cards stay global; containers usually get one end of a **veth** pair (packets sent on one end appear on the other), or macvlan, ipvlan or SR-IOV virtual functions. Because socket lookup searches only the packet's own namespace, two containers can both listen on port 80. See [[network-namespaces-explained|network namespaces]].
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc-explained|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]
