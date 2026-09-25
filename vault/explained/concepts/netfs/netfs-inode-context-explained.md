@@ -80,6 +80,6 @@ Memory mappings are a special fifth case: concurrent with everything, but acting
 ## Related
 
 - Technical version: [[netfs-inode-context]]
-- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model|Request model]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
+- [[netfs-explained|netfs subsystem]], [[netfs-io-request-model-explained|Request model]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
 - [[fscache-explained|fscache]], [[fscache-cookie-subsystem-explained|Cookies]], [[netfs-helper-library-explained|netfs helper library]]
 - [[vfs-locking-model-explained|VFS locking model]], [[page-cache-explained|Page cache]]

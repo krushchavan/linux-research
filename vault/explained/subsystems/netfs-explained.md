@@ -41,7 +41,7 @@ Merged in 5.13 by David Howells, it has since absorbed AFS, Ceph, 9P and CIFS. N
 ### Requests, streams and subrequests
 The core of netfs is a three-level model. One **request** covers one operation from the memory side ("read this 4 MB range"). It holds one or more **streams**, each a sequence of pieces heading to one destination: a read uses one; a write can use two, one to the server and one to the local cache. Each stream is cut into **subrequests**, single network calls or cache operations, each sized for its destination.
 
-Streams don't have to line up. Pages that only need copying into the cache appear only in the cache stream, which avoids a separate writeback pass just for the cache. When pieces finish, pages are released progressively, and failed pieces are retried after giving the filesystem a chance to adjust (for example, to get a fresh token). See [[netfs-io-request-model|the request model]].
+Streams don't have to line up. Pages that only need copying into the cache appear only in the cache stream, which avoids a separate writeback pass just for the cache. When pieces finish, pages are released progressively, and failed pieces are retried after giving the filesystem a chance to adjust (for example, to get a fresh token). See [[netfs-io-request-model-explained|the request model]].
 
 ### Per-file context
 Each file gets a small netfs record embedded next to the regular inode in the filesystem's own inode structure, so netfs can find it at no cost. It holds the callback table, the local-cache handle (if any), the **server's idea of the file size** (which can briefly differ from the local one during concurrent changes), and policy flags: bypass the page cache, write through synchronously, or treat the file as a single read-only blob.
@@ -99,6 +99,6 @@ If a cache read had failed instead (say the cached copy turned out stale), netfs
 ## Related
 
 - Technical version: [[netfs]]
-- [[netfs-io-request-model|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
+- [[netfs-io-request-model-explained|Request model]], [[netfs-inode-context-explained|Inode context]], [[netfs-read-path|Read path]], [[netfs-write-path|Write path]], [[netfs-operations-table|Operations table]]
 - [[netfs-helper-library-explained|netfs helper library (fscache view)]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|CacheFiles]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[page-cache-explained|Page cache]], [[folio-explained|Folios]], [[writeback-infrastructure-explained|Writeback]]

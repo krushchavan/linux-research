@@ -6,6 +6,7 @@ subsystem: netfs
 kernel_version: "5.13"
 researched: 2026-04-16
 status: complete
+explained: "[[netfs-io-request-model-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://lwn.net/Articles/894589/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # netfs I/O Request Model
+
+> 📘 Plain-language version: [[netfs-io-request-model-explained]]
 
 ## Purpose
 
