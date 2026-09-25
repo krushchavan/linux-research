@@ -148,7 +148,7 @@ Writing 64 KiB to a file:
 
 - Technical version: [[btrfs]]
 - [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees-explained|the trees]]
-- [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol|send/receive]], [[qgroups-explained|quota groups]]
+- [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups|Space accounting]], [[core-in-memory-structures|in-memory structures]]
 - [[fs|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

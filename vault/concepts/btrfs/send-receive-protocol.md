@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "3.6"
 researched: 2026-04-12
 status: complete
+explained: "[[send-receive-protocol-explained]]"
 sources:
   - https://lwn.net/Articles/506244/
   - https://lwn.net/Articles/505111/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Btrfs Send/Receive Protocol
+
+> 📘 Plain-language version: [[send-receive-protocol-explained]]
 
 ## Purpose
 
