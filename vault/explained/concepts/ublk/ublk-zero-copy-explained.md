@@ -98,4 +98,4 @@ When a client's direct I/O arrives, the kernel checks whether all its pages sit 
 - [[ublk-io-command-protocol-explained|I/O command protocol]]: where the copies happen in the default mode
 - [[registered-resources-explained|Registered resources]]: io_uring's buffer table, now holding kernel pages
 - [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]: zero-copy sends for network-backed devices
-- [[uring-cmd-passthrough-explained|Passthrough commands]], [[get-user-pages-and-pinning-explained|Page pinning]], [[maple-tree|Maple tree]], [[huge-pages-hugetlbfs|hugetlbfs]]
+- [[uring-cmd-passthrough-explained|Passthrough commands]], [[get-user-pages-and-pinning-explained|Page pinning]], [[maple-tree|Maple tree]], [[huge-pages-hugetlbfs-explained|hugetlbfs]]

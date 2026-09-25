@@ -71,7 +71,7 @@
 - [x] vault/concepts/mm/buddy-allocator.md
 - [x] vault/concepts/mm/folio.md
 - [x] vault/concepts/mm/get-user-pages-and-pinning.md
-- [ ] vault/concepts/mm/huge-pages-hugetlbfs.md
+- [x] vault/concepts/mm/huge-pages-hugetlbfs.md
 - [ ] vault/concepts/mm/maple-tree.md
 - [ ] vault/concepts/mm/memory-cgroup.md
 - [ ] vault/concepts/mm/memory-compaction.md

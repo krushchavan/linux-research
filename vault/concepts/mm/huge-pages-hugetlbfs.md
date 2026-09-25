@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.5.46"
 researched: 2026-04-11
 status: complete
+explained: "[[huge-pages-hugetlbfs-explained]]"
 sources:
   - https://www.kernel.org/doc/html/v4.18/vm/hugetlbfs_reserv.html
   - https://www.kernel.org/doc/html/latest/admin-guide/mm/hugetlbpage.html
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Huge Pages and hugetlbfs
+
+> 📘 Plain-language version: [[huge-pages-hugetlbfs-explained]]
 
 ## Purpose
 
