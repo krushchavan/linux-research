@@ -104,7 +104,7 @@
 - [x] vault/concepts/btrfs/subvolumes-and-snapshots.md
 - [x] vault/concepts/btrfs/transaction-model.md
 - [x] vault/subsystems/fs.md
-- [ ] vault/concepts/fs/core-in-memory-structures.md
+- [x] vault/concepts/fs/core-in-memory-structures.md
 - [ ] vault/concepts/fs/dentry-cache.md
 - [ ] vault/concepts/fs/dentry.md
 - [ ] vault/concepts/fs/extended-attributes-and-acls.md

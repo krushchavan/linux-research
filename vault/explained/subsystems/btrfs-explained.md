@@ -112,7 +112,7 @@ See [[checksumming-and-data-integrity-explained|checksumming-and-data-integrity]
 The algorithm is chosen when the filesystem is created: CRC32c by default (hardware-accelerated), or xxhash, SHA-256 or BLAKE2 (5.5+).
 
 ### In-memory structures
-See [[core-in-memory-structures]].
+See [[core-in-memory-structures-explained|core-in-memory-structures]].
 
 One per-mount object ties everything together: pointers to all the trees, the cache of subvolume roots, the block groups, the batched reference updates, and background threads for committing and cleanup. Each open file has a btrfs-specific inode that knows its subvolume, its key, its pending I/O, a cache of its extents, and flags like "compress" or "no checksums".
 
@@ -150,5 +150,5 @@ Writing 64 KiB to a file:
 - [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model-explained|transactions]], [[multiple-b-trees-explained|the trees]]
 - [[subvolumes-and-snapshots-explained|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
-- [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures|in-memory structures]]
+- [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures-explained|in-memory structures]]
 - [[fs-explained|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

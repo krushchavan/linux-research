@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[core-in-memory-structures-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://linux-kernel-labs.github.io/refs/heads/master/labs/filesystems_part1.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Core VFS In-Memory Structures
+
+> 📘 Plain-language version: [[core-in-memory-structures-explained]]
 
 ## Purpose
 
