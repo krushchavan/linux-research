@@ -111,7 +111,7 @@
 - [x] vault/concepts/fs/file-descriptor-and-open-file-table.md
 - [x] vault/concepts/fs/file-object.md
 - [x] vault/concepts/fs/filesystem-registration.md
-- [ ] vault/concepts/fs/fsnotify.md
+- [x] vault/concepts/fs/fsnotify.md
 - [ ] vault/concepts/fs/inode-cache.md
 - [ ] vault/concepts/fs/inode.md
 - [ ] vault/concepts/fs/inotify-and-fanotify.md

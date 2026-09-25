@@ -95,7 +95,7 @@ Every inode with data has an address space that ties the file to the page cache.
 
 ### fsnotify: telling programs about changes
 
-The common framework behind inotify, fanotify and the old dnotify. See [[fsnotify]] and [[inotify-and-fanotify]].
+The common framework behind inotify, fanotify and the old dnotify. See [[fsnotify-explained|fsnotify]] and [[inotify-and-fanotify]].
 
 1. VFS calls a lightweight hook at each interesting event (create, delete, modify, access, attribute change).
 2. Hooks do nothing unless someone has placed a **mark** on the object (a file, a mount or a whole filesystem), so there's no cost when nobody is watching.
@@ -146,6 +146,6 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 - [[vfs]]: the VFS deep dive
 - [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure]]
-- [[fsnotify]], [[inotify-and-fanotify]]
+- [[fsnotify-explained|fsnotify]], [[inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse]]
 - [[lsm-framework|LSM framework]], [[mount-namespace]]

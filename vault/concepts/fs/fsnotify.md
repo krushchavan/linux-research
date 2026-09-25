@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6.36"
 researched: 2026-04-05
 status: complete
+explained: "[[fsnotify-explained]]"
 sources:
   - https://lwn.net/Articles/318618/
   - https://lwn.net/Articles/604686/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # fsnotify
+
+> 📘 Plain-language version: [[fsnotify-explained]]
 
 ## Purpose
 
