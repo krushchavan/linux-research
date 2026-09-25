@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.14"
 researched: 2026-04-17
 status: complete
+explained: "[[securityfs-explained]]"
 sources:
   - https://lwn.net/Articles/153366/
   - https://lwn.net/Articles/153370/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # securityfs
+
+> 📘 Plain-language version: [[securityfs-explained]]
 
 ## Purpose
 
