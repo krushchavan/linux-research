@@ -96,7 +96,7 @@ Thin provisioning, dm-cache and dm-era all need complex, crash-safe metadata on 
 
 ### dm-bufio
 
-A simple buffer cache for targets that need to cache on-disk metadata but can't use the normal page cache, which is tied to files. dm-integrity uses it for its checksum journal. See [[dm-bufio]].
+A simple buffer cache for targets that need to cache on-disk metadata but can't use the normal page cache, which is tied to files. dm-integrity uses it for its checksum journal. See [[dm-bufio-explained|dm-bufio]].
 
 1. A target creates a client for a device, block size and maximum buffer count.
 2. Reading a block returns a cached buffer, or reads it from disk on a miss. The buffer stays pinned until released.
@@ -149,6 +149,6 @@ LVM creating a new thin volume and the first write to it:
 
 - Technical version: [[device-mapper]]
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
-- [[target-framework]], [[ioctl-control-interface]], [[dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio]]
+- [[target-framework]], [[ioctl-control-interface]], [[dm-io]], [[kcopyd]], [[persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt]], [[dm-integrity]]: the security targets
 - [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]

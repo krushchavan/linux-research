@@ -39,7 +39,7 @@
 - [x] vault/concepts/io_uring/sqpoll.md
 - [x] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [x] vault/subsystems/device-mapper.md
-- [ ] vault/concepts/device-mapper/dm-bufio.md
+- [x] vault/concepts/device-mapper/dm-bufio.md
 - [ ] vault/concepts/device-mapper/dm-io.md
 - [ ] vault/concepts/device-mapper/ioctl-control-interface.md
 - [ ] vault/concepts/device-mapper/kcopyd.md

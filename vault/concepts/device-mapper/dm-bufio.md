@@ -6,6 +6,7 @@ subsystem: device-mapper
 kernel_version: "4.6"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-bufio-explained]]"
 sources:
   - https://people.redhat.com/mpatocka/patches/kernel/new-snapshots/r22/dm-bufio.patch
   - https://docs.kernel.org/admin-guide/device-mapper/dm-integrity.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-bufio: Device Mapper Buffer Cache
+
+> 📘 Plain-language version: [[dm-bufio-explained]]
 
 ## Overview
 
