@@ -88,7 +88,7 @@ Work is moved off the submitting thread and out of completion context onto kerne
 
 ### Key management
 
-The key has to reach the kernel somehow, ideally without ever sitting in plain user-space memory. See [[dm-crypt-key-management]].
+The key has to reach the kernel somehow, ideally without ever sitting in plain user-space memory. See [[dm-crypt-key-management-explained|dm-crypt-key-management]].
 
 1. **Simplest:** the key is written in hex directly in the table. That is risky if the table is logged or visible, so it's mostly for testing.
 2. **Production:** the table names a key in the **kernel keyring** instead. dm-crypt fetches it from there. Key types include kernel-only "logon" keys, user keys, TPM-backed "trusted" keys, and "encrypted" keys decrypted inside the kernel. With trusted or encrypted keys, the raw AES key never appears in user space at all.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management-explained|dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative

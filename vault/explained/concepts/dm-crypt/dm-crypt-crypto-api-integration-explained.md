@@ -60,9 +60,9 @@ On a read, if the tag doesn't match, decryption reports a bad message and the re
       │
       ▼
  ┌──────── crypto API registry ─────────┐
- │  xts(aes-aesni)   priority high   ◀── chosen on x86 with AES-NI
- │  xts(aes-ce)      (ARM)                │
- │  xts(aes-generic) priority low         │
+ │  AES-NI version   priority high   ◀── chosen on x86 with AES-NI
+ │  ARM crypto-extension version          │
+ │  generic software version  (fallback)  │
  └──────────────────────────────────────┘
       │ one keyed instance per CPU
       ▼
