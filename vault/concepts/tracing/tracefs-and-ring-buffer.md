@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "2.6.27"
 researched: 2026-04-17
 status: complete
+explained: "[[tracefs-and-ring-buffer-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/trace/ring-buffer-design.html
   - https://www.kernel.org/doc/html/latest/trace/ftrace.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # tracefs and the Ring Buffer
+
+> 📘 Plain-language version: [[tracefs-and-ring-buffer-explained]]
 
 ## Purpose
 

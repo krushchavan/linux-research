@@ -243,7 +243,7 @@
 - [x] vault/concepts/tracing/ftrace.md
 - [x] vault/concepts/tracing/kprobes-and-kretprobes.md
 - [x] vault/concepts/tracing/perf-events.md
-- [ ] vault/concepts/tracing/tracefs-and-ring-buffer.md
+- [x] vault/concepts/tracing/tracefs-and-ring-buffer.md
 - [ ] vault/concepts/tracing/tracepoints-and-trace-event.md
 - [ ] vault/concepts/tracing/uprobes-and-usdt.md
 - [ ] vault/subsystems/smack.md
