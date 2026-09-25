@@ -164,7 +164,7 @@
 - [x] vault/concepts/overlayfs/whiteouts-and-opaque-dirs.md
 - [x] vault/subsystems/vfs.md
 - [x] vault/subsystems/cgroups.md
-- [ ] vault/concepts/cgroups/cgroup-bpf.md
+- [x] vault/concepts/cgroups/cgroup-bpf.md
 - [ ] vault/concepts/cgroups/cgroup-core.md
 - [ ] vault/concepts/cgroups/cgroup-freezer.md
 - [ ] vault/concepts/cgroups/cpuset-controller.md

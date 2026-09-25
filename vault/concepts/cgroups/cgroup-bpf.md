@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "4.10"
 researched: 2026-04-16
 status: complete
+explained: "[[cgroup-bpf-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://lwn.net/Articles/697462/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Cgroup BPF
+
+> 📘 Plain-language version: [[cgroup-bpf-explained]]
 
 ## Purpose
 
