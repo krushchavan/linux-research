@@ -7,6 +7,7 @@ mailing_list: dm-devel@redhat.com
 source_path: drivers/md/dm-crypt.c
 researched: 2026-04-18
 status: complete
+explained: "[[dm-crypt-explained]]"
 sources:
   - https://kernel-internals.org/security/dm-crypt/
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # dm-crypt — Block-Layer Transparent Encryption Subsystem
+
+> 📘 Plain-language version: [[dm-crypt-explained]]
 
 ## Overview
 

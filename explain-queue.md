@@ -45,7 +45,7 @@
 - [x] vault/concepts/device-mapper/kcopyd.md
 - [x] vault/concepts/device-mapper/persistent-data-library.md
 - [x] vault/concepts/device-mapper/target-framework.md
-- [ ] vault/subsystems/dm-crypt.md
+- [x] vault/subsystems/dm-crypt.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypt-config.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypt-io.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypto-api-integration.md
