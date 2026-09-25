@@ -94,4 +94,4 @@ The main loop handles every component *except the last*. What happens to the las
 - [[mount-namespace-explained|Mount namespaces]]: crossing mount points
 - [[file-object-explained|File object]]: what `open` produces at the end
 - [[filesystem-registration-explained|Filesystem registration]], [[inode]]
-- [[fs-explained|Filesystem subsystem (VFS)]], [[rcu-read-copy-update|RCU]], [[seqlocks-and-memory-barriers|Sequence locks]]
+- [[fs-explained|Filesystem subsystem (VFS)]], [[rcu-read-copy-update-explained|RCU]], [[seqlocks-and-memory-barriers|Sequence locks]]

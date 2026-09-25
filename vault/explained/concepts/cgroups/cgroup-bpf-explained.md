@@ -79,4 +79,4 @@ Detaching rebuilds the affected effective lists and drops the program. Because l
 
 - Technical version: [[cgroup-bpf]]
 - [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[bpf-explained|BPF]]
-- [[rcu-read-copy-update|RCU]]
+- [[rcu-read-copy-update-explained|RCU]]

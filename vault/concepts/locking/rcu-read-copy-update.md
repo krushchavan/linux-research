@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.5.43"
 researched: 2026-04-06
 status: complete
+explained: "[[rcu-read-copy-update-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/RCU/whatisRCU.html
   - https://www.kernel.org/doc/html/latest/RCU/Design/Requirements/Requirements.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # RCU: Read-Copy-Update
+
+> 📘 Plain-language version: [[rcu-read-copy-update-explained]]
 
 ## Purpose
 

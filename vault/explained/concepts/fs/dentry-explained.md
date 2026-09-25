@@ -89,4 +89,4 @@ A dentry with something mounted on it tells the lookup to cross into that mount;
 - [[core-in-memory-structures-explained|Core VFS objects]]
 - [[fs-explained|Filesystem subsystem (VFS)]]
 - [[path-lookup-explained|path-lookup]], [[inode]], [[mount-namespace-explained|mount-namespace]]
-- [[page-reclaim-explained|Page reclaim]], [[rcu-read-copy-update|RCU]], [[seqlocks-and-memory-barriers|Sequence locks]]
+- [[page-reclaim-explained|Page reclaim]], [[rcu-read-copy-update-explained|RCU]], [[seqlocks-and-memory-barriers|Sequence locks]]

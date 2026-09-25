@@ -73,4 +73,4 @@ Each controller's per-group structure begins with the same **state header**: whi
 
 - Technical version: [[css-set-and-subsystem-state]]
 - [[cgroups-explained|cgroups]], [[cgroup-core-explained|cgroup core]], [[memcg-explained|Memory cgroups]]
-- [[rcu-read-copy-update|RCU]]
+- [[rcu-read-copy-update-explained|RCU]]

@@ -85,5 +85,5 @@ All of this rests on **clockevents** (2.6.21), a uniform driver interface for ti
 ## Related
 
 - Technical version: [[dyntick-idle]]
-- [[rcu-read-copy-update|RCU]], [[interrupt-handling-explained|Interrupt handling]], [[per-cpu-variables-explained|Per-CPU variables]], [[locking-explained|Locking subsystem]]
+- [[rcu-read-copy-update-explained|RCU]], [[interrupt-handling-explained|Interrupt handling]], [[per-cpu-variables-explained|Per-CPU variables]], [[locking-explained|Locking subsystem]]
 - [[scheduler|Scheduler]], [[cpuset-controller-explained|cpuset (CPU isolation)]]

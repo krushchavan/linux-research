@@ -69,4 +69,4 @@ Reading another CPU's copy is fine as a snapshot. Writing to it is strongly disc
 
 - Technical version: [[per-cpu-variables]]
 - [[locking-explained|Locking subsystem]], [[local-lock-explained|Local locks]], [[interrupt-handling-explained|Interrupt handling]]
-- [[rcu-read-copy-update|RCU]], [[per-cpu-page-allocator-pcp-explained|Per-CPU page lists]], [[vmalloc-explained|vmalloc]]
+- [[rcu-read-copy-update-explained|RCU]], [[per-cpu-page-allocator-pcp-explained|Per-CPU page lists]], [[vmalloc-explained|vmalloc]]

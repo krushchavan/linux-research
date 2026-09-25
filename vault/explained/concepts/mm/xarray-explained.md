@@ -87,4 +87,4 @@ Created in "allocation" mode, the XArray can atomically find the lowest unused i
 - [[radix-tree-explained|Radix tree]]: the structure underneath and the API it replaced
 - [[page-cache-explained|Page cache]], [[address-space-explained|Address space]]: its biggest user
 - [[maple-tree-explained|Maple tree]]: its range-oriented sibling
-- [[rcu-read-copy-update|RCU]], [[slub-slab-allocator-explained|SLUB]], [[page-reclaim-explained|Page reclaim]]
+- [[rcu-read-copy-update-explained|RCU]], [[slub-slab-allocator-explained|SLUB]], [[page-reclaim-explained|Page reclaim]]
