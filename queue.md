@@ -229,7 +229,7 @@
 # --- Unresolved links from page-pool 2026-09-24 ---
 - [x] net -> xdp
 - [x] net -> devmem-tcp
-- [>] concept: dma-mapping-api
+- [x] concept: dma-mapping-api
 
 # --- Unresolved links from blk-mq 2026-09-25 ---
 - [ ] block -> bio-layer
