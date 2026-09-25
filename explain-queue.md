@@ -64,7 +64,7 @@
 - [x] vault/concepts/ublk/ublk-batch-io.md
 - [x] vault/concepts/ublk/ublk-control-plane.md
 - [x] vault/concepts/ublk/ublk-io-command-protocol.md
-- [ ] vault/concepts/ublk/ublk-user-recovery.md
+- [x] vault/concepts/ublk/ublk-user-recovery.md
 - [ ] vault/concepts/ublk/ublk-zero-copy.md
 - [ ] vault/subsystems/mm.md
 - [ ] vault/concepts/mm/address-space.md

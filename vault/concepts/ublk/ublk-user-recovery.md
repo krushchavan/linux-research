@@ -6,6 +6,7 @@ subsystem: ublk
 kernel_version: "6.1"
 researched: 2026-09-24
 status: complete
+explained: "[[ublk-user-recovery-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/block/ublk.html
   - https://raw.githubusercontent.com/torvalds/linux/master/include/uapi/linux/ublk_cmd.h
@@ -17,6 +18,8 @@ sources:
 ---
 
 # ublk User Recovery
+
+> 📘 Plain-language version: [[ublk-user-recovery-explained]]
 
 ## Purpose
 
