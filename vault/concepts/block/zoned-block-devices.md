@@ -6,6 +6,7 @@ subsystem: block
 kernel_version: "4.10"
 researched: 2026-09-25
 status: complete
+explained: "[[zoned-block-devices-explained]]"
 sources:
   - https://zonedstorage.io/docs/linux/overview
   - https://zonedstorage.io/docs/introduction/zoned-storage
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Zoned Block Devices
+
+> 📘 Plain-language version: [[zoned-block-devices-explained]]
 
 ## Purpose
 
