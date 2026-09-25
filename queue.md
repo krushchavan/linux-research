@@ -245,6 +245,6 @@
 - [x] block -> zoned-block-devices
 
 # --- Empty source notes found by explain-kernel 2026-09-25 (files exist but are 0 bytes) ---
-- [ ] btrfs -> cow-b-tree-engine
+- [x] btrfs -> cow-b-tree-engine
 - [ ] fs -> inode
 - [ ] fs -> superblock
