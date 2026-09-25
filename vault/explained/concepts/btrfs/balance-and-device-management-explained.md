@@ -114,4 +114,4 @@ The old disk stays live until the new one is fully populated, so redundancy neve
 - [[space-accounting-and-block-groups|Space accounting and block groups]]: what balance reclaims
 - [[raid-and-multi-device-support|RAID and multiple devices]]: the layouts balance converts between
 - [[transaction-model|Transactions]]: why a crash mid-balance is safe
-- [[checksumming-and-data-integrity|Checksums]]: verified during replace
+- [[checksumming-and-data-integrity-explained|Checksums]]: verified during replace

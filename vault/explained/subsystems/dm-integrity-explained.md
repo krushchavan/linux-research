@@ -127,4 +127,4 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
 - [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management-explained|dm-integrity-tag-management]], [[dm-integrity-recalculation-explained|dm-integrity-recalculation]]
-- [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]
+- [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity-explained|btrfs checksumming]]

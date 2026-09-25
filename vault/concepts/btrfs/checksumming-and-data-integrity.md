@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29"
 researched: 2026-04-05
 status: complete
+explained: "[[checksumming-and-data-integrity-explained]]"
 sources:
   - https://lwn.net/Articles/432083/
   - https://lwn.net/Articles/818842/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Btrfs Checksumming and Data Integrity
+
+> 📘 Plain-language version: [[checksumming-and-data-integrity-explained]]
 
 ## Purpose
 

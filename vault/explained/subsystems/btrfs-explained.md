@@ -103,7 +103,7 @@ Btrfs does RAID itself, at the level of large allocation chunks, with separate c
 A common setup is RAID1 for metadata and RAID0 or RAID1 for data. **Scrub** reads everything, checks it against the checksums, and repairs bad copies from good mirrors. **Balance** redistributes chunks to add or remove devices, or convert between profiles, while mounted.
 
 ### Checksums and data integrity
-See [[checksumming-and-data-integrity]].
+See [[checksumming-and-data-integrity-explained|checksumming-and-data-integrity]].
 
 1. On every write, each 4 KiB block gets a checksum stored in the checksum tree. Every tree node carries its own checksum in its header.
 2. On every read, the checksum is verified.
@@ -149,6 +149,6 @@ Writing 64 KiB to a file:
 - Technical version: [[btrfs]]
 - [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees|the trees]]
 - [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol|send/receive]], [[qgroups|quota groups]]
-- [[raid-and-multi-device-support|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity|checksums]]
+- [[raid-and-multi-device-support|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups|Space accounting]], [[core-in-memory-structures|in-memory structures]]
 - [[fs|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

@@ -94,7 +94,7 @@
 - [x] vault/subsystems/memcg.md
 - [x] vault/subsystems/btrfs.md
 - [x] vault/concepts/btrfs/balance-and-device-management.md
-- [ ] vault/concepts/btrfs/checksumming-and-data-integrity.md
+- [x] vault/concepts/btrfs/checksumming-and-data-integrity.md
 - [ ] vault/concepts/btrfs/cow-b-tree-engine.md
 - [ ] vault/concepts/btrfs/multiple-b-trees.md
 - [ ] vault/concepts/btrfs/qgroups.md
