@@ -67,7 +67,7 @@ The buddy allocator's zone lock would choke on a machine with many CPUs. See [[p
 
 ### SLUB: allocating bytes, not pages
 
-The kernel constantly needs objects of tens or hundreds of bytes. Using a whole 4 KB page for a 192-byte object wastes 95% of it. See [[slub-slab-allocator]].
+The kernel constantly needs objects of tens or hundreds of bytes. Using a whole 4 KB page for a 192-byte object wastes 95% of it. See [[slub-slab-allocator-explained|slub-slab-allocator]].
 
 1. Each object type gets a **cache** that carves pages into equal-sized slots.
 2. Each CPU has a current page of free slots. Allocating is one atomic swap of a "next free" pointer: no lock.
@@ -187,7 +187,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 ## Related
 
 - Technical version: [[mm]]
-- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
+- [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp-explained|per-cpu-page-allocator-pcp]], [[slub-slab-allocator-explained|slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management-explained|page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]

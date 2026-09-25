@@ -84,6 +84,6 @@ Letting interrupts stay enabled while holding the stash lock (2023) broke kernel
 - Technical version: [[per-cpu-page-allocator-pcp]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[buddy-allocator-explained|Buddy allocator]]: the layer behind the stashes
-- [[slub-slab-allocator]]: the main consumer of multi-page requests
+- [[slub-slab-allocator-explained|slub-slab-allocator]]: the main consumer of multi-page requests
 - [[page-reclaim-explained|Page reclaim]], [[memory-compaction-explained|Memory compaction]]: why stashes get drained
 - [[per-cpu-variables|Per-CPU variables]], [[rcu-read-copy-update|RCU]]

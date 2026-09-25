@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.22+"
 researched: 2026-04-05
 status: complete
+explained: "[[slub-slab-allocator-explained]]"
 sources:
   - https://kernel-internals.org/mm/slab/
   - https://kernel-internals.org/mm/slab-internals/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # SLUB Slab Allocator
+
+> 📘 Plain-language version: [[slub-slab-allocator-explained]]
 
 ## Purpose
 

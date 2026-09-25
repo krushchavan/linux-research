@@ -85,7 +85,7 @@
 - [x] vault/concepts/mm/psi-pressure-stall-information.md
 - [x] vault/concepts/mm/radix-tree.md
 - [x] vault/concepts/mm/rmap-reverse-mapping.md
-- [ ] vault/concepts/mm/slub-slab-allocator.md
+- [x] vault/concepts/mm/slub-slab-allocator.md
 - [ ] vault/concepts/mm/swap.md
 - [ ] vault/concepts/mm/transparent-huge-pages.md
 - [ ] vault/concepts/mm/virtual-memory-areas.md
