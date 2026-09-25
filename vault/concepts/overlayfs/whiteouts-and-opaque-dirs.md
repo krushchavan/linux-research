@@ -6,6 +6,7 @@ subsystem: overlayfs
 kernel_version: "3.18"
 researched: 2026-04-15
 status: complete
+explained: "[[whiteouts-and-opaque-dirs-explained]]"
 sources:
   - https://kernel-internals.org/filesystems/overlayfs/
   - https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # OverlayFS Whiteouts and Opaque Directories
+
+> 📘 Plain-language version: [[whiteouts-and-opaque-dirs-explained]]
 
 ## Purpose
 

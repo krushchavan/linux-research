@@ -53,7 +53,7 @@ The rename is the commit, so a half-copied file is never visible; an interrupted
 ### Whiteouts and opaque directories
 Lower layers can't be changed, so deleting a lower file creates a **whiteout** in the upper layer at the same path: a special device file (0:0), or on supporting filesystems a zero-size file with a marker attribute. Lookup sees it and reports "no such file" without looking further down.
 
-A directory deleted and re-created mustn't reveal the old directory's contents, so the new one is marked **opaque**, which stops lookups from descending into lower layers. A separate hint marks merged directories that contain at least one whiteout, so clean directories don't need scanning. Unprivileged mounts use the `user.` attribute namespace instead of `trusted.`. See [[whiteouts-and-opaque-dirs|whiteouts and opaque directories]].
+A directory deleted and re-created mustn't reveal the old directory's contents, so the new one is marked **opaque**, which stops lookups from descending into lower layers. A separate hint marks merged directories that contain at least one whiteout, so clean directories don't need scanning. Unprivileged mounts use the `user.` attribute namespace instead of `trusted.`. See [[whiteouts-and-opaque-dirs-explained|whiteouts and opaque directories]].
 
 ### Directory merging
 Files follow "first match wins", but same-named **directories** are merged: a listing combines every layer's contents, with upper entries hiding lower ones of the same name. Lookup checks the upper layer first (a whiteout ends the search), then gathers matching directories from each lower layer. Every lookup in a merged directory may therefore touch several layers, so directories that exist only in the upper layer skip the lower walk. See [[directory-merging-explained|directory merging]].
@@ -101,6 +101,6 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 ## Related
 
 - Technical version: [[overlayfs]]
-- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index-explained|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
+- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs-explained|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index-explained|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]

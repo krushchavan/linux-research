@@ -161,7 +161,7 @@
 - [x] vault/concepts/overlayfs/layer-stack.md
 - [x] vault/concepts/overlayfs/metacopy.md
 - [x] vault/concepts/overlayfs/redirect-dir-and-index.md
-- [ ] vault/concepts/overlayfs/whiteouts-and-opaque-dirs.md
+- [x] vault/concepts/overlayfs/whiteouts-and-opaque-dirs.md
 - [ ] vault/subsystems/vfs.md
 - [ ] vault/subsystems/cgroups.md
 - [ ] vault/concepts/cgroups/cgroup-bpf.md
