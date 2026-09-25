@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.5.27 (initial); 2.6.7 (objrmap/anon_vma); 2.6.34 (anon_vma_chain)"
 researched: 2026-04-10
 status: complete
+explained: "[[rmap-reverse-mapping-explained]]"
 sources:
   - https://lwn.net/Articles/383162/
   - https://lwn.net/Articles/75198/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Reverse Mapping (rmap)
+
+> 📘 Plain-language version: [[rmap-reverse-mapping-explained]]
 
 ## Purpose
 
