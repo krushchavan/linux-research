@@ -95,6 +95,6 @@ Registration fails if the locked-memory limit would be exceeded, the address is 
 - [[io_uring-explained|io_uring]]: the subsystem overview
 - [[provided-buffer-rings-explained|Provided buffer rings]]: the other buffer mechanism, chosen late instead of up front
 - [[get-user-pages-and-pinning|Page pinning]]: how long-term pins work
-- [[ublk|ublk]]: the main user of kernel-registered buffers
+- [[ublk-explained|ublk]]: the main user of kernel-registered buffers
 - [[uring-cmd-passthrough-explained|uring-cmd-passthrough]]: passthrough commands can use registered buffers
 - [[vfs|VFS]], [[block-explained|Block layer]]

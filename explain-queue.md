@@ -60,7 +60,7 @@
 - [x] vault/concepts/dm-integrity/dm-integrity-recalculation.md
 - [x] vault/concepts/dm-integrity/dm-integrity-tag-management.md
 - [x] vault/concepts/dma/dma-mapping-api.md
-- [ ] vault/subsystems/ublk.md
+- [x] vault/subsystems/ublk.md
 - [ ] vault/concepts/ublk/ublk-batch-io.md
 - [ ] vault/concepts/ublk/ublk-control-plane.md
 - [ ] vault/concepts/ublk/ublk-io-command-protocol.md

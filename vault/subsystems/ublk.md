@@ -7,6 +7,7 @@ mailing_list: linux-block@vger.kernel.org
 source_path: drivers/block/ublk_drv.c, include/uapi/linux/ublk_cmd.h
 researched: 2026-09-24
 status: complete
+explained: "[[ublk-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/block/ublk.html
   - https://raw.githubusercontent.com/torvalds/linux/master/include/uapi/linux/ublk_cmd.h
@@ -24,6 +25,8 @@ sources:
 ---
 
 # ublk Subsystem
+
+> 📘 Plain-language version: [[ublk-explained]]
 
 ## Overview
 
