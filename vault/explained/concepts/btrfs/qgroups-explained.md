@@ -79,7 +79,7 @@ Traditional qgroups are expensive: every commit walks back-references for every 
 
 - Technical version: [[qgroups]]
 - [[btrfs-explained|Btrfs]]: the subsystem overview
-- [[subvolumes-and-snapshots]]: what creates shared extents
+- [[subvolumes-and-snapshots-explained|subvolumes-and-snapshots]]: what creates shared extents
 - [[multiple-b-trees-explained|Btrfs B-trees]]: the extent tree and its back-references, and the quota tree itself
 - [[transaction-model]]: why accounting happens at commit
 - [[space-accounting-and-block-groups-explained|space-accounting-and-block-groups]]: physical space accounting, the complementary layer

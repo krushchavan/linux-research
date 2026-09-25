@@ -82,7 +82,7 @@ Different kinds of metadata get their own trees so they can grow and be managed 
 - **Newer trees:** a free-space tree (4.9) replacing an in-memory cache, a block-group tree (6.1) that speeds up mounting large filesystems, and a RAID stripe tree (6.7).
 
 ### Subvolumes and snapshots
-See [[subvolumes-and-snapshots]].
+See [[subvolumes-and-snapshots-explained|subvolumes-and-snapshots]].
 
 A **subvolume** is an independently mountable filesystem inside the volume, with its own file tree. It looks like a directory in its parent.
 
@@ -148,7 +148,7 @@ Writing 64 KiB to a file:
 
 - Technical version: [[btrfs]]
 - [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees-explained|the trees]]
-- [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
+- [[subvolumes-and-snapshots-explained|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures|in-memory structures]]
 - [[fs|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

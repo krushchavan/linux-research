@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29"
 researched: 2026-04-05
 status: complete
+explained: "[[subvolumes-and-snapshots-explained]]"
 sources:
   - https://lwn.net/Articles/579009/
   - https://lwn.net/Articles/237904/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Btrfs Subvolumes and Snapshots
+
+> 📘 Plain-language version: [[subvolumes-and-snapshots-explained]]
 
 ## Purpose
 
