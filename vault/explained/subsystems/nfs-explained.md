@@ -48,7 +48,7 @@ Three kinds of authentication:
 - **RPCSEC_GSS:** Kerberos-based signing and optional encryption of each call; user space sets up the security context, the kernel does the per-packet crypto.
 - **RPC-with-TLS:** the connection is encrypted with TLS at setup, selected with a mount option (5.15+).
 
-See [[sunrpc|SUNRPC]] and [[rpcsec-gss-and-kerberos|RPCSEC_GSS and Kerberos]].
+See [[sunrpc|SUNRPC]] and [[rpcsec-gss-and-kerberos-explained|RPCSEC_GSS and Kerberos]].
 
 ### XDR and compound calls
 Arguments and results are packed in **XDR**, a portable binary format, so NFS works between different CPU architectures. Each procedure has an encoder and decoder working on a stream over a buffer chain.
@@ -110,5 +110,5 @@ If the server reboots, the client notices (a sequence break or a stale-client er
 ## Related
 
 - Technical version: [[nfs]]
-- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]], [[nfs-client-explained|Client]], [[nfs-server-explained|Server]], [[pnfs-explained|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos|RPCSEC_GSS]]
+- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]], [[nfs-client-explained|Client]], [[nfs-server-explained|Server]], [[pnfs-explained|pNFS]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]], [[rpcsec-gss-and-kerberos-explained|RPCSEC_GSS]]
 - [[network-filesystems-overview-explained|Network filesystems overview]], [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[btrfs-explained|btrfs]]

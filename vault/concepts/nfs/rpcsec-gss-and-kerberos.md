@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.12"
 researched: 2026-04-11
 status: complete
+explained: "[[rpcsec-gss-and-kerberos-explained]]"
 sources:
   - https://docs.kernel.org/filesystems/nfs/rpc-server-gss.html
   - https://lwn.net/Articles/19844/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # RPCSEC_GSS and Kerberos
+
+> 📘 Plain-language version: [[rpcsec-gss-and-kerberos-explained]]
 
 ## Purpose
 

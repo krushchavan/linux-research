@@ -151,7 +151,7 @@
 - [x] vault/concepts/nfs/nfs-server.md
 - [x] vault/concepts/nfs/nfsv4.1-sessions.md
 - [x] vault/concepts/nfs/pnfs.md
-- [ ] vault/concepts/nfs/rpcsec-gss-and-kerberos.md
+- [x] vault/concepts/nfs/rpcsec-gss-and-kerberos.md
 - [ ] vault/concepts/nfs/sunrpc.md
 - [ ] vault/concepts/nfs/xdr-encoding.md
 - [ ] vault/subsystems/overlayfs.md
