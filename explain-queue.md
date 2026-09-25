@@ -106,7 +106,7 @@
 - [x] vault/subsystems/fs.md
 - [x] vault/concepts/fs/core-in-memory-structures.md
 - [x] vault/concepts/fs/dentry-cache.md
-- [ ] vault/concepts/fs/dentry.md
+- [x] vault/concepts/fs/dentry.md
 - [ ] vault/concepts/fs/extended-attributes-and-acls.md
 - [ ] vault/concepts/fs/file-descriptor-and-open-file-table.md
 - [ ] vault/concepts/fs/file-object.md

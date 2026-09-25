@@ -86,7 +86,7 @@ Killing a dentry drops its reference on the inode. If that was the last one, the
 
 - Technical version: [[dentry-cache]]
 - [[fs-explained|Filesystem subsystem (VFS)]]: the overview
-- [[dentry]]: the individual entries
+- [[dentry-explained|dentry]]: the individual entries
 - [[core-in-memory-structures-explained|Core VFS objects]]
 - [[inode-cache]], [[path-lookup]]
 - [[page-reclaim-explained|Page reclaim]], [[memory-cgroup-explained|Memory cgroups]], [[rcu-read-copy-update|RCU]]

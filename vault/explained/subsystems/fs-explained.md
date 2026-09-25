@@ -57,7 +57,7 @@ An inode represents a file, directory, symlink, device, FIFO or socket: everythi
 
 ### Dentry and the dentry cache: names
 
-A dentry maps one path component to its inode. The **dentry cache** is an in-memory view of the whole namespace. Without it, opening `/usr/bin/python` would ask the filesystem about each component every time. See [[dentry]] and [[dentry-cache-explained|dentry-cache]].
+A dentry maps one path component to its inode. The **dentry cache** is an in-memory view of the whole namespace. Without it, opening `/usr/bin/python` would ask the filesystem about each component every time. See [[dentry-explained|dentry]] and [[dentry-cache-explained|dentry-cache]].
 
 1. Dentries live only in RAM, never on disk.
 2. Lookups split the path into components and look each up in a hash table. A hit is instant; a miss asks the parent directory's filesystem, then caches the answer.
@@ -144,7 +144,7 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 
 - Technical version: [[fs]]
 - [[vfs]]: the VFS deep dive
-- [[superblock]], [[inode]], [[dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object]], [[path-lookup]]
+- [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object]], [[path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure]]
 - [[fsnotify]], [[inotify-and-fanotify]]
 - [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse]]

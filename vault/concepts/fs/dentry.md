@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[dentry-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://www.kernel.org/doc/html/v5.0/filesystems/path-lookup.html
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Dentry
+
+> 📘 Plain-language version: [[dentry-explained]]
 
 ## Purpose
 
