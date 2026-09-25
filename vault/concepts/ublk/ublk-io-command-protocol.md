@@ -6,6 +6,7 @@ subsystem: ublk
 kernel_version: "6.0"
 researched: 2026-09-24
 status: complete
+explained: "[[ublk-io-command-protocol-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/block/ublk.html
   - https://raw.githubusercontent.com/torvalds/linux/master/include/uapi/linux/ublk_cmd.h
@@ -16,6 +17,8 @@ sources:
 ---
 
 # ublk I/O Command Protocol
+
+> 📘 Plain-language version: [[ublk-io-command-protocol-explained]]
 
 ## Purpose
 

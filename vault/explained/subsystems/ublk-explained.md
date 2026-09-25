@@ -64,7 +64,7 @@ With the unprivileged option, a non-root user can create devices. Each command t
 
 ### The I/O command protocol
 
-The per-request handshake. See [[ublk-io-command-protocol]].
+The per-request handshake. See [[ublk-io-command-protocol-explained|ublk-io-command-protocol]].
 
 1. Each slot is identified by (queue, tag), matching the block layer's own request tags one-to-one.
 2. The server primes each slot with a "fetch" command, which stays pending for a long time.
@@ -134,5 +134,5 @@ If the server crashed in the middle, the device would quiesce, client I/O would 
 - [[io_uring-explained|io_uring]]: the transport ublk rides on
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[io-uring-task-work-explained|Task work]], [[registered-resources-explained|Registered resources]], [[provided-buffer-rings-explained|Provided buffer rings]]
 - [[blk-mq-explained|blk-mq]] and [[block-explained|Block layer]]: ublk is a normal block driver to them
-- [[ublk-control-plane-explained|ublk-control-plane]], [[ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
+- [[ublk-control-plane-explained|ublk-control-plane]], [[ublk-io-command-protocol-explained|ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery]]
 - [[get-user-pages-and-pinning|Page pinning]]
