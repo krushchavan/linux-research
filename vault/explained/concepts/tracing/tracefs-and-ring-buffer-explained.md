@@ -76,5 +76,5 @@ Each event has a tiny header: a few bits for type and length (small events need 
 ## Related
 
 - Technical version: [[tracefs-and-ring-buffer]]
-- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[perf-events-explained|perf events]]
+- [[tracing-explained|Tracing subsystem]], [[ftrace-explained|ftrace]], [[tracepoints-and-trace-event-explained|Tracepoints]], [[kprobes-and-kretprobes-explained|kprobes]], [[perf-events-explained|perf events]]
 - [[bpf-ring-buffer-explained|BPF ring buffer]], [[rcu-read-copy-update-explained|RCU]]

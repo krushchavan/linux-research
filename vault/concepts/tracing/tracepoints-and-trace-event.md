@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "2.6.28"
 researched: 2026-04-17
 status: complete
+explained: "[[tracepoints-and-trace-event-explained]]"
 sources:
   - https://kernel-internals.org/tracing/kprobes-tracepoints/
   - https://www.kernel.org/doc/html/latest/trace/tracepoints.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Tracepoints and TRACE_EVENT
+
+> 📘 Plain-language version: [[tracepoints-and-trace-event-explained]]
 
 ## Purpose
 
