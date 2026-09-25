@@ -51,7 +51,7 @@ This is the key trade in receive: interrupts when quiet (good latency), batched 
 ### Routing
 On arrival, IP checks the header, runs the firewall's prerouting hook, then looks the destination up in the **FIB** (forwarding table). IPv4's FIB is an **LC-trie**, a compressed prefix tree that finds the longest matching prefix quickly. The result becomes a cached route holding the output device, the next hop, and a function pointer: local delivery, or forwarding. Forwarding decrements the TTL (dropping at zero), runs the forward hook, fragments if the packet is bigger than the outgoing MTU, and queues it for transmission.
 
-**Policy routing** allows up to 255 tables, chosen by rules matching source, destination, incoming interface or a firewall mark (for VPN split routing, VRFs, per-user routes). **ECMP** spreads flows across equal-cost paths by hashing each flow's addresses (and optionally ports), so one flow always takes one path and isn't reordered. See [[ip-routing|IP routing]].
+**Policy routing** allows up to 255 tables, chosen by rules matching source, destination, incoming interface or a firewall mark (for VPN split routing, VRFs, per-user routes). **ECMP** spreads flows across equal-cost paths by hashing each flow's addresses (and optionally ports), so one flow always takes one path and isn't reordered. See [[ip-routing-explained|IP routing]].
 
 ### TCP and UDP
 Sockets are layered structures: generic socket, then internet socket, then TCP or UDP socket, with a protocol table connecting them.
@@ -106,13 +106,13 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 - **2.4 (2001):** NAPI replaces interrupt-per-packet receive. **2.6 (2003):** netfilter/iptables mature and connection tracking merges.
 - **2.6.20 (2007):** generic segmentation and receive offload.
 - **3.9 and 3.11 (2013):** multiple sockets per port for load spreading; TCP Fast Open, sending data in the SYN.
-- **4.8 (2016):** XDP. **4.14 (2017):** AF_XDP. **4.19 (2018):** BBR (per the note).
+- **4.8 (2016):** XDP. **4.14 (2017):** AF_XDP. **4.19 (2018):** BBR.
 - **5.1 (2019):** initial multipath TCP. **5.11 (2021):** threaded NAPI. **5.14 and 6.0:** BIG TCP, segments over 64 KB for IPv6 then IPv4.
 - **Ongoing:** multipath TCP maturity, loss-detection tuning, io_uring networking, smart-NIC offload, and zero-copy send.
 
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff|skb]], [[network-device-and-napi|Devices and NAPI]], [[ip-routing|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff|skb]], [[network-device-and-napi|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack|TCP/IP]], [[traffic-control-qdisc|Traffic control]], [[network-namespaces|Namespaces]], [[xdp|XDP]], [[page-pool|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

@@ -6,12 +6,15 @@ subsystem: net
 kernel_version: "2.6"
 researched: 2026-04-14
 status: complete
+explained: "[[ip-routing-explained]]"
 sources:
   - https://kernel-internals.org/net/ip-routing/
   - https://www.kernel.org/doc/html/latest/networking/ip-sysctl.html
 ---
 
 # IP Routing & FIB
+
+> 📘 Plain-language version: [[ip-routing-explained]]
 
 ## Purpose
 
