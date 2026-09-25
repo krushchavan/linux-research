@@ -6,12 +6,15 @@ subsystem: fscrypt
 kernel_version: "5.9"
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-inline-encryption-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/824841/
 ---
 
 # fscrypt Inline Encryption
+
+> 📘 Plain-language version: [[fscrypt-inline-encryption-explained]]
 
 ## Purpose
 

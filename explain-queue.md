@@ -128,7 +128,7 @@
 - [x] vault/subsystems/fscrypt.md
 - [x] vault/concepts/fscrypt/fscrypt-contents-encryption.md
 - [x] vault/concepts/fscrypt/fscrypt-filenames-encryption.md
-- [ ] vault/concepts/fscrypt/fscrypt-inline-encryption.md
+- [x] vault/concepts/fscrypt/fscrypt-inline-encryption.md
 - [ ] vault/concepts/fscrypt/fscrypt-inode-info.md
 - [ ] vault/concepts/fscrypt/fscrypt-key-management.md
 - [ ] vault/concepts/fscrypt/fscrypt-policy.md

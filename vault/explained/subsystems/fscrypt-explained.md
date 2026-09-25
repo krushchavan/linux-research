@@ -76,7 +76,7 @@ Without the key, directory listings still work: they show **no-key names**, enco
 ### Inline hardware encryption
 With the right mount option, fscrypt hands the key and IV to the block layer alongside each I/O instead of encrypting in software, and the storage controller's crypto engine encrypts or decrypts during the transfer: no CPU cipher work and no bounce pages. If the hardware can't handle the algorithm or IV size, a software fallback does it transparently.
 
-One constraint: each I/O must cover consecutive data-unit numbers, so filesystems split I/O where the numbering breaks. **Hardware-wrapped keys** go further: the raw key never exists in main memory, only a wrapped blob the hardware unwraps internally, with a separate derived secret for filenames. See [[fscrypt-inline-encryption|inline encryption]].
+One constraint: each I/O must cover consecutive data-unit numbers, so filesystems split I/O where the numbering breaks. **Hardware-wrapped keys** go further: the raw key never exists in main memory, only a wrapped blob the hardware unwraps internally, with a separate derived secret for filenames. See [[fscrypt-inline-encryption-explained|inline encryption]].
 
 ## A request's journey
 
@@ -105,6 +105,6 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 ## Related
 
 - Technical version: [[fscrypt]]
-- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption|Inline encryption]]
+- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
 - [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]

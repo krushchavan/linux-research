@@ -89,6 +89,6 @@ Some operations would break the scheme and are refused on encrypted files:
 ## Related
 
 - Technical version: [[fscrypt-contents-encryption]]
-- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-inode-info|Per-inode encryption info]], [[fscrypt-inline-encryption|Inline encryption]]
+- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-inode-info|Per-inode encryption info]], [[fscrypt-inline-encryption-explained|Inline encryption]]
 - [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]], [[block-explained|Block layer]], [[kernel-crypto-api|Kernel crypto API]]
 - [[dm-crypt-explained|dm-crypt]]: encryption below the filesystem, for contrast
