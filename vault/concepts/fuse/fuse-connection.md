@@ -6,6 +6,7 @@ subsystem: fuse
 kernel_version: "2.6.14"
 researched: 2026-04-08
 status: complete
+explained: "[[fuse-connection-explained]]"
 sources:
   - https://static.lwn.net/kerneldoc/filesystems/fuse.html
   - https://www.kernel.org/doc/html/next/filesystems/fuse.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # FUSE Connection
+
+> 📘 Plain-language version: [[fuse-connection-explained]]
 
 ## Purpose
 

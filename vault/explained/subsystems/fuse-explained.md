@@ -36,7 +36,7 @@ The kernel module registers a filesystem type, mounts with a file descriptor for
 ## The pieces
 
 ### The connection
-Each mounted FUSE filesystem has one **connection** object holding the request queues, a reference to the open device, and the capabilities agreed with the daemon. Before any real operation, the daemon and kernel do an **init handshake**: the daemon proposes a protocol version and a set of optional features (asynchronous reads, write-back caching, parallel directory operations and so on), and the kernel replies with what both understand. That agreement governs everything afterwards. See [[fuse-connection|the connection]].
+Each mounted FUSE filesystem has one **connection** object holding the request queues, a reference to the open device, and the capabilities agreed with the daemon. Before any real operation, the daemon and kernel do an **init handshake**: the daemon proposes a protocol version and a set of optional features (asynchronous reads, write-back caching, parallel directory operations and so on), and the kernel replies with what both understand. That agreement governs everything afterwards. See [[fuse-connection-explained|the connection]].
 
 ### The request queues
 Many processes can be waiting on the daemon at once, so requests are organised into queues:
@@ -98,7 +98,7 @@ If a non-fatal signal arrives during a later read the daemon is already handling
 ## Related
 
 - Technical version: [[fuse]]
-- [[fuse-connection|Connection]], [[fuse-request-queue|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
+- [[fuse-connection-explained|Connection]], [[fuse-request-queue|Request queue]], [[fuse-wire-protocol|Wire protocol]], [[fuse-vfs-integration|VFS integration]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[page-cache-explained|Page cache]]
 - [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs|OverlayFS]]
 - [[network-filesystems-overview-explained|Network filesystems]]
