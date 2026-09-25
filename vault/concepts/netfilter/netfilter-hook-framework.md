@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "2.4"
 researched: 2026-04-13
 status: complete
+explained: "[[netfilter-hook-framework-explained]]"
 sources:
   - https://kernel-internals.org/net/netfilter/
   - https://lwn.net/Articles/564095/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Netfilter Hook Framework
+
+> 📘 Plain-language version: [[netfilter-hook-framework-explained]]
 
 ## Purpose
 

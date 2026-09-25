@@ -198,7 +198,7 @@
 - [x] vault/concepts/netfilter/connection-tracking.md
 - [x] vault/concepts/netfilter/iptables.md
 - [x] vault/concepts/netfilter/netfilter-flowtable.md
-- [ ] vault/concepts/netfilter/netfilter-hook-framework.md
+- [x] vault/concepts/netfilter/netfilter-hook-framework.md
 - [ ] vault/concepts/netfilter/netfilter-nat.md
 - [ ] vault/concepts/netfilter/nftables.md
 - [ ] vault/subsystems/netlabel.md

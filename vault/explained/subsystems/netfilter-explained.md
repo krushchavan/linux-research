@@ -34,7 +34,7 @@ The framework itself contains **no policy**: it only runs hooks and applies verd
 ## The pieces
 
 ### The hook framework
-A module registers a set of hooks, each naming a protocol family, a junction, a **priority** and a callback. Each junction keeps, per network namespace, an array of hooks sorted by priority, rebuilt on every registration. At each junction the stack calls the hooks in order; the first drop or steal stops the run, otherwise the packet continues. Removal uses RCU so it's safe while packets are flowing. Even an empty junction costs something, which is why the fastest paths (XDP, traffic-control BPF) skip netfilter entirely. See [[netfilter-hook-framework|the hook framework]].
+A module registers a set of hooks, each naming a protocol family, a junction, a **priority** and a callback. Each junction keeps, per network namespace, an array of hooks sorted by priority, rebuilt on every registration. At each junction the stack calls the hooks in order; the first drop or steal stops the run, otherwise the packet continues. Removal uses RCU so it's safe while packets are flowing. Even an empty junction costs something, which is why the fastest paths (XDP, traffic-control BPF) skip netfilter entirely. See [[netfilter-hook-framework-explained|the hook framework]].
 
 ### iptables (the classic)
 iptables organises rules into **tables** (filter, nat, mangle, raw, security), each hooked at particular junctions, and tables into **chains**. Each chain is walked **linearly**, testing every rule's match against the packet; the first match's target runs: accept, drop, return, jump to another chain, or an extension such as DNAT or LOG. The user-space tool replaces a whole table at once, so even a one-rule change rewrites the entire table, leaving a race window on busy systems. Rules in the raw table run before connection tracking, so they can exempt flows from it. See [[iptables-explained|iptables]].
@@ -89,5 +89,5 @@ The first packet of a new inbound TCP connection to a port-forwarded service:
 ## Related
 
 - Technical version: [[netfilter]]
-- [[netfilter-hook-framework|Hook framework]], [[iptables-explained|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable-explained|Flowtable]]
+- [[netfilter-hook-framework-explained|Hook framework]], [[iptables-explained|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable-explained|Flowtable]]
 - [[net-explained|Networking stack]], [[ip-routing-explained|IP routing]], [[network-namespaces-explained|Network namespaces]], [[xdp-explained|XDP]], [[bpf-explained|BPF]], [[security|Security]]
