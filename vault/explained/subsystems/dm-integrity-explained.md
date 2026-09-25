@@ -40,7 +40,7 @@ Think of dm-integrity as **a checksum ledger** between the filesystem and the di
 
 ### Per-device configuration
 
-One object per device holds its mode, hash functions, journal settings, bitmap and buffers. See [[dm-integrity-device-config]].
+One object per device holds its mode, hash functions, journal settings, bitmap and buffers. See [[dm-integrity-device-config-explained|dm-integrity-device-config]].
 
 1. At setup, the table names the backing device, how many sectors are reserved at the front, the tag size, and options.
 2. From the tag size and block size, dm-integrity works out the layout: how many data sectors per chunk, how much tag space, how big the journal is.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
+- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]

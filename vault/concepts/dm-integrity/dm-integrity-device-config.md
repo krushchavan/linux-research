@@ -6,12 +6,15 @@ subsystem: dm-integrity
 kernel_version: "4.12"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-device-config-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://github.com/torvalds/linux/blob/master/drivers/md/dm-integrity.c
 ---
 
 # dm-integrity Device Config (dm_integrity_c)
+
+> 📘 Plain-language version: [[dm-integrity-device-config-explained]]
 
 ## Purpose
 
