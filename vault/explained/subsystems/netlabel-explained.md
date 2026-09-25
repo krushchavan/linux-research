@@ -54,7 +54,7 @@ This is the routing table for labelling: given a socket's security **domain** (r
 Address selectors (2.6.28) let one domain choose a protocol by **destination**: CIPSO to one subnet, CALIPSO to another, unlabelled for the rest. Before this, all of an application's traffic had to use one protocol, which blocked mixed IPv4/IPv6 deployments. See [[netlabel-domain-hash-table-explained|the domain table]].
 
 ### The management interface
-Administrators configure everything with `netlabelctl`, which talks to the kernel over Generic Netlink: add, remove and list domain mappings and DOI definitions. Changes are serialised with a spinlock (readers use RCU), and every configuration change produces an **audit record**. See [[netlabel-netlink-management-interface|the management interface]].
+Administrators configure everything with `netlabelctl`, which talks to the kernel over Generic Netlink: add, remove and list domain mappings and DOI definitions. Changes are serialised with a spinlock (readers use RCU), and every configuration change produces an **audit record**. See [[netlabel-netlink-management-interface-explained|the management interface]].
 
 ### The security-module API
 This is the key design choice. SELinux and Smack deal only with a **protocol-neutral label record**: a sensitivity level, a category bitmap, a security ID, the domain, and flags saying which fields are valid.
@@ -91,6 +91,6 @@ An SELinux process with categories c1 and c2 sends over TCP, and the receiver ch
 ## Related
 
 - Technical version: [[netlabel]]
-- [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]], [[netlabel-lsm-security-api-explained|LSM API]]
+- [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface-explained|Management interface]], [[netlabel-lsm-security-api-explained|LSM API]]
 - [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework|LSM framework]], [[linux-audit|Audit]]
 - [[net-explained|Networking stack]], [[netfilter-explained|Netfilter (SECMARK)]]

@@ -38,7 +38,7 @@ When a security module asks NetLabel to label a socket, NetLabel hashes the doma
 This is the key step. Before 2.6.28, a domain had one fixed protocol, so all of an application's traffic used the same labelling wherever it went, which blocked mixed IPv4/IPv6 networks and per-subnet policies. **Address selectors** let a domain entry hold a list of destination prefixes, each with its own protocol and DOI. The lookup walks the list and takes the first prefix covering the socket's destination; a catch-all prefix at the end (all addresses) handles the rest, usually as unlabelled.
 
 ### Step 5: Reads never wait
-Lookups happen on every new socket, so they must be cheap. They run under RCU with no lock at all. Changes come from the [[netlabel-netlink-management-interface|management interface]]: a writer takes a spinlock, updates the table, then waits for an RCU grace period before freeing old entries, so no reader ever sees freed memory. Every addition is also written to the audit log.
+Lookups happen on every new socket, so they must be cheap. They run under RCU with no lock at all. Changes come from the [[netlabel-netlink-management-interface-explained|management interface]]: a writer takes a spinlock, updates the table, then waits for an RCU grace period before freeing old entries, so no reader ever sees freed memory. Every addition is also written to the audit log.
 
 ### Step 6: Unlabelled traffic, both ways
 Unlabelled is the default for most systems: only traffic explicitly configured for CIPSO or CALIPSO gets labelled. The unlabelled configuration also controls **incoming** packets that arrive without a label option: they can be accepted or rejected.
@@ -73,5 +73,5 @@ Unlabelled is the default for most systems: only traffic explicitly configured f
 ## Related
 
 - Technical version: [[netlabel-domain-hash-table]]
-- [[netlabel-explained|NetLabel]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-netlink-management-interface|Management interface]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]]
+- [[netlabel-explained|NetLabel]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-netlink-management-interface-explained|Management interface]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]]
 - [[rcu-read-copy-update-explained|RCU]], [[linux-audit|Audit]]

@@ -6,6 +6,7 @@ subsystem: netlabel
 kernel_version: "2.6.19"
 researched: 2026-04-17
 status: complete
+explained: "[[netlabel-netlink-management-interface-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/netlabel/introduction.html
   - https://lwn.net/Articles/185491/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # NetLabel Netlink Management Interface
+
+> 📘 Plain-language version: [[netlabel-netlink-management-interface-explained]]
 
 ## Purpose
 

@@ -76,5 +76,5 @@ The module then maps the record to its own security ID and enforces policy. Sinc
 ## Related
 
 - Technical version: [[cipso-ipv4-engine]]
-- [[netlabel-explained|NetLabel]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface|Management interface]]
+- [[netlabel-explained|NetLabel]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface-explained|Management interface]]
 - [[selinux|SELinux]], [[smack|Smack]], [[net-explained|Networking stack]]

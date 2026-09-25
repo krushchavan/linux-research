@@ -206,7 +206,7 @@
 - [x] vault/concepts/netlabel/cipso-ipv4-engine.md
 - [x] vault/concepts/netlabel/netlabel-domain-hash-table.md
 - [x] vault/concepts/netlabel/netlabel-lsm-security-api.md
-- [ ] vault/concepts/netlabel/netlabel-netlink-management-interface.md
+- [x] vault/concepts/netlabel/netlabel-netlink-management-interface.md
 - [ ] vault/subsystems/scheduler.md
 - [ ] vault/concepts/scheduler/cfs-eevdf.md
 - [ ] vault/concepts/scheduler/context-switch.md
