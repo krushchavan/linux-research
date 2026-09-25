@@ -201,7 +201,7 @@
 - [x] vault/concepts/netfilter/netfilter-hook-framework.md
 - [x] vault/concepts/netfilter/netfilter-nat.md
 - [x] vault/concepts/netfilter/nftables.md
-- [ ] vault/subsystems/netlabel.md
+- [x] vault/subsystems/netlabel.md
 - [ ] vault/concepts/netlabel/calipso-ipv6-engine.md
 - [ ] vault/concepts/netlabel/cipso-ipv4-engine.md
 - [ ] vault/concepts/netlabel/netlabel-domain-hash-table.md

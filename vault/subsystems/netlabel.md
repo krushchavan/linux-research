@@ -7,6 +7,7 @@ mailing_list: netdev@vger.kernel.org, linux-security-module@vger.kernel.org
 source_path: net/netlabel/, net/ipv4/cipso_ipv4.c, net/ipv6/calipso.c
 researched: 2026-04-17
 status: complete
+explained: "[[netlabel-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/netlabel/introduction.html
   - https://www.kernel.org/doc/html/latest/netlabel/cipso_ipv4.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # NetLabel Subsystem
+
+> 📘 Plain-language version: [[netlabel-explained]]
 
 ## Overview
 
