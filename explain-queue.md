@@ -73,7 +73,7 @@
 - [x] vault/concepts/mm/get-user-pages-and-pinning.md
 - [x] vault/concepts/mm/huge-pages-hugetlbfs.md
 - [x] vault/concepts/mm/maple-tree.md
-- [ ] vault/concepts/mm/memory-cgroup.md
+- [x] vault/concepts/mm/memory-cgroup.md
 - [ ] vault/concepts/mm/memory-compaction.md
 - [ ] vault/concepts/mm/numa-memory-policy.md
 - [ ] vault/concepts/mm/oom-killer.md

@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.25"
 researched: 2026-04-13
 status: complete
+explained: "[[memory-cgroup-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://docs.kernel.org/admin-guide/cgroup-v1/memory.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Memory Cgroup (memcg)
+
+> 📘 Plain-language version: [[memory-cgroup-explained]]
 
 ## Purpose
 
