@@ -80,7 +80,7 @@ A **network namespace** gives a group of processes its own interfaces, routing t
 - **redirect**: to another interface, another CPU, or a user-space socket
 - **aborted**: drop and emit a trace event, for debugging
 
-It runs **natively** in drivers that support it, **generically** after skb allocation on any driver (without the allocation savings), or **offloaded** into NIC hardware. **AF_XDP** builds on redirect: an application registers a chunk of its own memory as frames, and packets land directly in it through shared rings, with no copy and no skb. See [[xdp|XDP]].
+It runs **natively** in drivers that support it, **generically** after skb allocation on any driver (without the allocation savings), or **offloaded** into NIC hardware. **AF_XDP** builds on redirect: an application registers a chunk of its own memory as frames, and packets land directly in it through shared rings, with no copy and no skb. See [[xdp-explained|XDP]].
 
 ## A request's journey
 
@@ -113,6 +113,6 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 ## Related
 
 - Technical version: [[net]]
-- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc-explained|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
+- [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc-explained|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp-explained|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
 - [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

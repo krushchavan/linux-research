@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "4.8"
 researched: 2026-09-25
 status: complete
+explained: "[[xdp-explained]]"
 sources:
   - https://kernel-internals.org/net/xdp/
   - https://kernel-internals.org/bpf/
@@ -21,6 +22,8 @@ sources:
 ---
 
 # XDP (eXpress Data Path)
+
+> 📘 Plain-language version: [[xdp-explained]]
 
 ## Purpose
 

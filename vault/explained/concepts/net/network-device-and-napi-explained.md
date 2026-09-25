@@ -82,5 +82,5 @@ Modern cards have many receive and transmit queues. **RSS** hashes each flow to 
 ## Related
 
 - Technical version: [[network-device-and-napi]]
-- [[net-explained|Networking stack]], [[sk-buff-explained|skb]], [[page-pool-explained|Page pool]], [[traffic-control-qdisc-explained|Traffic control]], [[xdp|XDP]]
+- [[net-explained|Networking stack]], [[sk-buff-explained|skb]], [[page-pool-explained|Page pool]], [[traffic-control-qdisc-explained|Traffic control]], [[xdp-explained|XDP]]
 - [[interrupt-handling-explained|Interrupt handling]], [[dma-mapping-api-explained|DMA mapping]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]

@@ -193,7 +193,7 @@
 - [x] vault/concepts/net/sk-buff.md
 - [x] vault/concepts/net/tcp-ip-stack.md
 - [x] vault/concepts/net/traffic-control-qdisc.md
-- [ ] vault/concepts/net/xdp.md
+- [x] vault/concepts/net/xdp.md
 - [ ] vault/subsystems/netfilter.md
 - [ ] vault/concepts/netfilter/connection-tracking.md
 - [ ] vault/concepts/netfilter/iptables.md
