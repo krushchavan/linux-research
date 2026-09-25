@@ -151,4 +151,4 @@ Writing 64 KiB to a file:
 - [[subvolumes-and-snapshots-explained|Subvolumes and snapshots]], [[send-receive-protocol-explained|send/receive]], [[qgroups-explained|quota groups]]
 - [[raid-and-multi-device-support-explained|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups-explained|Space accounting]], [[core-in-memory-structures|in-memory structures]]
-- [[fs|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]
+- [[fs-explained|Filesystems]], [[vfs|VFS]], [[block-explained|block layer]]

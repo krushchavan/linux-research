@@ -8,6 +8,7 @@ source_path: fs/
 researched: 2026-04-05
 last_refreshed: 2026-04-05
 status: complete
+explained: "[[fs-explained]]"
 related: ["[[vfs]]", "[[nfs]]", "[[btrfs]]"]
 sources:
   - https://www.kernel.org/doc/html/v5.7/filesystems/vfs.html
@@ -25,6 +26,8 @@ sources:
 ---
 
 # Linux Filesystem Subsystem (VFS)
+
+> 📘 Plain-language version: [[fs-explained]]
 
 ## Related Notes
 
