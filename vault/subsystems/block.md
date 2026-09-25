@@ -7,6 +7,7 @@ mailing_list: linux-block@vger.kernel.org
 source_path: block/
 researched: 2026-04-05
 status: complete
+explained: "[[block-explained]]"
 sources:
   - https://lwn.net/Articles/736534/
   - https://lwn.net/Articles/738449/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Block Layer Subsystem
+
+> 📘 Plain-language version: [[block-explained]]
 
 ## Overview
 

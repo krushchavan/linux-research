@@ -18,8 +18,8 @@
 ## Queue
 
 - [x] vault/concepts/io_uring/io-uring-zero-copy-networking.md
-- [ ] vault/subsystems/block.md
-- [ ] vault/concepts/block/blk-mq.md
+- [x] vault/subsystems/block.md
+- [>] vault/concepts/block/blk-mq.md
 - [ ] vault/subsystems/bpf.md
 - [ ] vault/concepts/bpf/bpf-helpers-and-kfuncs.md
 - [ ] vault/concepts/bpf/bpf-jit-compiler.md
