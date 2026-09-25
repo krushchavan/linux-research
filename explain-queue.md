@@ -246,6 +246,6 @@
 - [x] vault/concepts/tracing/tracefs-and-ring-buffer.md
 - [x] vault/concepts/tracing/tracepoints-and-trace-event.md
 - [x] vault/concepts/tracing/uprobes-and-usdt.md
-- [ ] vault/subsystems/smack.md
+- [x] vault/subsystems/smack.md
 - [ ] vault/concepts/block/bio-layer.md
 - [ ] vault/concepts/block/io-scheduler.md

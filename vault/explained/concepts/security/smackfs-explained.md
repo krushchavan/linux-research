@@ -86,5 +86,5 @@ Separately, mount options on other filesystems set default, root, floor, hat and
 ## Related
 
 - Technical version: [[smackfs]]
-- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling-explained|Network labelling]]
+- [[smack-explained|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smack-network-labeling-explained|Network labelling]]
 - [[securityfs-explained|securityfs]], [[netlabel-explained|NetLabel]], [[capabilities-explained|Capabilities]]

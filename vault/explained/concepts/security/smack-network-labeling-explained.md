@@ -66,5 +66,5 @@ On receive, the peer's label (the subject) must have write access to the local s
 ## Related
 
 - Technical version: [[smack-network-labeling]]
-- [[smack|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smackfs-explained|smackfs]]
+- [[smack-explained|Smack]], [[smack-access-engine-explained|Access engine]], [[smack-label-registry-explained|Label registry]], [[smack-inode-and-task-labeling-explained|Inode and task labelling]], [[smackfs-explained|smackfs]]
 - [[netlabel-explained|NetLabel]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[net-explained|Networking stack]]

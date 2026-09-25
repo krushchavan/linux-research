@@ -7,6 +7,7 @@ mailing_list: linux-security-module@vger.kernel.org
 source_path: security/smack/
 researched: 2026-04-16
 status: complete
+explained: "[[smack-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/LSM/Smack.html
   - https://lwn.net/Articles/244531/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Smack Subsystem
+
+> 📘 Plain-language version: [[smack-explained]]
 
 ## Overview
 

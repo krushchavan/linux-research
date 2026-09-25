@@ -65,4 +65,4 @@ This is the key point. SELinux uses the same code path for CALIPSO as for CIPSO:
 
 - Technical version: [[calipso-ipv6-engine]]
 - [[netlabel-explained|NetLabel]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[netlabel-lsm-security-api-explained|LSM API]], [[netlabel-domain-hash-table-explained|Domain table]]
-- [[selinux-explained|SELinux]], [[smack|Smack]], [[net-explained|Networking stack]]
+- [[selinux-explained|SELinux]], [[smack-explained|Smack]], [[net-explained|Networking stack]]
