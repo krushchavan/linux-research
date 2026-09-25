@@ -7,6 +7,7 @@ mailing_list: dm-devel@redhat.com
 source_path: drivers/md/dm*.c, include/linux/device-mapper.h
 researched: 2026-04-18
 status: complete
+explained: "[[device-mapper-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/index.html
   - https://en.wikipedia.org/wiki/Device_mapper
@@ -21,6 +22,8 @@ sources:
 ---
 
 # Device Mapper Subsystem
+
+> 📘 Plain-language version: [[device-mapper-explained]]
 
 ## Overview
 
