@@ -112,7 +112,7 @@ The same engine powers several features:
 
 - Technical version: [[io-uring-async-poll-and-multishot]]
 - [[io_uring-explained|io_uring]]: the subsystem overview
-- [[io-uring-task-work]]: how wake-ups continue in the application's thread
+- [[io-uring-task-work-explained|io-uring-task-work]]: how wake-ups continue in the application's thread
 - [[provided-buffer-rings]]: where multishot receive gets its buffers
 - [[io-wq]]: the helper-thread fallback this avoids
 - [[registered-resources]]: direct descriptors for multishot accept

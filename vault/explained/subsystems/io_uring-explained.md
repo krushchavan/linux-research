@@ -82,7 +82,7 @@ Even one batched system call is a system call. See [[sqpoll]].
 
 ### Task work: finishing in the right place
 
-Completions are often detected in the wrong place: an interrupt handler, or a callback run by whoever woke a wait queue. io_uring wants to finish them in the submitting thread, where it can touch that process's memory and the ring without heavy locking. See [[io-uring-task-work]].
+Completions are often detected in the wrong place: an interrupt handler, or a callback run by whoever woke a wait queue. io_uring wants to finish them in the submitting thread, where it can touch that process's memory and the ring without heavy locking. See [[io-uring-task-work-explained|io-uring-task-work]].
 
 1. The finished request is put on a lock-free list and the owning thread is notified.
 2. By default the notification can interrupt the thread (even with a cross-CPU interrupt) and force it out of user space. That is expensive for busy servers.

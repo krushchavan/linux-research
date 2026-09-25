@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.7"
 researched: 2026-09-24
 status: complete
+explained: "[[io-uring-task-work-explained]]"
 sources:
   - https://lwn.net/Articles/906470/
   - https://lwn.net/Articles/910608/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # io_uring task_work and Completion Batching
+
+> 📘 Plain-language version: [[io-uring-task-work-explained]]
 
 ## Purpose
 

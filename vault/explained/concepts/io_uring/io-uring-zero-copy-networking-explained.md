@@ -115,4 +115,4 @@ RECEIVE (zcrx)
 - [[page-pool|Page pool]]: the buffer recycler zcrx plugs into
 - [[devmem-tcp|Device-memory TCP]]: the sibling feature using the same provider mechanism
 - [[registered-resources|Registered buffers]]: pre-pinned buffers for zero-copy send
-- [[io-uring-task-work|io_uring task work]]: how completions get posted
+- [[io-uring-task-work-explained|io_uring task work]]: how completions get posted
