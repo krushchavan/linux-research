@@ -70,7 +70,7 @@ Changes are grouped into transactions, each with an increasing *generation* numb
 Every parent-to-child pointer also records the generation it expects the child to have. If a read finds a mismatch, btrfs knows a write went to the wrong place, catching "phantom writes" without re-checking every parent.
 
 ### The trees
-See [[multiple-b-trees]].
+See [[multiple-b-trees-explained|multiple-b-trees]].
 
 Different kinds of metadata get their own trees so they can grow and be managed independently:
 - **Root tree:** the directory of all other trees. Every lookup starts here.
@@ -147,7 +147,7 @@ Writing 64 KiB to a file:
 ## Related
 
 - Technical version: [[btrfs]]
-- [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees|the trees]]
+- [[cow-b-tree-engine|Copy-on-write B-trees]], [[transaction-model|transactions]], [[multiple-b-trees-explained|the trees]]
 - [[subvolumes-and-snapshots|Subvolumes and snapshots]], [[send-receive-protocol|send/receive]], [[qgroups|quota groups]]
 - [[raid-and-multi-device-support|RAID]], [[balance-and-device-management-explained|balance]], [[checksumming-and-data-integrity-explained|checksums]]
 - [[space-accounting-and-block-groups|Space accounting]], [[core-in-memory-structures|in-memory structures]]

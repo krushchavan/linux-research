@@ -96,7 +96,7 @@ Scrub looks things up in the state as of the last committed transaction, so it h
 
 - Technical version: [[checksumming-and-data-integrity]]
 - [[btrfs-explained|Btrfs]]: the subsystem overview
-- [[multiple-b-trees]]: every tree block is checksummed
+- [[multiple-b-trees-explained|multiple-b-trees]]: every tree block is checksummed
 - [[raid-and-multi-device-support]]: the mirrors and parity that repair uses
 - [[transaction-model]]: why checksums and data stay in step
 - [[dm-integrity-explained|dm-integrity]]: per-sector checksums at the block layer instead

@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29"
 researched: 2026-04-05
 status: complete
+explained: "[[multiple-b-trees-explained]]"
 sources:
   - https://lwn.net/Articles/342892/
   - https://archive.kernel.org/oldwiki/btrfs.wiki.kernel.org/index.php/Btrfs_design.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Btrfs Multiple B-Trees
+
+> 📘 Plain-language version: [[multiple-b-trees-explained]]
 
 ## Purpose
 
