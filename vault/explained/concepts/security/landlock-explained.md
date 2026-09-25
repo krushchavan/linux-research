@@ -76,4 +76,4 @@ Programs must ask the kernel which Landlock version it supports, and use only ri
 ## Related
 
 - Technical version: [[landlock]]
-- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf-explained|seccomp]], [[capabilities-explained|Capabilities]], [[credentials-explained|Credentials]], [[apparmor-explained|AppArmor]], [[selinux|SELinux]]
+- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf-explained|seccomp]], [[capabilities-explained|Capabilities]], [[credentials-explained|Credentials]], [[apparmor-explained|AppArmor]], [[selinux-explained|SELinux]]

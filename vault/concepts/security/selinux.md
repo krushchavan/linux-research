@@ -6,12 +6,15 @@ subsystem: security
 kernel_version: "2.6.0"
 researched: 2026-04-15
 status: complete
+explained: "[[selinux-explained]]"
 sources:
   - https://kernel-internals.org/security/selinux/
   - https://www.kernel.org/doc/html/latest/security/lsm.html
 ---
 
 # SELinux
+
+> 📘 Plain-language version: [[selinux-explained]]
 
 ## Overview
 

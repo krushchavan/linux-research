@@ -81,4 +81,4 @@ When a module rejects a labelled packet, NetLabel can send back the right **ICMP
 
 - Technical version: [[netlabel-lsm-security-api]]
 - [[netlabel-explained|NetLabel]], [[netlabel-domain-hash-table-explained|Domain table]], [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-netlink-management-interface-explained|Management interface]]
-- [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework-explained|LSM framework]]
+- [[selinux-explained|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework-explained|LSM framework]]

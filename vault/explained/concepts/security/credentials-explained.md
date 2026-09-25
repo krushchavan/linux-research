@@ -78,5 +78,5 @@ A few flags change capability rules for a task: stop the kernel clearing capabil
 ## Related
 
 - Technical version: [[credentials]]
-- [[security-explained|Security subsystem]], [[capabilities-explained|Capabilities]], [[lsm-framework-explained|LSM framework]], [[selinux|SELinux]], [[seccomp-bpf-explained|seccomp]], [[user-namespaces|User namespaces]], [[kernel-keyring-explained|Keyrings]]
+- [[security-explained|Security subsystem]], [[capabilities-explained|Capabilities]], [[lsm-framework-explained|LSM framework]], [[selinux-explained|SELinux]], [[seccomp-bpf-explained|seccomp]], [[user-namespaces|User namespaces]], [[kernel-keyring-explained|Keyrings]]
 - [[rcu-read-copy-update-explained|RCU]]

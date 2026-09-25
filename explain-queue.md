@@ -231,7 +231,7 @@
 - [x] vault/concepts/security/process-model.md
 - [x] vault/concepts/security/seccomp-bpf.md
 - [x] vault/concepts/security/securityfs.md
-- [ ] vault/concepts/security/selinux.md
+- [x] vault/concepts/security/selinux.md
 - [ ] vault/concepts/security/smack-access-engine.md
 - [ ] vault/concepts/security/smack-inode-and-task-labeling.md
 - [ ] vault/concepts/security/smack-label-registry.md

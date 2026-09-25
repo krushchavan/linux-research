@@ -69,4 +69,4 @@ Each profile is either **enforcing** or in **complain** mode. In complain mode, 
 ## Related
 
 - Technical version: [[apparmor]]
-- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[selinux|SELinux]], [[capabilities-explained|Capabilities]], [[linux-audit-explained|Audit]], [[landlock-explained|Landlock]]
+- [[security-explained|Security subsystem]], [[lsm-framework-explained|LSM framework]], [[selinux-explained|SELinux]], [[capabilities-explained|Capabilities]], [[linux-audit-explained|Audit]], [[landlock-explained|Landlock]]

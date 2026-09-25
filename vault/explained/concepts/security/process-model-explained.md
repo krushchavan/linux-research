@@ -87,4 +87,4 @@ Tracing can read and write another process's memory and registers, so it's the m
 ## Related
 
 - Technical version: [[process-model]]
-- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[capabilities-explained|Capabilities]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf-explained|seccomp]], [[user-namespaces|User namespaces]], [[selinux|SELinux]]
+- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[capabilities-explained|Capabilities]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf-explained|seccomp]], [[user-namespaces|User namespaces]], [[selinux-explained|SELinux]]

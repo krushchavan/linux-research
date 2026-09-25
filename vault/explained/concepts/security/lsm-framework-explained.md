@@ -68,4 +68,4 @@ SELinux, AppArmor and Smack were each marked **exclusive**, because each assumed
 ## Related
 
 - Technical version: [[lsm-framework]]
-- [[security-explained|Security subsystem]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[smack|Smack]], [[landlock-explained|Landlock]], [[capabilities-explained|Capabilities]], [[credentials-explained|Credentials]], [[linux-audit-explained|Audit]]
+- [[security-explained|Security subsystem]], [[selinux-explained|SELinux]], [[apparmor-explained|AppArmor]], [[smack|Smack]], [[landlock-explained|Landlock]], [[capabilities-explained|Capabilities]], [[credentials-explained|Credentials]], [[linux-audit-explained|Audit]]
