@@ -105,7 +105,7 @@ With memory cgroups, hitting a group's limit triggers OOM **within that group**,
 
 - Technical version: [[oom-killer]]
 - [[mm-explained|Memory management]]: the subsystem overview
-- [[page-reclaim]]: what must fail first
+- [[page-reclaim-explained|page-reclaim]]: what must fail first
 - [[memory-cgroup-explained|Memory cgroups]]: OOM scoped to a container
 - [[buddy-allocator-explained|Buddy allocator]]: where reaped pages go
 - [[virtual-memory-areas]], [[page-fault-handler-explained|page-fault-handler]], [[psi-pressure-stall-information]]

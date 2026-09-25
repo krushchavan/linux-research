@@ -89,4 +89,4 @@ Dirty tracking is per folio too: dirtying one byte of a 2 MB folio writes back a
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[page-cache-explained|page-cache]], [[address-space-explained|Address space]]: where folios are cached
 - [[transparent-huge-pages]]: the compound-page machinery large folios build on
-- [[page-reclaim]], [[rmap-reverse-mapping]], [[memory-cgroup-explained|memory-cgroup]]
+- [[page-reclaim-explained|page-reclaim]], [[rmap-reverse-mapping]], [[memory-cgroup-explained|memory-cgroup]]

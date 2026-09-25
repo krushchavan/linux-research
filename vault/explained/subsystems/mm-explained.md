@@ -124,7 +124,7 @@ Folios replaced individual page descriptors as the page-cache unit in 5.16. A 2 
 
 ### Page reclaim: manufacturing free pages
 
-Free pages have to be actively produced. See [[page-reclaim]].
+Free pages have to be actively produced. See [[page-reclaim-explained|page-reclaim]].
 
 1. When a zone falls below its *low* watermark, a per-node background thread (**kswapd**) wakes and reclaims until it's back above *high*.
 2. It scans for cold pages and decides:
@@ -189,7 +189,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 - Technical version: [[mm]]
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
 - [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management]]
-- [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
+- [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim-explained|page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information]]
 - [[vfs|VFS]], [[block-explained|Block layer]]

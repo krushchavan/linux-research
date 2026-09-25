@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6+"
 researched: 2026-04-05
 status: complete
+explained: "[[page-reclaim-explained]]"
 sources:
   - https://kernel-internals.org/site-index/
   - https://docs.kernel.org/mm/multigen_lru.html
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Page Reclaim
+
+> 📘 Plain-language version: [[page-reclaim-explained]]
 
 ## Purpose
 
