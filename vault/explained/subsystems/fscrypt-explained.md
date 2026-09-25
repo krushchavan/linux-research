@@ -59,7 +59,7 @@ Adding a key records which users added it (a per-user count) and stores a hash f
 See [[fscrypt-key-management|key management]].
 
 ### Per-file encryption state
-The first time an encrypted file is opened, fscrypt reads its stored policy and nonce, finds the master key, derives the file's key, prepares either a software cipher or a hardware key handle, and attaches the result to the in-memory inode for later opens to reuse. Directories also get a separate filename key. With v2, fscrypt checks the key hash and returns "no key" rather than silently decrypting to garbage when the wrong master key was added. See [[fscrypt-inode-info|per-inode info]].
+The first time an encrypted file is opened, fscrypt reads its stored policy and nonce, finds the master key, derives the file's key, prepares either a software cipher or a hardware key handle, and attaches the result to the in-memory inode for later opens to reuse. Directories also get a separate filename key. With v2, fscrypt checks the key hash and returns "no key" rather than silently decrypting to garbage when the wrong master key was added. See [[fscrypt-inode-info-explained|per-inode info]].
 
 ### Contents encryption
 This is the key design choice. fscrypt works at the **page cache boundary**, not at the block device: the page cache holds plaintext, and encryption happens as data moves between memory and disk.
@@ -105,6 +105,6 @@ Opening and reading an encrypted file after the user has unlocked its directory:
 ## Related
 
 - Technical version: [[fscrypt]]
-- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
+- [[fscrypt-policy|Policies]], [[fscrypt-key-management|Key management]], [[fscrypt-inode-info-explained|Per-inode info]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-filenames-encryption-explained|Filename encryption]], [[fscrypt-inline-encryption-explained|Inline encryption]]
 - [[dm-crypt-explained|dm-crypt]]: whole-device encryption, for contrast
 - [[kernel-crypto-api|Kernel crypto API]], [[block-explained|Block layer]], [[page-cache-explained|Page cache]]

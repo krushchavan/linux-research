@@ -80,5 +80,5 @@ Since 5.17, a directory can be both encrypted and case-insensitive. Names are Un
 ## Related
 
 - Technical version: [[fscrypt-filenames-encryption]]
-- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-inode-info|Per-inode encryption info]], [[fscrypt-policy|Policies]]
+- [[fscrypt-explained|fscrypt subsystem]], [[fscrypt-contents-encryption-explained|Contents encryption]], [[fscrypt-inode-info-explained|Per-inode encryption info]], [[fscrypt-policy|Policies]]
 - [[path-lookup-explained|Path lookup]], [[dentry-explained|Dentries]], [[kernel-crypto-api|Kernel crypto API]]

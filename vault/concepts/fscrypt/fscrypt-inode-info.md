@@ -6,12 +6,15 @@ subsystem: fscrypt
 kernel_version: "4.1"
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-inode-info-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/795378/
 ---
 
 # fscrypt Inode Info
+
+> 📘 Plain-language version: [[fscrypt-inode-info-explained]]
 
 ## Purpose
 
