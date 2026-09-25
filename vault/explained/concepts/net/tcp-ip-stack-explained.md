@@ -84,4 +84,4 @@ A SYN flood tries to fill the request table with half-open connections. With **S
 
 - Technical version: [[tcp-ip-stack]]
 - [[net-explained|Networking stack]], [[sk-buff-explained|skb]], [[ip-routing-explained|IP routing]], [[network-namespaces-explained|Network namespaces]]
-- [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[traffic-control-qdisc-explained|Traffic control]]
+- [[netfilter-explained|Netfilter]], [[bpf-explained|BPF]], [[traffic-control-qdisc-explained|Traffic control]]

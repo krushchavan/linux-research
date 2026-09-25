@@ -194,7 +194,7 @@
 - [x] vault/concepts/net/tcp-ip-stack.md
 - [x] vault/concepts/net/traffic-control-qdisc.md
 - [x] vault/concepts/net/xdp.md
-- [ ] vault/subsystems/netfilter.md
+- [x] vault/subsystems/netfilter.md
 - [ ] vault/concepts/netfilter/connection-tracking.md
 - [ ] vault/concepts/netfilter/iptables.md
 - [ ] vault/concepts/netfilter/netfilter-flowtable.md

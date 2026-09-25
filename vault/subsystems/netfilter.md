@@ -7,6 +7,7 @@ mailing_list: netfilter-devel@vger.kernel.org
 source_path: net/netfilter/
 researched: 2026-04-13
 status: complete
+explained: "[[netfilter-explained]]"
 sources:
   - https://kernel-internals.org/net/netfilter/
   - https://kernel-internals.org/net/nftables-iptables/
@@ -22,6 +23,8 @@ sources:
 ---
 
 # Netfilter Subsystem
+
+> 📘 Plain-language version: [[netfilter-explained]]
 
 ## Related Notes
 

@@ -114,5 +114,5 @@ Forwarding follows the same start, then routing picks an output device, TTL is d
 
 - Technical version: [[net]]
 - [[sk-buff-explained|skb]], [[network-device-and-napi-explained|Devices and NAPI]], [[ip-routing-explained|Routing]], [[tcp-ip-stack-explained|TCP/IP]], [[traffic-control-qdisc-explained|Traffic control]], [[network-namespaces-explained|Namespaces]], [[xdp-explained|XDP]], [[page-pool-explained|Page pool]], [[devmem-tcp-explained|Device-memory TCP]]
-- [[netfilter|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
+- [[netfilter-explained|Netfilter]], [[bpf-explained|BPF]], [[cgroup-bpf-explained|cgroup BPF]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[interrupt-handling-explained|Interrupt handling]], [[rcu-read-copy-update-explained|RCU]], [[dma-mapping-api-explained|DMA mapping]]

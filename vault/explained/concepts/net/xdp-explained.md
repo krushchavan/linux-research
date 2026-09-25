@@ -85,4 +85,4 @@ A full redirect queue, or a target without an XDP transmit hook, frees the frame
 - Technical version: [[xdp]]
 - [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[page-pool-explained|Page pool]], [[sk-buff-explained|skb]]
 - [[bpf-explained|BPF]], [[bpf-program-types-explained|BPF program types]], [[bpf-maps-explained|BPF maps]], [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]
-- [[traffic-control-qdisc-explained|Traffic control]], [[netfilter|Netfilter]]
+- [[traffic-control-qdisc-explained|Traffic control]], [[netfilter-explained|Netfilter]]

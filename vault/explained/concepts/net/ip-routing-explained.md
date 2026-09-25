@@ -77,4 +77,4 @@ When several routes to the same destination are equally good, they're stored as 
 
 - Technical version: [[ip-routing]]
 - [[net-explained|Networking stack]], [[network-device-and-napi-explained|Devices and NAPI]], [[network-namespaces-explained|Network namespaces (per-namespace tables)]], [[tcp-ip-stack-explained|TCP/IP]]
-- [[netfilter|Netfilter]], [[netfilter-nat|NAT]]
+- [[netfilter-explained|Netfilter]], [[netfilter-nat|NAT]]
