@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.1"
 researched: 2026-04-12
 status: complete
+explained: "[[io-uring-internals-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/
   - https://kernel-internals.org/io-uring/io-uring-arch/
@@ -20,6 +21,8 @@ sources:
 ---
 
 # io_uring Internals
+
+> 📘 Plain-language version: [[io-uring-internals-explained]]
 
 ## Purpose
 

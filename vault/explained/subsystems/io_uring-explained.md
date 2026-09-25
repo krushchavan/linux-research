@@ -54,7 +54,7 @@ Every other feature (pre-registered files and buffers, a kernel polling thread, 
 
 ### The rings and the request lifecycle
 
-The interface itself is two ring buffers in memory shared by the application and the kernel. See [[io-uring-internals]].
+The interface itself is two ring buffers in memory shared by the application and the kernel. See [[io-uring-internals-explained|io-uring-internals]].
 
 1. The application writes fixed-size (64-byte) request entries into the **submission queue** and moves its tail forward.
 2. One system call (or the polling thread, below) tells the kernel to walk the new entries. Each becomes an in-kernel request object, with its file resolved and credentials recorded.
@@ -162,7 +162,7 @@ A TCP server follows a similar pattern: one multishot accept puts each new conne
 ## Related
 
 - Technical version: [[io_uring]]
-- [[io-uring-internals]]: the rings and request lifecycle in detail
+- [[io-uring-internals-explained|io-uring-internals]]: the rings and request lifecycle in detail
 - [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[block-explained|Block layer]] and [[blk-mq-explained|blk-mq]]: where direct and passthrough I/O goes
 - [[bpf-explained|BPF]]: now able to drive io_uring event loops
