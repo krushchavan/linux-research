@@ -53,7 +53,7 @@
 - [x] vault/concepts/dm-crypt/dm-crypt-key-management.md
 - [x] vault/concepts/dm-crypt/dm-crypt-workqueue-io-path.md
 - [x] vault/subsystems/dm-integrity.md
-- [ ] vault/concepts/dm-integrity/dm-integrity-bitmap-mode.md
+- [x] vault/concepts/dm-integrity/dm-integrity-bitmap-mode.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-device-config.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-journal.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-on-disk-layout.md

@@ -69,7 +69,7 @@ The journal gives atomicity: a sector's data and tag are both updated, or neithe
 
 ### Bitmap mode
 
-A faster alternative when doubling every write is too expensive. See [[dm-integrity-bitmap-mode]].
+A faster alternative when doubling every write is too expensive. See [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]].
 
 1. Before writing, the bit for that region is set in a dirty bitmap. Data and tag are written directly. After the write is flushed, the bit is cleared.
 2. After a crash, every region with a dirty bit is **recalculated**: read the data, recompute the tag, write it.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal]], [[dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
+- [[dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]

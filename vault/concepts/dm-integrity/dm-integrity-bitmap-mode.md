@@ -6,6 +6,7 @@ subsystem: dm-integrity
 kernel_version: "4.18"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-bitmap-mode-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://people.redhat.com/mpatocka/patches/kernel/dm-integrity-bitmap/dm-integrity-bitmap.patch
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-integrity Bitmap Mode
+
+> 📘 Plain-language version: [[dm-integrity-bitmap-mode-explained]]
 
 ## Purpose
 
