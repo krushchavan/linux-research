@@ -83,5 +83,5 @@ With **dynamic pre-emption** (5.12+), one kernel binary can boot as none, volunt
 ## Related
 
 - Technical version: [[preemption-model]]
-- [[scheduler-explained|Scheduler]], [[context-switch-explained|Context switch]], [[pi-mutexes-explained|PI mutexes]], [[rt-scheduler|Real-time scheduler]], [[cpu-cgroups-explained|CPU cgroups]]
+- [[scheduler-explained|Scheduler]], [[context-switch-explained|Context switch]], [[pi-mutexes-explained|PI mutexes]], [[rt-scheduler-explained|Real-time scheduler]], [[cpu-cgroups-explained|CPU cgroups]]
 - [[locking-explained|Locking]], [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[per-cpu-variables-explained|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]

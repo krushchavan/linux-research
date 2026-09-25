@@ -6,12 +6,15 @@ subsystem: scheduler
 kernel_version: "2.6.0"
 researched: 2026-04-13
 status: complete
+explained: "[[rt-scheduler-explained]]"
 sources:
   - https://kernel-internals.org/sched/rt-scheduler/
   - https://kernel-internals.org/sched/
 ---
 
 # RT Scheduler
+
+> 📘 Plain-language version: [[rt-scheduler-explained]]
 
 ## Purpose
 

@@ -66,7 +66,7 @@ For tasks needing deterministic access, two standard policies:
 - **FIFO:** run until blocking or yielding, with no time slice
 - **round-robin:** a 100 ms slice by default, then to the back of its priority level
 
-Priorities run from 1 to 99. A bitmap marks which levels have tasks, so finding the highest is constant time. On multi-core machines, real-time tasks get pushed to other CPUs when a higher-priority one arrives. To stop real-time tasks starving everything else, they are **throttled** by default to 950 ms out of every 1000 ms; this can be disabled. Setting these policies needs a privilege. See [[rt-scheduler|real-time scheduler]].
+Priorities run from 1 to 99. A bitmap marks which levels have tasks, so finding the highest is constant time. On multi-core machines, real-time tasks get pushed to other CPUs when a higher-priority one arrives. To stop real-time tasks starving everything else, they are **throttled** by default to 950 ms out of every 1000 ms; this can be disabled. Setting these policies needs a privilege. See [[rt-scheduler-explained|real-time scheduler]].
 
 ### Deadline scheduling
 Real-time priorities are assigned by hand and prone to priority inversion. **Deadline scheduling** lets a task declare a runtime budget, a deadline, and a period instead. The kernel runs **admission control**: if the total declared utilisation would go past 100%, the request is refused. Each period, the task's budget counts down; when it hits zero the task is throttled until a timer refills it at the next period. Among deadline tasks, the one with the earliest absolute deadline runs (earliest deadline first). Unused budget from idle deadline tasks can be reclaimed (a mechanism called GRUB). See [[sched-deadline|SCHED_DEADLINE]].
@@ -125,5 +125,5 @@ A task blocks on an empty pipe and is later woken:
 ## Related
 
 - Technical version: [[scheduler]]
-- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing-explained|Load balancing]], [[cpu-cgroups-explained|CPU cgroups]], [[preemption-model-explained|Preemption model]], [[pi-mutexes-explained|PI mutexes]]
+- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler-explained|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing-explained|Load balancing]], [[cpu-cgroups-explained|CPU cgroups]], [[preemption-model-explained|Preemption model]], [[pi-mutexes-explained|PI mutexes]]
 - [[cgroups-explained|cgroups]], [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]], [[mm-explained|Memory management]], [[numa-memory-policy|NUMA memory policy]]
