@@ -43,7 +43,7 @@ The kernel only does the encryption and I/O mechanics. Everything about passphra
 
 ### Per-device state
 
-One object per encrypted device holds everything for its lifetime. See [[dm-crypt-crypt-config]].
+One object per encrypted device holds everything for its lifetime. See [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]].
 
 1. When the table is loaded, dm-crypt parses the cipher specification (for example "aes-xts-plain64") and allocates **one cipher instance per CPU**. Each worker uses the one for its own CPU, so there is no lock contention.
 2. The master key is stored in this object. AES-256-XTS needs 64 bytes (two 256-bit keys). The key is pushed into every per-CPU cipher and the staging copy is wiped.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config]], [[dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative
