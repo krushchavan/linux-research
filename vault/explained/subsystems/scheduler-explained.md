@@ -79,7 +79,7 @@ A "needs rescheduling" flag is set on the current task and checked at safe point
 4. switch **registers and stack** in a small piece of architecture-specific assembly
 5. in the new task, mark the old one as no longer on a CPU, which is what lets a concurrent wake-up on another CPU safely move it
 
-See [[context-switch|context switch]] and [[preemption-model|preemption model]].
+See [[context-switch-explained|context switch]] and [[preemption-model|preemption model]].
 
 ### Load balancing
 Per-CPU queues can drift out of balance. The kernel models the hardware as nested **scheduling domains** (hyperthread siblings, cores sharing a cache, sockets/NUMA nodes), each with its own balancing aggressiveness. Balancing happens three ways:
@@ -125,5 +125,5 @@ A task blocks on an empty pipe and is later woken:
 ## Related
 
 - Technical version: [[scheduler]]
-- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
+- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
 - [[cgroups-explained|cgroups]], [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]], [[mm-explained|Memory management]], [[numa-memory-policy|NUMA memory policy]]

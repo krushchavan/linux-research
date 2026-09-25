@@ -209,7 +209,7 @@
 - [x] vault/concepts/netlabel/netlabel-netlink-management-interface.md
 - [x] vault/subsystems/scheduler.md
 - [x] vault/concepts/scheduler/cfs-eevdf.md
-- [ ] vault/concepts/scheduler/context-switch.md
+- [x] vault/concepts/scheduler/context-switch.md
 - [ ] vault/concepts/scheduler/cpu-cgroups.md
 - [ ] vault/concepts/scheduler/load-balancing.md
 - [ ] vault/concepts/scheduler/pi-mutexes.md

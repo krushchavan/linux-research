@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6.0"
 researched: 2026-04-13
 status: complete
+explained: "[[context-switch-explained]]"
 sources:
   - https://kernel-internals.org/sched/context-switch/
   - https://kernel-internals.org/sched/preemption/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Context Switch
+
+> 📘 Plain-language version: [[context-switch-explained]]
 
 ## Purpose
 
