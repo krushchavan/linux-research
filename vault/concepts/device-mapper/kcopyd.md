@@ -6,12 +6,15 @@ subsystem: device-mapper
 kernel_version: "2.6.0"
 researched: 2026-04-18
 status: complete
+explained: "[[kcopyd-explained]]"
 sources:
   - https://lwn.net/Articles/87712/
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/index.html
 ---
 
 # kcopyd: Device Mapper Asynchronous Copy Engine
+
+> 📘 Plain-language version: [[kcopyd-explained]]
 
 ## Overview
 
