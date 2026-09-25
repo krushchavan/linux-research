@@ -232,8 +232,11 @@
 - [x] concept: dma-mapping-api
 
 # --- Unresolved links from blk-mq 2026-09-25 ---
-- [ ] block -> bio-layer
+- [x] block -> bio-layer
 - [ ] block -> io-scheduler
 
 # --- Unresolved links from xdp 2026-09-25 ---
 - [ ] net -> af-xdp
+
+# --- Unresolved links from bio-layer 2026-09-25 ---
+- [ ] fs -> iomap
