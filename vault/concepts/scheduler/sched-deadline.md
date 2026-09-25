@@ -6,12 +6,15 @@ subsystem: scheduler
 kernel_version: "3.14"
 researched: 2026-04-13
 status: complete
+explained: "[[sched-deadline-explained]]"
 sources:
   - https://kernel-internals.org/sched/deadline/
   - https://kernel-internals.org/sched/
 ---
 
 # SCHED_DEADLINE
+
+> 📘 Plain-language version: [[sched-deadline-explained]]
 
 ## Purpose
 

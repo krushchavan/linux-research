@@ -91,4 +91,4 @@ Deadline tasks don't use priority numbers, so a plain boost is meaningless. Inst
 
 - Technical version: [[pi-mutexes]]
 - [[futex-internals-explained|Futexes]], [[mutex-explained|Mutex]], [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[locking-explained|Locking]]
-- [[scheduler-explained|Scheduler]], [[rt-scheduler-explained|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[preemption-model-explained|Preemption model]]
+- [[scheduler-explained|Scheduler]], [[rt-scheduler-explained|Real-time scheduler]], [[sched-deadline-explained|SCHED_DEADLINE]], [[preemption-model-explained|Preemption model]]

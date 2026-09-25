@@ -73,5 +73,5 @@ The load balancer reads each queue's runnable count, load figures and average id
 ## Related
 
 - Technical version: [[runqueue]]
-- [[scheduler-explained|Scheduler]], [[scheduler-classes|Scheduling classes]], [[load-balancing-explained|Load balancing]], [[context-switch-explained|Context switch]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler-explained|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]]
+- [[scheduler-explained|Scheduler]], [[scheduler-classes|Scheduling classes]], [[load-balancing-explained|Load balancing]], [[context-switch-explained|Context switch]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler-explained|Real-time scheduler]], [[sched-deadline-explained|SCHED_DEADLINE]]
 - [[spinlock-and-raw-spinlock-explained|Spinlocks]], [[interrupt-handling-explained|Interrupt handling]]
