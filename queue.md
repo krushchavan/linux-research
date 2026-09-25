@@ -233,10 +233,13 @@
 
 # --- Unresolved links from blk-mq 2026-09-25 ---
 - [x] block -> bio-layer
-- [ ] block -> io-scheduler
+- [x] block -> io-scheduler
 
 # --- Unresolved links from xdp 2026-09-25 ---
 - [ ] net -> af-xdp
 
 # --- Unresolved links from bio-layer 2026-09-25 ---
 - [ ] fs -> iomap
+
+# --- Unresolved links from io-scheduler 2026-09-25 ---
+- [ ] block -> zoned-block-devices
