@@ -147,5 +147,5 @@ Later, if the program writes, the folio is dirtied and its inode queued on the d
 - [[superblock]], [[inode]], [[dentry-explained|dentry]], [[dentry-cache-explained|dentry-cache]], [[file-object-explained|file-object]], [[path-lookup-explained|path-lookup]]
 - [[address-space-explained|Address space]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|writeback-infrastructure]]
 - [[fsnotify-explained|fsnotify]], [[inotify-and-fanotify-explained|inotify-and-fanotify]]
-- [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs]], [[fuse-explained|fuse]]
+- [[mm-explained|Memory management]], [[block-explained|Block layer]], [[btrfs-explained|Btrfs]], [[nfs-explained|nfs]], [[fuse-explained|fuse]]
 - [[lsm-framework|LSM framework]], [[mount-namespace-explained|mount-namespace]]

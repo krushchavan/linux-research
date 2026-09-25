@@ -7,6 +7,7 @@ mailing_list: linux-nfs@vger.kernel.org
 source_path: fs/nfs/ net/sunrpc/ fs/nfsd/
 researched: 2026-04-05
 status: complete
+explained: "[[nfs-explained]]"
 sources:
   - https://lwn.net/Articles/898262/
   - https://lwn.net/Articles/891742/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # NFS (Network File System) Subsystem
+
+> 📘 Plain-language version: [[nfs-explained]]
 
 ## Related Notes
 

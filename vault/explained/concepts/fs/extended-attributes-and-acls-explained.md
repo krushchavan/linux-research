@@ -108,4 +108,4 @@ Security modules both *check* every attribute operation and *store* their own la
 - [[lsm-framework|LSM framework]], [[selinux|SELinux]], [[smack|Smack]]
 - [[fscrypt-explained|fscrypt]]: stores encryption policies as hidden attributes
 - [[overlayfs|OverlayFS]]: uses trusted. markers
-- [[nfs|NFS]], [[btrfs-explained|Btrfs]], [[inode]]
+- [[nfs-explained|NFS]], [[btrfs-explained|Btrfs]], [[inode]]
