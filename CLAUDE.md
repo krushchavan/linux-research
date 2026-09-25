@@ -10,6 +10,19 @@ This repo is a self-growing Linux kernel knowledge base. The Claude Code desktop
 - **`vault/patches/`** — Analyses of notable LKML patches and threads
 - **`vault/people/`** — Key contributors and their areas of focus
 - **`vault/_templates/`** — Note templates; use these when creating new notes
+- **`vault/explained/`** — Plain-language companions of the technical notes (step-by-step, concept-first, few code identifiers). Mirrors `concepts/` and `subsystems/`; files are named `<name>-explained.md`. Each original links to its companion (`explained:` frontmatter + banner) and each companion links back (`original:`).
+
+## Plain-Language Companions
+
+Use the `/explain-kernel` skill to convert notes (default batch of 4, resumable):
+
+```
+/explain-kernel            # next 4 notes from explain-queue.md
+/explain-kernel 10         # next 10
+/explain-kernel vault/concepts/mm/folio.md   # one specific note
+```
+
+Progress is tracked in `explain-queue.md` (`[ ]` / `[>]` / `[x]`, same conventions as `queue.md`). A scheduled task (`kernel-explain-queue`) runs a batch hourly. `scripts/crossref-explained.sh` adds the cross-links. New research notes are picked up automatically by the skill's sync step.
 
 ## How to Research a Topic
 

@@ -8,6 +8,7 @@ A living knowledge base built by the Claude Code research agent.
 - [[subsystems/|Subsystems]] — Deep dives per subsystem (mm, net, fs, drivers…)
 - [[patches/|Patches]] — Notable patch analyses and LKML thread summaries
 - [[people/|People]] — Key contributors and their areas of focus
+- [[explained/|Explained]] — Plain-language, step-by-step companions to the technical notes (e.g. [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking, explained]])
 
 ## How to Add a Note
 
