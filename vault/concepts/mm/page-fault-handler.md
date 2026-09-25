@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "1.0+"
 researched: 2026-04-05
 status: complete
+explained: "[[page-fault-handler-explained]]"
 sources:
   - https://kernel-internals.org/mm/page-fault/
   - https://www.kernel.org/doc/html/latest/mm/page_tables.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Page Fault Handler
+
+> 📘 Plain-language version: [[page-fault-handler-explained]]
 
 ## Purpose
 

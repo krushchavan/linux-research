@@ -108,4 +108,4 @@ With memory cgroups, hitting a group's limit triggers OOM **within that group**,
 - [[page-reclaim]]: what must fail first
 - [[memory-cgroup-explained|Memory cgroups]]: OOM scoped to a container
 - [[buddy-allocator-explained|Buddy allocator]]: where reaped pages go
-- [[virtual-memory-areas]], [[page-fault-handler]], [[psi-pressure-stall-information]]
+- [[virtual-memory-areas]], [[page-fault-handler-explained|page-fault-handler]], [[psi-pressure-stall-information]]

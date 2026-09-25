@@ -99,7 +99,7 @@ Each process needs its own layout of stack, heap, code, mapped files and librari
 
 ### The page fault handler: redeeming promises
 
-Every VMA is a promise; the fault handler is where it's redeemed. See [[page-fault-handler]].
+Every VMA is a promise; the fault handler is where it's redeemed. See [[page-fault-handler-explained|page-fault-handler]].
 
 When the CPU hits an address with no valid mapping, it raises a fault. The handler finds the VMA (trying the per-VMA lock first), checks permissions, and decides:
 - **First read of anonymous memory:** map the shared **zero page**, one read-only page of zeros shared by everyone. No allocation.
@@ -188,7 +188,7 @@ Had the program *read* first, it would have got the shared zero page with no all
 
 - Technical version: [[mm]]
 - [[buddy-allocator-explained|buddy-allocator]], [[per-cpu-page-allocator-pcp]], [[slub-slab-allocator]], [[vmalloc]]
-- [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler]], [[page-table-management]]
+- [[virtual-memory-areas]], [[maple-tree-explained|maple-tree]], [[page-fault-handler-explained|page-fault-handler]], [[page-table-management]]
 - [[page-cache-explained|page-cache]], [[folio-explained|folio]], [[page-reclaim]], [[swap]], [[oom-killer-explained|oom-killer]]
 - [[transparent-huge-pages]], [[huge-pages-hugetlbfs-explained|huge-pages-hugetlbfs]], [[memory-compaction-explained|memory-compaction]]
 - [[memory-cgroup-explained|memory-cgroup]], [[numa-memory-policy-explained|numa-memory-policy]], [[psi-pressure-stall-information]]

@@ -94,5 +94,5 @@ Databases that keep their own cache (PostgreSQL, RocksDB) can open files with **
 - [[address-space-explained|Address space]]: the per-file object behind the cache
 - [[folio-explained|Folios]]: the cache's unit
 - [[page-reclaim]]: evicts clean pages, writes dirty ones first
-- [[page-fault-handler]], [[virtual-memory-areas]]: how mapped files use the cache
+- [[page-fault-handler-explained|page-fault-handler]], [[virtual-memory-areas]]: how mapped files use the cache
 - [[writeback-infrastructure]], [[memory-cgroup-explained|Memory cgroups]], [[xarray]]

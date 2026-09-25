@@ -92,7 +92,7 @@ The fix (5.17, David Hildenbrand) marks anonymous pages as **exclusive** when ex
 - Technical version: [[get-user-pages-and-pinning]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[folio-explained|Folios]]: where reference and pin counts live
-- [[page-fault-handler]], [[page-table-management]], [[rmap-reverse-mapping]]
+- [[page-fault-handler-explained|page-fault-handler]], [[page-table-management]], [[rmap-reverse-mapping]]
 - [[address-space-explained|Address space]]: filesystems check for pins before writeback
 - [[transparent-huge-pages]]: pinned huge pages can't be split
 - [[registered-resources-explained|io_uring registered buffers]], [[dma-mapping-api-explained|DMA mapping API]]

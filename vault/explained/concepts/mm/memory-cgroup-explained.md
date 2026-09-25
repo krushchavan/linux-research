@@ -101,5 +101,5 @@ A page stays charged to the group that allocated it, even if the process later m
 - [[page-reclaim]], [[oom-killer-explained|oom-killer]], [[swap]]: what the controller drives
 - [[psi-pressure-stall-information]]: how throttling becomes visible
 - [[folio-explained|Folios]]: the unit that carries the group tag
-- [[slub-slab-allocator]], [[page-fault-handler]]
+- [[slub-slab-allocator]], [[page-fault-handler-explained|page-fault-handler]]
 - [[cgroups|Control groups]], [[cgroup-core]]

@@ -106,6 +106,6 @@ Explicit range policies take precedence over this automatic migration, and balan
 - Technical version: [[numa-memory-policy]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[buddy-allocator-explained|Buddy allocator]]: picks pages within the chosen nodes
-- [[page-fault-handler]]: where the policy is looked up
+- [[page-fault-handler-explained|page-fault-handler]]: where the policy is looked up
 - [[memory-compaction-explained|Memory compaction]]: may run when moving pages to a node
 - [[memory-cgroup-explained|Memory cgroups]], [[cpuset-controller|cpuset controller]], [[scheduler|Scheduler]]
