@@ -7,6 +7,7 @@ mailing_list: linux-fsdevel@vger.kernel.org
 source_path: fs/netfs/, include/linux/netfs.h
 researched: 2026-04-16
 status: complete
+explained: "[[netfs-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://docs.kernel.org/next/filesystems/caching/netfs-api.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # netfs Subsystem
+
+> 📘 Plain-language version: [[netfs-explained]]
 
 ## Overview
 
