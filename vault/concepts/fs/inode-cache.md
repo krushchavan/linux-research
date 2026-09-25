@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4+"
 researched: 2026-04-05
 status: complete
+explained: "[[inode-cache-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://lwn.net/Articles/407560/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Inode Cache (icache)
+
+> 📘 Plain-language version: [[inode-cache-explained]]
 
 ## Purpose
 

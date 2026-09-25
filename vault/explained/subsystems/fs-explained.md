@@ -49,7 +49,7 @@ A superblock represents one *mounted instance* of a filesystem: its mount option
 
 ### Inode: one filesystem object
 
-An inode represents a file, directory, symlink, device, FIFO or socket: everything about it *except* its name and place in the tree. See [[inode]] and [[inode-cache]].
+An inode represents a file, directory, symlink, device, FIFO or socket: everything about it *except* its name and place in the tree. See [[inode]] and [[inode-cache-explained|inode-cache]].
 
 1. For disk filesystems, an inode is a cached copy of on-disk metadata, read in by the parent directory's lookup operation and reused afterwards.
 2. Hard links are several names pointing at one inode. The inode is freed only when its link count hits zero *and* nobody has it open.
