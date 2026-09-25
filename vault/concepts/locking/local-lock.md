@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "5.8"
 researched: 2026-04-13
 status: complete
+explained: "[[local-lock-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/locktypes.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # local_lock: Per-CPU Critical Sections
+
+> 📘 Plain-language version: [[local-lock-explained]]
 
 ## Overview
 

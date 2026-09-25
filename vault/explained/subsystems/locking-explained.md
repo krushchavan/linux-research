@@ -55,7 +55,7 @@ These let **many readers or one writer** in: good for read-heavy structures like
 For small data read constantly and written rarely, such as the kernel's timekeeping, readers take **no lock at all**. A counter goes odd while a write is in progress and even when it's done. A reader notes the counter, reads the data, and checks the counter again; if it changed or was odd, it retries. A spinlock alongside keeps writers from colliding with each other. Typed variants (5.10) tell lockdep which lock serialises the writers, and a "latch" variant keeps two copies so a reader, even in an NMI, can always find a consistent one. See [[seqlocks-and-memory-barriers|sequence locks]].
 
 ### Local locks
-Protecting per-CPU data used to mean bare "disable preemption" calls. A **local lock** names that critical section. On normal kernels it still just disables preemption (or interrupts), with no lock object at all. On RT kernels it becomes a real per-CPU lock that can be preempted, and in both cases lockdep can see it and catch misuse. See [[local-lock|local locks]].
+Protecting per-CPU data used to mean bare "disable preemption" calls. A **local lock** names that critical section. On normal kernels it still just disables preemption (or interrupts), with no lock object at all. On RT kernels it becomes a real per-CPU lock that can be preempted, and in both cases lockdep can see it and catch misuse. See [[local-lock-explained|local locks]].
 
 ### Lockdep
 This is the key safety tool. **Lockdep** watches every lock acquisition and builds a graph of "held A, then took B" edges between lock **classes** (lock types, not each individual lock). As soon as a new edge would close a cycle, meaning some order of events *could* deadlock, it reports it with a full trace, even though no deadlock has actually happened.
@@ -94,6 +94,6 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 ## Related
 
 - Technical version: [[locking]]
-- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock|Local locks]], [[lockdep|Lockdep]], [[futex-internals-explained|Futexes]]
+- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update|RCU]], [[per-cpu-variables|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]
 - [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]

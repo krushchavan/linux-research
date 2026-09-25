@@ -90,5 +90,5 @@ With PREEMPT_RT, ordinary spinlocks become sleeping locks, and the "disable inte
 ## Related
 
 - Technical version: [[interrupt-handling]]
-- [[locking-explained|Locking subsystem]], [[spinlock-and-raw-spinlock|Spinlocks]], [[local-lock|Local locks]], [[per-cpu-variables|Per-CPU variables]]
+- [[locking-explained|Locking subsystem]], [[spinlock-and-raw-spinlock|Spinlocks]], [[local-lock-explained|Local locks]], [[per-cpu-variables|Per-CPU variables]]
 - [[rcu-read-copy-update|RCU]], [[seqlocks-and-memory-barriers|Sequence locks and barriers]], [[dyntick-idle-explained|Dyntick-idle]], [[scheduler|Scheduler]]
