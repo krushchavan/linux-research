@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "4.18"
 researched: 2026-09-25
 status: complete
+explained: "[[af-xdp-explained]]"
 sources:
   - https://kernel-internals.org/net/af-xdp/
   - https://www.kernel.org/doc/html/latest/networking/af_xdp.html
@@ -27,6 +28,8 @@ sources:
 ---
 
 # AF_XDP (XDP Sockets)
+
+> 📘 Plain-language version: [[af-xdp-explained]]
 
 ## Purpose
 
