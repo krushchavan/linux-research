@@ -22,7 +22,16 @@
 - [x] vault/concepts/block/blk-mq.md
 - [x] vault/subsystems/bpf.md
 - [x] vault/concepts/bpf/bpf-helpers-and-kfuncs.md
-- [ ] vault/concepts/bpf/bpf-jit-compiler.md
+- [x] vault/concepts/bpf/bpf-jit-compiler.md
+- [ ] vault/subsystems/io_uring.md
+- [ ] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
+- [ ] vault/concepts/io_uring/io-uring-internals.md
+- [ ] vault/concepts/io_uring/io-uring-task-work.md
+- [ ] vault/concepts/io_uring/io-wq.md
+- [ ] vault/concepts/io_uring/provided-buffer-rings.md
+- [ ] vault/concepts/io_uring/registered-resources.md
+- [ ] vault/concepts/io_uring/sqpoll.md
+- [ ] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [ ] vault/concepts/bpf/bpf-maps.md
 - [ ] vault/concepts/bpf/bpf-program-types.md
 - [ ] vault/concepts/bpf/bpf-ring-buffer.md
@@ -105,15 +114,6 @@
 - [ ] vault/concepts/fuse/fuse-request-queue.md
 - [ ] vault/concepts/fuse/fuse-vfs-integration.md
 - [ ] vault/concepts/fuse/fuse-wire-protocol.md
-- [ ] vault/subsystems/io_uring.md
-- [ ] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
-- [ ] vault/concepts/io_uring/io-uring-internals.md
-- [ ] vault/concepts/io_uring/io-uring-task-work.md
-- [ ] vault/concepts/io_uring/io-wq.md
-- [ ] vault/concepts/io_uring/provided-buffer-rings.md
-- [ ] vault/concepts/io_uring/registered-resources.md
-- [ ] vault/concepts/io_uring/sqpoll.md
-- [ ] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [ ] vault/subsystems/locking.md
 - [ ] vault/concepts/locking/dyntick-idle.md
 - [ ] vault/concepts/locking/futex-internals.md

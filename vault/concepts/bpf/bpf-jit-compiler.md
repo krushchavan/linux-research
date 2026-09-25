@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "3.0"
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-jit-compiler-explained]]"
 sources:
   - https://lwn.net/Articles/437981/
   - https://lwn.net/Articles/740157/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # BPF JIT Compiler
+
+> 📘 Plain-language version: [[bpf-jit-compiler-explained]]
 
 ## Purpose
 
