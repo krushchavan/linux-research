@@ -218,7 +218,7 @@
 - [x] vault/concepts/scheduler/runqueue.md
 - [x] vault/concepts/scheduler/sched-deadline.md
 - [x] vault/concepts/scheduler/scheduler-classes.md
-- [ ] vault/subsystems/security.md
+- [x] vault/subsystems/security.md
 - [ ] vault/concepts/security/apparmor.md
 - [ ] vault/concepts/security/capabilities.md
 - [ ] vault/concepts/security/credentials.md

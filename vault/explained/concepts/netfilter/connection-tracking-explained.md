@@ -82,4 +82,4 @@ Features like NAT details, byte and packet counters, timestamps, labels and zone
 
 - Technical version: [[connection-tracking]]
 - [[netfilter-explained|Netfilter]], [[netfilter-hook-framework-explained|Hook framework]], [[netfilter-nat-explained|NAT]], [[netfilter-flowtable-explained|Flowtable]], [[nftables-explained|nftables]], [[iptables-explained|iptables]]
-- [[network-namespaces-explained|Network namespaces]], [[rcu-read-copy-update-explained|RCU]], [[security|Security (SELinux marks)]]
+- [[network-namespaces-explained|Network namespaces]], [[rcu-read-copy-update-explained|RCU]], [[security-explained|Security (SELinux marks)]]

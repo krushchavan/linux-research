@@ -94,4 +94,4 @@ A subtle failure mode: with SQPOLL, requests are consumed *concurrently*, not by
 - [[io-uring-task-work-explained|Task work]]
 - [[io-wq-explained|io-wq]]: the other io_uring thread type, which also became a real thread in 5.12
 - [[block-explained|Block layer]]: polled completions for fast storage
-- [[security|Security]]
+- [[security-explained|Security]]

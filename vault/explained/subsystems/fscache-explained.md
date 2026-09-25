@@ -107,4 +107,4 @@ If the server's copy later changes (new generation number or size), the filesyst
 - Technical version: [[fscache]]
 - [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library-explained|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
-- [[vfs-explained|VFS]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]], [[block-explained|Block layer]], [[security|Security]]
+- [[vfs-explained|VFS]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]], [[block-explained|Block layer]], [[security-explained|Security]]

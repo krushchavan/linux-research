@@ -7,6 +7,7 @@ mailing_list: linux-security-module@vger.kernel.org
 source_path: security/
 researched: 2026-04-15
 status: complete
+explained: "[[security-explained]]"
 sources:
   - https://kernel-internals.org/security/
   - https://kernel-internals.org/security/capabilities/
@@ -25,6 +26,8 @@ sources:
 ---
 
 # Linux Security Subsystem
+
+> 📘 Plain-language version: [[security-explained]]
 
 ## Overview
 
