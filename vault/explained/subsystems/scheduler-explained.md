@@ -87,7 +87,7 @@ Per-CPU queues can drift out of balance. The kernel models the hardware as neste
 - **when a CPU goes idle**, pulling work at once if it's worth the migration cost
 - **on wake-up**, choosing a CPU: prefer one sharing a cache with the waker, then the idlest
 
-Load is measured with **PELT**, a decaying average in which history older than about 32 ms counts for under 1%. On mixed big/little CPUs, a task using more than 80% of a small core's capacity is flagged as a "misfit" and moved to a bigger one. See [[load-balancing|load balancing]].
+Load is measured with **PELT**, a decaying average in which history older than about 32 ms counts for under 1%. On mixed big/little CPUs, a task using more than 80% of a small core's capacity is flagged as a "misfit" and moved to a bigger one. See [[load-balancing-explained|load balancing]].
 
 ### CPU cgroups
 Containers need isolation: one mustn't starve another by spawning endless threads. Each group gets its own per-CPU fair queue plus a scheduling entity that competes in its parent's queue with the group's weight, a two-level hierarchy.
@@ -125,5 +125,5 @@ A task blocks on an empty pipe and is later woken:
 ## Related
 
 - Technical version: [[scheduler]]
-- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing|Load balancing]], [[cpu-cgroups-explained|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
+- [[scheduler-classes|Scheduling classes]], [[runqueue|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[rt-scheduler|Real-time scheduler]], [[sched-deadline|SCHED_DEADLINE]], [[context-switch-explained|Context switch]], [[load-balancing-explained|Load balancing]], [[cpu-cgroups-explained|CPU cgroups]], [[preemption-model|Preemption model]], [[pi-mutexes|PI mutexes]]
 - [[cgroups-explained|cgroups]], [[locking-explained|Locking]], [[interrupt-handling-explained|Interrupt handling]], [[mm-explained|Memory management]], [[numa-memory-policy|NUMA memory policy]]

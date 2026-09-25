@@ -6,6 +6,7 @@ subsystem: scheduler
 kernel_version: "2.6.0"
 researched: 2026-04-13
 status: complete
+explained: "[[load-balancing-explained]]"
 sources:
   - https://kernel-internals.org/sched/load-balancing/
   - https://kernel-internals.org/sched/sched-domains/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # Load Balancing
+
+> 📘 Plain-language version: [[load-balancing-explained]]
 
 ## Purpose
 
