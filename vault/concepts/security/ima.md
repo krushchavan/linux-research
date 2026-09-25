@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.30"
 researched: 2026-04-18
 status: complete
+explained: "[[ima-explained]]"
 sources:
   - https://lwn.net/Articles/137306/
   - https://lwn.net/Articles/488906/
@@ -21,6 +22,8 @@ sources:
 ---
 
 # IMA — Integrity Measurement Architecture
+
+> 📘 Plain-language version: [[ima-explained]]
 
 ## Purpose
 

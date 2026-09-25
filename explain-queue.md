@@ -222,7 +222,7 @@
 - [x] vault/concepts/security/apparmor.md
 - [x] vault/concepts/security/capabilities.md
 - [x] vault/concepts/security/credentials.md
-- [ ] vault/concepts/security/ima.md
+- [x] vault/concepts/security/ima.md
 - [ ] vault/concepts/security/kernel-hardening.md
 - [ ] vault/concepts/security/kernel-keyring.md
 - [ ] vault/concepts/security/landlock.md

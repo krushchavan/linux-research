@@ -68,7 +68,7 @@ A few flags change capability rules for a task: stop the kernel clearing capabil
 ## Tradeoffs
 
 - **What it gives you:** lock-free, always-consistent reads of identity on the hottest security paths; all-or-nothing identity changes; a single place every check reads from.
-- **What it costs / requires:** every change allocates a new record, and old ones must wait out an RCU grace period before being freed. That's cheap because credential changes are rare next to reads.
+- **What it costs / requires:** every change allocates a new record, and old ones must wait out an RCU grace period before being freed.
 - **Where it bites:** code must follow the protocol (copy, edit, commit, or abort) and never edit a live record. Reading *another* task's credentials without the RCU lock is a bug. The kernel also has an internal way to temporarily override the current credentials, reserved for kernel use only.
 
 ## How it got here
