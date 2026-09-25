@@ -7,6 +7,7 @@ mailing_list: linux-fscrypt@vger.kernel.org
 source_path: fs/crypto/
 researched: 2026-04-15
 status: complete
+explained: "[[fscrypt-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/fscrypt.html
   - https://lwn.net/Articles/737274/
@@ -21,6 +22,8 @@ sources:
 ---
 
 # fscrypt — Filesystem-Level Encryption Subsystem
+
+> 📘 Plain-language version: [[fscrypt-explained]]
 
 ## Overview
 
