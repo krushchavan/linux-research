@@ -167,7 +167,7 @@
 - [x] vault/concepts/cgroups/cgroup-bpf.md
 - [x] vault/concepts/cgroups/cgroup-core.md
 - [x] vault/concepts/cgroups/cgroup-freezer.md
-- [ ] vault/concepts/cgroups/cpuset-controller.md
+- [x] vault/concepts/cgroups/cpuset-controller.md
 - [ ] vault/concepts/cgroups/css-set-and-subsystem-state.md
 - [ ] vault/concepts/cgroups/io-controller.md
 - [ ] vault/concepts/cgroups/pid-controller.md

@@ -6,6 +6,7 @@ subsystem: cgroups
 kernel_version: "2.6.0"
 researched: 2026-04-16
 status: complete
+explained: "[[cpuset-controller-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html
   - https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v1/cpusets.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Cpuset Controller
+
+> 📘 Plain-language version: [[cpuset-controller-explained]]
 
 ## Purpose
 
