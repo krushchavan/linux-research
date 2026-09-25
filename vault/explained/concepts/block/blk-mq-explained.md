@@ -108,4 +108,4 @@ There are two different ways to pause, and the difference matters:
 - [[block-explained|The block layer]]: the subsystem this sits in
 - [[io_uring-explained|io_uring]]: the async interface that uses plugging, batching and polling
 - [[ublk]]: a driver whose "hardware" is a userspace program
-- [[dma-mapping-api|DMA mapping]]: how drivers make request memory reachable by the device
+- [[dma-mapping-api-explained|DMA mapping]]: how drivers make request memory reachable by the device

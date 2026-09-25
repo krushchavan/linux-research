@@ -6,6 +6,7 @@ subsystem: dma
 kernel_version: "2.6"
 researched: 2026-09-25
 status: complete
+explained: "[[dma-mapping-api-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/core-api/dma-api-howto.html
   - https://lwn.net/Articles/1020437/
@@ -16,6 +17,8 @@ sources:
 ---
 
 # DMA Mapping API
+
+> 📘 Plain-language version: [[dma-mapping-api-explained]]
 
 ## Purpose
 
