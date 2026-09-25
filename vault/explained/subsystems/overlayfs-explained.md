@@ -39,7 +39,7 @@ Reads fall through to whichever layer has the file; writes go to the upper layer
 ## The pieces
 
 ### The layer stack
-At mount time, OverlayFS takes a list of lower directories, an upper directory and a work directory. Lowers are ordered newest first, like image layers applied in sequence; when a name exists in several, the topmost wins. The upper and work directories must be on the **same filesystem**, so the rename that completes a copy-up never crosses devices. Lowers can be anything, even other overlays. Leaving out upper and work gives a read-only union. See [[layer-stack|the layer stack]].
+At mount time, OverlayFS takes a list of lower directories, an upper directory and a work directory. Lowers are ordered newest first, like image layers applied in sequence; when a name exists in several, the topmost wins. The upper and work directories must be on the **same filesystem**, so the rename that completes a copy-up never crosses devices. Lowers can be anything, even other overlays. Leaving out upper and work gives a read-only union. See [[layer-stack-explained|the layer stack]].
 
 ### Copy-up
 This is the key mechanism. Before a lower file is written, truncated or has its metadata changed, it's promoted to the upper layer:
@@ -101,6 +101,6 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 ## Related
 
 - Technical version: [[overlayfs]]
-- [[layer-stack|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy|Metacopy]]
+- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy|Metacopy]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]

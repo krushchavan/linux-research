@@ -82,5 +82,5 @@ With **metacopy** enabled, changes to metadata alone (permissions, owner, times)
 ## Related
 
 - Technical version: [[copy-up]]
-- [[overlayfs-explained|OverlayFS]], [[layer-stack|Layer stack]], [[metacopy|Metacopy]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]]
+- [[overlayfs-explained|OverlayFS]], [[layer-stack-explained|Layer stack]], [[metacopy|Metacopy]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[extended-attributes-and-acls-explained|Extended attributes]], [[fscrypt-explained|fscrypt]]

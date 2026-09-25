@@ -69,5 +69,5 @@ A kernel build option makes `auto` the default.
 ## Related
 
 - Technical version: [[inode-numbering-xino]]
-- [[overlayfs-explained|OverlayFS]], [[layer-stack|Layer stack]], [[redirect-dir-and-index|Redirects and index]], [[copy-up-explained|Copy-up]]
+- [[overlayfs-explained|OverlayFS]], [[layer-stack-explained|Layer stack]], [[redirect-dir-and-index|Redirects and index]], [[copy-up-explained|Copy-up]]
 - [[inode-cache-explained|Inode cache]], [[fs-explained|Filesystem subsystem (VFS)]]

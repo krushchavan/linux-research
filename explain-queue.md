@@ -158,7 +158,7 @@
 - [x] vault/concepts/overlayfs/copy-up.md
 - [x] vault/concepts/overlayfs/directory-merging.md
 - [x] vault/concepts/overlayfs/inode-numbering-xino.md
-- [ ] vault/concepts/overlayfs/layer-stack.md
+- [x] vault/concepts/overlayfs/layer-stack.md
 - [ ] vault/concepts/overlayfs/metacopy.md
 - [ ] vault/concepts/overlayfs/redirect-dir-and-index.md
 - [ ] vault/concepts/overlayfs/whiteouts-and-opaque-dirs.md

@@ -77,5 +77,5 @@ Directories that contain at least one whiteout carry an **impure** mark. Only fo
 ## Related
 
 - Technical version: [[directory-merging]]
-- [[overlayfs-explained|OverlayFS]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]], [[layer-stack|Layer stack]], [[copy-up-explained|Copy-up]]
+- [[overlayfs-explained|OverlayFS]], [[whiteouts-and-opaque-dirs|Whiteouts and opaque directories]], [[redirect-dir-and-index|Redirects and index]], [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]]
 - [[path-lookup-explained|Path lookup]], [[dentry-cache-explained|Dentry cache]], [[fs-explained|Filesystem subsystem (VFS)]]
