@@ -115,7 +115,7 @@
 - [x] vault/concepts/fs/inode-cache.md
 - [ ] vault/concepts/fs/inode.md
 - [x] vault/concepts/fs/inotify-and-fanotify.md
-- [ ] vault/concepts/fs/mount-namespace.md
+- [x] vault/concepts/fs/mount-namespace.md
 - [ ] vault/concepts/fs/network-filesystems-overview.md
 - [ ] vault/concepts/fs/path-lookup.md
 - [ ] vault/concepts/fs/superblock.md

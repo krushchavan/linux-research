@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.4.19"
 researched: 2026-04-05
 status: complete
+explained: "[[mount-namespace-explained]]"
 sources:
   - https://lwn.net/Articles/689856/
   - https://lwn.net/Articles/690679/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Mount Namespace
+
+> 📘 Plain-language version: [[mount-namespace-explained]]
 
 ## Purpose
 

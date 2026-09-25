@@ -90,4 +90,4 @@ Any subvolume can be mounted as the root of a filesystem by name or ID; otherwis
 - [[send-receive-protocol-explained|Send/receive]]: replicating read-only snapshots
 - [[qgroups-explained|Qgroups]]: accounting shared versus exclusive space
 - [[transaction-model-explained|transaction-model]], [[space-accounting-and-block-groups-explained|Space accounting]]
-- [[checksumming-and-data-integrity-explained|Checksumming]], [[mount-namespace|Mount namespaces]]
+- [[checksumming-and-data-integrity-explained|Checksumming]], [[mount-namespace-explained|Mount namespaces]]
