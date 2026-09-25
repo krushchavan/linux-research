@@ -6,6 +6,7 @@ subsystem: fs
 kernel_version: "2.6"
 researched: 2026-09-25
 status: complete
+explained: "[[inode-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/vfs.html
   - https://docs.kernel.org/filesystems/multigrain-ts.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Inode (struct inode)
+
+> 📘 Plain-language version: [[inode-explained]]
 
 ## Purpose
 

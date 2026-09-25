@@ -93,5 +93,5 @@ The main loop handles every component *except the last*. What happens to the las
 - [[dentry-explained|Dentries]], [[dentry-cache-explained|Dentry cache]]
 - [[mount-namespace-explained|Mount namespaces]]: crossing mount points
 - [[file-object-explained|File object]]: what `open` produces at the end
-- [[filesystem-registration-explained|Filesystem registration]], [[inode]]
+- [[filesystem-registration-explained|Filesystem registration]], [[inode-explained|inode]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[rcu-read-copy-update-explained|RCU]], [[seqlocks-and-memory-barriers-explained|Sequence locks]]

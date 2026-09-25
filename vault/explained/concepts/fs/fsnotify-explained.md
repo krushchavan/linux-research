@@ -85,5 +85,5 @@ Security modules can filter notifications so watching doesn't leak information a
 - Technical version: [[fsnotify]]
 - [[inotify-and-fanotify-explained|inotify-and-fanotify]]: the user-facing APIs in more detail
 - [[fs-explained|Filesystem subsystem (VFS)]]
-- [[inode]], [[mount-namespace-explained|mount-namespace]], [[lsm-framework-explained|LSM framework]]
+- [[inode-explained|inode]], [[mount-namespace-explained|mount-namespace]], [[lsm-framework-explained|LSM framework]]
 - [[rcu-read-copy-update-explained|RCU]]

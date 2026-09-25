@@ -116,7 +116,7 @@
 - [x] vault/concepts/fs/filesystem-registration.md
 - [x] vault/concepts/fs/fsnotify.md
 - [x] vault/concepts/fs/inode-cache.md
-- [ ] vault/concepts/fs/inode.md
+- [x] vault/concepts/fs/inode.md
 - [x] vault/concepts/fs/inotify-and-fanotify.md
 - [x] vault/concepts/fs/mount-namespace.md
 - [x] vault/concepts/fs/network-filesystems-overview.md
