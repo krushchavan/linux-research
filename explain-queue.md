@@ -172,7 +172,7 @@
 - [x] vault/concepts/cgroups/io-controller.md
 - [x] vault/concepts/cgroups/pid-controller.md
 - [x] vault/concepts/crypto/kernel-crypto-api.md
-- [ ] vault/subsystems/locking.md
+- [x] vault/subsystems/locking.md
 - [ ] vault/concepts/locking/dyntick-idle.md
 - [ ] vault/concepts/locking/futex-internals.md
 - [ ] vault/concepts/locking/interrupt-handling.md

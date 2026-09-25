@@ -7,6 +7,7 @@ mailing_list: linux-kernel@vger.kernel.org
 source_path: kernel/locking/
 researched: 2026-04-13
 status: complete
+explained: "[[locking-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/locktypes.html
@@ -23,6 +24,8 @@ sources:
 ---
 
 # Locking Subsystem
+
+> 📘 Plain-language version: [[locking-explained]]
 
 ## Overview
 
