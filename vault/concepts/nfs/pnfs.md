@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.38"
 researched: 2026-04-05
 status: complete
+explained: "[[pnfs-explained]]"
 sources:
   - https://lwn.net/Articles/313437/
   - https://lwn.net/Articles/628682/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # pNFS (Parallel NFS)
+
+> 📘 Plain-language version: [[pnfs-explained]]
 
 ## Purpose
 
