@@ -174,7 +174,7 @@
 - [x] vault/concepts/crypto/kernel-crypto-api.md
 - [x] vault/subsystems/locking.md
 - [x] vault/concepts/locking/dyntick-idle.md
-- [ ] vault/concepts/locking/futex-internals.md
+- [x] vault/concepts/locking/futex-internals.md
 - [ ] vault/concepts/locking/interrupt-handling.md
 - [ ] vault/concepts/locking/local-lock.md
 - [ ] vault/concepts/locking/lockdep.md

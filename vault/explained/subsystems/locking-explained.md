@@ -63,7 +63,7 @@ This is the key safety tool. **Lockdep** watches every lock acquisition and buil
 It also checks interrupt safety: a lock ever taken in an interrupt handler must never be taken elsewhere with interrupts enabled, or an interrupt arriving at the wrong moment would deadlock. Each class records which contexts it has been used in. Validated chains of held locks are remembered by hash, so repeats skip the graph search. Tracking classes instead of instances keeps memory bounded (typically under 10,000 classes), rather than one entry per inode lock among millions. See [[lockdep|lockdep]].
 
 ### Futexes
-User-space mutexes are built on **futexes**: a 32-bit word in user memory. Uncontended locking is one atomic operation in user space, with no system call. Only under contention does the library call the kernel to **wait** on the word; the kernel files the waiter in a global hash table (by address and process, or by page for shared futexes) and puts it to sleep. A **wake** call walks the matching bucket and wakes waiters. Priority-inheritance futexes track the owner in the word and boost it through RT mutexes, robust lists clean up after threads that die holding locks, and a wait-on-many call (5.16) lets games and runtimes wait on several words at once. See [[futex-internals|futexes]].
+User-space mutexes are built on **futexes**: a 32-bit word in user memory. Uncontended locking is one atomic operation in user space, with no system call. Only under contention does the library call the kernel to **wait** on the word; the kernel files the waiter in a global hash table (by address and process, or by page for shared futexes) and puts it to sleep. A **wake** call walks the matching bucket and wakes waiters. Priority-inheritance futexes track the owner in the word and boost it through RT mutexes, robust lists clean up after threads that die holding locks, and a wait-on-many call (5.16) lets games and runtimes wait on several words at once. See [[futex-internals-explained|futexes]].
 
 ## A request's journey
 
@@ -94,6 +94,6 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 ## Related
 
 - Technical version: [[locking]]
-- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock|Local locks]], [[lockdep|Lockdep]], [[futex-internals|Futexes]]
+- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock|Local locks]], [[lockdep|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update|RCU]], [[per-cpu-variables|Per-CPU variables]], [[interrupt-handling|Interrupt handling]]
 - [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]

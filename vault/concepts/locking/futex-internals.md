@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.0"
 researched: 2026-04-13
 status: complete
+explained: "[[futex-internals-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/futex-requeue-pi.html
@@ -16,6 +17,8 @@ sources:
 ---
 
 # Futex Internals
+
+> 📘 Plain-language version: [[futex-internals-explained]]
 
 ## Overview
 
