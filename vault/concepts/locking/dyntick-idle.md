@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.21"
 researched: 2026-04-13
 status: complete
+explained: "[[dyntick-idle-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/timers/no_hz.html
   - https://docs.kernel.org/timers/no_hz.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Dyntick-Idle (NO_HZ)
+
+> 📘 Plain-language version: [[dyntick-idle-explained]]
 
 ## Purpose
 
