@@ -77,7 +77,7 @@ When dm-crypt sits on top in authenticated mode, its tags are produced with the 
 
 - Technical version: [[dm-integrity-bitmap-mode]]
 - [[dm-integrity-explained|dm-integrity]]: the subsystem overview
-- [[dm-integrity-journal]]: the double-write alternative
+- [[dm-integrity-journal-explained|dm-integrity-journal]]: the double-write alternative
 - [[dm-integrity-recalculation]]: the worker that repairs dirty regions
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
 - [[dm-crypt-explained|dm-crypt]]: why its tags need journaled mode

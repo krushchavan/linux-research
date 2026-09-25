@@ -55,7 +55,7 @@
 - [x] vault/subsystems/dm-integrity.md
 - [x] vault/concepts/dm-integrity/dm-integrity-bitmap-mode.md
 - [x] vault/concepts/dm-integrity/dm-integrity-device-config.md
-- [ ] vault/concepts/dm-integrity/dm-integrity-journal.md
+- [x] vault/concepts/dm-integrity/dm-integrity-journal.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-on-disk-layout.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-recalculation.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-tag-management.md

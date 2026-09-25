@@ -58,7 +58,7 @@ Everything is at fixed, computable positions. See [[dm-integrity-on-disk-layout]
 
 ### The journal
 
-The journal gives atomicity: a sector's data and tag are both updated, or neither. See [[dm-integrity-journal]].
+The journal gives atomicity: a sector's data and tag are both updated, or neither. See [[dm-integrity-journal-explained|dm-integrity-journal]].
 
 1. In journaled mode, a write goes first into a journal section: data plus tag, with the destination sector.
 2. The section is **committed**: every sector in it is stamped with the same commit ID, written with a barrier so it's really on disk.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
+- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]
