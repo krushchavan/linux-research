@@ -6,6 +6,7 @@ subsystem: netfilter
 kernel_version: "2.6.14"
 researched: 2026-04-13
 status: complete
+explained: "[[connection-tracking-explained]]"
 sources:
   - https://kernel-internals.org/net/conntrack/
   - https://kernel-internals.org/net/netfilter/
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Connection Tracking (conntrack)
+
+> 📘 Plain-language version: [[connection-tracking-explained]]
 
 ## Purpose
 

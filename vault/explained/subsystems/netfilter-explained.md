@@ -47,7 +47,7 @@ This is the key design change. Its real speed comes from **sets**: named collect
 ### Connection tracking
 **Conntrack** keeps a table of every flow, so rules can match on state (new, established, related, invalid) and NAT can reverse-translate replies automatically. It runs first, at priority −200, when packets arrive and when local packets leave.
 
-The first packet of a flow creates an entry holding **two** tuples, the original direction and the pre-computed reply direction, but only as **unconfirmed**. It's inserted into the main table only when the packet actually makes it through (at the final junction). Packets dropped by the firewall never pollute the table. Later packets in either direction find the entry by hashing their tuple, refreshing its timeout. Protocol trackers refine the state (TCP follows SYN, ACK, FIN and RST). **Helpers** parse protocols that carry addresses in their payload (FTP passive mode, SIP) and create **expectations**, so the follow-on connection is recognised as related. See [[connection-tracking|connection tracking]].
+The first packet of a flow creates an entry holding **two** tuples, the original direction and the pre-computed reply direction, but only as **unconfirmed**. It's inserted into the main table only when the packet actually makes it through (at the final junction). Packets dropped by the firewall never pollute the table. Later packets in either direction find the entry by hashing their tuple, refreshing its timeout. Protocol trackers refine the state (TCP follows SYN, ACK, FIN and RST). **Helpers** parse protocols that carry addresses in their payload (FTP passive mode, SIP) and create **expectations**, so the follow-on connection is recognised as related. See [[connection-tracking-explained|connection tracking]].
 
 ### NAT
 NAT is an extension of conntrack. The first time a NAT rule matches a flow, the chosen rewrite is stored in its conntrack entry; after that, every packet of the flow, in both directions, is rewritten from the stored state without re-evaluating rules.
@@ -89,5 +89,5 @@ The first packet of a new inbound TCP connection to a port-forwarded service:
 ## Related
 
 - Technical version: [[netfilter]]
-- [[netfilter-hook-framework|Hook framework]], [[iptables|iptables]], [[nftables|nftables]], [[connection-tracking|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable|Flowtable]]
+- [[netfilter-hook-framework|Hook framework]], [[iptables|iptables]], [[nftables|nftables]], [[connection-tracking-explained|Connection tracking]], [[netfilter-nat|NAT]], [[netfilter-flowtable|Flowtable]]
 - [[net-explained|Networking stack]], [[ip-routing-explained|IP routing]], [[network-namespaces-explained|Network namespaces]], [[xdp-explained|XDP]], [[bpf-explained|BPF]], [[security|Security]]
