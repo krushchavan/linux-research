@@ -75,5 +75,5 @@ Deadline tasks can migrate between CPUs, with the per-CPU bandwidth accounting m
 ## Related
 
 - Technical version: [[sched-deadline]]
-- [[scheduler-explained|Scheduler]], [[rt-scheduler-explained|Real-time scheduler]], [[scheduler-classes|Scheduling classes]], [[runqueue-explained|Run queue]], [[pi-mutexes-explained|PI mutexes]]
+- [[scheduler-explained|Scheduler]], [[rt-scheduler-explained|Real-time scheduler]], [[scheduler-classes-explained|Scheduling classes]], [[runqueue-explained|Run queue]], [[pi-mutexes-explained|PI mutexes]]
 - [[locking-explained|Locking]]

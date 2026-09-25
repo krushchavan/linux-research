@@ -85,5 +85,5 @@ This is the key step. Back in the new task, a clean-up routine marks the old tas
 ## Related
 
 - Technical version: [[context-switch]]
-- [[scheduler-explained|Scheduler]], [[runqueue-explained|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[preemption-model-explained|Preemption model]], [[scheduler-classes|Scheduling classes]]
+- [[scheduler-explained|Scheduler]], [[runqueue-explained|Run queue]], [[cfs-eevdf-explained|CFS/EEVDF]], [[preemption-model-explained|Preemption model]], [[scheduler-classes-explained|Scheduling classes]]
 - [[interrupt-handling-explained|Interrupt handling]], [[locking-explained|Locking]]

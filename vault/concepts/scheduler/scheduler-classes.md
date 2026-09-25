@@ -6,12 +6,15 @@ subsystem: scheduler
 kernel_version: "2.6.23"
 researched: 2026-04-13
 status: complete
+explained: "[[scheduler-classes-explained]]"
 sources:
   - https://kernel-internals.org/sched/scheduler-classes/
   - https://kernel-internals.org/sched/
 ---
 
 # Scheduler Classes
+
+> 📘 Plain-language version: [[scheduler-classes-explained]]
 
 ## Purpose
 
