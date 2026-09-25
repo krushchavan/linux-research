@@ -78,5 +78,5 @@ The Linux client keeps a session record with two slot tables, one per direction.
 ## Related
 
 - Technical version: [[nfsv4.1-sessions]]
-- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]], [[pnfs-explained|pNFS]], [[sunrpc|SUNRPC]]
+- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]], [[pnfs-explained|pNFS]], [[sunrpc-explained|SUNRPC]]
 - [[delegations-and-locking-explained|Delegations and locking]]

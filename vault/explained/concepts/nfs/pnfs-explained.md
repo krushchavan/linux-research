@@ -75,5 +75,5 @@ When the client is done (file closed, say) it returns the layout. The metadata s
 ## Related
 
 - Technical version: [[pnfs]]
-- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfsv4.1-sessions-explained|NFSv4.1 sessions]], [[sunrpc|SUNRPC]]
+- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfsv4.1-sessions-explained|NFSv4.1 sessions]], [[sunrpc-explained|SUNRPC]]
 - [[block-explained|Block layer]], [[delegations-and-locking-explained|Delegations and locking]]

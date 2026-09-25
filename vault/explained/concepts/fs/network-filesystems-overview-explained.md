@@ -92,4 +92,4 @@ A buffered read of an uncached file on a Ceph mount with local caching:
 - [[netfs-explained|netfs]], [[netfs-helper-library-explained|netfs-helper-library]], [[fscache-explained|fscache]], [[cachefiles-backend-explained|cachefiles-backend]]
 - [[nfs-explained|nfs]], [[nfs-client-explained|nfs-client]], [[nfs-server-explained|nfs-server]], [[fuse-explained|fuse]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]]
-- [[sunrpc]], [[security]]
+- [[sunrpc-explained|sunrpc]], [[security]]

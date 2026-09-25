@@ -79,5 +79,5 @@ A control filesystem exposes the thread count, active exports, enabled NFS versi
 
 - Technical version: [[nfs-server]]
 - [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-localio-explained|LOCALIO]], [[delegations-and-locking-explained|Delegations and locking]]
-- [[sunrpc|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]]
+- [[sunrpc-explained|SUNRPC]], [[xdr-encoding|XDR]], [[nfsv4.1-sessions-explained|Sessions]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[dentry-explained|Dentries]], [[page-cache-explained|Page cache]]

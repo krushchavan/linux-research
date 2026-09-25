@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.0"
 researched: 2026-04-05
 status: complete
+explained: "[[sunrpc-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/net/sunrpc/clnt.c
   - https://github.com/torvalds/linux/blob/master/net/sunrpc/xprt.c
@@ -15,6 +16,8 @@ sources:
 ---
 
 # SunRPC (kernel RPC layer)
+
+> 📘 Plain-language version: [[sunrpc-explained]]
 
 ## Purpose
 

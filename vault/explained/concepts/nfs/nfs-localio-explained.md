@@ -79,5 +79,5 @@ If the host differs, the namespace differs, or the mount isn't AUTH_SYS, the mou
 ## Related
 
 - Technical version: [[nfs-localio]]
-- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]], [[sunrpc|SUNRPC]]
+- [[nfs-explained|NFS subsystem]], [[nfs-client-explained|NFS client]], [[nfs-server-explained|NFS server]], [[sunrpc-explained|SUNRPC]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[page-cache-explained|Page cache]], [[writeback-infrastructure-explained|Writeback]]
