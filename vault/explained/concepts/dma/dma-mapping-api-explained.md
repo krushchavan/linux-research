@@ -118,7 +118,7 @@ Scatter lists force conversions (block request → scatter list → device addre
 
 - Technical version: [[dma-mapping-api]]
 - [[blk-mq-explained|blk-mq]]: maps each block request for the device
-- [[page-pool|Page pool]]: keeps network pages mapped for life
+- [[page-pool-explained|Page pool]]: keeps network pages mapped for life
 - [[get-user-pages-and-pinning-explained|Page pinning]]: how user memory is pinned before mapping
 - [[buddy-allocator-explained|Buddy allocator]]: backing memory for coherent allocations
 - [[devmem-tcp-explained|Device-memory TCP]]: a driver of the move away from per-page descriptors

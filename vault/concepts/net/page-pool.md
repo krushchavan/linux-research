@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "4.18"
 researched: 2026-09-24
 status: complete
+explained: "[[page-pool-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/page_pool.html
   - https://www.kernel.org/doc/html/latest/networking/netmem.html
@@ -23,6 +24,8 @@ sources:
 ---
 
 # Page Pool
+
+> 📘 Plain-language version: [[page-pool-explained]]
 
 ## Purpose
 

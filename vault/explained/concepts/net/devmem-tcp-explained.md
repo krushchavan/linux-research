@@ -33,7 +33,7 @@ Three NIC features make it possible to put only the right payloads in device mem
 The application exports accelerator memory as a **dma-buf**, the kernel's standard object for sharing buffers between devices. It then asks, over a netlink interface, to bind that dma-buf to specific receive queues. The kernel:
 1. maps the dma-buf for the NIC, getting its DMA addresses
 2. cuts those addresses into page-sized chunks, each described by a small **net_iov** descriptor, kept in an allocator
-3. installs this as the queue's [[page-pool|page pool]] **memory provider** and restarts the queue
+3. installs this as the queue's [[page-pool-explained|page pool]] **memory provider** and restarts the queue
 
 The binding lives as long as the netlink socket, so if the process dies, the queue is automatically unbound.
 
@@ -93,5 +93,5 @@ A flow not steered to the bound queue lands in host memory and is reported as li
 ## Related
 
 - Technical version: [[devmem-tcp]]
-- [[page-pool|Page pool]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy receive]], [[net-explained|Networking stack]], [[sk-buff|skb]], [[tcp-ip-stack|TCP/IP]], [[network-device-and-napi-explained|Devices and NAPI]]
+- [[page-pool-explained|Page pool]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy receive]], [[net-explained|Networking stack]], [[sk-buff|skb]], [[tcp-ip-stack|TCP/IP]], [[network-device-and-napi-explained|Devices and NAPI]]
 - [[dma-mapping-api-explained|DMA mapping]]

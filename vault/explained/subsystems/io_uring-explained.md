@@ -166,5 +166,5 @@ A TCP server follows a similar pattern: one multishot accept puts each new conne
 - [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]]
 - [[block-explained|Block layer]] and [[blk-mq-explained|blk-mq]]: where direct and passthrough I/O goes
 - [[bpf-explained|BPF]]: now able to drive io_uring event loops
-- [[vfs-explained|VFS]], [[net-explained|Networking]], [[page-pool|Page pool]], [[get-user-pages-and-pinning-explained|Page pinning]]
+- [[vfs-explained|VFS]], [[net-explained|Networking]], [[page-pool-explained|Page pool]], [[get-user-pages-and-pinning-explained|Page pinning]]
 - [[ublk-explained|ublk]], [[fuse-explained|FUSE]], [[seccomp-bpf|seccomp]]
