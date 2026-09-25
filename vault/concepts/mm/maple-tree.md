@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "6.1"
 researched: 2026-09-25
 status: complete
+explained: "[[maple-tree-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/core-api/maple_tree.html
   - https://lwn.net/Articles/845507/
@@ -17,6 +18,8 @@ sources:
 ---
 
 # Maple Tree
+
+> 📘 Plain-language version: [[maple-tree-explained]]
 
 ## Purpose
 
