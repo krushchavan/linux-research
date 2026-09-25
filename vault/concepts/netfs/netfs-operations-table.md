@@ -6,6 +6,7 @@ subsystem: netfs
 kernel_version: "5.13"
 researched: 2026-04-16
 status: complete
+explained: "[[netfs-operations-table-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/netfs_library.html
   - https://lwn.net/Articles/894589/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # netfs Operations Table
+
+> 📘 Plain-language version: [[netfs-operations-table-explained]]
 
 ## Purpose
 

@@ -140,7 +140,7 @@
 - [x] vault/subsystems/netfs.md
 - [x] vault/concepts/netfs/netfs-inode-context.md
 - [x] vault/concepts/netfs/netfs-io-request-model.md
-- [ ] vault/concepts/netfs/netfs-operations-table.md
+- [x] vault/concepts/netfs/netfs-operations-table.md
 - [ ] vault/concepts/netfs/netfs-read-path.md
 - [ ] vault/concepts/netfs/netfs-write-path.md
 - [ ] vault/subsystems/nfs.md
