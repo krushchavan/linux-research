@@ -44,7 +44,7 @@
 - [x] vault/concepts/device-mapper/ioctl-control-interface.md
 - [x] vault/concepts/device-mapper/kcopyd.md
 - [x] vault/concepts/device-mapper/persistent-data-library.md
-- [ ] vault/concepts/device-mapper/target-framework.md
+- [x] vault/concepts/device-mapper/target-framework.md
 - [ ] vault/subsystems/dm-crypt.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypt-config.md
 - [ ] vault/concepts/dm-crypt/dm-crypt-crypt-io.md

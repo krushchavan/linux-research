@@ -79,6 +79,6 @@ A "secure data" flag tells the kernel to wipe its copy of the command buffer whe
 
 - Technical version: [[ioctl-control-interface]]
 - [[device-mapper-explained|Device mapper]]: the framework
-- [[target-framework]]: what a table load constructs, and the suspend/resume hooks
+- [[target-framework-explained|target-framework]]: what a table load constructs, and the suspend/resume hooks
 - [[dm-crypt]]: the main user of the secure-data flag
 - [[block-explained|Block layer]]: where the virtual device is registered

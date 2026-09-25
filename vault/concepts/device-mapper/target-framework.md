@@ -6,6 +6,7 @@ subsystem: device-mapper
 kernel_version: "2.6.0"
 researched: 2026-04-18
 status: complete
+explained: "[[target-framework-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/include/linux/device-mapper.h
   - https://en.wikipedia.org/wiki/Device_mapper
@@ -13,6 +14,8 @@ sources:
 ---
 
 # Device Mapper Target Framework
+
+> 📘 Plain-language version: [[target-framework-explained]]
 
 ## Overview
 

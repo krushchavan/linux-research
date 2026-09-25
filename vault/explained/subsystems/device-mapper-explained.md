@@ -50,7 +50,7 @@ The design has three planes:
 
 ### The target framework
 
-The plugin contract that makes DM extensible. See [[target-framework]].
+The plugin contract that makes DM extensible. See [[target-framework-explained|target-framework]].
 
 1. A module registers a target type under a name such as "linear", "crypt" or "thin".
 2. When a table is loaded, the kernel looks up each row's target type and calls its constructor with the row's arguments. The constructor builds that instance's private state.
@@ -149,6 +149,6 @@ LVM creating a new thin volume and the first write to it:
 
 - Technical version: [[device-mapper]]
 - [[block-explained|Block layer]]: DM devices are ordinary block devices to everything above
-- [[target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd-explained|kcopyd]], [[persistent-data-library-explained|persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
+- [[target-framework-explained|target-framework]], [[ioctl-control-interface-explained|ioctl-control-interface]], [[dm-io-explained|dm-io]], [[kcopyd-explained|kcopyd]], [[persistent-data-library-explained|persistent-data-library]], [[dm-bufio-explained|dm-bufio]]
 - [[dm-crypt]], [[dm-integrity]]: the security targets
 - [[kernel-crypto-api|Kernel crypto API]], [[ima|IMA]]

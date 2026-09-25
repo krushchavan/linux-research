@@ -81,6 +81,6 @@ The source note doesn't give a version history for dm-io itself. The mirror targ
 - Technical version: [[dm-io]]
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[kcopyd-explained|kcopyd]]: uses dm-io for the read and write halves of each copy
-- [[target-framework]]: targets create their dm-io clients in their constructors
+- [[target-framework-explained|target-framework]]: targets create their dm-io clients in their constructors
 - [[dm-bufio-explained|dm-bufio]]: the metadata cache that sits beside it
 - [[block-explained|Block layer]]: where the requests end up

@@ -85,4 +85,4 @@ The source note doesn't give a version history for kcopyd. Its users span device
 - Technical version: [[kcopyd]]
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-io-explained|dm-io]]: does kcopyd's actual reads and writes
-- [[target-framework]]: mirror, snapshot, thin and cache create kcopyd clients
+- [[target-framework-explained|target-framework]]: mirror, snapshot, thin and cache create kcopyd clients
