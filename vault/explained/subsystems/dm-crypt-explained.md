@@ -71,7 +71,7 @@ The modern recommendation, **AES-256-XTS with plain64**, sidesteps most IV pitfa
 
 ### Crypto API integration
 
-dm-crypt doesn't implement ciphers; it uses the kernel's crypto API. See [[dm-crypt-crypto-api-integration]].
+dm-crypt doesn't implement ciphers; it uses the kernel's crypto API. See [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]].
 
 1. The cipher name picks the best available implementation. On x86, "xts(aes)" resolves to the AES-NI accelerated version if present, otherwise to software. With AES-NI, encryption typically costs under 5% of raw device throughput.
 2. With an **authenticated** cipher (AEAD, for example AES-GCM), each sector also gets an authentication tag. dm-crypt hands the tag to dm-integrity, which stores it separately. On read, a bad tag means the data was tampered with, and the read fails with an I/O error instead of returning corrupted plaintext.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative
