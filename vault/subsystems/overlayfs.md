@@ -7,6 +7,7 @@ mailing_list: linux-fsdevel@vger.kernel.org
 source_path: fs/overlayfs/
 researched: 2026-04-15
 status: complete
+explained: "[[overlayfs-explained]]"
 sources:
   - https://kernel-internals.org/filesystems/overlayfs/
   - https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # OverlayFS Subsystem
+
+> 📘 Plain-language version: [[overlayfs-explained]]
 
 ## Overview
 

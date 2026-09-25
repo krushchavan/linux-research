@@ -100,5 +100,5 @@ If a non-fatal signal arrives during a later read the daemon is already handling
 - Technical version: [[fuse]]
 - [[fuse-connection-explained|Connection]], [[fuse-request-queue-explained|Request queue]], [[fuse-wire-protocol-explained|Wire protocol]], [[fuse-vfs-integration-explained|VFS integration]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[path-lookup-explained|Path lookup]], [[page-cache-explained|Page cache]]
-- [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs|OverlayFS]]
+- [[io_uring-explained|io_uring]], [[uring-cmd-passthrough-explained|io_uring command passthrough]], [[overlayfs-explained|OverlayFS]]
 - [[network-filesystems-overview-explained|Network filesystems]]

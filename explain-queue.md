@@ -154,7 +154,7 @@
 - [x] vault/concepts/nfs/rpcsec-gss-and-kerberos.md
 - [x] vault/concepts/nfs/sunrpc.md
 - [x] vault/concepts/nfs/xdr-encoding.md
-- [ ] vault/subsystems/overlayfs.md
+- [x] vault/subsystems/overlayfs.md
 - [ ] vault/concepts/overlayfs/copy-up.md
 - [ ] vault/concepts/overlayfs/directory-merging.md
 - [ ] vault/concepts/overlayfs/inode-numbering-xino.md
