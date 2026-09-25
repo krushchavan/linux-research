@@ -6,6 +6,7 @@ subsystem: netlabel
 kernel_version: "4.8"
 researched: 2026-04-17
 status: complete
+explained: "[[calipso-ipv6-engine-explained]]"
 sources:
   - https://www.paul-moore.com/blog/d/2016/12/calipso_intro.html
   - https://lwn.net/Articles/204905/
@@ -13,6 +14,8 @@ sources:
 ---
 
 # CALIPSO/IPv6 Engine
+
+> 📘 Plain-language version: [[calipso-ipv6-engine-explained]]
 
 ## Purpose
 

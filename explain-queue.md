@@ -202,7 +202,7 @@
 - [x] vault/concepts/netfilter/netfilter-nat.md
 - [x] vault/concepts/netfilter/nftables.md
 - [x] vault/subsystems/netlabel.md
-- [ ] vault/concepts/netlabel/calipso-ipv6-engine.md
+- [x] vault/concepts/netlabel/calipso-ipv6-engine.md
 - [ ] vault/concepts/netlabel/cipso-ipv4-engine.md
 - [ ] vault/concepts/netlabel/netlabel-domain-hash-table.md
 - [ ] vault/concepts/netlabel/netlabel-lsm-security-api.md
