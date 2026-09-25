@@ -7,6 +7,7 @@ mailing_list: netdev@vger.kernel.org
 source_path: net/
 researched: 2026-04-14
 status: complete
+explained: "[[net-explained]]"
 sources:
   - https://kernel-internals.org/site-index/
   - https://kernel-internals.org/net/ip-routing/
@@ -22,6 +23,8 @@ sources:
 ---
 
 # Linux Networking (net) Subsystem
+
+> 📘 Plain-language version: [[net-explained]]
 
 ## Overview
 

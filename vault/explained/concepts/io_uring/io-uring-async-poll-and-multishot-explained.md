@@ -116,4 +116,4 @@ The same engine powers several features:
 - [[provided-buffer-rings-explained|provided-buffer-rings]]: where multishot receive gets its buffers
 - [[io-wq-explained|io-wq]]: the helper-thread fallback this avoids
 - [[registered-resources-explained|registered-resources]]: direct descriptors for multishot accept
-- [[vfs-explained|VFS]], [[net|Networking]]
+- [[vfs-explained|VFS]], [[net-explained|Networking]]

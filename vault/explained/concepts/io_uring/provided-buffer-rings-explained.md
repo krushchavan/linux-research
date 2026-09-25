@@ -91,4 +91,4 @@ The first design (5.7) supplied buffers with a special request, storing them on 
 - [[io-uring-async-poll-and-multishot-explained|Async poll and multishot]]: multishot receive requires provided buffers
 - [[registered-resources-explained|registered-resources]]: the other way to prepare buffers in advance
 - [[fuse-explained|FUSE]]: driving kernel-managed buffer rings
-- [[net|Networking]], [[vfs-explained|VFS]]
+- [[net-explained|Networking]], [[vfs-explained|VFS]]
