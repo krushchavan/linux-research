@@ -6,6 +6,7 @@ subsystem: bpf
 kernel_version: "4.x"
 researched: 2026-04-16
 status: complete
+explained: "[[libbpf-and-toolchain-explained]]"
 sources:
   - https://lwn.net/Articles/909095/
   - https://kernel-internals.org/bpf/
@@ -14,6 +15,8 @@ sources:
 ---
 
 # libbpf and BPF Toolchain
+
+> 📘 Plain-language version: [[libbpf-and-toolchain-explained]]
 
 ## Purpose
 

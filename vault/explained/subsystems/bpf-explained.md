@@ -122,7 +122,7 @@ Tracing tools push huge numbers of events to userspace. The older mechanism gave
 4. Wakeups can be batched so a sleeping reader isn't woken for every single event. A reverse variant lets userspace send data *to* BPF.
 
 ### libbpf and tools: the plumbing
-See [[libbpf-and-toolchain]].
+See [[libbpf-and-toolchain-explained|libbpf-and-toolchain]].
 
 The raw system call needs bytecode, type info, relocation records and map handles packed into one structure. libbpf is the standard library that does this.
 
@@ -162,6 +162,6 @@ Dropping attack traffic at the network card with XDP:
 
 - Technical version: [[bpf]]
 - [[bpf-verifier-explained|The verifier]], [[bpf-maps-explained|maps]], [[bpf-jit-compiler-explained|the JIT]], [[bpf-program-types-explained|program types]]
-- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re-explained|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain|libbpf]]
+- [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]], [[btf-and-co-re-explained|BTF and CO-RE]], [[bpf-ring-buffer-explained|the ring buffer]], [[libbpf-and-toolchain-explained|libbpf]]
 - [[xdp|XDP]]: the earliest networking hook
 - [[net|Networking]], [[scheduler|scheduler]], [[security|security]], [[cgroups|cgroups]], [[tracing|tracing]]

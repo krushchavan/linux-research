@@ -98,4 +98,4 @@ New kinds of BTF record keep being added. Older tools used to fail on a kind the
 - [[bpf-verifier-explained|The verifier]]: uses BTF for type checking
 - [[bpf-helpers-and-kfuncs-explained|Helpers and kfuncs]]: kfuncs are found and checked through BTF
 - [[bpf-maps-explained|BPF maps]]: BTF lets tools print their contents
-- [[libbpf-and-toolchain|libbpf]]: the loader that applies CO-RE relocations
+- [[libbpf-and-toolchain-explained|libbpf]]: the loader that applies CO-RE relocations
