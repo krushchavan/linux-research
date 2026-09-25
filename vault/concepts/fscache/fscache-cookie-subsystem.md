@@ -6,6 +6,7 @@ subsystem: fscache
 kernel_version: "5.17"
 researched: 2026-04-15
 status: complete
+explained: "[[fscache-cookie-subsystem-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/filesystems/caching/fscache.html
   - https://www.kernel.org/doc/html/latest/filesystems/caching/backend-api.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # fscache Cookie Subsystem
+
+> 📘 Plain-language version: [[fscache-cookie-subsystem-explained]]
 
 ## Purpose
 

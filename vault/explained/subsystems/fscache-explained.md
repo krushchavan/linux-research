@@ -49,7 +49,7 @@ A file cookie goes through four phases:
 3. **unused:** when the count reaches zero, the backend object can be retired; the filesystem hands over the final size and validity data
 4. **relinquished:** the cookie is removed for good, and optionally its on-disk copy is discarded
 
-Since the 5.17 rewrite, fscache stores keys, sizes and validity data in the cookie itself rather than calling back into the filesystem to fetch them. See [[fscache-cookie-subsystem|the cookie subsystem]].
+Since the 5.17 rewrite, fscache stores keys, sizes and validity data in the cookie itself rather than calling back into the filesystem to fetch them. See [[fscache-cookie-subsystem-explained|the cookie subsystem]].
 
 ### The netfs helper library
 Every network filesystem needs the same fiddly plumbing: readahead, reading single pages, preparing and finishing writes, and direct I/O, all made correct in the presence of a cache. The helper library does this once. Filesystems supply only their network-call hooks.
@@ -105,6 +105,6 @@ If the server's copy later changes (new generation number or size), the filesyst
 ## Related
 
 - Technical version: [[fscache]]
-- [[fscache-cookie-subsystem|Cookie subsystem]], [[netfs-helper-library|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
+- [[fscache-cookie-subsystem-explained|Cookie subsystem]], [[netfs-helper-library|netfs helper library]], [[cachefiles-backend-explained|CacheFiles backend]]
 - [[network-filesystems-overview-explained|Network filesystems overview]]
 - [[vfs|VFS]], [[page-cache-explained|Page cache]], [[mm-explained|Memory management]], [[block-explained|Block layer]], [[security|Security]]

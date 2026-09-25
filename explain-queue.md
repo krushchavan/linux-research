@@ -123,7 +123,7 @@
 - [x] vault/concepts/fs/writeback-infrastructure.md
 - [x] vault/subsystems/fscache.md
 - [x] vault/concepts/fscache/cachefiles-backend.md
-- [ ] vault/concepts/fscache/fscache-cookie-subsystem.md
+- [x] vault/concepts/fscache/fscache-cookie-subsystem.md
 - [ ] vault/concepts/fscache/netfs-helper-library.md
 - [ ] vault/subsystems/fscrypt.md
 - [ ] vault/concepts/fscrypt/fscrypt-contents-encryption.md
