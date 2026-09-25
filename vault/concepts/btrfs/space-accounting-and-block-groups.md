@@ -6,6 +6,7 @@ subsystem: btrfs
 kernel_version: "2.6.29 (initial btrfs merge); major rework 4.2 (ticketed ENOSPC)"
 researched: 2026-04-11
 status: complete
+explained: "[[space-accounting-and-block-groups-explained]]"
 sources:
   - https://lwn.net/Articles/348659/
   - https://lwn.net/Articles/918005/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Space Accounting and Block Groups
+
+> 📘 Plain-language version: [[space-accounting-and-block-groups-explained]]
 
 ## Purpose
 

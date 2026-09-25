@@ -100,7 +100,7 @@
 - [x] vault/concepts/btrfs/qgroups.md
 - [x] vault/concepts/btrfs/raid-and-multi-device-support.md
 - [x] vault/concepts/btrfs/send-receive-protocol.md
-- [ ] vault/concepts/btrfs/space-accounting-and-block-groups.md
+- [x] vault/concepts/btrfs/space-accounting-and-block-groups.md
 - [ ] vault/concepts/btrfs/subvolumes-and-snapshots.md
 - [ ] vault/concepts/btrfs/transaction-model.md
 - [ ] vault/subsystems/fs.md
