@@ -79,7 +79,7 @@ dm-crypt doesn't implement ciphers; it uses the kernel's crypto API. See [[dm-cr
 
 ### The workqueue I/O path
 
-Work is moved off the submitting thread and out of completion context onto kernel worker threads. See [[dm-crypt-workqueue-io-path]].
+Work is moved off the submitting thread and out of completion context onto kernel worker threads. See [[dm-crypt-workqueue-io-path-explained|dm-crypt-workqueue-io-path]].
 
 1. One high-priority queue only dispatches reads to the disk, so reads keep reaching the disk even when the crypto workers are busy.
 2. A main queue does the encryption and decryption, using the per-CPU ciphers.
@@ -127,7 +127,7 @@ With an authenticated cipher stacked on dm-integrity, step 3 also produces a tag
 
 - Technical version: [[dm-crypt]]
 - [[device-mapper-explained|Device mapper]]: the framework dm-crypt plugs into
-- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path]], [[dm-crypt-key-management-explained|dm-crypt-key-management]]
+- [[dm-crypt-crypt-config-explained|dm-crypt-crypt-config]], [[dm-crypt-crypt-io-explained|dm-crypt-crypt-io]], [[dm-crypt-iv-generation-explained|dm-crypt-iv-generation]], [[dm-crypt-crypto-api-integration-explained|dm-crypt-crypto-api-integration]], [[dm-crypt-workqueue-io-path-explained|dm-crypt-workqueue-io-path]], [[dm-crypt-key-management-explained|dm-crypt-key-management]]
 - [[dm-integrity]]: stores authentication tags for authenticated mode
 - [[kernel-crypto-api|Kernel crypto API]], [[kernel-keyring|Kernel keyring]]
 - [[fscrypt]]: file-level encryption, the per-directory alternative

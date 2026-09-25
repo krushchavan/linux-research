@@ -6,6 +6,7 @@ subsystem: dm-crypt
 kernel_version: "2.5"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-crypt-workqueue-io-path-explained]]"
 sources:
   - https://kernel-internals.org/security/dm-crypt/
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # dm-crypt Workqueue I/O Path — kcryptd and kcryptd_io
+
+> 📘 Plain-language version: [[dm-crypt-workqueue-io-path-explained]]
 
 ## Purpose
 
