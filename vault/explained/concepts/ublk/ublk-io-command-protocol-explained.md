@@ -90,5 +90,5 @@ When the server's ring is torn down or it cancels commands, io_uring tells ublk.
 - [[ublk-explained|ublk]]: the subsystem overview
 - [[ublk-control-plane-explained|Control plane]]: priming happens before "start"
 - [[ublk-batch-io-explained|Batch I/O]]: the many-requests-per-command alternative
-- [[ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
+- [[ublk-zero-copy-explained|ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[io-uring-task-work-explained|Task work]], [[blk-mq-explained|blk-mq]]

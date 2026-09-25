@@ -92,5 +92,5 @@ If the replacement also dies, the same path runs again. If nobody recovers, I/O 
 - [[ublk-explained|ublk]]: the subsystem overview
 - [[ublk-io-command-protocol-explained|I/O command protocol]]: the fetches that get cancelled
 - [[ublk-control-plane-explained|Control plane]]: where recovery commands and policy flags live
-- [[ublk-zero-copy]]: why teardown waits for buffers
+- [[ublk-zero-copy-explained|ublk-zero-copy]]: why teardown waits for buffers
 - [[blk-mq-explained|blk-mq]]: quiesce and requeue provide the "on hold" behaviour

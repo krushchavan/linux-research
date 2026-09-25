@@ -84,6 +84,6 @@ On cancellation, all posted fetches are completed with an abort, and any tags st
 - Technical version: [[ublk-batch-io]]
 - [[ublk-explained|ublk]]: the subsystem overview
 - [[ublk-io-command-protocol-explained|ublk-io-command-protocol]]: the classic per-request protocol this replaces
-- [[ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
+- [[ublk-zero-copy-explained|ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
 - [[io-uring-async-poll-and-multishot-explained|Multishot requests]], [[provided-buffer-rings-explained|Provided buffer rings]]
 - [[blk-mq-explained|blk-mq]]

@@ -6,6 +6,7 @@ subsystem: ublk
 kernel_version: "6.15"
 researched: 2026-09-24
 status: complete
+explained: "[[ublk-zero-copy-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/block/ublk.html
   - https://raw.githubusercontent.com/torvalds/linux/master/include/uapi/linux/ublk_cmd.h
@@ -19,6 +20,8 @@ sources:
 ---
 
 # ublk Zero-Copy
+
+> 📘 Plain-language version: [[ublk-zero-copy-explained]]
 
 ## Purpose
 

@@ -85,7 +85,7 @@ Removes the one-command-per-request overhead (7.0). See [[ublk-batch-io-explaine
 
 ### Zero-copy
 
-Copying every byte between the client's pages and the server is ublk's main remaining overhead. See [[ublk-zero-copy]]. Four data paths, in the order they appeared:
+Copying every byte between the client's pages and the server is ublk's main remaining overhead. See [[ublk-zero-copy-explained|ublk-zero-copy]]. Four data paths, in the order they appeared:
 1. **Copy** (default): the driver copies at dispatch and commit.
 2. **Copy on demand** (~6.5): the server reads and writes the device channel at an offset that encodes (queue, tag), copying only what it needs, when it needs it.
 3. **Registered-buffer zero-copy** (6.15): the driver installs the client request's pages into a registered-buffer slot of the server's io_uring. The server's fixed-buffer reads and writes against its backend then move data directly between the client's pages and the backend. A release callback keeps the request alive until the last user is done. In 6.16 the kernel can do this registration automatically at an index the server chose, saving two commands per I/O.
@@ -134,5 +134,5 @@ If the server crashed in the middle, the device would quiesce, client I/O would 
 - [[io_uring-explained|io_uring]]: the transport ublk rides on
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[io-uring-task-work-explained|Task work]], [[registered-resources-explained|Registered resources]], [[provided-buffer-rings-explained|Provided buffer rings]]
 - [[blk-mq-explained|blk-mq]] and [[block-explained|Block layer]]: ublk is a normal block driver to them
-- [[ublk-control-plane-explained|ublk-control-plane]], [[ublk-io-command-protocol-explained|ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
+- [[ublk-control-plane-explained|ublk-control-plane]], [[ublk-io-command-protocol-explained|ublk-io-command-protocol]], [[ublk-batch-io-explained|ublk-batch-io]], [[ublk-zero-copy-explained|ublk-zero-copy]], [[ublk-user-recovery-explained|ublk-user-recovery]]
 - [[get-user-pages-and-pinning|Page pinning]]
