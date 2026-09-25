@@ -178,7 +178,7 @@
 - [x] vault/concepts/locking/interrupt-handling.md
 - [x] vault/concepts/locking/local-lock.md
 - [x] vault/concepts/locking/lockdep.md
-- [ ] vault/concepts/locking/mutex.md
+- [x] vault/concepts/locking/mutex.md
 - [ ] vault/concepts/locking/per-cpu-variables.md
 - [ ] vault/concepts/locking/rcu-read-copy-update.md
 - [ ] vault/concepts/locking/rwsem-reader-writer-semaphore.md

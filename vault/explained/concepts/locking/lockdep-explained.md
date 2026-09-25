@@ -72,5 +72,5 @@ The full set of locks held at an acquisition is a **chain**. Lockdep hashes each
 ## Related
 
 - Technical version: [[lockdep]]
-- [[locking-explained|Locking subsystem]], [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]]
+- [[locking-explained|Locking subsystem]], [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]]
 - [[interrupt-handling-explained|Interrupt handling]], [[local-lock-explained|Local locks]], [[vfs-locking-model-explained|VFS locking model]]

@@ -46,7 +46,7 @@ A mutex lets waiters **sleep** during long critical sections in task context. It
 2. **Middle (optimistic spinning):** if the owner is *running* on another CPU, it'll probably release soon, so spin briefly in a queue rather than sleep and wake. Give up if the owner is preempted.
 3. **Slow:** join the wait list and sleep. On unlock, if the handoff flag is set, the lock goes straight to the first waiter, so it isn't beaten by a newcomer.
 
-**RT mutexes** add **priority inheritance**: if a high-priority task waits on a lock held by a low-priority one, the holder is temporarily boosted, along the whole chain if the holder is itself waiting. **Wound/wait mutexes** help graphics drivers that must take a changing set of locks: each attempt carries a global ticket, and a newer one blocking an older one is "wounded" and must back off and retry, guaranteeing progress. See [[mutex|mutexes]].
+**RT mutexes** add **priority inheritance**: if a high-priority task waits on a lock held by a low-priority one, the holder is temporarily boosted, along the whole chain if the holder is itself waiting. **Wound/wait mutexes** help graphics drivers that must take a changing set of locks: each attempt carries a global ticket, and a newer one blocking an older one is "wounded" and must back off and retry, guaranteeing progress. See [[mutex-explained|mutexes]].
 
 ### Read/write semaphores
 These let **many readers or one writer** in: good for read-heavy structures like inodes, address spaces and memory maps. One word holds a writer bit, flags, and a reader count. Readers add to the count if no writer holds or waits for the lock; a writer sets its bit when the count is empty, otherwise it queues. Both sides can spin optimistically while the owner runs. A handoff flag (5.2) stops a steady stream of readers from starving writers. On release, a writer wakes the next writer, or all readers queued at the front. See [[rwsem-reader-writer-semaphore|read/write semaphores]].
@@ -94,6 +94,6 @@ Lockdep checks every step: had B been holding some other lock X, and A were ever
 ## Related
 
 - Technical version: [[locking]]
-- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
+- [[spinlock-and-raw-spinlock|Spinlocks]], [[mutex-explained|Mutexes]], [[rwsem-reader-writer-semaphore|Read/write semaphores]], [[seqlocks-and-memory-barriers|Sequence locks]], [[local-lock-explained|Local locks]], [[lockdep-explained|Lockdep]], [[futex-internals-explained|Futexes]]
 - [[rcu-read-copy-update|RCU]], [[per-cpu-variables|Per-CPU variables]], [[interrupt-handling-explained|Interrupt handling]]
 - [[vfs-locking-model-explained|VFS locking model]], [[scheduler|Scheduler]]

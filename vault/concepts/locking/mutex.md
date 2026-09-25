@@ -6,6 +6,7 @@ subsystem: locking
 kernel_version: "2.6.16"
 researched: 2026-04-13
 status: complete
+explained: "[[mutex-explained]]"
 sources:
   - https://kernel-internals.org/locking/
   - https://www.kernel.org/doc/html/latest/locking/mutex-design.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Mutex
+
+> 📘 Plain-language version: [[mutex-explained]]
 
 ## Overview
 
