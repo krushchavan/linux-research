@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "5.19"
 researched: 2026-09-24
 status: complete
+explained: "[[uring-cmd-passthrough-explained]]"
 sources:
   - https://lwn.net/Articles/849751/
   - https://lwn.net/Articles/901219/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # io_uring uring_cmd Passthrough
+
+> 📘 Plain-language version: [[uring-cmd-passthrough-explained]]
 
 ## Purpose
 

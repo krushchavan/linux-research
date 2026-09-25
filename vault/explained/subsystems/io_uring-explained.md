@@ -118,7 +118,7 @@ Sending a socket read to a helper thread that then sleeps would recreate thread-
 
 ### Driver passthrough commands
 
-Generic operations can't express every driver's native command set. See [[uring-cmd-passthrough]].
+Generic operations can't express every driver's native command set. See [[uring-cmd-passthrough-explained|uring-cmd-passthrough]].
 
 1. A file can accept its own commands through io_uring. The request carries a command code and a small inline payload (up to 80 bytes with double-size entries).
 2. The driver completes it immediately or later, usually finishing in the submitter's thread via task work.

@@ -37,7 +37,7 @@
 - [x] vault/concepts/io_uring/provided-buffer-rings.md
 - [x] vault/concepts/io_uring/registered-resources.md
 - [x] vault/concepts/io_uring/sqpoll.md
-- [ ] vault/concepts/io_uring/uring-cmd-passthrough.md
+- [x] vault/concepts/io_uring/uring-cmd-passthrough.md
 - [ ] vault/subsystems/device-mapper.md
 - [ ] vault/concepts/device-mapper/dm-bufio.md
 - [ ] vault/concepts/device-mapper/dm-io.md
