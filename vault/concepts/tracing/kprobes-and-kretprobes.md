@@ -6,6 +6,7 @@ subsystem: tracing
 kernel_version: "2.6.9"
 researched: 2026-04-17
 status: complete
+explained: "[[kprobes-and-kretprobes-explained]]"
 sources:
   - https://kernel-internals.org/tracing/kprobes-tracepoints/
   - https://www.kernel.org/doc/html/latest/trace/kprobes.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # kprobes and kretprobes
+
+> 📘 Plain-language version: [[kprobes-and-kretprobes-explained]]
 
 ## Purpose
 

@@ -241,7 +241,7 @@
 - [x] vault/concepts/security/user-namespaces.md
 - [x] vault/subsystems/tracing.md
 - [x] vault/concepts/tracing/ftrace.md
-- [ ] vault/concepts/tracing/kprobes-and-kretprobes.md
+- [x] vault/concepts/tracing/kprobes-and-kretprobes.md
 - [ ] vault/concepts/tracing/perf-events.md
 - [ ] vault/concepts/tracing/tracefs-and-ring-buffer.md
 - [ ] vault/concepts/tracing/tracepoints-and-trace-event.md
