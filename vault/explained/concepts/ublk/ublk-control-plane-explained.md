@@ -95,4 +95,4 @@ With the unprivileged option (6.2), "add device" doesn't need admin rights. The 
 - [[ublk-io-command-protocol-explained|ublk-io-command-protocol]]: what the server does after start
 - [[ublk-user-recovery-explained|ublk-user-recovery]], [[ublk-zero-copy-explained|ublk-zero-copy]]
 - [[uring-cmd-passthrough-explained|Passthrough commands]], [[blk-mq-explained|blk-mq]]
-- [[user-namespaces|User namespaces]], [[lsm-framework|LSM framework]]
+- [[user-namespaces|User namespaces]], [[lsm-framework-explained|LSM framework]]

@@ -6,6 +6,7 @@ subsystem: security
 kernel_version: "2.6.0"
 researched: 2026-04-15
 status: complete
+explained: "[[lsm-framework-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/security/lsm.html
   - https://www.kernel.org/doc/html/latest/security/lsm-development.html
@@ -14,6 +15,8 @@ sources:
 ---
 
 # LSM Framework
+
+> 📘 Plain-language version: [[lsm-framework-explained]]
 
 ## Overview
 

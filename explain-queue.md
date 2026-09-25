@@ -227,7 +227,7 @@
 - [x] vault/concepts/security/kernel-keyring.md
 - [x] vault/concepts/security/landlock.md
 - [x] vault/concepts/security/linux-audit.md
-- [ ] vault/concepts/security/lsm-framework.md
+- [x] vault/concepts/security/lsm-framework.md
 - [ ] vault/concepts/security/process-model.md
 - [ ] vault/concepts/security/seccomp-bpf.md
 - [ ] vault/concepts/security/securityfs.md

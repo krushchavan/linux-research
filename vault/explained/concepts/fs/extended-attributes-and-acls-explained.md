@@ -105,7 +105,7 @@ Security modules both *check* every attribute operation and *store* their own la
 
 - Technical version: [[extended-attributes-and-acls]]
 - [[fs-explained|Filesystem subsystem (VFS)]]
-- [[lsm-framework|LSM framework]], [[selinux|SELinux]], [[smack|Smack]]
+- [[lsm-framework-explained|LSM framework]], [[selinux|SELinux]], [[smack|Smack]]
 - [[fscrypt-explained|fscrypt]]: stores encryption policies as hidden attributes
 - [[overlayfs-explained|OverlayFS]]: uses trusted. markers
 - [[nfs-explained|NFS]], [[btrfs-explained|Btrfs]], [[inode]]

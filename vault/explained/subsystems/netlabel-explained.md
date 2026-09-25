@@ -92,5 +92,5 @@ An SELinux process with categories c1 and c2 sends over TCP, and the receiver ch
 
 - Technical version: [[netlabel]]
 - [[cipso-ipv4-engine-explained|CIPSO engine]], [[calipso-ipv6-engine-explained|CALIPSO engine]], [[netlabel-domain-hash-table-explained|Domain table]], [[netlabel-netlink-management-interface-explained|Management interface]], [[netlabel-lsm-security-api-explained|LSM API]]
-- [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework|LSM framework]], [[linux-audit-explained|Audit]]
+- [[selinux|SELinux]], [[smack|Smack]], [[smack-network-labeling|Smack network labelling]], [[lsm-framework-explained|LSM framework]], [[linux-audit-explained|Audit]]
 - [[net-explained|Networking stack]], [[netfilter-explained|Netfilter (SECMARK)]]

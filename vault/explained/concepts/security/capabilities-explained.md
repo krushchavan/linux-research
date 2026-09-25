@@ -72,4 +72,4 @@ The **system-administration** capability covers more than 40 unrelated operation
 ## Related
 
 - Technical version: [[capabilities]]
-- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[lsm-framework|LSM framework]], [[seccomp-bpf|seccomp]], [[user-namespaces|User namespaces]], [[apparmor-explained|AppArmor]]
+- [[security-explained|Security subsystem]], [[credentials-explained|Credentials]], [[lsm-framework-explained|LSM framework]], [[seccomp-bpf|seccomp]], [[user-namespaces|User namespaces]], [[apparmor-explained|AppArmor]]

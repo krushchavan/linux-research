@@ -45,7 +45,7 @@ Alongside sit **credentials** (who a task is), **audit** (a record of what happe
 ### The LSM framework
 This is the extensibility backbone. At every security-relevant decision point (opening a file, creating a socket, forking), the kernel calls a **hook**. Each hook has a list of callbacks from the active security modules; the kernel runs them in order and stops at the first denial (a few hooks merge results instead). Modules register at boot, in an order set by the kernel configuration, and the lists are frozen afterwards; removing hooks at runtime is deliberately unsupported.
 
-Modules need to attach private data to inodes, tasks, sockets and credentials. Since 5.1, instead of a separate pointer per module in every structure, the framework allocates **one combined blob** per object and gives each module a fixed slice of it. That's what makes **stacking** (several major modules active at once) possible for most object types; modules still marked "exclusive" can't stack yet. See [[lsm-framework|LSM framework]].
+Modules need to attach private data to inodes, tasks, sockets and credentials. Since 5.1, instead of a separate pointer per module in every structure, the framework allocates **one combined blob** per object and gives each module a fixed slice of it. That's what makes **stacking** (several major modules active at once) possible for most object types; modules still marked "exclusive" can't stack yet. See [[lsm-framework-explained|LSM framework]].
 
 ### Capabilities
 Capabilities break root into about 40 powers: binding to low ports, loading modules, bypassing file permissions, and so on. Each task has five capability sets:
@@ -118,6 +118,6 @@ A denial runs the other way: a web server whose SELinux type isn't allowed to re
 ## Related
 
 - Technical version: [[security]]
-- [[lsm-framework|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit-explained|Audit]]
+- [[lsm-framework-explained|LSM framework]], [[capabilities-explained|Capabilities]], [[seccomp-bpf|seccomp]], [[selinux|SELinux]], [[apparmor-explained|AppArmor]], [[landlock-explained|Landlock]], [[credentials-explained|Credentials]], [[kernel-hardening-explained|Kernel hardening]], [[linux-audit-explained|Audit]]
 - [[smack|Smack]], [[user-namespaces|User namespaces]], [[process-model|Process model]], [[netlabel-explained|NetLabel]]
 - [[vfs-explained|VFS]], [[net-explained|Networking]], [[bpf-explained|BPF]], [[io_uring-explained|io_uring]], [[rcu-read-copy-update-explained|RCU]]

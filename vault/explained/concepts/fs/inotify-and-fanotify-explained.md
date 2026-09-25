@@ -88,4 +88,4 @@ Originally each event came with a freshly opened file descriptor for the file. T
 - [[fsnotify-explained|fsnotify]]: the shared backbone
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|mount-namespace]]
 - [[file-descriptor-and-open-file-table-explained|Descriptors and the open file table]]
-- [[lsm-framework|LSM framework]]
+- [[lsm-framework-explained|LSM framework]]
