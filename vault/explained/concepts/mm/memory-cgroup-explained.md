@@ -99,7 +99,7 @@ A page stays charged to the group that allocated it, even if the process later m
 - Technical version: [[memory-cgroup]]
 - [[mm-explained|Memory management]]: the subsystem overview
 - [[page-reclaim-explained|page-reclaim]], [[oom-killer-explained|oom-killer]], [[swap]]: what the controller drives
-- [[psi-pressure-stall-information]]: how throttling becomes visible
+- [[psi-pressure-stall-information-explained|psi-pressure-stall-information]]: how throttling becomes visible
 - [[folio-explained|Folios]]: the unit that carries the group tag
 - [[slub-slab-allocator]], [[page-fault-handler-explained|page-fault-handler]]
 - [[cgroups|Control groups]], [[cgroup-core]]

@@ -109,4 +109,4 @@ Measured results: about 40% less kswapd CPU time, 85% fewer low-memory kills on 
 - [[page-cache-explained|Page cache]], [[swap]]: where evicted pages come from and go
 - [[oom-killer-explained|OOM killer]]: the last resort
 - [[memory-cgroup-explained|Memory cgroups]]: per-group reclaim on the same machinery
-- [[psi-pressure-stall-information]], [[block-explained|Block layer]], [[vfs|VFS]]
+- [[psi-pressure-stall-information-explained|psi-pressure-stall-information]], [[block-explained|Block layer]], [[vfs|VFS]]

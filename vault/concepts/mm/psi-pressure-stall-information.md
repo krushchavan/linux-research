@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "4.20"
 researched: 2026-04-16
 status: complete
+explained: "[[psi-pressure-stall-information-explained]]"
 sources:
   - https://kernel-internals.org/mm/psi/
   - https://www.kernel.org/doc/html/latest/accounting/psi.html
@@ -18,6 +19,8 @@ sources:
 ---
 
 # PSI — Pressure Stall Information
+
+> 📘 Plain-language version: [[psi-pressure-stall-information-explained]]
 
 ## Purpose
 
