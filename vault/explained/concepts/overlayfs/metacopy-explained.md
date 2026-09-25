@@ -79,5 +79,5 @@ Data-only lower layers (the double-colon syntax) exist mainly for metacopy: a me
 ## Related
 
 - Technical version: [[metacopy]]
-- [[overlayfs-explained|OverlayFS]], [[copy-up-explained|Copy-up]], [[layer-stack-explained|Layer stack]], [[inode-numbering-xino-explained|xino]], [[redirect-dir-and-index|Redirects and index]]
+- [[overlayfs-explained|OverlayFS]], [[copy-up-explained|Copy-up]], [[layer-stack-explained|Layer stack]], [[inode-numbering-xino-explained|xino]], [[redirect-dir-and-index-explained|Redirects and index]]
 - [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]], [[fscrypt-explained|fscrypt]]

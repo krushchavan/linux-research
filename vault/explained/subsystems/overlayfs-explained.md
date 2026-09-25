@@ -63,7 +63,7 @@ Two features close POSIX gaps:
 - **Directory renames across layers:** moving a lower directory would mean moving all its lower children, which is impossible. With redirects on, only the directory itself is copied up, and it records its original lower path in an attribute that later lookups follow. Without redirects, such a rename fails with "cross-device".
 - **Hard links:** without the index, copying up one name of a hard-linked file creates an independent upper file, and writes through one name no longer show through the others. With the **index** on, each copy-up is recorded under the work directory, keyed by the lower file's handle, so later copy-ups of other names link to the same upper file.
 
-Both need the underlying filesystem to support NFS-style file handles. See [[redirect-dir-and-index|redirects and the index]].
+Both need the underlying filesystem to support NFS-style file handles. See [[redirect-dir-and-index-explained|redirects and the index]].
 
 ### Inode numbers (xino)
 By default, inode numbers aren't stable across remounts and can collide between layers, which confuses tools that identify files by (device, inode). **xino** gives each underlying filesystem a small ID and packs it into the unused high bits of the inode number, making numbers unique and persistent. If a filesystem uses very large inode numbers, xino falls back and warns. When all layers share one filesystem, no encoding is needed. See [[inode-numbering-xino-explained|inode numbering]].
@@ -101,6 +101,6 @@ Deleting `/usr/lib/old.so` from a lower layer works differently: a whiteout appe
 ## Related
 
 - Technical version: [[overlayfs]]
-- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
+- [[layer-stack-explained|Layer stack]], [[copy-up-explained|Copy-up]], [[whiteouts-and-opaque-dirs|Whiteouts]], [[directory-merging-explained|Directory merging]], [[redirect-dir-and-index-explained|Redirects and index]], [[inode-numbering-xino-explained|xino]], [[metacopy-explained|Metacopy]]
 - [[fs-explained|Filesystem subsystem (VFS)]], [[mount-namespace-explained|Mount namespaces]], [[user-namespaces|User namespaces]], [[fuse-explained|FUSE]]
 - [[fscrypt-explained|fscrypt]], [[page-cache-explained|Page cache]], [[extended-attributes-and-acls-explained|Extended attributes]]

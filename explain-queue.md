@@ -160,7 +160,7 @@
 - [x] vault/concepts/overlayfs/inode-numbering-xino.md
 - [x] vault/concepts/overlayfs/layer-stack.md
 - [x] vault/concepts/overlayfs/metacopy.md
-- [ ] vault/concepts/overlayfs/redirect-dir-and-index.md
+- [x] vault/concepts/overlayfs/redirect-dir-and-index.md
 - [ ] vault/concepts/overlayfs/whiteouts-and-opaque-dirs.md
 - [ ] vault/subsystems/vfs.md
 - [ ] vault/subsystems/cgroups.md

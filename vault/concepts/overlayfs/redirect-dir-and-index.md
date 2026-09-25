@@ -6,6 +6,7 @@ subsystem: overlayfs
 kernel_version: "4.13"
 researched: 2026-04-15
 status: complete
+explained: "[[redirect-dir-and-index-explained]]"
 sources:
   - https://kernel-internals.org/filesystems/overlayfs/
   - https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
@@ -15,6 +16,8 @@ sources:
 ---
 
 # OverlayFS Redirect Dir and Index
+
+> 📘 Plain-language version: [[redirect-dir-and-index-explained]]
 
 ## Purpose
 
