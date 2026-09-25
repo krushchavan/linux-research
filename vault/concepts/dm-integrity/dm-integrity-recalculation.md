@@ -6,6 +6,7 @@ subsystem: dm-integrity
 kernel_version: "5.7"
 researched: 2026-04-18
 status: complete
+explained: "[[dm-integrity-recalculation-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-integrity.html
   - https://www.mail-archive.com/dm-devel@lists.linux.dev/msg04481.html
@@ -13,6 +14,8 @@ sources:
 ---
 
 # dm-integrity Recalculation
+
+> 📘 Plain-language version: [[dm-integrity-recalculation-explained]]
 
 ## Purpose
 

@@ -57,7 +57,7 @@
 - [x] vault/concepts/dm-integrity/dm-integrity-device-config.md
 - [x] vault/concepts/dm-integrity/dm-integrity-journal.md
 - [x] vault/concepts/dm-integrity/dm-integrity-on-disk-layout.md
-- [ ] vault/concepts/dm-integrity/dm-integrity-recalculation.md
+- [x] vault/concepts/dm-integrity/dm-integrity-recalculation.md
 - [ ] vault/concepts/dm-integrity/dm-integrity-tag-management.md
 - [ ] vault/concepts/dma/dma-mapping-api.md
 - [ ] vault/subsystems/ublk.md

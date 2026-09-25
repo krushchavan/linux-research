@@ -86,7 +86,7 @@ This layer hides where tags come from. See [[dm-integrity-tag-management]].
 
 ### Recalculation
 
-A background pass that builds or repairs tags for the whole volume: after formatting, after a bitmap-mode crash, or after changing the hash. See [[dm-integrity-recalculation]].
+A background pass that builds or repairs tags for the whole volume: after formatting, after a bitmap-mode crash, or after changing the hash. See [[dm-integrity-recalculation-explained|dm-integrity-recalculation]].
 
 1. The superblock records how far recalculation has got. At startup, if it isn't finished, a background worker resumes from there.
 2. The worker reads a batch, computes and writes tags, advances the marker and saves the superblock. A crash resumes from the last saved position.
@@ -126,5 +126,5 @@ With dm-crypt stacked on top in authenticated mode, dm-crypt makes the tag in st
 - [[device-mapper-explained|Device mapper]]: the framework
 - [[dm-crypt-explained|dm-crypt]]: supplies tags in authenticated mode
 - [[dm-bufio-explained|dm-bufio]]: the tag cache
-- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation]]
+- [[dm-integrity-device-config-explained|dm-integrity-device-config]], [[dm-integrity-on-disk-layout-explained|dm-integrity-on-disk-layout]], [[dm-integrity-journal-explained|dm-integrity-journal]], [[dm-integrity-bitmap-mode-explained|dm-integrity-bitmap-mode]], [[dm-integrity-tag-management]], [[dm-integrity-recalculation-explained|dm-integrity-recalculation]]
 - [[kernel-crypto-api|Kernel crypto API]], [[checksumming-and-data-integrity|btrfs checksumming]]
