@@ -6,6 +6,7 @@ subsystem: mm
 kernel_version: "2.6.7"
 researched: 2026-04-12
 status: complete
+explained: "[[numa-memory-policy-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/mm/numa_memory_policy.html
   - https://www.kernel.org/doc/Documentation/vm/numa_memory_policy.txt
@@ -19,6 +20,8 @@ sources:
 ---
 
 # NUMA Memory Policy
+
+> 📘 Plain-language version: [[numa-memory-policy-explained]]
 
 ## Purpose
 
