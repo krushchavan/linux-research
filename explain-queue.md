@@ -29,7 +29,7 @@
 - [x] vault/concepts/bpf/bpf-verifier.md
 - [x] vault/concepts/bpf/btf-and-co-re.md
 - [x] vault/concepts/bpf/libbpf-and-toolchain.md
-- [ ] vault/subsystems/io_uring.md
+- [x] vault/subsystems/io_uring.md
 - [ ] vault/concepts/io_uring/io-uring-async-poll-and-multishot.md
 - [ ] vault/concepts/io_uring/io-uring-internals.md
 - [ ] vault/concepts/io_uring/io-uring-task-work.md
@@ -247,3 +247,5 @@
 - [ ] vault/concepts/tracing/tracepoints-and-trace-event.md
 - [ ] vault/concepts/tracing/uprobes-and-usdt.md
 - [ ] vault/subsystems/smack.md
+- [ ] vault/concepts/block/bio-layer.md
+- [ ] vault/concepts/block/io-scheduler.md

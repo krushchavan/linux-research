@@ -7,6 +7,7 @@ mailing_list: io-uring@vger.kernel.org
 source_path: io_uring/
 researched: 2026-09-24
 status: complete
+explained: "[[io_uring-explained]]"
 sources:
   - https://kernel-internals.org/io-uring/
   - https://kernel-internals.org/io-uring/life-of-request/
@@ -32,6 +33,8 @@ sources:
 ---
 
 # io_uring Subsystem
+
+> 📘 Plain-language version: [[io_uring-explained]]
 
 ## Overview
 

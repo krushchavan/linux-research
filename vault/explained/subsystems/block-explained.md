@@ -107,6 +107,6 @@ The block layer calls the bio's completion callback, which wakes the writeback t
 
 - Technical version: [[block]]
 - [[blk-mq-explained|The multi-queue core]]: the scalable submission and dispatch engine
-- [[io_uring]]: the async interface that drives polling and passthrough
+- [[io_uring-explained|io_uring]]: the async interface that drives polling and passthrough
 - [[device-mapper|Device mapper]]: stacked virtual block devices
 - [[ublk]]: block devices implemented by userspace programs
