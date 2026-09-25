@@ -20,7 +20,7 @@
 - [x] vault/concepts/io_uring/io-uring-zero-copy-networking.md
 - [x] vault/subsystems/block.md
 - [x] vault/concepts/block/blk-mq.md
-- [ ] vault/subsystems/bpf.md
+- [x] vault/subsystems/bpf.md
 - [ ] vault/concepts/bpf/bpf-helpers-and-kfuncs.md
 - [ ] vault/concepts/bpf/bpf-jit-compiler.md
 - [ ] vault/concepts/bpf/bpf-maps.md

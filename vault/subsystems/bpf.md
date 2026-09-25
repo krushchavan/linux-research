@@ -7,6 +7,7 @@ mailing_list: bpf@vger.kernel.org
 source_path: kernel/bpf/
 researched: 2026-04-16
 status: complete
+explained: "[[bpf-explained]]"
 sources:
   - https://kernel-internals.org/bpf/
   - https://www.kernel.org/doc/html/latest/bpf/index.html
@@ -23,6 +24,8 @@ sources:
 ---
 
 # BPF (eBPF) Subsystem
+
+> 📘 Plain-language version: [[bpf-explained]]
 
 ## Overview
 
