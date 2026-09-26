@@ -6,6 +6,7 @@ subsystem: nvme
 kernel_version: "4.10 (nvme-fc host, nvmet-fc target, fcloop); lpfc 4.11; qla2xxx 4.14; FC-NVMe-2 disconnect/SLER support ~5.x"
 researched: 2026-09-26
 status: complete
+explained: "[[nvme-over-fibre-channel-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/include/linux/nvme-fc-driver.h
   - https://github.com/torvalds/linux/blob/master/drivers/nvme/target/fcloop.c
@@ -21,6 +22,8 @@ sources:
 ---
 
 # NVMe over Fibre Channel (FC-NVMe)
+
+> 📘 Plain-language version: [[nvme-over-fibre-channel-explained]]
 
 > Transport sibling of [[nvme-over-fabrics-rdma-and-tcp]]. Compared with the other storage fabrics in [[storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma]].
 
