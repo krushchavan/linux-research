@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.11"
 researched: 2026-09-26
 status: complete
+explained: "[[mad-and-subnet-administration-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/mad.c
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/mad_priv.h
@@ -18,6 +19,8 @@ sources:
 ---
 
 # MADs and Subnet Administration
+
+> 📘 Plain-language version: [[mad-and-subnet-administration-explained]]
 
 ## Purpose
 
