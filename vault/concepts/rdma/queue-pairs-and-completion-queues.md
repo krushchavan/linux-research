@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.11 (CQ polling API: 4.5; shared CQ pool: 5.9; RDMA DIM: 5.4)"
 researched: 2026-09-26
 status: complete
+explained: "[[queue-pairs-and-completion-queues-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/include/rdma/ib_verbs.h
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/cq.c
@@ -15,6 +16,8 @@ sources:
 ---
 
 # Queue Pairs and Completion Queues
+
+> 📘 Plain-language version: [[queue-pairs-and-completion-queues-explained]]
 
 ## Purpose
 

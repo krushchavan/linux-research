@@ -22,7 +22,7 @@
 - [x] vault/concepts/rdma/mad-and-subnet-administration.md
 - [x] vault/concepts/rdma/memory-registration-and-ib-umem.md
 - [x] vault/concepts/rdma/on-demand-paging-odp.md
-- [ ] vault/concepts/rdma/queue-pairs-and-completion-queues.md
+- [x] vault/concepts/rdma/queue-pairs-and-completion-queues.md
 - [ ] vault/concepts/rdma/rdma-cm-connection-manager.md
 - [ ] vault/concepts/rdma/rdma-netlink-restrack-and-cgroup.md
 - [ ] vault/concepts/rdma/rdma-rw-api.md
