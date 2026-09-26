@@ -288,5 +288,5 @@
 - [x] comparison: memory pinning and registration strategies (GUP pinning, io_uring registered buffers, RDMA MR, ODP, dma-buf attach modes, zcrx areas, AF_XDP UMEM)
 - [x] comparison: RDMA transports (InfiniBand vs RoCE vs iWARP vs EFA SRD vs Ultra Ethernet)
 - [x] comparison: storage fabrics (NVMe/RDMA vs NVMe/TCP vs iSER/iSCSI vs NVMe/FC vs NFS over RDMA, kernel vs SPDK targets)
-- [>] scsi -> iscsi-iser-and-lio-target
-- [ ] nvme -> nvme-over-fibre-channel
+- [x] scsi -> iscsi-iser-and-lio-target
+- [>] nvme -> nvme-over-fibre-channel
