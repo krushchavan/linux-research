@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.17 (rdma_cm, ucma 2.6.18)"
 researched: 2026-09-26
 status: complete
+explained: "[[rdma-cm-connection-manager-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/cma.c
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/cma_priv.h
@@ -19,6 +20,8 @@ sources:
 ---
 
 # RDMA Connection Manager (rdma_cm)
+
+> 📘 Plain-language version: [[rdma-cm-connection-manager-explained]]
 
 ## Purpose
 

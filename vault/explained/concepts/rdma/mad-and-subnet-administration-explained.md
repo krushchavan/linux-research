@@ -72,4 +72,4 @@ A per-port device lets user space register agents and read and write whole MADs;
 ## Related
 
 - Technical version: [[mad-and-subnet-administration]]
-- [[rdma-explained|RDMA subsystem]], [[rdma-cm-connection-manager|Connection manager]], [[ib-device-and-client-model-explained|Device and client model]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]]
+- [[rdma-explained|RDMA subsystem]], [[rdma-cm-connection-manager-explained|Connection manager]], [[ib-device-and-client-model-explained|Device and client model]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]]
