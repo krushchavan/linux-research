@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.19 (iw_cm, iw_cxgb3); 5.3 (siw)"
 researched: 2026-09-26
 status: complete
+explained: "[[iwarp-transport-explained]]"
 sources:
   - https://datatracker.ietf.org/doc/html/rfc5040
   - https://datatracker.ietf.org/doc/html/rfc7306
@@ -20,6 +21,8 @@ sources:
 ---
 
 # iWARP Transport
+
+> 📘 Plain-language version: [[iwarp-transport-explained]]
 
 ## Purpose
 
