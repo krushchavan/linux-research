@@ -275,7 +275,7 @@
 - [x] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
 - [x] net -> devmem-tcp-tx
 - [x] net -> header-split-and-flow-steering-for-zero-copy-rx
-- [ ] net -> netdev-queue-management-api
+- [x] net -> netdev-queue-management-api
 - [ ] net -> netdev-netlink-family
 # Comparisons
 - [ ] io_uring vs RDMA: completion models, memory registration, and zero-copy compared
