@@ -285,6 +285,6 @@
 
 # --- Cross-framework comparisons (requested 2026-09-26) ---
 - [x] comparison: zero-copy buffer ownership and return protocols (AF_XDP fill ring, zcrx refill ring, devmem tokens, provided buffer rings, RDMA SRQ) + zero-copy send paths
-- [>] comparison: memory pinning and registration strategies (GUP pinning, io_uring registered buffers, RDMA MR, ODP, dma-buf attach modes, zcrx areas, AF_XDP UMEM)
-- [ ] comparison: RDMA transports (InfiniBand vs RoCE vs iWARP vs EFA SRD vs Ultra Ethernet)
+- [x] comparison: memory pinning and registration strategies (GUP pinning, io_uring registered buffers, RDMA MR, ODP, dma-buf attach modes, zcrx areas, AF_XDP UMEM)
+- [>] comparison: RDMA transports (InfiniBand vs RoCE vs iWARP vs EFA SRD vs Ultra Ethernet)
 - [ ] comparison: storage fabrics (NVMe/RDMA vs NVMe/TCP vs iSER/iSCSI vs NVMe/FC vs NFS over RDMA, kernel vs SPDK targets)
