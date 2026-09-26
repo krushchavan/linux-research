@@ -283,3 +283,7 @@
 - [x] vault/subsystems/smack.md
 - [x] vault/concepts/block/bio-layer.md
 - [x] vault/concepts/block/io-scheduler.md
+- [x] vault/concepts/comparisons/memory-pinning-and-registration-strategies.md
+- [ ] vault/concepts/comparisons/rdma-transports-infiniband-roce-iwarp-efa-srd-ultra-ethernet.md
+- [ ] vault/concepts/comparisons/storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma.md
+- [ ] vault/concepts/comparisons/zero-copy-buffer-ownership-and-return-protocols.md

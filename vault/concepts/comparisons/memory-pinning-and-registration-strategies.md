@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "RDMA MR (2.6); FOLL_PIN 5.6; FOLL_LONGTERM migration 5.7+; io_uring registered buffers 5.1; AF_XDP UMEM 4.18; RDMA ODP 4.x; dma-buf RDMA MRs 5.12; devmem 6.12; zcrx 6.15"
 researched: 2026-09-26
 status: complete
+explained: "[[memory-pinning-and-registration-strategies-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/core-api/pin_user_pages.html
   - https://lwn.net/Articles/886139/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Memory Pinning and Registration Strategies
+
+> 📘 Plain-language version: [[memory-pinning-and-registration-strategies-explained]]
 
 > Comparison note under `comparisons/`. Companion to [[zero-copy-buffer-ownership-and-return-protocols]] (which covers *who owns a buffer when*). This note covers *how memory becomes usable by a device in the first place*. Deep dives: [[get-user-pages-and-pinning]], [[registered-resources]], [[memory-registration-and-ib-umem]], [[on-demand-paging-odp]], [[dma-buf-sharing]], [[dma-mapping-api]].
 
