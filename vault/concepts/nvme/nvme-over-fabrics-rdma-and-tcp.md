@@ -6,6 +6,7 @@ subsystem: nvme
 kernel_version: "4.8 (NVMe-oF RDMA host/target); 5.0 (NVMe/TCP); 6.7 (NVMe/TCP TLS)"
 researched: 2026-09-26
 status: complete
+explained: "[[nvme-over-fabrics-rdma-and-tcp-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/nvme/host/rdma.c
   - https://github.com/torvalds/linux/blob/master/drivers/nvme/host/tcp.c
@@ -21,6 +22,8 @@ sources:
 ---
 
 # NVMe over Fabrics: RDMA and TCP Transports
+
+> 📘 Plain-language version: [[nvme-over-fabrics-rdma-and-tcp-explained]]
 
 ## Purpose
 

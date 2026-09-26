@@ -84,5 +84,5 @@ A provider can only go away after every mapping is gone: page references drop to
 ## Related
 
 - Technical version: [[p2pdma-peer-to-peer-dma]]
-- [[dma-mapping-api-explained|DMA mapping API]], [[dma-buf-sharing-explained|dma-buf sharing]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[nvme-over-fabrics-rdma-and-tcp|NVMe over Fabrics]], [[rdma-explained|RDMA]]
+- [[dma-mapping-api-explained|DMA mapping API]], [[dma-buf-sharing-explained|dma-buf sharing]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[nvme-over-fabrics-rdma-and-tcp-explained|NVMe over Fabrics]], [[rdma-explained|RDMA]]
 - [[get-user-pages-and-pinning-explained|Page pinning]], [[bio-layer-explained|bio layer]], [[blk-mq-explained|blk-mq]], [[devmem-tcp-explained|devmem TCP]]
