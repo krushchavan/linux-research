@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "4.11 (rdma cgroup); 4.16–4.17 (nldev, restrack); 5.3 (counters)"
 researched: 2026-09-26
 status: complete
+explained: "[[rdma-netlink-restrack-and-cgroup-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/nldev.c
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/restrack.c
@@ -19,6 +20,8 @@ sources:
 ---
 
 # RDMA Netlink, Resource Tracking, Counters and the rdma cgroup
+
+> 📘 Plain-language version: [[rdma-netlink-restrack-and-cgroup-explained]]
 
 ## Purpose
 
