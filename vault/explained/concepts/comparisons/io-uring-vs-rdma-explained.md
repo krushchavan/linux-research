@@ -31,7 +31,7 @@ An io_uring entry can describe *any* supported operation (read, write, send, rec
 - **Skipping completions:** RDMA can leave sends unsignalled (a later signalled one implies the earlier ones finished); io_uring has a similar "skip on success" flag.
 - **Order:** RDMA completions on one reliable connection are strictly ordered; io_uring's aren't unless requests are linked or drained.
 - **Zero-copy sends:** io_uring gives a result, then a separate notification when the pages are free. RDMA gives one completion meaning "the remote side acknowledged", after which the buffer is free, and for a remote write, the data is already in place.
-- **Waiting:** io_uring waits in its system call, via an eventfd, or by spinning on device queues. RDMA busy-polls the ring (pure memory reads) or arms it and sleeps on a file descriptor, the one point where the kernel re-enters the RDMA data path. Both support spin-then-sleep ([[polling-vs-interrupts-io-uring-napi-rdma-cq|polling vs interrupts]]).
+- **Waiting:** io_uring waits in its system call, via an eventfd, or by spinning on device queues. RDMA busy-polls the ring (pure memory reads) or arms it and sleeps on a file descriptor, the one point where the kernel re-enters the RDMA data path. Both support spin-then-sleep ([[polling-vs-interrupts-io-uring-napi-rdma-cq-explained|polling vs interrupts]]).
 - **Overflow:** io_uring stashes completions internally if the ring is full, so none are lost. An RDMA completion-queue overflow is a fatal error, so the application must size queues for the worst case.
 
 ### Step 3: Registering memory

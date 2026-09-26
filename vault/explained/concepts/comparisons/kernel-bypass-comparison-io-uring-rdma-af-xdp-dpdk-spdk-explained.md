@@ -67,7 +67,7 @@ This is the key step: pick by what you're willing to lose.
 
 - **What it gives you:** the further right you go, the fewer cycles per operation, up to no system calls, interrupts, copies or stack processing at all. RDMA is off the line: it keeps kernel ownership but moves the transport into hardware.
 - **What it costs / requires:** the more you bypass, the less comes free. io_uring keeps everything; AF_XDP drops the network stack; DPDK and SPDK drop the driver and device sharing. Kernel-mediated approaches enforce policy per operation (io_uring) or at bind time (AF_XDP, RDMA setup). VFIO-based bypass trusts the application with the whole device, fenced only by the IOMMU.
-- **Where it bites:** peak numbers everywhere come from polling, and SPDK's own research shows the waste. io_uring, AF_XDP and RDMA can switch between polling and interrupts; DPDK and SPDK are built around polling ([[polling-vs-interrupts-io-uring-napi-rdma-cq|polling vs interrupts]]). Meanwhile the kernel keeps absorbing bypass wins: passthrough approaches SPDK, AF_XDP gives DPDK a kernel-friendly backend, zcrx and devmem bring zero-copy receive to kernel TCP, and queue leasing brings them into containers. The remaining gaps are protocol processing cost (TCP versus none) and one-sided remote access (RDMA only).
+- **Where it bites:** peak numbers everywhere come from polling, and SPDK's own research shows the waste. io_uring, AF_XDP and RDMA can switch between polling and interrupts; DPDK and SPDK are built around polling ([[polling-vs-interrupts-io-uring-napi-rdma-cq-explained|polling vs interrupts]]). Meanwhile the kernel keeps absorbing bypass wins: passthrough approaches SPDK, AF_XDP gives DPDK a kernel-friendly backend, zcrx and devmem bring zero-copy receive to kernel TCP, and queue leasing brings them into containers. The remaining gaps are protocol processing cost (TCP versus none) and one-sided remote access (RDMA only).
 
 ## How it got here
 
@@ -81,6 +81,6 @@ This is the key step: pick by what you're willing to lose.
 ## Related
 
 - Technical version: [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk]]
-- [[io-uring-vs-rdma-explained|io_uring vs RDMA]], [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained|Devmem vs GPUDirect vs zcrx]], [[polling-vs-interrupts-io-uring-napi-rdma-cq|Polling vs interrupts]]
+- [[io-uring-vs-rdma-explained|io_uring vs RDMA]], [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained|Devmem vs GPUDirect vs zcrx]], [[polling-vs-interrupts-io-uring-napi-rdma-cq-explained|Polling vs interrupts]]
 - [[af-xdp-explained|AF_XDP]], [[rdma-explained|RDMA]], [[zero-copy-rx-zcrx-explained|zcrx]], [[uring-cmd-passthrough-explained|io_uring passthrough]], [[blk-mq-explained|blk-mq]]
 - [[p2pdma-peer-to-peer-dma-explained|P2PDMA]], [[get-user-pages-and-pinning-explained|Page pinning]], [[huge-pages-hugetlbfs-explained|Huge pages]], [[netdev-queue-management-api-explained|Queue management API]]

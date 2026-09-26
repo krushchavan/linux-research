@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "NAPI 2.6; busy-poll 3.11; SQPOLL/IOPOLL 5.1; preferred busy-poll 5.11; io_uring NAPI 6.9; hybrid IOPOLL + IRQ suspension 6.13; threaded busy-poll 2025"
 researched: 2026-09-26
 status: complete
+explained: "[[polling-vs-interrupts-io-uring-napi-rdma-cq-explained]]"
 sources:
   - https://lwn.net/Articles/997491/
   - https://lwn.net/Articles/1034942/
@@ -23,6 +24,8 @@ sources:
 ---
 
 # Polling vs Interrupts: io_uring SQPOLL/IOPOLL, NAPI Busy-Poll and RDMA CQ Polling
+
+> 📘 Plain-language version: [[polling-vs-interrupts-io-uring-napi-rdma-cq-explained]]
 
 > Comparison note under `comparisons/`. Complements [[io-uring-vs-rdma]] and [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk]].
 

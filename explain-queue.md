@@ -46,7 +46,7 @@
 - [x] vault/concepts/comparisons/devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx.md
 - [x] vault/concepts/comparisons/io-uring-vs-rdma.md
 - [x] vault/concepts/comparisons/kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk.md
-- [ ] vault/concepts/comparisons/polling-vs-interrupts-io-uring-napi-rdma-cq.md
+- [x] vault/concepts/comparisons/polling-vs-interrupts-io-uring-napi-rdma-cq.md
 - [x] vault/concepts/net/af-xdp.md
 - [x] vault/concepts/fs/iomap.md
 - [x] vault/concepts/block/zoned-block-devices.md
