@@ -71,5 +71,5 @@ Every user object creation **charges** the task's cgroup and each of its ancesto
 ## Related
 
 - Technical version: [[rdma-netlink-restrack-and-cgroup]]
-- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[ib-device-and-client-model-explained|Device and client model]], [[soft-rdma-rxe-and-siw|rxe and siw]]
+- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[ib-device-and-client-model-explained|Device and client model]], [[soft-rdma-rxe-and-siw-explained|rxe and siw]]
 - [[cgroups-explained|cgroups]]

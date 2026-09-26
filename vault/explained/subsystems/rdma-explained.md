@@ -70,7 +70,7 @@ Storage targets (NVMe-oF, iSER, SRP, the NFS server) all do the same thing: take
 RDMA resources are scarce hardware objects that normal tools can't see. **Resource tracking** (4.17) records every domain, queue, memory region and connection with its owning task; a netlink family exposes them, plus statistics and link creation, to the `rdma` tool from iproute2. Per-queue and per-port hardware counters can bind automatically by type or process. The **rdma cgroup** controller (4.11, Parav Pandit) limits user contexts and verbs objects per device per cgroup. See [[rdma-netlink-restrack-and-cgroup-explained|netlink, restrack and cgroup]].
 
 ### Software RDMA
-**rxe** (Soft-RoCE, 4.8) and **siw** (soft-iWARP, 5.3) implement a device in software over any Ethernet card: rxe wraps InfiniBand transport in UDP port 4791 with software checksums; siw runs iWARP's layers over a kernel TCP socket. The data path still uses shared memory, but ringing the doorbell becomes a system call. They're for development, CI and interoperability, not speed. See [[soft-rdma-rxe-and-siw|rxe and siw]].
+**rxe** (Soft-RoCE, 4.8) and **siw** (soft-iWARP, 5.3) implement a device in software over any Ethernet card: rxe wraps InfiniBand transport in UDP port 4791 with software checksums; siw runs iWARP's layers over a kernel TCP socket. The data path still uses shared memory, but ringing the doorbell becomes a system call. They're for development, CI and interoperability, not speed. See [[soft-rdma-rxe-and-siw-explained|rxe and siw]].
 
 ## A request's journey
 
@@ -105,5 +105,5 @@ The kernel handled addressing, pinning, the handshake and state changes, and non
 ## Related
 
 - Technical version: [[rdma]]
-- [[ib-device-and-client-model-explained|Device and client model]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[on-demand-paging-odp-explained|On-demand paging]], [[rdma-cm-connection-manager-explained|Connection manager]], [[mad-and-subnet-administration-explained|Management datagrams]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[rdma-rw-api-explained|rw API]], [[rdma-netlink-restrack-and-cgroup-explained|Netlink, restrack and cgroup]], [[soft-rdma-rxe-and-siw|rxe and siw]]
+- [[ib-device-and-client-model-explained|Device and client model]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[on-demand-paging-odp-explained|On-demand paging]], [[rdma-cm-connection-manager-explained|Connection manager]], [[mad-and-subnet-administration-explained|Management datagrams]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[rdma-rw-api-explained|rw API]], [[rdma-netlink-restrack-and-cgroup-explained|Netlink, restrack and cgroup]], [[soft-rdma-rxe-and-siw-explained|rxe and siw]]
 - [[io_uring-explained|io_uring]], [[get-user-pages-and-pinning-explained|Page pinning]], [[devmem-tcp-explained|devmem TCP]], [[af-xdp-explained|AF_XDP]]

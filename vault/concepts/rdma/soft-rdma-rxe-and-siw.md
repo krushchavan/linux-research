@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "4.8 (rxe); 5.3 (siw)"
 researched: 2026-09-26
 status: complete
+explained: "[[soft-rdma-rxe-and-siw-explained]]"
 sources:
   - https://github.com/torvalds/linux/tree/master/drivers/infiniband/sw/rxe
   - https://github.com/torvalds/linux/tree/master/drivers/infiniband/sw/siw
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Software RDMA: rxe (Soft-RoCE) and siw (soft-iWARP)
+
+> 📘 Plain-language version: [[soft-rdma-rxe-and-siw-explained]]
 
 ## Purpose
 

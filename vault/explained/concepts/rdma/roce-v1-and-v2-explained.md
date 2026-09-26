@@ -77,4 +77,4 @@ Hardware RoCE v2 at 100–400 Gb/s achieves roughly 1–2 µs one-way latency fo
 ## Related
 
 - Technical version: [[roce-v1-and-v2]]
-- [[rdma-explained|RDMA subsystem]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[roce-congestion-control-pfc-ecn-dcqcn-explained|RoCE congestion control]], [[iwarp-transport-explained|iWARP]], [[soft-rdma-rxe-and-siw|rxe and siw]], [[rdma-cm-connection-manager-explained|Connection manager]]
+- [[rdma-explained|RDMA subsystem]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[roce-congestion-control-pfc-ecn-dcqcn-explained|RoCE congestion control]], [[iwarp-transport-explained|iWARP]], [[soft-rdma-rxe-and-siw-explained|rxe and siw]], [[rdma-cm-connection-manager-explained|Connection manager]]

@@ -29,7 +29,7 @@
 - [x] vault/concepts/rdma/roce-congestion-control-pfc-ecn-dcqcn.md
 - [x] vault/concepts/rdma/roce-gid-table-and-netdev-binding.md
 - [x] vault/concepts/rdma/roce-v1-and-v2.md
-- [ ] vault/concepts/rdma/soft-rdma-rxe-and-siw.md
+- [x] vault/concepts/rdma/soft-rdma-rxe-and-siw.md
 - [ ] vault/concepts/rdma/verbs-api-and-uverbs.md
 - [ ] vault/concepts/net/netmem-and-net-iov-abstraction.md
 - [ ] vault/concepts/net/devmem-tcp-rx-dmabuf-binding-and-token-recycling.md
