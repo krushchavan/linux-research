@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "iSCSI initiator 2.6.13; iSER initiator 2.6.19; LIO target 2.6.38 (isert 3.10); NFS/RDMA 2.6.24; NVMe-oF RDMA 4.8; NVMe/FC 4.10; NVMe/TCP 5.0; NVMe/TCP TLS 6.7"
 researched: 2026-09-26
 status: complete
+explained: "[[storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma-explained]]"
 sources:
   - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/configuring-nvme-over-fabrics-using-nvme-fc_managing-storage-devices
   - https://access.redhat.com/solutions/3522911
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Storage Fabrics Compared: NVMe/RDMA vs NVMe/TCP vs iSER/iSCSI vs NVMe/FC vs NFS over RDMA
+
+> 📘 Plain-language version: [[storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma-explained]]
 
 > Comparison note under `comparisons/`. Deep dives: [[nvme-over-fabrics-rdma-and-tcp]], [[nfs-over-rdma-svcrdma-xprtrdma]], [[rdma-rw-api]], [[blk-mq]]. Related comparisons: [[rdma-transports-infiniband-roce-iwarp-efa-srd-ultra-ethernet]], [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk]], [[polling-vs-interrupts-io-uring-napi-rdma-cq]].
 
