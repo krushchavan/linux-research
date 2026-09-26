@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.16 (devmem TX); 2025–26 (virtual-device / netkit TX via leased queues, unprivileged bind-tx)"
 researched: 2026-09-26
 status: complete
+explained: "[[devmem-tcp-tx-explained]]"
 sources:
   - https://docs.kernel.org/networking/devmem.html
   - https://github.com/torvalds/linux/blob/master/net/core/netdev-genl.c
@@ -19,6 +20,8 @@ sources:
 ---
 
 # Devmem TCP TX: Sending from Device Memory
+
+> 📘 Plain-language version: [[devmem-tcp-tx-explained]]
 
 ## Purpose
 

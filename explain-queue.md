@@ -33,7 +33,7 @@
 - [x] vault/concepts/rdma/verbs-api-and-uverbs.md
 - [x] vault/concepts/net/netmem-and-net-iov-abstraction.md
 - [x] vault/concepts/net/devmem-tcp-rx-dmabuf-binding-and-token-recycling.md
-- [ ] vault/concepts/net/devmem-tcp-tx.md
+- [x] vault/concepts/net/devmem-tcp-tx.md
 - [ ] vault/concepts/net/header-split-and-flow-steering-for-zero-copy-rx.md
 - [ ] vault/concepts/net/netdev-queue-management-api.md
 - [ ] vault/concepts/net/netdev-netlink-family.md
