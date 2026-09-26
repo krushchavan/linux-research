@@ -80,5 +80,5 @@ Unbinding removes the binding from the global table and restarts each queue with
 ## Related
 
 - Technical version: [[devmem-tcp-rx-dmabuf-binding-and-token-recycling]]
-- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-tx-explained|devmem TX]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[netdev-queue-management-api|Queue management API]], [[header-split-and-flow-steering-for-zero-copy-rx|Header split and steering]], [[netdev-netlink-family|netdev netlink]], [[zero-copy-rx-zcrx|io_uring zcrx]]
+- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-tx-explained|devmem TX]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[netdev-queue-management-api|Queue management API]], [[header-split-and-flow-steering-for-zero-copy-rx-explained|Header split and steering]], [[netdev-netlink-family|netdev netlink]], [[zero-copy-rx-zcrx|io_uring zcrx]]
 - [[dma-buf-sharing|dma-buf sharing]], [[page-pool-explained|Page pool]], [[tcp-ip-stack-explained|TCP/IP stack]], [[sk-buff-explained|sk_buff]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]]

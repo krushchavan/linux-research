@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.7 (tcp-data-split netlink); 6.14 (hds-thresh, hds_config); 6.12+ (memory-provider guards)"
 researched: 2026-09-26
 status: complete
+explained: "[[header-split-and-flow-steering-for-zero-copy-rx-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/net/ethtool/rings.c
   - https://github.com/torvalds/linux/blob/master/net/ethtool/common.c
@@ -21,6 +22,8 @@ sources:
 ---
 
 # Header Split and Flow Steering for Zero-Copy RX
+
+> 📘 Plain-language version: [[header-split-and-flow-steering-for-zero-copy-rx-explained]]
 
 ## Purpose
 

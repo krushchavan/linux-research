@@ -34,7 +34,7 @@
 - [x] vault/concepts/net/netmem-and-net-iov-abstraction.md
 - [x] vault/concepts/net/devmem-tcp-rx-dmabuf-binding-and-token-recycling.md
 - [x] vault/concepts/net/devmem-tcp-tx.md
-- [ ] vault/concepts/net/header-split-and-flow-steering-for-zero-copy-rx.md
+- [x] vault/concepts/net/header-split-and-flow-steering-for-zero-copy-rx.md
 - [ ] vault/concepts/net/netdev-queue-management-api.md
 - [ ] vault/concepts/net/netdev-netlink-family.md
 - [ ] vault/concepts/net/smc-r-shared-memory-communications.md
