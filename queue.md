@@ -248,3 +248,26 @@
 - [x] btrfs -> cow-b-tree-engine
 - [x] fs -> inode
 - [x] fs -> superblock
+
+# --- RDMA and kernel-bypass I/O vs io_uring (requested 2026-09-26) ---
+# Foundations: the RDMA subsystem and its core mechanisms
+- [ ] subsystem: rdma
+- [ ] rdma -> verbs-api-and-uverbs
+- [ ] rdma -> memory-registration-and-ib-umem
+- [ ] rdma -> on-demand-paging-odp
+- [ ] rdma -> queue-pairs-and-completion-queues
+- [ ] rdma -> rdma-cm-connection-manager
+- [ ] rdma -> roce-and-iwarp-transports
+- [ ] rdma -> soft-rdma-rxe-and-siw
+# RDMA consumers inside the kernel
+- [ ] nvme -> nvme-over-fabrics-rdma-and-tcp
+- [ ] nfs -> nfs-over-rdma-svcrdma-xprtrdma
+- [ ] net -> smc-r-shared-memory-communications
+# Zero-copy / peer-to-peer building blocks shared with io_uring
+- [ ] mm -> p2pdma-peer-to-peer-dma
+- [ ] dma -> dma-buf-sharing
+- [ ] io_uring -> zero-copy-rx-zcrx
+# Comparisons
+- [ ] io_uring vs RDMA: completion models, memory registration, and zero-copy compared
+- [ ] kernel-bypass comparison: io_uring vs RDMA vs AF_XDP vs DPDK vs SPDK
+- [ ] polling vs interrupts: io_uring SQPOLL/IOPOLL, NAPI busy-poll, and RDMA CQ polling
