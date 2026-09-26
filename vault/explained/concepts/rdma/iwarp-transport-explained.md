@@ -81,5 +81,5 @@ Chelsio T4–T7 cards (the flagship, with full TCP offload), Intel E810/X722 (th
 ## Related
 
 - Technical version: [[iwarp-transport]]
-- [[rdma-explained|RDMA subsystem]], [[soft-rdma-rxe-and-siw|rxe and siw]], [[rdma-cm-connection-manager-explained|Connection manager]], [[rdma-rw-api-explained|rw API]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[roce-v1-and-v2|RoCE v1 and v2]], [[roce-congestion-control-pfc-ecn-dcqcn|RoCE congestion control]]
+- [[rdma-explained|RDMA subsystem]], [[soft-rdma-rxe-and-siw|rxe and siw]], [[rdma-cm-connection-manager-explained|Connection manager]], [[rdma-rw-api-explained|rw API]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[roce-v1-and-v2|RoCE v1 and v2]], [[roce-congestion-control-pfc-ecn-dcqcn-explained|RoCE congestion control]]
 - [[tcp-ip-stack-explained|TCP/IP stack]]

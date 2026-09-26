@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "3.x (dcbnl PFC); 4.x (mlx5 DCQCN params, CNP counters); 7.x/2026 (pause-storm events)"
 researched: 2026-09-26
 status: complete
+explained: "[[roce-congestion-control-pfc-ecn-dcqcn-explained]]"
 sources:
   - https://conferences.sigcomm.org/sigcomm/2015/pdf/papers/p523.pdf
   - https://www.microsoft.com/en-us/research/publication/congestion-control-for-large-scale-rdma-deployments/
@@ -24,6 +25,8 @@ sources:
 ---
 
 # RoCE Congestion Control: PFC, ECN and DCQCN
+
+> 📘 Plain-language version: [[roce-congestion-control-pfc-ecn-dcqcn-explained]]
 
 ## Purpose
 
