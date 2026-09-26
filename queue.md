@@ -287,4 +287,6 @@
 - [x] comparison: zero-copy buffer ownership and return protocols (AF_XDP fill ring, zcrx refill ring, devmem tokens, provided buffer rings, RDMA SRQ) + zero-copy send paths
 - [x] comparison: memory pinning and registration strategies (GUP pinning, io_uring registered buffers, RDMA MR, ODP, dma-buf attach modes, zcrx areas, AF_XDP UMEM)
 - [x] comparison: RDMA transports (InfiniBand vs RoCE vs iWARP vs EFA SRD vs Ultra Ethernet)
-- [>] comparison: storage fabrics (NVMe/RDMA vs NVMe/TCP vs iSER/iSCSI vs NVMe/FC vs NFS over RDMA, kernel vs SPDK targets)
+- [x] comparison: storage fabrics (NVMe/RDMA vs NVMe/TCP vs iSER/iSCSI vs NVMe/FC vs NFS over RDMA, kernel vs SPDK targets)
+- [ ] scsi -> iscsi-iser-and-lio-target
+- [ ] nvme -> nvme-over-fibre-channel
