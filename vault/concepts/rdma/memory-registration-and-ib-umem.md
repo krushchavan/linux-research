@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.11 (FOLL_LONGTERM pinning: 5.2+; dma-buf umem: 5.12)"
 researched: 2026-09-26
 status: complete
+explained: "[[memory-registration-and-ib-umem-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/umem.c
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/umem_dmabuf.c
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Memory Registration and ib_umem
+
+> 📘 Plain-language version: [[memory-registration-and-ib-umem-explained]]
 
 ## Purpose
 

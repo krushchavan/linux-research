@@ -20,7 +20,7 @@
 - [x] vault/concepts/rdma/ib-device-and-client-model.md
 - [x] vault/concepts/rdma/iwarp-transport.md
 - [x] vault/concepts/rdma/mad-and-subnet-administration.md
-- [ ] vault/concepts/rdma/memory-registration-and-ib-umem.md
+- [x] vault/concepts/rdma/memory-registration-and-ib-umem.md
 - [ ] vault/concepts/rdma/on-demand-paging-odp.md
 - [ ] vault/concepts/rdma/queue-pairs-and-completion-queues.md
 - [ ] vault/concepts/rdma/rdma-cm-connection-manager.md
