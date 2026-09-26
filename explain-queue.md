@@ -16,6 +16,37 @@
 # ════════════════════════════════════════════════════════════════════
 
 ## Queue
+- [x] vault/subsystems/rdma.md
+- [ ] vault/concepts/rdma/ib-device-and-client-model.md
+- [ ] vault/concepts/rdma/iwarp-transport.md
+- [ ] vault/concepts/rdma/mad-and-subnet-administration.md
+- [ ] vault/concepts/rdma/memory-registration-and-ib-umem.md
+- [ ] vault/concepts/rdma/on-demand-paging-odp.md
+- [ ] vault/concepts/rdma/queue-pairs-and-completion-queues.md
+- [ ] vault/concepts/rdma/rdma-cm-connection-manager.md
+- [ ] vault/concepts/rdma/rdma-netlink-restrack-and-cgroup.md
+- [ ] vault/concepts/rdma/rdma-rw-api.md
+- [ ] vault/concepts/rdma/roce-congestion-control-pfc-ecn-dcqcn.md
+- [ ] vault/concepts/rdma/roce-gid-table-and-netdev-binding.md
+- [ ] vault/concepts/rdma/roce-v1-and-v2.md
+- [ ] vault/concepts/rdma/soft-rdma-rxe-and-siw.md
+- [ ] vault/concepts/rdma/verbs-api-and-uverbs.md
+- [ ] vault/concepts/net/netmem-and-net-iov-abstraction.md
+- [ ] vault/concepts/net/devmem-tcp-rx-dmabuf-binding-and-token-recycling.md
+- [ ] vault/concepts/net/devmem-tcp-tx.md
+- [ ] vault/concepts/net/header-split-and-flow-steering-for-zero-copy-rx.md
+- [ ] vault/concepts/net/netdev-queue-management-api.md
+- [ ] vault/concepts/net/netdev-netlink-family.md
+- [ ] vault/concepts/net/smc-r-shared-memory-communications.md
+- [ ] vault/concepts/dma/dma-buf-sharing.md
+- [ ] vault/concepts/dma/p2pdma-peer-to-peer-dma.md
+- [ ] vault/concepts/io_uring/zero-copy-rx-zcrx.md
+- [ ] vault/concepts/nfs/nfs-over-rdma-svcrdma-xprtrdma.md
+- [ ] vault/concepts/nvme/nvme-over-fabrics-rdma-and-tcp.md
+- [ ] vault/concepts/comparisons/devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx.md
+- [ ] vault/concepts/comparisons/io-uring-vs-rdma.md
+- [ ] vault/concepts/comparisons/kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk.md
+- [ ] vault/concepts/comparisons/polling-vs-interrupts-io-uring-napi-rdma-cq.md
 - [x] vault/concepts/net/af-xdp.md
 - [x] vault/concepts/fs/iomap.md
 - [x] vault/concepts/block/zoned-block-devices.md

@@ -7,6 +7,7 @@ mailing_list: linux-rdma@vger.kernel.org
 source_path: drivers/infiniband/, include/rdma/, include/uapi/rdma/
 researched: 2026-09-26
 status: complete
+explained: "[[rdma-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/infiniband/index.html
   - https://www.kernel.org/doc/html/latest/infiniband/user_verbs.html
@@ -25,6 +26,8 @@ sources:
 ---
 
 # RDMA Subsystem
+
+> 📘 Plain-language version: [[rdma-explained]]
 
 ## Overview
 
