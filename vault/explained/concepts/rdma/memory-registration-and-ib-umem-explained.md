@@ -84,5 +84,5 @@ Kernel consumers (storage and file protocols) already hold DMA-able pages, so th
 ## Related
 
 - Technical version: [[memory-registration-and-ib-umem]]
-- [[rdma-explained|RDMA subsystem]], [[on-demand-paging-odp|On-demand paging]], [[dma-buf-sharing|dma-buf sharing]], [[queue-pairs-and-completion-queues|Queue pairs and CQs]], [[rdma-rw-api|rw API]]
+- [[rdma-explained|RDMA subsystem]], [[on-demand-paging-odp-explained|On-demand paging]], [[dma-buf-sharing|dma-buf sharing]], [[queue-pairs-and-completion-queues|Queue pairs and CQs]], [[rdma-rw-api|rw API]]
 - [[get-user-pages-and-pinning-explained|Page pinning]], [[dma-mapping-api|DMA mapping]], [[registered-resources-explained|io_uring registered resources]]

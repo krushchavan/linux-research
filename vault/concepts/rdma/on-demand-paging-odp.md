@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "3.19 (mlx5 explicit ODP); 4.x implicit ODP; 5.5 mmu_interval_notifier; 6.2+ rxe ODP"
 researched: 2026-09-26
 status: complete
+explained: "[[on-demand-paging-odp-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/umem_odp.c
   - https://github.com/torvalds/linux/blob/master/include/rdma/ib_umem_odp.h
@@ -20,6 +21,8 @@ sources:
 ---
 
 # On-Demand Paging (ODP)
+
+> 📘 Plain-language version: [[on-demand-paging-odp-explained]]
 
 ## Purpose
 
