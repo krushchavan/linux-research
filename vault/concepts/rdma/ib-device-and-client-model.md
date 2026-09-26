@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.11 (xarray/two-stage registration rewrite: 5.1)"
 researched: 2026-09-26
 status: complete
+explained: "[[ib-device-and-client-model-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/device.c
   - https://github.com/torvalds/linux/blob/master/include/rdma/ib_verbs.h
@@ -14,6 +15,8 @@ sources:
 ---
 
 # ib_device and the Client Model
+
+> 📘 Plain-language version: [[ib-device-and-client-model-explained]]
 
 ## Purpose
 
