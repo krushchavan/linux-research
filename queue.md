@@ -279,6 +279,6 @@
 - [x] net -> netdev-netlink-family
 # Comparisons
 - [x] io_uring vs RDMA: completion models, memory registration, and zero-copy compared
-- [ ] devmem TCP vs RDMA GPUDirect vs io_uring zcrx: moving data straight to accelerator memory
+- [x] devmem TCP vs RDMA GPUDirect vs io_uring zcrx: moving data straight to accelerator memory
 - [ ] kernel-bypass comparison: io_uring vs RDMA vs AF_XDP vs DPDK vs SPDK
 - [ ] polling vs interrupts: io_uring SQPOLL/IOPOLL, NAPI busy-poll, and RDMA CQ polling
