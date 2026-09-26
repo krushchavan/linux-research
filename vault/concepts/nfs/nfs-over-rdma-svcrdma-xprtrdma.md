@@ -6,6 +6,7 @@ subsystem: nfs
 kernel_version: "2.6.24 (client, xprtrdma); 2.6.25 (server, svcrdma)"
 researched: 2026-09-26
 status: complete
+explained: "[[nfs-over-rdma-svcrdma-xprtrdma-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/admin-guide/nfs/nfs-rdma.html
   - https://www.rfc-editor.org/rfc/rfc8166.html
@@ -19,6 +20,8 @@ sources:
 ---
 
 # NFS over RDMA (xprtrdma and svcrdma)
+
+> 📘 Plain-language version: [[nfs-over-rdma-svcrdma-xprtrdma-explained]]
 
 ## Purpose
 
