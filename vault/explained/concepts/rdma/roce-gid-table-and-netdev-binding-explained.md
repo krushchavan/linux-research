@@ -84,5 +84,5 @@ Every change raises a "GID changed" event on the port, so users can re-resolve.
 ## Related
 
 - Technical version: [[roce-gid-table-and-netdev-binding]]
-- [[roce-v1-and-v2|RoCE v1 and v2]], [[rdma-cm-connection-manager-explained|Connection manager]], [[ib-device-and-client-model-explained|Device and client model]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[rdma-explained|RDMA subsystem]]
+- [[roce-v1-and-v2-explained|RoCE v1 and v2]], [[rdma-cm-connection-manager-explained|Connection manager]], [[ib-device-and-client-model-explained|Device and client model]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[rdma-explained|RDMA subsystem]]
 - [[network-device-and-napi-explained|Network devices]], [[network-namespaces-explained|Network namespaces]]

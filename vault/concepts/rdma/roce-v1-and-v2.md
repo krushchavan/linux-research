@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.37 (RoCE v1 / IBoE in mlx4); 4.5 (RoCE v2)"
 researched: 2026-09-26
 status: complete
+explained: "[[roce-v1-and-v2-explained]]"
 sources:
   - https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet
   - https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_infiniband_and_rdma_networks/configuring-roce_configuring-infiniband-and-rdma-networks
@@ -18,6 +19,8 @@ sources:
 ---
 
 # RoCE v1 and v2
+
+> 📘 Plain-language version: [[roce-v1-and-v2-explained]]
 
 ## Purpose
 

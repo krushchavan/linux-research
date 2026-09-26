@@ -85,5 +85,5 @@ On mlx5, the DCQCN parameters (about 15 of them, for the reaction and notificati
 ## Related
 
 - Technical version: [[roce-congestion-control-pfc-ecn-dcqcn]]
-- [[roce-v1-and-v2|RoCE v1 and v2]], [[rdma-explained|RDMA subsystem]], [[rdma-cm-connection-manager-explained|Connection manager]], [[iwarp-transport-explained|iWARP]]
+- [[roce-v1-and-v2-explained|RoCE v1 and v2]], [[rdma-explained|RDMA subsystem]], [[rdma-cm-connection-manager-explained|Connection manager]], [[iwarp-transport-explained|iWARP]]
 - [[traffic-control-qdisc-explained|Traffic control]], [[tcp-ip-stack-explained|TCP/IP stack]]
