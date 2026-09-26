@@ -257,7 +257,10 @@
 - [ ] rdma -> on-demand-paging-odp
 - [ ] rdma -> queue-pairs-and-completion-queues
 - [ ] rdma -> rdma-cm-connection-manager
-- [ ] rdma -> roce-and-iwarp-transports
+- [ ] rdma -> roce-v1-and-v2
+- [ ] rdma -> roce-gid-table-and-netdev-binding
+- [ ] rdma -> roce-congestion-control-pfc-ecn-dcqcn
+- [ ] rdma -> iwarp-transport
 - [ ] rdma -> soft-rdma-rxe-and-siw
 # RDMA consumers inside the kernel
 - [ ] nvme -> nvme-over-fabrics-rdma-and-tcp
