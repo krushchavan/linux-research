@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "4.7 (bvec + DMA IOVA paths: 6.x/2026)"
 researched: 2026-09-26
 status: complete
+explained: "[[rdma-rw-api-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/rw.c
   - https://github.com/torvalds/linux/blob/master/include/rdma/rw.h
@@ -14,6 +15,8 @@ sources:
 ---
 
 # RDMA R/W API (rdma_rw)
+
+> 📘 Plain-language version: [[rdma-rw-api-explained]]
 
 ## Purpose
 

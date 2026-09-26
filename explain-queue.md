@@ -25,7 +25,7 @@
 - [x] vault/concepts/rdma/queue-pairs-and-completion-queues.md
 - [x] vault/concepts/rdma/rdma-cm-connection-manager.md
 - [x] vault/concepts/rdma/rdma-netlink-restrack-and-cgroup.md
-- [ ] vault/concepts/rdma/rdma-rw-api.md
+- [x] vault/concepts/rdma/rdma-rw-api.md
 - [ ] vault/concepts/rdma/roce-congestion-control-pfc-ecn-dcqcn.md
 - [ ] vault/concepts/rdma/roce-gid-table-and-netdev-binding.md
 - [ ] vault/concepts/rdma/roce-v1-and-v2.md
