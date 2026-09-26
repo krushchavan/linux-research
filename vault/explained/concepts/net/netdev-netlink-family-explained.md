@@ -71,5 +71,5 @@ Handlers use each device's own lock rather than the global networking lock (for 
 ## Related
 
 - Technical version: [[netdev-netlink-family]]
-- [[netdev-queue-management-api-explained|Queue management API]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[devmem-tcp-tx-explained|devmem TX]], [[zero-copy-rx-zcrx|io_uring zcrx]]
+- [[netdev-queue-management-api-explained|Queue management API]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[devmem-tcp-tx-explained|devmem TX]], [[zero-copy-rx-zcrx-explained|io_uring zcrx]]
 - [[page-pool-explained|Page pool]], [[network-device-and-napi-explained|NAPI]], [[xdp-explained|XDP]], [[af-xdp-explained|AF_XDP]], [[rdma-netlink-restrack-and-cgroup-explained|RDMA netlink]]

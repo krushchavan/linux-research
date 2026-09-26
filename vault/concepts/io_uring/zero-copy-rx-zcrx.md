@@ -6,6 +6,7 @@ subsystem: io_uring
 kernel_version: "6.15 (zcrx); 6.16+ (dma-buf areas, rx_buf_len); 2025–26 (ifq export/import, events, multi-area, NODEV)"
 researched: 2026-09-26
 status: complete
+explained: "[[zero-copy-rx-zcrx-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/io_uring/zcrx.c
   - https://github.com/torvalds/linux/blob/master/io_uring/zcrx.h
@@ -18,6 +19,8 @@ sources:
 ---
 
 # io_uring Zero-Copy Receive (zcrx) Internals
+
+> 📘 Plain-language version: [[zero-copy-rx-zcrx-explained]]
 
 > Companion to the broader [[io-uring-zero-copy-networking]] note (SEND_ZC + zcrx overview). This note goes deeper on zcrx's buffer lifecycle, reference counting, provider hooks and the 2025–26 control-plane additions.
 

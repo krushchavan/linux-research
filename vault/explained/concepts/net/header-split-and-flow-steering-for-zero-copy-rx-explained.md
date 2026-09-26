@@ -75,5 +75,5 @@ Correctness holds either way. A zero-copy flow landing on a normal queue arrives
 ## Related
 
 - Technical version: [[header-split-and-flow-steering-for-zero-copy-rx]]
-- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[zero-copy-rx-zcrx|io_uring zcrx]], [[netdev-queue-management-api-explained|Queue management API]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]]
+- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[zero-copy-rx-zcrx-explained|io_uring zcrx]], [[netdev-queue-management-api-explained|Queue management API]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]]
 - [[xdp-explained|XDP]], [[af-xdp-explained|AF_XDP]], [[network-device-and-napi-explained|NAPI]], [[page-pool-explained|Page pool]], [[rdma-explained|RDMA]]

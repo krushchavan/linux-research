@@ -72,5 +72,5 @@ Drivers with memory-provider support: bnxt, gve, mlx5, fbnic, netdevsim (for tes
 ## Related
 
 - Technical version: [[netdev-queue-management-api]]
-- [[page-pool-explained|Page pool]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[devmem-tcp-tx-explained|devmem TX]], [[zero-copy-rx-zcrx|io_uring zcrx]], [[header-split-and-flow-steering-for-zero-copy-rx-explained|Header split and steering]]
+- [[page-pool-explained|Page pool]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[devmem-tcp-tx-explained|devmem TX]], [[zero-copy-rx-zcrx-explained|io_uring zcrx]], [[header-split-and-flow-steering-for-zero-copy-rx-explained|Header split and steering]]
 - [[netdev-netlink-family-explained|netdev netlink]], [[af-xdp-explained|AF_XDP]], [[network-device-and-napi-explained|NAPI]], [[network-namespaces-explained|Network namespaces]]

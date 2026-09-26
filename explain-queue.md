@@ -40,7 +40,7 @@
 - [x] vault/concepts/net/smc-r-shared-memory-communications.md
 - [x] vault/concepts/dma/dma-buf-sharing.md
 - [x] vault/concepts/dma/p2pdma-peer-to-peer-dma.md
-- [ ] vault/concepts/io_uring/zero-copy-rx-zcrx.md
+- [x] vault/concepts/io_uring/zero-copy-rx-zcrx.md
 - [ ] vault/concepts/nfs/nfs-over-rdma-svcrdma-xprtrdma.md
 - [ ] vault/concepts/nvme/nvme-over-fabrics-rdma-and-tcp.md
 - [ ] vault/concepts/comparisons/devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx.md
