@@ -74,4 +74,4 @@ For containers, RDMA uses virtual functions or macvlan RDMA devices, while devme
 
 - Technical version: [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx]]
 - [[devmem-tcp-explained|devmem TCP]], [[zero-copy-rx-zcrx-explained|io_uring zcrx]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[dma-buf-sharing-explained|dma-buf sharing]], [[p2pdma-peer-to-peer-dma-explained|P2PDMA]]
-- [[rdma-explained|RDMA]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[page-pool-explained|Page pool]], [[io-uring-vs-rdma|io_uring vs RDMA]], [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk|Kernel-bypass comparison]]
+- [[rdma-explained|RDMA]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[page-pool-explained|Page pool]], [[io-uring-vs-rdma-explained|io_uring vs RDMA]], [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk|Kernel-bypass comparison]]

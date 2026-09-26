@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "io_uring 5.1+; RDMA 2.6.11+; zcrx 6.15; dma-buf in both 5.12/6.16"
 researched: 2026-09-26
 status: complete
+explained: "[[io-uring-vs-rdma-explained]]"
 sources:
   - https://arxiv.org/abs/2512.04859
   - https://kernel-recipes.org/en/2024/schedule/efficient-zero-copy-networking-using-io_uring/
@@ -19,6 +20,8 @@ sources:
 ---
 
 # io_uring vs RDMA: Completion Models, Memory Registration and Zero-Copy
+
+> 📘 Plain-language version: [[io-uring-vs-rdma-explained]]
 
 > Comparison note. Filed under `comparisons/` (a new folder) because it spans the [[io_uring]] and [[rdma]] subsystems equally.
 

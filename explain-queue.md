@@ -44,7 +44,7 @@
 - [x] vault/concepts/nfs/nfs-over-rdma-svcrdma-xprtrdma.md
 - [x] vault/concepts/nvme/nvme-over-fabrics-rdma-and-tcp.md
 - [x] vault/concepts/comparisons/devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx.md
-- [ ] vault/concepts/comparisons/io-uring-vs-rdma.md
+- [x] vault/concepts/comparisons/io-uring-vs-rdma.md
 - [ ] vault/concepts/comparisons/kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk.md
 - [ ] vault/concepts/comparisons/polling-vs-interrupts-io-uring-napi-rdma-cq.md
 - [x] vault/concepts/net/af-xdp.md
