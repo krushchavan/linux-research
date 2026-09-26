@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "2.6.11 (write ABI); 4.14–4.20 (ioctl ABI)"
 researched: 2026-09-26
 status: complete
+explained: "[[verbs-api-and-uverbs-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/infiniband/user_verbs.html
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/uverbs_ioctl.c
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Verbs API and uverbs
+
+> 📘 Plain-language version: [[verbs-api-and-uverbs-explained]]
 
 ## Purpose
 

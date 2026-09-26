@@ -88,5 +88,5 @@ User-space posting and polling never touch the kernel: the library writes entrie
 ## Related
 
 - Technical version: [[queue-pairs-and-completion-queues]]
-- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[rdma-cm-connection-manager-explained|Connection manager]]
+- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs-explained|Verbs and uverbs]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[rdma-cm-connection-manager-explained|Connection manager]]
 - [[io_uring-explained|io_uring]], [[network-device-and-napi-explained|NAPI]]
