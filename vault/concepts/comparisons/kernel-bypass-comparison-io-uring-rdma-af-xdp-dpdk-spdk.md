@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "RDMA 2.6.11; DPDK (VFIO) 3.6+; AF_XDP 4.18; io_uring 5.1; zcrx 6.15"
 researched: 2026-09-26
 status: complete
+explained: "[[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk-explained]]"
 sources:
   - https://spdk.io/doc/userspace.html
   - https://spdk.io/doc/nvme.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Kernel-Bypass Comparison: io_uring vs RDMA vs AF_XDP vs DPDK vs SPDK
+
+> 📘 Plain-language version: [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk-explained]]
 
 > Comparison note under `comparisons/`. See also [[io-uring-vs-rdma]] (a deeper two-way comparison) and [[polling-vs-interrupts-io-uring-napi-rdma-cq]].
 

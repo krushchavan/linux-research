@@ -89,4 +89,4 @@ An NVMe-oF RDMA namespace is an ordinary block device, so io_uring (including po
 - Technical version: [[io-uring-vs-rdma]]
 - [[io-uring-internals-explained|io_uring internals]], [[registered-resources-explained|Registered resources]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]], [[zero-copy-rx-zcrx-explained|zcrx]]
 - [[rdma-explained|RDMA]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[get-user-pages-and-pinning-explained|Page pinning]], [[dma-buf-sharing-explained|dma-buf]]
-- [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk|Kernel-bypass comparison]], [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained|Devmem vs GPUDirect vs zcrx]]
+- [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk-explained|Kernel-bypass comparison]], [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained|Devmem vs GPUDirect vs zcrx]]
