@@ -81,4 +81,4 @@ Datagram IDs have no connection: "connect" does a small service-resolution excha
 ## Related
 
 - Technical version: [[rdma-cm-connection-manager]]
-- [[rdma-explained|RDMA subsystem]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[roce-gid-table-and-netdev-binding|RoCE GID table]], [[iwarp-transport-explained|iWARP]], [[mad-and-subnet-administration-explained|Management datagrams]], [[ib-device-and-client-model-explained|Device and client model]], [[nvme-over-fabrics-rdma-and-tcp|NVMe over Fabrics]]
+- [[rdma-explained|RDMA subsystem]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[iwarp-transport-explained|iWARP]], [[mad-and-subnet-administration-explained|Management datagrams]], [[ib-device-and-client-model-explained|Device and client model]], [[nvme-over-fabrics-rdma-and-tcp|NVMe over Fabrics]]

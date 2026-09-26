@@ -72,4 +72,4 @@ Three reader/writer locks protect the device table, the client table and each de
 ## Related
 
 - Technical version: [[ib-device-and-client-model]]
-- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[roce-gid-table-and-netdev-binding|RoCE GID table]], [[rdma-netlink-restrack-and-cgroup-explained|Netlink, restrack and cgroup]]
+- [[rdma-explained|RDMA subsystem]], [[verbs-api-and-uverbs|Verbs and uverbs]], [[roce-gid-table-and-netdev-binding-explained|RoCE GID table]], [[rdma-netlink-restrack-and-cgroup-explained|Netlink, restrack and cgroup]]

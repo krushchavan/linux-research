@@ -6,6 +6,7 @@ subsystem: rdma
 kernel_version: "4.5 (RoCE v2 GID types and roce_gid_mgmt); 4.19 (gid_attr ndev/refcount rework)"
 researched: 2026-09-26
 status: complete
+explained: "[[roce-gid-table-and-netdev-binding-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/roce_gid_mgmt.c
   - https://github.com/torvalds/linux/blob/master/drivers/infiniband/core/cache.c
@@ -15,6 +16,8 @@ sources:
 ---
 
 # RoCE GID Table and Netdev Binding
+
+> 📘 Plain-language version: [[roce-gid-table-and-netdev-binding-explained]]
 
 ## Purpose
 
