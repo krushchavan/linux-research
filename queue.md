@@ -276,7 +276,7 @@
 - [x] net -> devmem-tcp-tx
 - [x] net -> header-split-and-flow-steering-for-zero-copy-rx
 - [x] net -> netdev-queue-management-api
-- [ ] net -> netdev-netlink-family
+- [x] net -> netdev-netlink-family
 # Comparisons
 - [ ] io_uring vs RDMA: completion models, memory registration, and zero-copy compared
 - [ ] devmem TCP vs RDMA GPUDirect vs io_uring zcrx: moving data straight to accelerator memory
