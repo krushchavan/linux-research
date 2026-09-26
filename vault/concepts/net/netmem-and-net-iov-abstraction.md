@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.10 (netmem_ref); 6.12 (net_iov, unreadable skbs, devmem TCP); 6.17 (netmem_desc split)"
 researched: 2026-09-26
 status: complete
+explained: "[[netmem-and-net-iov-abstraction-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/include/net/netmem.h
   - https://github.com/torvalds/linux/blob/master/include/net/page_pool/memory_provider.h
@@ -19,6 +20,8 @@ sources:
 ---
 
 # netmem and net_iov: Non-Page Memory in the Network Stack
+
+> 📘 Plain-language version: [[netmem-and-net-iov-abstraction-explained]]
 
 ## Purpose
 

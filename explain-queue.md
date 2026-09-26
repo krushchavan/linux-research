@@ -31,7 +31,7 @@
 - [x] vault/concepts/rdma/roce-v1-and-v2.md
 - [x] vault/concepts/rdma/soft-rdma-rxe-and-siw.md
 - [x] vault/concepts/rdma/verbs-api-and-uverbs.md
-- [ ] vault/concepts/net/netmem-and-net-iov-abstraction.md
+- [x] vault/concepts/net/netmem-and-net-iov-abstraction.md
 - [ ] vault/concepts/net/devmem-tcp-rx-dmabuf-binding-and-token-recycling.md
 - [ ] vault/concepts/net/devmem-tcp-tx.md
 - [ ] vault/concepts/net/header-split-and-flow-steering-for-zero-copy-rx.md
