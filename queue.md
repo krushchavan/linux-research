@@ -264,7 +264,7 @@
 - [x] rdma -> soft-rdma-rxe-and-siw
 # RDMA consumers inside the kernel
 - [x] nvme -> nvme-over-fabrics-rdma-and-tcp
-- [ ] nfs -> nfs-over-rdma-svcrdma-xprtrdma
+- [x] nfs -> nfs-over-rdma-svcrdma-xprtrdma
 - [ ] net -> smc-r-shared-memory-communications
 # Zero-copy / peer-to-peer building blocks shared with io_uring
 - [ ] mm -> p2pdma-peer-to-peer-dma
