@@ -239,13 +239,13 @@ Read it top-down for the **control path**. Userspace libraries enter through thr
 
 **Purpose**: Storage ULP targets (NVMe-oF target, iSER target, SRP target, NFS server) all do the same dance: take a host's `{addr, rkey, len}` descriptor, register or map local pages, and issue RDMA READ or WRITE, respecting device SGE limits and iWARP's rule that READ sinks must be registered. `rdma_rw` does this once, correctly.
 
-**How it works**: `rdma_rw_ctx_init()` takes a local scatterlist (or bvecs) and a remote address/rkey. It picks a strategy: a single SGE, multiple SGEs split across chained WRs, an IOVA-contiguous mapping built with the new DMA IOVA API, or MR registration (forced on iWARP and whenever `force_mr` is set, e.g. for T10-PI signature offload). `rdma_rw_ctx_post()` posts the chain with one completion at the end. `rdma_rw_ctx_destroy()` unmaps and returns MRs to the QP's pool.
+**How it works**: `rdma_rw_ctx_init()` takes a local scatterlist (or bvecs) and a remote address/rkey. It picks a strategy: a single SGE, multiple SGEs split across chained WRs, an IOVA-contiguous mapping built with the new DMA IOVA API, or MR registration (mandatory for iWARP RDMA READs, optional when the device prefers it, forced by `force_mr`; a separate signature-MR path handles T10-PI). `rdma_rw_ctx_post()` posts the chain with one completion at the end. `rdma_rw_ctx_destroy()` unmaps and returns MRs to the QP's pool.
 
 **Key struct**: `struct rdma_rw_ctx` (`include/rdma/rw.h`) — tagged union over `single`, `map`, `iova` and `reg` strategies.
 
 **Key functions**: `rdma_rw_ctx_init()`, `rdma_rw_ctx_post()`, `rdma_rw_ctx_destroy()`, `rdma_rw_mr_factor()` (`rw.c`)
 
-**Config & flags**: `rdma_rw` module parameter `force_mr` (debug).
+**Config & flags**: `ib_core.force_mr` module parameter (debug).
 
 ---
 
