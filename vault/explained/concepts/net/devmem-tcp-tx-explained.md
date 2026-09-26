@@ -68,5 +68,5 @@ As with ordinary zero-copy send, TCP keeps the packets (and their chunk referenc
 ## Related
 
 - Technical version: [[devmem-tcp-tx]]
-- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[netdev-netlink-family|netdev netlink]], [[netdev-queue-management-api-explained|Queue management API]]
+- [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[netmem-and-net-iov-abstraction-explained|netmem and net_iov]], [[netdev-netlink-family-explained|netdev netlink]], [[netdev-queue-management-api-explained|Queue management API]]
 - [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]], [[ip-routing-explained|IP routing]], [[dma-buf-sharing|dma-buf sharing]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]]

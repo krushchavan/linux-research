@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.3 (netdev family, xdp-features); 6.8 (queue/napi-get); 6.9 (qstats); 6.12 (bind-rx); 6.16 (bind-tx); 2026 (queue-create)"
 researched: 2026-09-26
 status: complete
+explained: "[[netdev-netlink-family-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/Documentation/netlink/specs/netdev.yaml
   - https://github.com/torvalds/linux/blob/master/net/core/netdev-genl.c
@@ -18,6 +19,8 @@ sources:
 ---
 
 # The netdev Generic Netlink Family
+
+> 📘 Plain-language version: [[netdev-netlink-family-explained]]
 
 ## Purpose
 
