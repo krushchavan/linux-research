@@ -6,6 +6,7 @@ subsystem: scsi
 kernel_version: "open-iscsi 2.6.13; iSER initiator 2.6.19; LIO target core 2.6.38; iSCSI target 3.1; isert 3.10; TCMU 3.18"
 researched: 2026-09-26
 status: complete
+explained: "[[iscsi-iser-and-lio-target-explained]]"
 sources:
   - https://github.com/open-iscsi/open-iscsi/blob/master/README
   - https://docs.kernel.org/target/tcmu-design.html
@@ -21,6 +22,8 @@ sources:
 ---
 
 # iSCSI, iSER and the LIO Target
+
+> 📘 Plain-language version: [[iscsi-iser-and-lio-target-explained]]
 
 > Part of the storage-fabrics comparison: [[storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma]]. NVMe-era counterpart: [[nvme-over-fabrics-rdma-and-tcp]].
 

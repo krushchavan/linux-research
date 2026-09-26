@@ -55,7 +55,7 @@ Fibre Channel doesn't drop frames because of congestion, but bit errors and link
 
 ### Step 8: The hardware drivers
 - **Broadcom/Emulex (lpfc)** supports both host and target mode, and chooses per port whether to carry SCSI, NVMe or both.
-- **Marvell/QLogic (qla2xxx)** supports host mode (its target mode is SCSI-only, through the LIO target, [[iscsi-iser-and-lio-target|LIO]]).
+- **Marvell/QLogic (qla2xxx)** supports host mode (its target mode is SCSI-only, through the LIO target, [[iscsi-iser-and-lio-target-explained|LIO]]).
 - Both run **SCSI and NVMe on the same port at once**, so a host can use old SCSI volumes and new NVMe namespaces from the same array.
 - Enterprise distributions have fully supported NVMe over FC since around RHEL 7.6 and 8.0.
 
@@ -93,4 +93,4 @@ Fibre Channel doesn't drop frames because of congestion, but bit errors and link
 
 - Technical version: [[nvme-over-fibre-channel]]
 - [[nvme-over-fabrics-rdma-and-tcp-explained|NVMe over Fabrics (RDMA and TCP)]], [[storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma-explained|Storage fabrics compared]]
-- [[blk-mq-explained|blk-mq]], [[iscsi-iser-and-lio-target|iSCSI, iSER and LIO]]
+- [[blk-mq-explained|blk-mq]], [[iscsi-iser-and-lio-target-explained|iSCSI, iSER and LIO]]

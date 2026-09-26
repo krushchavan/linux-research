@@ -288,4 +288,4 @@
 - [x] vault/concepts/comparisons/storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma.md
 - [x] vault/concepts/comparisons/zero-copy-buffer-ownership-and-return-protocols.md
 - [x] vault/concepts/nvme/nvme-over-fibre-channel.md
-- [ ] vault/concepts/scsi/iscsi-iser-and-lio-target.md
+- [x] vault/concepts/scsi/iscsi-iser-and-lio-target.md
