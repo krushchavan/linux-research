@@ -272,7 +272,7 @@
 - [x] io_uring -> zero-copy-rx-zcrx
 # Device memory TCP (devmem) deep dives
 - [x] net -> netmem-and-net-iov-abstraction
-- [ ] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
+- [x] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
 - [ ] net -> devmem-tcp-tx
 - [ ] net -> header-split-and-flow-steering-for-zero-copy-rx
 - [ ] net -> netdev-queue-management-api
