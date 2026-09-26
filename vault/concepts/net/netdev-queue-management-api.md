@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.10 (queue_mgmt_ops); 6.12 (netdev_rx_queue_restart + providers); 2026 (queue config, queue leasing / queue-create)"
 researched: 2026-09-26
 status: complete
+explained: "[[netdev-queue-management-api-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/include/net/netdev_queues.h
   - https://github.com/torvalds/linux/blob/master/net/core/netdev_rx_queue.c
@@ -18,6 +19,8 @@ sources:
 ---
 
 # Netdev Queue Management API (Per-Queue Restart, Memory Providers, Queue Leasing)
+
+> 📘 Plain-language version: [[netdev-queue-management-api-explained]]
 
 ## Purpose
 
