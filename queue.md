@@ -269,7 +269,7 @@
 # Zero-copy / peer-to-peer building blocks shared with io_uring
 - [x] mm -> p2pdma-peer-to-peer-dma
 - [x] dma -> dma-buf-sharing
-- [ ] io_uring -> zero-copy-rx-zcrx
+- [x] io_uring -> zero-copy-rx-zcrx
 # Device memory TCP (devmem) deep dives
 - [ ] net -> netmem-and-net-iov-abstraction
 - [ ] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
