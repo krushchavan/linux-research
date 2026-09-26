@@ -260,7 +260,7 @@
 - [x] rdma -> roce-v1-and-v2
 - [x] rdma -> roce-gid-table-and-netdev-binding
 - [x] rdma -> roce-congestion-control-pfc-ecn-dcqcn
-- [ ] rdma -> iwarp-transport
+- [x] rdma -> iwarp-transport
 - [x] rdma -> soft-rdma-rxe-and-siw
 # RDMA consumers inside the kernel
 - [ ] nvme -> nvme-over-fabrics-rdma-and-tcp
