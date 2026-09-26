@@ -71,5 +71,5 @@ When an exporter must relocate a buffer (say, evicting GPU memory under pressure
 ## Related
 
 - Technical version: [[dma-buf-sharing]]
-- [[p2pdma-peer-to-peer-dma|P2PDMA]], [[dma-mapping-api-explained|DMA mapping API]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[on-demand-paging-odp-explained|On-demand paging]], [[rdma-explained|RDMA]]
+- [[p2pdma-peer-to-peer-dma-explained|P2PDMA]], [[dma-mapping-api-explained|DMA mapping API]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[on-demand-paging-odp-explained|On-demand paging]], [[rdma-explained|RDMA]]
 - [[devmem-tcp-explained|devmem TCP]], [[io-uring-zero-copy-networking-explained|io_uring zero-copy networking]], [[page-pool-explained|Page pool]]

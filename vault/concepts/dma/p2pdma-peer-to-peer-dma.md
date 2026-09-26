@@ -6,6 +6,7 @@ subsystem: dma
 kernel_version: "4.20 (in-kernel P2PDMA); 6.2 (userspace p2pmem mmap + O_DIRECT); 6.19 (p2pdma_provider, VFIO dma-buf export)"
 researched: 2026-09-26
 status: complete
+explained: "[[p2pdma-peer-to-peer-dma-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/driver-api/pci/p2pdma.html
   - https://github.com/torvalds/linux/blob/master/drivers/pci/p2pdma.c
@@ -23,6 +24,8 @@ sources:
 ---
 
 # PCI Peer-to-Peer DMA (P2PDMA)
+
+> 📘 Plain-language version: [[p2pdma-peer-to-peer-dma-explained]]
 
 > Queued as `mm -> p2pdma-peer-to-peer-dma`; filed under `dma/` because the code lives in `drivers/pci/` and the DMA-mapping layer, alongside [[dma-mapping-api]].
 
