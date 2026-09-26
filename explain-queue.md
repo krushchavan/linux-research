@@ -286,4 +286,4 @@
 - [x] vault/concepts/comparisons/memory-pinning-and-registration-strategies.md
 - [x] vault/concepts/comparisons/rdma-transports-infiniband-roce-iwarp-efa-srd-ultra-ethernet.md
 - [x] vault/concepts/comparisons/storage-fabrics-nvme-of-iser-iscsi-nvme-fc-nfs-rdma.md
-- [ ] vault/concepts/comparisons/zero-copy-buffer-ownership-and-return-protocols.md
+- [x] vault/concepts/comparisons/zero-copy-buffer-ownership-and-return-protocols.md

@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "RDMA SRQ (IB verbs, 2.6); MSG_ZEROCOPY 4.14; AF_XDP 4.18; provided buffer rings 5.19; io_uring SEND_ZC 6.0; devmem RX 6.12 / TX 6.14; io_uring zcrx 6.15"
 researched: 2026-09-26
 status: complete
+explained: "[[zero-copy-buffer-ownership-and-return-protocols-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/networking/af_xdp.html
   - https://www.kernel.org/doc/html/latest/networking/msg_zerocopy.html
@@ -22,6 +23,8 @@ sources:
 ---
 
 # Zero-Copy Buffer Ownership and Return Protocols
+
+> 📘 Plain-language version: [[zero-copy-buffer-ownership-and-return-protocols-explained]]
 
 > Comparison note under `comparisons/`. Complements [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk]], [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx]], [[io-uring-vs-rdma]] and [[polling-vs-interrupts-io-uring-napi-rdma-cq]]. The memory side (pinning, registration, DMA mapping) is covered separately by the queued comparison on memory pinning and registration strategies.
 

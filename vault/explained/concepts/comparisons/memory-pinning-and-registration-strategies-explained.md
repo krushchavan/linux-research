@@ -121,6 +121,6 @@ Zero-copy receive needs memory the NIC can write into at any moment. So both des
 ## Related
 
 - Technical version: [[memory-pinning-and-registration-strategies]]
-- [[zero-copy-buffer-ownership-and-return-protocols|Zero-copy buffer ownership]] (who owns a buffer when)
+- [[zero-copy-buffer-ownership-and-return-protocols-explained|Zero-copy buffer ownership]] (who owns a buffer when)
 - [[get-user-pages-and-pinning-explained|get_user_pages and pinning]], [[registered-resources-explained|io_uring registered resources]], [[memory-registration-and-ib-umem-explained|RDMA memory registration]], [[on-demand-paging-odp-explained|ODP]], [[dma-buf-sharing-explained|dma-buf]], [[dma-mapping-api-explained|DMA mapping]]
 - [[af-xdp-explained|AF_XDP]], [[zero-copy-rx-zcrx-explained|io_uring zcrx]], [[p2pdma-peer-to-peer-dma-explained|P2PDMA]]
