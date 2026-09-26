@@ -38,7 +38,7 @@
 - [x] vault/concepts/net/netdev-queue-management-api.md
 - [x] vault/concepts/net/netdev-netlink-family.md
 - [x] vault/concepts/net/smc-r-shared-memory-communications.md
-- [ ] vault/concepts/dma/dma-buf-sharing.md
+- [x] vault/concepts/dma/dma-buf-sharing.md
 - [ ] vault/concepts/dma/p2pdma-peer-to-peer-dma.md
 - [ ] vault/concepts/io_uring/zero-copy-rx-zcrx.md
 - [ ] vault/concepts/nfs/nfs-over-rdma-svcrdma-xprtrdma.md

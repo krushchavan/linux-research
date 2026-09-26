@@ -72,4 +72,4 @@ After completion, the helper returns regions to the pool (to be invalidated on n
 
 - Technical version: [[rdma-rw-api]]
 - [[rdma-explained|RDMA subsystem]], [[memory-registration-and-ib-umem-explained|Memory registration]], [[queue-pairs-and-completion-queues-explained|Queue pairs and CQs]], [[iwarp-transport-explained|iWARP]], [[nvme-over-fabrics-rdma-and-tcp|NVMe over Fabrics]], [[nfs-over-rdma-svcrdma-xprtrdma|NFS over RDMA]]
-- [[bio-layer-explained|bio layer]], [[dma-mapping-api|DMA mapping]]
+- [[bio-layer-explained|bio layer]], [[dma-mapping-api-explained|DMA mapping]]

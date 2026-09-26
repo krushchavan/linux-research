@@ -75,5 +75,5 @@ Dynamic dma-buf registrations are ODP in another form: the GPU driver calls the 
 ## Related
 
 - Technical version: [[on-demand-paging-odp]]
-- [[memory-registration-and-ib-umem-explained|Memory registration]], [[rdma-explained|RDMA subsystem]], [[dma-buf-sharing|dma-buf sharing]], [[soft-rdma-rxe-and-siw-explained|rxe and siw]]
+- [[memory-registration-and-ib-umem-explained|Memory registration]], [[rdma-explained|RDMA subsystem]], [[dma-buf-sharing-explained|dma-buf sharing]], [[soft-rdma-rxe-and-siw-explained|rxe and siw]]
 - [[get-user-pages-and-pinning-explained|Page pinning]], [[page-fault-handler-explained|Page fault handler]]

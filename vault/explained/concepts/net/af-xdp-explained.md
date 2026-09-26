@@ -96,4 +96,4 @@ Closing the socket removes it from the BPF map, tells the driver to release the 
 
 - Technical version: [[af-xdp]]
 - [[xdp-explained|XDP]], [[bpf-maps-explained|BPF maps]], [[network-device-and-napi-explained|NAPI]], [[page-pool-explained|Page pool]], [[sk-buff-explained|sk_buff]], [[traffic-control-qdisc-explained|Traffic control]]
-- [[get-user-pages-and-pinning-explained|Page pinning]], [[huge-pages-hugetlbfs-explained|Huge pages]], [[dma-mapping-api|DMA mapping]], [[io_uring-explained|io_uring]], [[libbpf-and-toolchain-explained|libbpf]]
+- [[get-user-pages-and-pinning-explained|Page pinning]], [[huge-pages-hugetlbfs-explained|Huge pages]], [[dma-mapping-api-explained|DMA mapping]], [[io_uring-explained|io_uring]], [[libbpf-and-toolchain-explained|libbpf]]

@@ -6,6 +6,7 @@ subsystem: dma
 kernel_version: "3.3 (dma-buf); 5.5–5.7 (dynamic attach, move_notify); 7.x/2026 (invalidate_mappings, revocation)"
 researched: 2026-09-26
 status: complete
+explained: "[[dma-buf-sharing-explained]]"
 sources:
   - https://www.kernel.org/doc/html/latest/driver-api/dma-buf.html
   - https://github.com/torvalds/linux/blob/master/include/linux/dma-buf.h
@@ -22,6 +23,8 @@ sources:
 ---
 
 # dma-buf: Cross-Device Buffer Sharing
+
+> 📘 Plain-language version: [[dma-buf-sharing-explained]]
 
 ## Purpose
 
