@@ -273,7 +273,7 @@
 # Device memory TCP (devmem) deep dives
 - [x] net -> netmem-and-net-iov-abstraction
 - [x] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
-- [ ] net -> devmem-tcp-tx
+- [x] net -> devmem-tcp-tx
 - [ ] net -> header-split-and-flow-steering-for-zero-copy-rx
 - [ ] net -> netdev-queue-management-api
 - [ ] net -> netdev-netlink-family
