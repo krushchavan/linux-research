@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "InfiniBand 2.6.11; iWARP 2.6.19; RoCE v1 3.0 / v2 4.5; EFA 5.2; Ultra Ethernet RFC 2025 (drivers/ultraeth, not merged)"
 researched: 2026-09-26
 status: complete
+explained: "[[rdma-transports-infiniband-roce-iwarp-efa-srd-ultra-ethernet-explained]]"
 sources:
   - https://lwn.net/Articles/1013363/
   - https://lwn.net/Articles/786036/
@@ -23,6 +24,8 @@ sources:
 ---
 
 # RDMA Transports Compared: InfiniBand vs RoCE vs iWARP vs EFA SRD vs Ultra Ethernet
+
+> 📘 Plain-language version: [[rdma-transports-infiniband-roce-iwarp-efa-srd-ultra-ethernet-explained]]
 
 > Comparison note under `comparisons/`. Deep dives: [[rdma]], [[roce-v1-and-v2]], [[iwarp-transport]], [[roce-congestion-control-pfc-ecn-dcqcn]], [[queue-pairs-and-completion-queues]], [[mad-and-subnet-administration]], [[soft-rdma-rxe-and-siw]]. Related comparisons: [[io-uring-vs-rdma]], [[kernel-bypass-comparison-io-uring-rdma-af-xdp-dpdk-spdk]].
 
