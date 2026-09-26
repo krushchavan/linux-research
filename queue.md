@@ -267,7 +267,7 @@
 - [x] nfs -> nfs-over-rdma-svcrdma-xprtrdma
 - [x] net -> smc-r-shared-memory-communications
 # Zero-copy / peer-to-peer building blocks shared with io_uring
-- [ ] mm -> p2pdma-peer-to-peer-dma
+- [x] mm -> p2pdma-peer-to-peer-dma
 - [ ] dma -> dma-buf-sharing
 - [ ] io_uring -> zero-copy-rx-zcrx
 # Device memory TCP (devmem) deep dives
