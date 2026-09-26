@@ -270,7 +270,15 @@
 - [ ] mm -> p2pdma-peer-to-peer-dma
 - [ ] dma -> dma-buf-sharing
 - [ ] io_uring -> zero-copy-rx-zcrx
+# Device memory TCP (devmem) deep dives
+- [ ] net -> netmem-and-net-iov-abstraction
+- [ ] net -> devmem-tcp-rx-dmabuf-binding-and-token-recycling
+- [ ] net -> devmem-tcp-tx
+- [ ] net -> header-split-and-flow-steering-for-zero-copy-rx
+- [ ] net -> netdev-queue-management-api
+- [ ] net -> netdev-netlink-family
 # Comparisons
 - [ ] io_uring vs RDMA: completion models, memory registration, and zero-copy compared
+- [ ] devmem TCP vs RDMA GPUDirect vs io_uring zcrx: moving data straight to accelerator memory
 - [ ] kernel-bypass comparison: io_uring vs RDMA vs AF_XDP vs DPDK vs SPDK
 - [ ] polling vs interrupts: io_uring SQPOLL/IOPOLL, NAPI busy-poll, and RDMA CQ polling
