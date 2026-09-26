@@ -251,11 +251,11 @@
 
 # --- RDMA and kernel-bypass I/O vs io_uring (requested 2026-09-26) ---
 # Foundations: the RDMA subsystem and its core mechanisms
-- [ ] subsystem: rdma
-- [ ] rdma -> verbs-api-and-uverbs
-- [ ] rdma -> memory-registration-and-ib-umem
-- [ ] rdma -> on-demand-paging-odp
-- [ ] rdma -> queue-pairs-and-completion-queues
+- [>] subsystem: rdma
+- [x] rdma -> verbs-api-and-uverbs
+- [x] rdma -> memory-registration-and-ib-umem
+- [x] rdma -> on-demand-paging-odp
+- [x] rdma -> queue-pairs-and-completion-queues
 - [ ] rdma -> rdma-cm-connection-manager
 - [ ] rdma -> roce-v1-and-v2
 - [ ] rdma -> roce-gid-table-and-netdev-binding
