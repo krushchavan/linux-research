@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "4.11 (SMC-R); 4.19 (SMC-D); 5.10–5.18 (SMCv2 / SMC-Rv2); 6.11 (IPPROTO_SMC)"
 researched: 2026-09-26
 status: complete
+explained: "[[smc-r-shared-memory-communications-explained]]"
 sources:
   - https://www.rfc-editor.org/rfc/rfc7609.html
   - https://lwn.net/Articles/976037/
@@ -18,6 +19,8 @@ sources:
 ---
 
 # SMC-R: Shared Memory Communications over RDMA
+
+> 📘 Plain-language version: [[smc-r-shared-memory-communications-explained]]
 
 ## Purpose
 
