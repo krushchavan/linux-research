@@ -6,6 +6,7 @@ subsystem: net
 kernel_version: "6.12 (devmem RX); 2025–26 (rx-page-size, netkit vdev)"
 researched: 2026-09-26
 status: complete
+explained: "[[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained]]"
 sources:
   - https://github.com/torvalds/linux/blob/master/net/core/devmem.c
   - https://github.com/torvalds/linux/blob/master/net/core/devmem.h
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Devmem TCP RX: dma-buf Binding and Token Recycling
+
+> 📘 Plain-language version: [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained]]
 
 > Deep dive under [[devmem-tcp]] (which gives the feature overview). This note follows the RX path's data structures: how a dma-buf becomes NIC receive buffers, how those buffers reach userspace as tokens, and how every reference is accounted until the memory can be unmapped.
 

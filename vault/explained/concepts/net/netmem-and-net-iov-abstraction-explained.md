@@ -69,5 +69,5 @@ To receive: use the page pool; support TCP header/data split so headers land in 
 ## Related
 
 - Technical version: [[netmem-and-net-iov-abstraction]]
-- [[page-pool-explained|Page pool]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling|devmem RX binding]], [[devmem-tcp-tx|devmem TX]], [[zero-copy-rx-zcrx|io_uring zcrx]], [[netdev-queue-management-api|Queue management API]]
+- [[page-pool-explained|Page pool]], [[devmem-tcp-explained|devmem TCP]], [[devmem-tcp-rx-dmabuf-binding-and-token-recycling-explained|devmem RX binding]], [[devmem-tcp-tx|devmem TX]], [[zero-copy-rx-zcrx|io_uring zcrx]], [[netdev-queue-management-api|Queue management API]]
 - [[sk-buff-explained|sk_buff]], [[tcp-ip-stack-explained|TCP/IP stack]], [[folio-explained|Folio]]
