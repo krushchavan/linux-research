@@ -6,6 +6,7 @@ subsystem: comparisons
 kernel_version: "RDMA dma-buf 5.12; devmem RX 6.12 / TX 6.16; zcrx 6.15 (dma-buf areas 6.16)"
 researched: 2026-09-26
 status: complete
+explained: "[[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained]]"
 sources:
   - https://docs.nvidia.com/cuda/gpudirect-rdma/index.html
   - https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/24.6.2/gpu-operator-rdma.html
@@ -20,6 +21,8 @@ sources:
 ---
 
 # Devmem TCP vs GPUDirect RDMA vs io_uring zcrx: Moving Network Data Straight to Accelerator Memory
+
+> 📘 Plain-language version: [[devmem-tcp-vs-rdma-gpudirect-vs-io-uring-zcrx-explained]]
 
 > Comparison note under `comparisons/`. Builds on [[devmem-tcp]], [[memory-registration-and-ib-umem]], [[zero-copy-rx-zcrx]], [[dma-buf-sharing]] and [[p2pdma-peer-to-peer-dma]].
 
